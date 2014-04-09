@@ -1,0 +1,875 @@
+{
+  "meta" : {
+    "view" : {
+      "id" : "vbxz-36ag",
+      "name" : "WiFi Locations in Edmonton",
+      "attribution" : "Corporate Services - Information Technology Branch",
+      "averageRating" : 0,
+      "category" : "Facilities and Structures",
+      "createdAt" : 1384892183,
+      "description" : "This an on-going program to provide a comprehensive list of WiFi locations in Edmonton.",
+      "displayType" : "table",
+      "downloadCount" : 12,
+      "indexUpdatedAt" : 1396984260,
+      "newBackend" : false,
+      "numberOfComments" : 0,
+      "oid" : 7719101,
+      "publicationAppendEnabled" : false,
+      "publicationDate" : 1396960219,
+      "publicationGroup" : 1362099,
+      "publicationStage" : "published",
+      "rowsUpdatedAt" : 1396960217,
+      "rowsUpdatedBy" : "dhgx-s4x9",
+      "tableId" : 1538936,
+      "totalTimesRated" : 0,
+      "viewCount" : 167,
+      "viewLastModified" : 1396960219,
+      "viewType" : "tabular",
+      "columns" : [ {
+        "id" : -1,
+        "name" : "sid",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":sid",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : -1,
+        "name" : "id",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":id",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : -1,
+        "name" : "position",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":position",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : -1,
+        "name" : "created_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : -1,
+        "name" : "created_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : -1,
+        "name" : "updated_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : -1,
+        "name" : "updated_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : -1,
+        "name" : "meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : 141893949,
+        "name" : "LOCATION_NAME",
+        "dataTypeName" : "text",
+        "description" : "Name of the place where the WiFi antenna is located.",
+        "fieldName" : "location_name",
+        "position" : 1,
+        "renderTypeName" : "text",
+        "tableColumnId" : 16398220,
+        "width" : 187,
+        "cachedContents" : {
+          "non_null" : 159,
+          "smallest" : "Abbottsfield Recreation Centre",
+          "null" : 0,
+          "largest" : "William Hawrelak Park (Pavilion)",
+          "top" : [ {
+            "count" : 20,
+            "item" : "Callingwood Arena & Recreation Centre"
+          }, {
+            "count" : 19,
+            "item" : "Terwillegar Community Recreation Centre"
+          }, {
+            "count" : 18,
+            "item" : "ACT Rec Center"
+          }, {
+            "count" : 17,
+            "item" : "John Janzen Nature Centre"
+          }, {
+            "count" : 16,
+            "item" : "Millwoods Recreation Centre"
+          }, {
+            "count" : 15,
+            "item" : "ETS Davies Administration Building"
+          }, {
+            "count" : 14,
+            "item" : "Davies MES"
+          }, {
+            "count" : 13,
+            "item" : "O'leary Leisure Centre"
+          }, {
+            "count" : 12,
+            "item" : "John Walter Museum"
+          }, {
+            "count" : 11,
+            "item" : "Kinsmen Sports Centre"
+          }, {
+            "count" : 10,
+            "item" : "Queen Elizabeth Pool "
+          }, {
+            "count" : 9,
+            "item" : "Donnan Arena "
+          }, {
+            "count" : 8,
+            "item" : "Parks SouthEast"
+          }, {
+            "count" : 7,
+            "item" : "Jasper Place Leisure Centre"
+          }, {
+            "count" : 6,
+            "item" : "ST. Francis Xavier Sports Centre"
+          }, {
+            "count" : 5,
+            "item" : "Office of Traffic Safety"
+          }, {
+            "count" : 4,
+            "item" : "Heritage Amplitheatre in William Hawrelak Park"
+          }, {
+            "count" : 3,
+            "item" : "William Hawrelak Park (Pavilion)"
+          }, {
+            "count" : 2,
+            "item" : "William Hawrelak Park (Outdoor Skating Rink)"
+          }, {
+            "count" : 1,
+            "item" : "SE Seniors (SEESA)"
+          } ]
+        },
+        "format" : {
+          "align" : "left"
+        }
+      }, {
+        "id" : 141893950,
+        "name" : "ADDRESS",
+        "dataTypeName" : "text",
+        "description" : "Physical Street address where the WiFi antenna is located.",
+        "fieldName" : "address",
+        "position" : 2,
+        "renderTypeName" : "text",
+        "tableColumnId" : 16398221,
+        "width" : 129,
+        "cachedContents" : {
+          "non_null" : 159,
+          "smallest" : "10004 - 104 AVENUE NW",
+          "null" : 0,
+          "largest" : "9940 - 147 STREET NW",
+          "top" : [ {
+            "count" : 20,
+            "item" : "11520 - 153 AVENUE NW"
+          }, {
+            "count" : 19,
+            "item" : "13025 - 112 STREET NW"
+          }, {
+            "count" : 18,
+            "item" : "13808 - 111 AVENUE NW"
+          }, {
+            "count" : 17,
+            "item" : "14520 - 66 STREET NW"
+          }, {
+            "count" : 16,
+            "item" : "2909 - 113 AVENUE NW"
+          }, {
+            "count" : 15,
+            "item" : "3804 - 139 AVENUE NW"
+          }, {
+            "count" : 14,
+            "item" : "7 - SIR WINSTON CHURCHILL SQUARE NW"
+          }, {
+            "count" : 13,
+            "item" : "7000 - 143 STREET NW"
+          }, {
+            "count" : 12,
+            "item" : "7207 - 28 AVENUE NW"
+          }, {
+            "count" : 11,
+            "item" : "8331 - 104 STREET NW"
+          }, {
+            "count" : 10,
+            "item" : "8808 - 132 AVENUE NW"
+          }, {
+            "count" : 9,
+            "item" : "9100 - WALTERDALE HILL NW"
+          }, {
+            "count" : 8,
+            "item" : "9330 - GROAT ROAD NW"
+          }, {
+            "count" : 7,
+            "item" : "9350 - 82 STREET NW"
+          }, {
+            "count" : 6,
+            "item" : "9504 - 49 STREET NW"
+          }, {
+            "count" : 5,
+            "item" : "9555 - 84 AVENUE NW"
+          }, {
+            "count" : 4,
+            "item" : "9626 - 96A STREET NW"
+          }, {
+            "count" : 3,
+            "item" : "9797 - JASPER AVENUE NW"
+          }, {
+            "count" : 2,
+            "item" : "9803 - 102A AVENUE NW"
+          }, {
+            "count" : 1,
+            "item" : "9918 - 102 AVENUE NW"
+          } ]
+        },
+        "format" : {
+          "align" : "left"
+        }
+      }, {
+        "id" : 141893951,
+        "name" : "FACILITY_TYPE",
+        "dataTypeName" : "text",
+        "description" : "Type of location where WiFi antenna is found.",
+        "fieldName" : "facility_type",
+        "position" : 3,
+        "renderTypeName" : "text",
+        "tableColumnId" : 16398222,
+        "width" : 140,
+        "cachedContents" : {
+          "non_null" : 159,
+          "smallest" : "City Facility",
+          "null" : 0,
+          "largest" : "Transit Facility",
+          "top" : [ {
+            "count" : 20,
+            "item" : "City Facility"
+          }, {
+            "count" : 19,
+            "item" : "Transit Facility"
+          } ]
+        },
+        "format" : {
+          "align" : "left"
+        }
+      }, {
+        "id" : 141893952,
+        "name" : "STATUS",
+        "dataTypeName" : "text",
+        "description" : "Implementation status of the WiFi antenna at a given location.",
+        "fieldName" : "status",
+        "position" : 4,
+        "renderTypeName" : "text",
+        "tableColumnId" : 16398223,
+        "width" : 131,
+        "cachedContents" : {
+          "non_null" : 159,
+          "smallest" : "Active",
+          "null" : 0,
+          "largest" : "In Progress",
+          "top" : [ {
+            "count" : 20,
+            "item" : "In Progress"
+          }, {
+            "count" : 19,
+            "item" : "In Future"
+          }, {
+            "count" : 18,
+            "item" : "Active"
+          } ]
+        },
+        "format" : {
+          "align" : "left"
+        }
+      }, {
+        "id" : 141893953,
+        "name" : "WIFIPROVIDER",
+        "dataTypeName" : "text",
+        "description" : "Name of an organization providing the WiFi service to the public.",
+        "fieldName" : "wifiprovider",
+        "position" : 5,
+        "renderTypeName" : "text",
+        "tableColumnId" : 16398224,
+        "width" : 138,
+        "cachedContents" : {
+          "non_null" : 159,
+          "smallest" : "City of Edmonton",
+          "null" : 0,
+          "largest" : "SHAW",
+          "top" : [ {
+            "count" : 20,
+            "item" : "SHAW"
+          }, {
+            "count" : 19,
+            "item" : "City of Edmonton"
+          } ]
+        },
+        "format" : {
+          "align" : "left"
+        }
+      }, {
+        "id" : 141893954,
+        "name" : "LATITUDE",
+        "dataTypeName" : "number",
+        "description" : "Horizontal Geographic coordinate of Location",
+        "fieldName" : "latitude",
+        "position" : 11,
+        "renderTypeName" : "number",
+        "tableColumnId" : 16398230,
+        "width" : 126,
+        "cachedContents" : {
+          "non_null" : 159,
+          "smallest" : "53.4114848201545",
+          "sum" : "8513.0323245793340",
+          "null" : 0,
+          "average" : "53.54108380238575",
+          "largest" : "53.6170140867372",
+          "top" : [ {
+            "count" : 20,
+            "item" : "53.5582635114373"
+          }, {
+            "count" : 19,
+            "item" : "53.6170140867372"
+          }, {
+            "count" : 18,
+            "item" : "53.6072876114676"
+          }, {
+            "count" : 17,
+            "item" : "53.5050977209512"
+          }, {
+            "count" : 16,
+            "item" : "53.5615513841583"
+          }, {
+            "count" : 15,
+            "item" : "53.6029423215779"
+          }, {
+            "count" : 14,
+            "item" : "53.492762607718"
+          }, {
+            "count" : 13,
+            "item" : "53.5428603198967"
+          }, {
+            "count" : 12,
+            "item" : "53.5014591624913"
+          }, {
+            "count" : 11,
+            "item" : "53.4571154101646"
+          }, {
+            "count" : 10,
+            "item" : "53.5197834574499"
+          }, {
+            "count" : 9,
+            "item" : "53.5944892627371"
+          }, {
+            "count" : 8,
+            "item" : "53.5272511542602"
+          }, {
+            "count" : 7,
+            "item" : "53.5276760771396"
+          }, {
+            "count" : 6,
+            "item" : "53.5195115026708"
+          }, {
+            "count" : 5,
+            "item" : "53.5352063578107"
+          }, {
+            "count" : 4,
+            "item" : "53.5413578039352"
+          }, {
+            "count" : 3,
+            "item" : "53.5444196687436"
+          }, {
+            "count" : 2,
+            "item" : "53.5439606220845"
+          }, {
+            "count" : 1,
+            "item" : "53.5389665336744"
+          } ]
+        },
+        "format" : {
+          "precisionStyle" : "standard",
+          "noCommas" : "false",
+          "align" : "right"
+        }
+      }, {
+        "id" : 141893955,
+        "name" : "LONGITUDE",
+        "dataTypeName" : "number",
+        "description" : "Vertical Geographic coordinate of Location",
+        "fieldName" : "longitude",
+        "position" : 12,
+        "renderTypeName" : "number",
+        "tableColumnId" : 16398231,
+        "width" : 117,
+        "cachedContents" : {
+          "non_null" : 159,
+          "smallest" : "-113.65078650539",
+          "sum" : "-18046.259541048915",
+          "null" : 0,
+          "average" : "-113.4984876795529",
+          "largest" : "-113.343009354843",
+          "top" : [ {
+            "count" : 20,
+            "item" : "-113.477284678919"
+          }, {
+            "count" : 19,
+            "item" : "-113.521903213779"
+          }, {
+            "count" : 18,
+            "item" : "-113.444235606844"
+          }, {
+            "count" : 17,
+            "item" : "-113.626961467784"
+          }, {
+            "count" : 16,
+            "item" : "-113.384192082018"
+          }, {
+            "count" : 15,
+            "item" : "-113.404318005052"
+          }, {
+            "count" : 14,
+            "item" : "-113.458531656336"
+          }, {
+            "count" : 13,
+            "item" : "-113.48969339998"
+          }, {
+            "count" : 12,
+            "item" : "-113.578920548901"
+          }, {
+            "count" : 11,
+            "item" : "-113.445028039348"
+          }, {
+            "count" : 10,
+            "item" : "-113.497032298449"
+          }, {
+            "count" : 9,
+            "item" : "-113.477633573925"
+          }, {
+            "count" : 8,
+            "item" : "-113.511483226487"
+          }, {
+            "count" : 7,
+            "item" : "-113.547165750399"
+          }, {
+            "count" : 6,
+            "item" : "-113.474414037306"
+          }, {
+            "count" : 5,
+            "item" : "-113.477821318846"
+          }, {
+            "count" : 4,
+            "item" : "-113.485915350274"
+          }, {
+            "count" : 3,
+            "item" : "-113.487875513414"
+          }, {
+            "count" : 2,
+            "item" : "-113.48992772572"
+          }, {
+            "count" : 1,
+            "item" : "-113.575397923117"
+          } ]
+        },
+        "format" : {
+          "precisionStyle" : "standard",
+          "noCommas" : "false",
+          "align" : "right"
+        }
+      }, {
+        "id" : 141893956,
+        "name" : "LOCATION",
+        "dataTypeName" : "location",
+        "description" : "Spatial coordinates of Location",
+        "fieldName" : "location",
+        "position" : 13,
+        "renderTypeName" : "location",
+        "tableColumnId" : 16398232,
+        "width" : 196,
+        "cachedContents" : {
+          "non_null" : 159,
+          "smallest" : {
+            "longitude" : "-113.445719632399",
+            "latitude" : "53.6022680648072"
+          },
+          "null" : 0,
+          "largest" : {
+            "longitude" : "-113.456654550158",
+            "latitude" : "53.4950142777967"
+          },
+          "top" : [ {
+            "count" : 20,
+            "item" : {
+              "longitude" : "-113.430607872893",
+              "latitude" : "53.5193322097241"
+            }
+          }, {
+            "count" : 19,
+            "item" : {
+              "longitude" : "-113.497032298449",
+              "latitude" : "53.5197834574499"
+            }
+          }, {
+            "count" : 18,
+            "item" : {
+              "longitude" : "-113.497032298449",
+              "latitude" : "53.5197834574499"
+            }
+          }, {
+            "count" : 17,
+            "item" : {
+              "longitude" : "-113.458638190071",
+              "latitude" : "53.5510274498804"
+            }
+          }, {
+            "count" : 16,
+            "item" : {
+              "longitude" : "-113.454109021866",
+              "latitude" : "53.5236841287891"
+            }
+          }, {
+            "count" : 15,
+            "item" : {
+              "longitude" : "-113.458531656336",
+              "latitude" : "53.492762607718"
+            }
+          }, {
+            "count" : 14,
+            "item" : {
+              "longitude" : "-113.458531656336",
+              "latitude" : "53.492762607718"
+            }
+          }, {
+            "count" : 13,
+            "item" : {
+              "longitude" : "-113.477633573925",
+              "latitude" : "53.5944892627371"
+            }
+          }, {
+            "count" : 12,
+            "item" : {
+              "longitude" : "-113.477633573925",
+              "latitude" : "53.5944892627371"
+            }
+          }, {
+            "count" : 11,
+            "item" : {
+              "longitude" : "-113.511483226487",
+              "latitude" : "53.5272511542602"
+            }
+          }, {
+            "count" : 10,
+            "item" : {
+              "longitude" : "-113.511483226487",
+              "latitude" : "53.5272511542602"
+            }
+          }, {
+            "count" : 9,
+            "item" : {
+              "longitude" : "-113.511483226487",
+              "latitude" : "53.5272511542602"
+            }
+          }, {
+            "count" : 8,
+            "item" : {
+              "longitude" : "-113.511483226487",
+              "latitude" : "53.5272511542602"
+            }
+          }, {
+            "count" : 7,
+            "item" : {
+              "longitude" : "-113.468776505282",
+              "latitude" : "53.5156016494401"
+            }
+          }, {
+            "count" : 6,
+            "item" : {
+              "longitude" : "-113.468972793626",
+              "latitude" : "53.4726696388526"
+            }
+          }, {
+            "count" : 5,
+            "item" : {
+              "longitude" : "-113.605061116264",
+              "latitude" : "53.52747782658"
+            }
+          }, {
+            "count" : 4,
+            "item" : {
+              "longitude" : "-113.604828902121",
+              "latitude" : "53.5294131749041"
+            }
+          }, {
+            "count" : 3,
+            "item" : {
+              "longitude" : "-113.473029724731",
+              "latitude" : "53.4770398506373"
+            }
+          }, {
+            "count" : 2,
+            "item" : {
+              "longitude" : "-113.547165750399",
+              "latitude" : "53.5276760771396"
+            }
+          }, {
+            "count" : 1,
+            "item" : {
+              "longitude" : "-113.547165750399",
+              "latitude" : "53.5276760771396"
+            }
+          } ]
+        },
+        "format" : {
+          "view" : "address_coords",
+          "align" : "left"
+        },
+        "subColumnTypes" : [ "human_address", "latitude", "longitude", "machine_address", "needs_recoding" ]
+      } ],
+      "grants" : [ {
+        "inherited" : false,
+        "type" : "viewer",
+        "flags" : [ "public" ]
+      } ],
+      "metadata" : {
+        "custom_fields" : {
+          "Dataset Dependencies" : {
+            "Dataset Name (If any)" : ""
+          },
+          "General Information" : {
+            "Dataset Owner" : "To provide a comprehensive list of free WiFi locations in Edmonton. ",
+            "Purpose" : "To provide a list of wifi locations in Edmonton",
+            "Dataset Owner Contact" : ""
+          },
+          "Spatial" : {
+            "Datum" : "",
+            "Coordinate System" : ""
+          },
+          "Time Frame" : {
+            "Date Created" : "",
+            "Period of Coverage" : "Current",
+            "Date Updated" : "",
+            "Update Frequency" : "As Necessary"
+          }
+        },
+        "renderTypeConfig" : {
+          "visible" : {
+            "table" : true
+          }
+        },
+        "availableDisplayTypes" : [ "table", "fatrow", "page" ],
+        "rdfSubject" : "0"
+      },
+      "owner" : {
+        "id" : "dhgx-s4x9",
+        "displayName" : "Open Data Administrator",
+        "privilegesDisabled" : false,
+        "roleName" : "administrator",
+        "screenName" : "Open Data Administrator",
+        "rights" : [ "create_datasets", "edit_others_datasets", "edit_sdp", "edit_site_theme", "moderate_comments", "manage_users", "chown_datasets", "edit_nominations", "approve_nominations", "feature_items", "federations", "manage_stories", "manage_approval", "change_configurations", "view_domain", "view_others_datasets", "edit_pages", "create_pages", "view_goals", "view_dashboards", "edit_goals", "edit_dashboards", "create_dashboards" ]
+      },
+      "query" : {
+      },
+      "rights" : [ "read" ],
+      "tableAuthor" : {
+        "id" : "dhgx-s4x9",
+        "displayName" : "Open Data Administrator",
+        "privilegesDisabled" : false,
+        "roleName" : "administrator",
+        "screenName" : "Open Data Administrator",
+        "rights" : [ "create_datasets", "edit_others_datasets", "edit_sdp", "edit_site_theme", "moderate_comments", "manage_users", "chown_datasets", "edit_nominations", "approve_nominations", "feature_items", "federations", "manage_stories", "manage_approval", "change_configurations", "view_domain", "view_others_datasets", "edit_pages", "create_pages", "view_goals", "view_dashboards", "edit_goals", "edit_dashboards", "create_dashboards" ]
+      },
+      "tags" : [ "wifi", "free" ],
+      "flags" : [ "default" ]
+    }
+  },
+  "data" : [ [ 1, "A94F433A-F749-4F2B-8464-B8815BB98C7A", 1, 1396960210, "393213", 1396960210, "393213", "{\n}", "EPL Londonderry Library ", "1 - LONDONDERRY MALL NW", "City Facility", "In Progress", "SHAW", "53.6022680648072", "-113.445719632399", [ null, "53.6022680648072", "-113.445719632399", null, false ] ]
+, [ 2, "C7BB017E-DB84-41A0-83C3-14F4C3C24707", 2, 1396960210, "393213", 1396960210, "393213", "{\n}", "City Hall Outdoor Skating Rink", "1 - SIR WINSTON CHURCHILL SQUARE NW", "City Facility", "In Future", "SHAW", "53.5453581803487", "-113.490179358063", [ null, "53.5453581803487", "-113.490179358063", null, false ] ]
+, [ 3, "44F1F493-6781-46F8-869B-A199F7D8C875", 3, 1396960210, "393213", 1396960210, "393213", "{\n}", "CITY HALL", "1 - SIR WINSTON CHURCHILL SQUARE NW", "City Facility", "In Future", "SHAW", "53.5453581803487", "-113.490179358063", [ null, "53.5453581803487", "-113.490179358063", null, false ] ]
+, [ 4, "545DED1C-431F-45BD-8B7A-204D6C161B9B", 4, 1396960210, "393213", 1396960210, "393213", "{\n}", "City Hall", "1 - SIR WINSTON CHURCHILL SQUARE NW", "City Facility", "Active", "City of Edmonton", "53.5453581803487", "-113.490179358063", [ null, "53.5453581803487", "-113.490179358063", null, false ] ]
+, [ 5, "0B7B58F5-8B3B-4D93-878D-488B0CD6C31F", 5, 1396960210, "393213", 1396960210, "393213", "{\n}", "CN Tower", "10004 - 104 AVENUE NW", "City Facility", "Active", "City of Edmonton", "53.5470182088796", "-113.491382519925", [ null, "53.5470182088796", "-113.491382519925", null, false ] ]
+, [ 6, "539B364C-F6EC-4881-998F-DDC5D4B68326", 6, 1396960210, "393213", 1396960210, "393213", "{\n}", "Churchill Building", "10015 - 103 AVENUE NW", "City Facility", "Active", "City of Edmonton", "53.5451887781172", "-113.491761906721", [ null, "53.5451887781172", "-113.491761906721", null, false ] ]
+, [ 7, "4C77E65D-6BF1-4420-B5DC-71E7EBFD8969", 7, 1396960210, "393213", 1396960210, "393213", "{\n}", "Scotia Place", "10060 - JASPER AVENUE NW", "City Facility", "Active", "City of Edmonton", "53.5413431426192", "-113.492969576631", [ null, "53.5413431426192", "-113.492969576631", null, false ] ]
+, [ 8, "7550796C-9FCC-44EC-A95C-D0BE49C8B217", 8, 1396960210, "393213", 1396960210, "393213", "{\n}", "City Centre West", "10200 - 102 AVENUE NW", "City Facility", "Active", "City of Edmonton", "53.5435755691373", "-113.495704540322", [ null, "53.5435755691373", "-113.495704540322", null, false ] ]
+, [ 9, "1AFD28E5-5867-45C8-9B05-47A63F93A98B", 9, 1396960210, "393213", 1396960210, "393213", "{\n}", "Sir Winston Churchill Square", "10216 - 99 STREET NW", "City Facility", "In Future", "SHAW", "53.5439606220845", "-113.48992772572", [ null, "53.5439606220845", "-113.48992772572", null, false ] ]
+, [ 10, "ADE81197-55C1-4580-87F4-3F214165BBD4", 10, 1396960210, "393213", 1396960210, "393213", "{\n}", "Telus Field", "10233 - 96 AVENUE NW", "City Facility", "In Future", "SHAW", "53.530032801894", "-113.496344865312", [ null, "53.530032801894", "-113.496344865312", null, false ] ]
+, [ 11, "50F41C85-0E70-43BF-8507-1938BB971CDB", 11, 1396960210, "393213", 1396960210, "393213", "{\n}", "HSBC Building", "10250 - 101 STREET NW", "City Facility", "Active", "City of Edmonton", "53.5441778240237", "-113.494229245353", [ null, "53.5441778240237", "-113.494229245353", null, false ] ]
+, [ 12, "8EC98755-C4FC-4D93-9FFE-3966C5AA5F77", 12, 1396960210, "393213", 1396960210, "393213", "{\n}", "Oliver Pool", "10315 - 119 STREET NW", "City Facility", "In Future", "SHAW", "53.5454064760071", "-113.525895575659", [ null, "53.5454064760071", "-113.525895575659", null, false ] ]
+, [ 13, "F06F019F-C1D0-4B5C-93C8-D1CADDB451EE", 13, 1396960210, "393213", 1396960210, "393213", "{\n}", "Oliver Arena ", "10335 - 119 STREET NW", "City Facility", "In Future", "SHAW", "53.5454064760071", "-113.525895575659", [ null, "53.5454064760071", "-113.525895575659", null, false ] ]
+, [ 14, "2D0C6D7C-34DD-4538-9FD8-AA4255FBB455", 14, 1396960210, "393213", 1396960210, "393213", "{\n}", "ERD Station 1", "10351 - 96 STREET NW", "City Facility", "Active", "City of Edmonton", "53.5477841107296", "-113.48347997421", [ null, "53.5477841107296", "-113.48347997421", null, false ] ]
+, [ 15, "14A20CC7-CAD3-485C-93DB-D4C11DEC4AD9", 15, 1396960210, "393213", 1396960210, "393213", "{\n}", "Michael Cameron Arena ", "10404 - 56 STREET NW", "City Facility", "In Progress", "SHAW", "53.5464658174658", "-113.424487338135", [ null, "53.5464658174658", "-113.424487338135", null, false ] ]
+, [ 16, "846C8EF2-7D9D-4330-9E3E-5446E5E78CAE", 16, 1396960210, "393213", 1396960210, "393213", "{\n}", "Fire Rescue Services Training School", "10420 - 157 STREET NW", "City Facility", "Active", "City of Edmonton", "53.5473153225484", "-113.592997701835", [ null, "53.5473153225484", "-113.592997701835", null, false ] ]
+, [ 17, "EF11CC72-9DA3-4F56-A884-59FD0794B409", 17, 1396960210, "393213", 1396960210, "393213", "{\n}", "Prince of Wales - Armouries", "10440 - 108 AVENUE NW", "City Facility", "In Future", "SHAW", "53.5541527086952", "-113.500191147579", [ null, "53.5541527086952", "-113.500191147579", null, false ] ]
+, [ 18, "E33FC88E-A681-459A-A51E-F0285DC283A2", 18, 1396960210, "393213", 1396960210, "393213", "{\n}", "Prince of Wales - Armouries", "10440 - 108 AVENUE NW", "City Facility", "Active", "City of Edmonton", "53.5541527086952", "-113.500191147579", [ null, "53.5541527086952", "-113.500191147579", null, false ] ]
+, [ 19, "2C071BDD-A59F-4E4A-89C5-9C121624C318", 19, 1396960210, "393213", 1396960210, "393213", "{\n}", "Strathcona Leisure Centre", "10450 - 72 AVENUE NW", "City Facility", "In Progress", "SHAW", "53.5090213604453", "-113.499124641985", [ null, "53.5090213604453", "-113.499124641985", null, false ] ]
+, [ 20, "D724D8B4-E137-4C76-A5DD-FF21E3AD9C0F", 20, 1396960210, "393213", 1396960210, "393213", "{\n}", "George Hughes Arena", "10525 - 72 AVENUE NW", "City Facility", "In Progress", "SHAW", "53.5081196888959", "-113.501415590517", [ null, "53.5081196888959", "-113.501415590517", null, false ] ]
+, [ 21, "22AE3589-5CCF-41EE-A950-B43D852E2901", 21, 1396960210, "393213", 1396960210, "393213", "{\n}", "Hardisty Leisure Centre", "10535 - 65 STREET NW", "City Facility", "Active", "City of Edmonton", "53.5488177601979", "-113.430497888235", [ null, "53.5488177601979", "-113.430497888235", null, false ] ]
+, [ 22, "F4EB9A9C-748C-4B2A-A93B-C9B3E7C44FAD", 22, 1396960210, "393213", 1396960210, "393213", "{\n}", "Hardisty Leisure Centre", "10535 - 65 STREET NW", "City Facility", "In Future", "SHAW", "53.5488177601979", "-113.430497888235", [ null, "53.5488177601979", "-113.430497888235", null, false ] ]
+, [ 23, "F53CFD81-E6F4-47AC-9898-6FE809196338", 23, 1396960210, "393213", 1396960210, "393213", "{\n}", "Emergency Operations Center (EOC)", "10539 - 105 STREET NW", "City Facility", "Active", "City of Edmonton", "53.5484119440971", "-113.500554313977", [ null, "53.5484119440971", "-113.500554313977", null, false ] ]
+, [ 24, "3D0B78D7-9424-4AB6-9B4A-1D9F0AF07B82", 24, 1396960210, "393213", 1396960210, "393213", "{\n}", "Beaufort Bldg", "10835 - 120 STREET NW", "City Facility", "Active", "City of Edmonton", "53.5539050734737", "-113.528335691073", [ null, "53.5539050734737", "-113.528335691073", null, false ] ]
+, [ 25, "55A33FD5-D9D2-4A32-9CF0-3C98C851CD48", 25, 1396960210, "393213", 1396960210, "393213", "{\n}", "Tipton Arena ", "10849 - 81 AVENUE NW", "City Facility", "In Future", "SHAW", "53.516628637162", "-113.51065799468", [ null, "53.516628637162", "-113.51065799468", null, false ] ]
+, [ 26, "4C003CE4-F8B4-4989-80D7-F13CF6FD302D", 26, 1396960210, "393213", 1396960210, "393213", "{\n}", "City Arts Centre", "10943 - 84 AVENUE NW", "City Facility", "In Progress", "SHAW", "53.5195719733075", "-113.513864370601", [ null, "53.5195719733075", "-113.513864370601", null, false ] ]
+, [ 27, "A3B76DEC-E89F-4B7D-AC6B-94A2DC66D916", 27, 1396960210, "393213", 1396960210, "393213", "{\n}", "City Arts Centre", "10943 - 84 AVENUE NW", "City Facility", "Active", "City of Edmonton", "53.5195719733075", "-113.513864370601", [ null, "53.5195719733075", "-113.513864370601", null, false ] ]
+, [ 28, "E5EF86F2-C28D-4724-8274-65DABDD7C6A2", 28, 1396960210, "393213", 1396960210, "393213", "{\n}", "Commonwealth Stadium", "11000 - STADIUM ROAD NW", "City Facility", "In Future", "SHAW", "53.5582635114373", "-113.477284678919", [ null, "53.5582635114373", "-113.477284678919", null, false ] ]
+, [ 29, "62BF603C-37BD-4813-9DA8-2794E6EA65A6", 29, 1396960210, "393213", 1396960210, "393213", "{\n}", "Clarke Stadium ", "11000 - STADIUM ROAD NW", "City Facility", "In Future", "SHAW", "53.5582635114373", "-113.477284678919", [ null, "53.5582635114373", "-113.477284678919", null, false ] ]
+, [ 30, "EA1EE3F7-FEF5-4F7B-B771-37F71CE39BD2", 30, 1396960210, "393213", 1396960210, "393213", "{\n}", "Engineering Services Bldg", "11004 - 190 STREET NW", "City Facility", "Active", "City of Edmonton", "53.5566061833407", "-113.65078650539", [ null, "53.5566061833407", "-113.65078650539", null, false ] ]
+, [ 31, "0A0C2F9D-2B31-4652-84DF-F2C51CBFC7ED", 31, 1396960210, "393213", 1396960210, "393213", "{\n}", "Commonwealth, CCRC (Community Recreation Centre)", "11100 - STADIUM ROAD NW", "City Facility", "In Progress", "SHAW", "53.5582635114373", "-113.477284678919", [ null, "53.5582635114373", "-113.477284678919", null, false ] ]
+, [ 32, "E1FE72C8-7740-4487-843F-6E4A4C95A238", 32, 1396960210, "393213", 1396960210, "393213", "{\n}", "Commonwealth, CCRC (Community Recreation Centre)", "11100 - STADIUM ROAD NW", "City Facility", "Active", "City of Edmonton", "53.5582635114373", "-113.477284678919", [ null, "53.5582635114373", "-113.477284678919", null, false ] ]
+, [ 33, "D1FCD47C-4165-4938-AD12-95D1291303D0", 33, 1396960210, "393213", 1396960210, "393213", "{\n}", "Central Lions Senior Centre", "11113 - 113 STREET NW", "City Facility", "Active", "City of Edmonton", "53.5609334550567", "-113.513594124805", [ null, "53.5609334550567", "-113.513594124805", null, false ] ]
+, [ 34, "639DF461-1E18-4185-9280-3BBE627D4E43", 34, 1396960210, "393213", 1396960210, "393213", "{\n}", "Central Lions Senior Centre", "11113 - 113 STREET NW", "City Facility", "In Progress", "SHAW", "53.5609334550567", "-113.513594124805", [ null, "53.5609334550567", "-113.513594124805", null, false ] ]
+, [ 35, "5C707422-68EC-4ECF-BC7C-52D112B6D4CD", 35, 1396960210, "393213", 1396960210, "393213", "{\n}", "Confederation Leisure Centre", "11204 - 43 AVENUE NW", "City Facility", "In Future", "SHAW", "53.479842211087", "-113.520373105169", [ null, "53.479842211087", "-113.520373105169", null, false ] ]
+, [ 36, "3B5F9888-8B55-4356-AD11-0CD09762BDA2", 36, 1396960210, "393213", 1396960210, "393213", "{\n}", "Telus World of Science", "11211 - 142 STREET NW", "City Facility", "In Future", "SHAW", "53.5607901975469", "-113.563543354146", [ null, "53.5607901975469", "-113.563543354146", null, false ] ]
+, [ 37, "78709397-F9D0-4DC4-AEB6-883C9F4B5620", 37, 1396960210, "393213", 1396960210, "393213", "{\n}", "Parks Northwest", "11402 - 149 STREET NW", "City Facility", "Active", "City of Edmonton", "53.5639540998847", "-113.579594516642", [ null, "53.5639540998847", "-113.579594516642", null, false ] ]
+, [ 38, "2D14B7F4-E663-4C5C-BB32-0B4DEFF9ABD2", 38, 1396960210, "393213", 1396960210, "393213", "{\n}", "Eastglen Leisure Centre", "11410 - 68 STREET NW", "City Facility", "In Future", "SHAW", "53.5669410739484", "-113.445070687815", [ null, "53.5669410739484", "-113.445070687815", null, false ] ]
+, [ 39, "C353F989-06E0-4BC9-9B94-5AF35443913C", 39, 1396960210, "393213", 1396960210, "393213", "{\n}", "Coronation ECO Station", "11440 - 143 STREET NW", "City Facility", "Active", "City of Edmonton", "53.5643976456127", "-113.568451844235", [ null, "53.5643976456127", "-113.568451844235", null, false ] ]
+, [ 40, "3F37C11A-7200-418B-98D5-FDB0B7E3CFD1", 40, 1396960210, "393213", 1396960210, "393213", "{\n}", "Castledowns Arena & Recreation ", "11520 - 153 AVENUE NW", "City Facility", "In Progress", "SHAW", "53.6170140867372", "-113.521903213779", [ null, "53.6170140867372", "-113.521903213779", null, false ] ]
+, [ 41, "D2B9152A-AC4E-47F9-B0AD-1CF6A9970801", 41, 1396960210, "393213", 1396960210, "393213", "{\n}", "Castledowns Arena & Recreation ", "11520 - 153 AVENUE NW", "City Facility", "Active", "City of Edmonton", "53.6170140867372", "-113.521903213779", [ null, "53.6170140867372", "-113.521903213779", null, false ] ]
+, [ 42, "2F15D6F7-0D7A-4B4B-B3EB-6CC909BAB5F8", 42, 1396960210, "393213", 1396960210, "393213", "{\n}", "Castledowns Outdoor Skating Rink", "11520 - 153 AVENUE NW", "City Facility", "In Future", "SHAW", "53.6170140867372", "-113.521903213779", [ null, "53.6170140867372", "-113.521903213779", null, false ] ]
+, [ 43, "E7C8BCC2-0B2D-4D77-A234-66A3CFBD074B", 43, 1396960210, "393213", 1396960210, "393213", "{\n}", "Castle Downs Park Pavilion", "11520 - 153 AVENUE NW", "City Facility", "In Future", "City of Edmonton", "53.6170140867372", "-113.521903213779", [ null, "53.6170140867372", "-113.521903213779", null, false ] ]
+, [ 44, "3E4EA6D2-7D54-449A-93EF-DB6A13B623B9", 44, 1396960210, "393213", 1396960210, "393213", "{\n}", "EPL Sprucewood Library ", "11555 - 95 STREET NW", "City Facility", "In Progress", "SHAW", "53.5671533316272", "-113.486760112301", [ null, "53.5671533316272", "-113.486760112301", null, false ] ]
+, [ 45, "C18489F2-091B-4946-BC9F-8D99092B967F", 45, 1396960210, "393213", 1396960210, "393213", "{\n}", "Victoria Park Pavillion & Speed Oval", "12030 - RIVER VALLEY ROAD NW", "City Facility", "In Future", "SHAW", "53.5355292370979", "-113.523370989794", [ null, "53.5355292370979", "-113.523370989794", null, false ] ]
+, [ 46, "B725DA9B-4B18-46D6-B850-C9F4E281DF8E", 46, 1396960210, "393213", 1396960210, "393213", "{\n}", "Victoria Golf Course Clubhouse and ProShop", "12030 - RIVER VALLEY ROAD NW", "City Facility", "In Future", "SHAW", "53.5355292370979", "-113.523370989794", [ null, "53.5355292370979", "-113.523370989794", null, false ] ]
+, [ 47, "E00613D3-C96C-4B16-97D5-357ED61906C5", 47, 1396960210, "393213", 1396960210, "393213", "{\n}", "Westwood Arena ", "12040 - 97 STREET NW", "City Facility", "In Future", "SHAW", "53.5743384285299", "-113.493059975285", [ null, "53.5743384285299", "-113.493059975285", null, false ] ]
+, [ 48, "6A00B79E-E032-4BF0-B02E-C977CF59DCA5", 48, 1396960210, "393213", 1396960210, "393213", "{\n}", "Westwood Central Service Yard", "12304 - 107 STREET NW", "City Facility", "Active", "City of Edmonton", "53.5794702350281", "-113.506797675828", [ null, "53.5794702350281", "-113.506797675828", null, false ] ]
+, [ 49, "AAC935A7-E415-4BBC-A696-2D47D3052BA9", 49, 1396960210, "393213", 1396960210, "393213", "{\n}", "Westwood MES/Offices/Garage", "12404 - 107 STREET NW", "City Facility", "Active", "City of Edmonton", "53.5794702350281", "-113.506797675828", [ null, "53.5794702350281", "-113.506797675828", null, false ] ]
+, [ 50, "FA9A40DB-AC12-4D4C-9509-7DA077BDC735", 50, 1396960210, "393213", 1396960210, "393213", "{\n}", "EPL Calder Library", "12520 - 132 AVENUE NW", "City Facility", "In Progress", "SHAW", "53.5928149899025", "-113.538478743099", [ null, "53.5928149899025", "-113.538478743099", null, false ] ]
+, [ 51, "12609192-1818-4A92-8F69-D67FD62E749D", 51, 1396960210, "393213", 1396960210, "393213", "{\n}", "Edmonton Soccer Centre East", "12720 - VICTORIA TRAIL NW", "City Facility", "In Future", "SHAW", "53.580520449569", "-113.384828269084", [ null, "53.580520449569", "-113.384828269084", null, false ] ]
+, [ 52, "6AA0B8B9-9EB2-47B5-93C9-4D9092C3DAFC", 52, 1396960210, "393213", 1396960210, "393213", "{\n}", "Kennedale East Parks", "12803 - 58 STREET NW", "City Facility", "Active", "City of Edmonton", "53.5865632512187", "-113.429867895409", [ null, "53.5865632512187", "-113.429867895409", null, false ] ]
+, [ 53, "2088B933-5E4A-4D47-B8F3-0420F136D41E", 53, 1396960210, "393213", 1396960210, "393213", "{\n}", "Kennedale Waste Operations East ", "12804 - 58 STREET NW", "City Facility", "Active", "City of Edmonton", "53.5865632512187", "-113.429867895409", [ null, "53.5865632512187", "-113.429867895409", null, false ] ]
+, [ 54, "08108B51-E2B2-461F-80A7-52CBA79C29E9", 54, 1396960210, "393213", 1396960210, "393213", "{\n}", "Kennedale Drainage Building", "12810 - 58 STREET NW", "City Facility", "Active", "City of Edmonton", "53.5851125409079", "-113.431413761096", [ null, "53.5851125409079", "-113.431413761096", null, false ] ]
+, [ 55, "85825853-4E6E-4182-A8E0-AECE81EE6000", 55, 1396960210, "393213", 1396960210, "393213", "{\n}", "Kennedale MES", "12840 - 58 STREET NW", "City Facility", "Active", "City of Edmonton", "53.5851125409079", "-113.431413761096", [ null, "53.5851125409079", "-113.431413761096", null, false ] ]
+, [ 56, "4D041384-CE7F-4F70-9C76-8653203CB5DF", 56, 1396960210, "393213", 1396960210, "393213", "{\n}", "Grand Trunk Arena", "13025 - 112 STREET NW", "City Facility", "Active", "City of Edmonton", "53.5897861904175", "-113.511017124987", [ null, "53.5897861904175", "-113.511017124987", null, false ] ]
+, [ 57, "4F59C65E-8301-488F-8129-286A8D98FCAB", 57, 1396960210, "393213", 1396960210, "393213", "{\n}", "Grand Trunk Leisure Centre", "13025 - 112 STREET NW", "City Facility", "In Progress", "SHAW", "53.5897861904175", "-113.511017124987", [ null, "53.5897861904175", "-113.511017124987", null, false ] ]
+, [ 58, "904F465F-283D-49F1-997C-544B6C045E68", 58, 1396960210, "393213", 1396960210, "393213", "{\n}", "Grand Trunk Arena", "13025 - 112 STREET NW", "City Facility", "In Progress", "SHAW", "53.5897861904175", "-113.511017124987", [ null, "53.5897861904175", "-113.511017124987", null, false ] ]
+, [ 59, "3948B99F-CAD2-4474-8126-E6ED85A4D061", 59, 1396960210, "393213", 1396960210, "393213", "{\n}", "Waste Management (Admin Bld, R&D Bld, IPTF Bld, ESMF)", "13111 - MERIDIAN STREET NE", "City Facility", "Active", "City of Edmonton", "53.5964792527372", "-113.343009354843", [ null, "53.5964792527372", "-113.343009354843", null, false ] ]
+, [ 60, "341FBDCD-E61F-4DEC-A1D7-00D12B01E344", 60, 1396960210, "393213", 1396960210, "393213", "{\n}", "Alfred Savage Amenities Building (Whitemud Amenities)", "13204 - FOX DRIVE NW", "City Facility", "In Future", "SHAW", "53.5048225082916", "-113.551166900002", [ null, "53.5048225082916", "-113.551166900002", null, false ] ]
+, [ 61, "916E7120-CE52-43AD-BA2C-94C8DB6E1866", 61, 1396960210, "393213", 1396960210, "393213", "{\n}", "DL MacDonald", "13310 - 50A STREET NW", "City Facility", "Active", "City of Edmonton", "53.5948805741816", "-113.4203430629", [ null, "53.5948805741816", "-113.4203430629", null, false ] ]
+, [ 62, "DE6A3A3A-D58D-4366-91AE-F70072F17696", 62, 1396960210, "393213", 1396960210, "393213", "{\n}", "ROW Building", "13310 - 50A STREET NW", "City Facility", "Active", "City of Edmonton", "53.5948805741816", "-113.4203430629", [ null, "53.5948805741816", "-113.4203430629", null, false ] ]
+, [ 63, "42398C4E-C85F-4476-8597-17EEA5E1307F", 63, 1396960210, "393213", 1396960210, "393213", "{\n}", "Valley Zoo ", "13315 - BUENA VISTA ROAD NW", "City Facility", "In Future", "SHAW", "53.5103327607691", "-113.555787782926", [ null, "53.5103327607691", "-113.555787782926", null, false ] ]
+, [ 64, "DBFD233B-D555-44E5-83EB-02E711AC3AFB", 64, 1396960210, "393213", 1396960210, "393213", "{\n}", "Valley Zoo (Saito Admin Office, Interpretive Rm, Zoo School, Development Society Office)", "13315 - BUENA VISTA ROAD NW", "City Facility", "Active", "City of Edmonton", "53.5103327607691", "-113.555787782926", [ null, "53.5103327607691", "-113.555787782926", null, false ] ]
+, [ 65, "12CFF012-516B-4325-9E36-4D299772E0BB", 65, 1396960210, "393213", 1396960210, "393213", "{\n}", "Glengarry Arena ", "13340 - 85 STREET NW", "City Facility", "In Future", "SHAW", "53.5944956018098", "-113.471945563578", [ null, "53.5944956018098", "-113.471945563578", null, false ] ]
+, [ 66, "491C120A-7D8A-4288-B9BD-8F50A8E4DBBC", 66, 1396960210, "393213", 1396960210, "393213", "{\n}", "EPL Woodcroft Library ", "13420 - 114 AVENUE NW", "City Facility", "In Progress", "SHAW", "53.5640349693536", "-113.553647537846", [ null, "53.5640349693536", "-113.553647537846", null, false ] ]
+, [ 67, "B524FBA2-ACDB-44F5-BA3C-3FB9B770FAF3", 67, 1396960210, "393213", 1396960210, "393213", "{\n}", "Animal Care & Control Centre", "13550 - 163 STREET NW", "City Facility", "Active", "City of Edmonton", "53.5976522166638", "-113.603468819714", [ null, "53.5976522166638", "-113.603468819714", null, false ] ]
+, [ 68, "DBE53002-0F98-4D4C-AE38-9B293EF77D13", 68, 1396960210, "393213", 1396960210, "393213", "{\n}", "Peter Hemingway Fitness and Leisure Centre", "13808 - 111 AVENUE NW", "City Facility", "Active", "City of Edmonton", "53.5597281023844", "-113.560219782175", [ null, "53.5597281023844", "-113.560219782175", null, false ] ]
+, [ 69, "B481DE56-EEEB-4B20-8822-F0228C00B6E1", 69, 1396960210, "393213", 1396960210, "393213", "{\n}", "Coronation Arena", "13808 - 111 AVENUE NW", "City Facility", "In Future", "SHAW", "53.5597281023844", "-113.560219782175", [ null, "53.5597281023844", "-113.560219782175", null, false ] ]
+, [ 70, "973A393D-CE52-47BC-B861-25C823A552DE", 70, 1396960210, "393213", 1396960210, "393213", "{\n}", "Peter Hemingway Fitness and Leisure Centre", "13808 - 111 AVENUE NW", "City Facility", "In Future", "SHAW", "53.5597281685788", "-113.560116013477", [ null, "53.5597281685788", "-113.560116013477", null, false ] ]
+, [ 71, "5C8D97A4-6578-4511-9790-E4C674406106", 71, 1396960210, "393213", 1396960210, "393213", "{\n}", "EPL Whitemud Crossing Library ", "140, 4211 - 106 STREET NW", "City Facility", "In Progress", "SHAW", "53.4796614092273", "-113.502522354405", [ null, "53.4796614092273", "-113.502522354405", null, false ] ]
+, [ 72, "E5583F19-AE03-479E-9EFE-2245E4B0948B", 72, 1396960210, "393213", 1396960210, "393213", "{\n}", "West End Maintenance Building (M.E.S.)", "14320 - 114 AVENUE NW", "City Facility", "Active", "City of Edmonton", "53.5636535007716", "-113.571937764115", [ null, "53.5636535007716", "-113.571937764115", null, false ] ]
+, [ 73, "94E8509A-51DA-4B8C-8B1A-824CB66E9ACC", 73, 1396960210, "393213", 1396960210, "393213", "{\n}", "Coronation Drainage Yard - Administration Building", "14402 - 114 AVENUE NW", "City Facility", "Active", "City of Edmonton", "53.5636535007716", "-113.571937764115", [ null, "53.5636535007716", "-113.571937764115", null, false ] ]
+, [ 74, "0473A061-F688-4C40-846A-19913608488A", 74, 1396960210, "393213", 1396960210, "393213", "{\n}", "Londonderry Leisure Centre", "14520 - 66 STREET NW", "City Facility", "In Future", "SHAW", "53.6072876114676", "-113.444235606844", [ null, "53.6072876114676", "-113.444235606844", null, false ] ]
+, [ 75, "49001AA8-9D83-440F-AB2A-BC9C49F8B82D", 75, 1396960210, "393213", 1396960210, "393213", "{\n}", "Londonderry Arena ", "14520 - 66 STREET NW", "City Facility", "In Future", "SHAW", "53.6072876114676", "-113.444235606844", [ null, "53.6072876114676", "-113.444235606844", null, false ] ]
+, [ 76, "151B8398-5CED-4EFB-96D2-2FB1F71F9F61", 76, 1396960210, "393213", 1396960210, "393213", "{\n}", "Londonderry Arena ", "14520 - 66 STREET NW", "City Facility", "Active", "City of Edmonton", "53.6072876114676", "-113.444235606844", [ null, "53.6072876114676", "-113.444235606844", null, false ] ]
+, [ 77, "AD7AFC10-7131-426D-AEBE-B3E603332DD8", 77, 1396960210, "393213", 1396960210, "393213", "{\n}", "Edmonton Soccer Association Complex", "14920 - 142 STREET NW", "City Facility", "In Future", "SHAW", "53.6108506489527", "-113.572634852734", [ null, "53.6108506489527", "-113.572634852734", null, false ] ]
+, [ 78, "AE5B5083-7BB8-4FED-AFB3-BA1F0B3E8F56", 78, 1396960210, "393213", 1396960210, "393213", "{\n}", "EPL Castledowns Library", "15333 - CASTLE DOWNS ROAD NW", "City Facility", "In Progress", "SHAW", "53.6145971075594", "-113.515326993891", [ null, "53.6145971075594", "-113.515326993891", null, false ] ]
+, [ 79, "4A2F2414-54C8-4CF1-96E8-D4F051991423", 79, 1396960210, "393213", 1396960210, "393213", "{\n}", "EPL Meadowlark Library", "15612 - 90 AVENUE NW", "City Facility", "In Future", "SHAW", "53.5235842672052", "-113.590967914639", [ null, "53.5235842672052", "-113.590967914639", null, false ] ]
+, [ 80, "43E0B926-1081-4448-BD4D-2217758ECCBC", 80, 1396960210, "393213", 1396960210, "393213", "{\n}", "Fred Broadstock Pool", "15720 - 105 AVENUE NW", "City Facility", "In Future", "SHAW", "53.549144501195", "-113.593024957072", [ null, "53.549144501195", "-113.593024957072", null, false ] ]
+, [ 81, "DA28F858-0C9B-4F5A-B3CA-CC47D658ECE4", 81, 1396960210, "393213", 1396960210, "393213", "{\n}", "Alberta Park Place Bldg", "16104 - 114 AVENUE NW", "City Facility", "Active", "City of Edmonton", "53.5639194889566", "-113.599666479966", [ null, "53.5639194889566", "-113.599666479966", null, false ] ]
+, [ 82, "B64903C9-67FB-4E39-9A46-46AD66DB7AE0", 82, 1396960210, "393213", 1396960210, "393213", "{\n}", "Elections Office", "16304 - 114 AVENUE NW", "City Facility", "Active", "City of Edmonton", "53.5640972401258", "-113.603729037166", [ null, "53.5640972401258", "-113.603729037166", null, false ] ]
+, [ 83, "D10CF76B-317F-4B4C-83CE-7570103DC0D8", 83, 1396960210, "393213", 1396960210, "393213", "{\n}", "Meadows Community Recreation Centre", "1707 - 23 AVENUE NW", "City Facility", "In Future", "SHAW", "53.4502200617219", "-113.372291827488", [ null, "53.4502200617219", "-113.372291827488", null, false ] ]
+, [ 84, "5D2BB340-A04C-41ED-B310-3DD7E5E056E5", 84, 1396960210, "393213", 1396960210, "393213", "{\n}", "EPL Meadows Library", "1707 - 23 AVENUE NW", "City Facility", "In Future", "SHAW", "53.4502200617219", "-113.372291827488", [ null, "53.4502200617219", "-113.372291827488", null, false ] ]
+, [ 85, "2F70FFA2-511C-4373-8AA3-4A230842BCB4", 85, 1396960210, "393213", 1396960210, "393213", "{\n}", "Edmonton Soccer Centre West", "17415 - 106A AVENUE NW", "City Facility", "In Future", "SHAW", "53.5512031501034", "-113.621628528581", [ null, "53.5512031501034", "-113.621628528581", null, false ] ]
+, [ 86, "71251869-2E9D-4E4F-94DD-9B1B0728526D", 86, 1396960210, "393213", 1396960210, "393213", "{\n}", "EPL Lois Hole Library ", "17650 - 69 AVENUE NW", "City Facility", "In Progress", "SHAW", "53.5050977209512", "-113.626961467784", [ null, "53.5050977209512", "-113.626961467784", null, false ] ]
+, [ 87, "0ED0D561-E578-4379-9792-0614538EBD31", 87, 1396960210, "393213", 1396960210, "393213", "{\n}", "Callingwood Arena & Recreation Centre", "17740 - 69 AVENUE NW", "City Facility", "Active", "City of Edmonton", "53.5050977209512", "-113.626961467784", [ null, "53.5050977209512", "-113.626961467784", null, false ] ]
+, [ 88, "D7DA06BD-8DF7-4B2A-BF50-C386B7EB2ABF", 88, 1396960210, "393213", 1396960210, "393213", "{\n}", "Callingwood Arena & Recreation Centre", "17740 - 69 AVENUE NW", "City Facility", "In Progress", "SHAW", "53.5050977209512", "-113.626961467784", [ null, "53.5050977209512", "-113.626961467784", null, false ] ]
+, [ 89, "8E4B0CCC-E752-446D-9F7F-D8AF0C0B123F", 89, 1396960210, "393213", 1396960210, "393213", "{\n}", "Fire Service Center", "18603 - 106A AVENUE NW", "City Facility", "Active", "City of Edmonton", "53.552711302727", "-113.646982402674", [ null, "53.552711302727", "-113.646982402674", null, false ] ]
+, [ 90, "838E37B9-1AD7-4B51-84F0-D6829CA93B90", 90, 1396960210, "393213", 1396960210, "393213", "{\n}", "Kinsmen Twin Arenas", "1979 - 111 STREET NW", "City Facility", "In Future", "SHAW", "53.4500008958808", "-113.512144027382", [ null, "53.4500008958808", "-113.512144027382", null, false ] ]
+, [ 91, "6AE14B70-7164-48FF-A8D4-991466258D5B", 91, 1396960210, "393213", 1396960210, "393213", "{\n}", "Terwillegar Community Recreation Centre", "2051 - LEGER ROAD NW", "City Facility", "Active", "City of Edmonton", "53.4583347056265", "-113.582684288656", [ null, "53.4583347056265", "-113.582684288656", null, false ] ]
+, [ 92, "4FC9A94D-D65E-49E7-9389-DD3CFE4E501B", 92, 1396960210, "393213", 1396960210, "393213", "{\n}", "Terwillegar Community Recreation Centre", "2051 - LEGER ROAD NW", "City Facility", "In Future", "SHAW", "53.4583347056265", "-113.582684288656", [ null, "53.4583347056265", "-113.582684288656", null, false ] ]
+, [ 93, "C4D1C40B-B212-436E-8C47-2AACF2930A85", 93, 1396960210, "393213", 1396960210, "393213", "{\n}", "EPL Millwoods Library ", "2331 - 66 STREET NW", "City Facility", "In Progress", "SHAW", "53.4558369917488", "-113.430231360386", [ null, "53.4558369917488", "-113.430231360386", null, false ] ]
+, [ 94, "18D0D9BD-F5E7-40A3-8B83-347B6ED119EB", 94, 1396960210, "393213", 1396960210, "393213", "{\n}", "Ellerslie MES", "2415 - 101 STREET SW", "City Facility", "Active", "City of Edmonton", "53.4114848201545", "-113.489507733223", [ null, "53.4114848201545", "-113.489507733223", null, false ] ]
+, [ 95, "764DD489-1321-4AA9-9F5D-10847199781D", 95, 1396960210, "393213", 1396960210, "393213", "{\n}", "Rundle Golf Course Clubhouse", "2909 - 113 AVENUE NW", "City Facility", "In Future", "SHAW", "53.5615513841583", "-113.384192082018", [ null, "53.5615513841583", "-113.384192082018", null, false ] ]
+, [ 96, "3F85118D-6C3C-46A9-8A1D-65EC317DA317", 96, 1396960210, "393213", 1396960210, "393213", "{\n}", "ACT Rec Center", "2909 - 113 AVENUE NW", "City Facility", "Active", "City of Edmonton", "53.5615513841583", "-113.384192082018", [ null, "53.5615513841583", "-113.384192082018", null, false ] ]
+, [ 97, "873A1F59-E9CB-46C2-B596-571A9F7C026A", 97, 1396960210, "393213", 1396960210, "393213", "{\n}", "ACT Rec Center", "2909 - 113 AVENUE NW", "City Facility", "In Future", "SHAW", "53.5615513841583", "-113.384192082018", [ null, "53.5615513841583", "-113.384192082018", null, false ] ]
+, [ 98, "8CA23378-E604-4C72-8093-599F54B17E14", 98, 1396960210, "393213", 1396960210, "393213", "{\n}", "Rundle Park Family Recreation Centre", "2909 - 113 AVENUE NW", "City Facility", "In Future", "SHAW", "53.5615513841583", "-113.384192082018", [ null, "53.5615513841583", "-113.384192082018", null, false ] ]
+, [ 99, "9E454A61-7D3A-45E9-9B00-18E455FECE2B", 99, 1396960210, "393213", 1396960210, "393213", "{\n}", "Chancery Hall", "3 - SIR WINSTON CHURCHILL SQUARE NW", "City Facility", "Active", "City of Edmonton", "53.5443010411273", "-113.488653329283", [ null, "53.5443010411273", "-113.488653329283", null, false ] ]
+, [ 100, "74B5092F-B623-4EEF-922D-1964BD9207CA", 100, 1396960210, "393213", 1396960210, "393213", "{\n}", "Abbottsfield Recreation Centre", "3010 - 119 AVENUE NW", "City Facility", "In Future", "SHAW", "53.572821929153", "-113.389634932355", [ null, "53.572821929153", "-113.389634932355", null, false ] ]
+, [ 101, "2D8AAD43-108C-4B88-8FD2-0143821AB1F6", 101, 1396960210, "393213", 1396960210, "393213", "{\n}", "EPL Penny McKee Library", "3414 - 118 AVENUE NW", "City Facility", "In Progress", "SHAW", "53.5711616320818", "-113.395450269254", [ null, "53.5711616320818", "-113.395450269254", null, false ] ]
+, [ 102, "B177D005-9BAE-45FE-91DA-5EDD5E7BAD47", 102, 1396960210, "393213", 1396960210, "393213", "{\n}", "Clareview Arena", "3804 - 139 AVENUE NW", "City Facility", "Active", "City of Edmonton", "53.6029423215779", "-113.404318005052", [ null, "53.6029423215779", "-113.404318005052", null, false ] ]
+, [ 103, "18C18F0F-92E2-4613-928D-7B20F83EA88A", 103, 1396960210, "393213", 1396960210, "393213", "{\n}", "Clareview Community Recreation Center", "3804 - 139 AVENUE NW", "City Facility", "In Future", "SHAW", "53.6029423215779", "-113.404318005052", [ null, "53.6029423215779", "-113.404318005052", null, false ] ]
+, [ 104, "310AD860-3402-49CC-B749-80350C081D42", 104, 1396960210, "393213", 1396960210, "393213", "{\n}", "Jackie Parker Pavillion (Outdoor Skating Rink, Playground and Spray Park)", "4540 - 50 STREET NW", "City Facility", "In Future", "SHAW", "53.4809640742647", "-113.423883509103", [ null, "53.4809640742647", "-113.423883509103", null, false ] ]
+, [ 105, "74D0E159-468E-49F8-AF85-F8634CC01CB6", 105, 1396960210, "393213", 1396960210, "393213", "{\n}", "EPL Riverbend Library", "460 - RIVERBEND SQUARE NW", "City Facility", "In Progress", "SHAW", "53.4681189417757", "-113.583639388616", [ null, "53.4681189417757", "-113.583639388616", null, false ] ]
+, [ 106, "7EC216A7-7E8E-4A27-A329-E50ED7D4D100", 106, 1396960210, "393213", 1396960210, "393213", "{\n}", "EPL Capilano Library ", "5004 - 98 AVENUE NW", "City Facility", "In Progress", "SHAW", "53.539461211791", "-113.421474982382", [ null, "53.539461211791", "-113.421474982382", null, false ] ]
+, [ 107, "EC531509-DE80-4854-A8C0-11E00260E198", 107, 1396960210, "393213", 1396960210, "393213", "{\n}", "Richard Paterson Garage", "5710 - 86 STREET NW", "City Facility", "Active", "City of Edmonton", "53.492762607718", "-113.458531656336", [ null, "53.492762607718", "-113.458531656336", null, false ] ]
+, [ 108, "8F522D53-7B20-48A9-B306-7A6BA5428EE2", 108, 1396960210, "393213", 1396960210, "393213", "{\n}", "Edmonton Soccer Centre South", "6520 - ROPER ROAD NW", "City Facility", "In Future", "SHAW", "53.4965114855861", "-113.432466628127", [ null, "53.4965114855861", "-113.432466628127", null, false ] ]
+, [ 109, "563CCA2A-DCEF-47F8-8A14-93D6FD1B6F5F", 109, 1396960210, "393213", 1396960210, "393213", "{\n}", "EPL Highlands Library ", "6710 - 118 AVENUE NW", "City Facility", "In Future", "SHAW", "53.5707718850723", "-113.444992599293", [ null, "53.5707718850723", "-113.444992599293", null, false ] ]
+, [ 110, "1875E0C4-9A08-41E1-81ED-FA3910A694DD", 110, 1396960210, "393213", 1396960210, "393213", "{\n}", "Russ Barnes Arena", "6725 - 121 AVENUE NW", "City Facility", "In Progress", "SHAW", "53.5743502440921", "-113.446076107316", [ null, "53.5743502440921", "-113.446076107316", null, false ] ]
+, [ 111, "C2502609-DE5C-4BDC-B944-DAE0185BC7A7", 111, 1396960210, "393213", 1396960210, "393213", "{\n}", "Stanley Milner Library", "7 - SIR WINSTON CHURCHILL SQUARE NW", "City Facility", "Active", "City of Edmonton", "53.5428603198967", "-113.48969339998", [ null, "53.5428603198967", "-113.48969339998", null, false ] ]
+, [ 112, "2F39949B-AFE9-49FF-94A5-9C2CC5A23F0E", 112, 1396960210, "393213", 1396960210, "393213", "{\n}", "Centenial Plaza", "7 - SIR WINSTON CHURCHILL SQUARE NW", "City Facility", "In Future", "SHAW", "53.5428603198967", "-113.48969339998", [ null, "53.5428603198967", "-113.48969339998", null, false ] ]
+, [ 113, "3DD728E0-76E5-42E6-89A4-06439E8246D9", 113, 1396960210, "393213", 1396960210, "393213", "{\n}", "EPL Stanley A. Milner Library", "7 - SIR WINSTON CHURCHILL SQUARE NW", "City Facility", "In Progress", "SHAW", "53.5428603198967", "-113.48969339998", [ null, "53.5428603198967", "-113.48969339998", null, false ] ]
+, [ 114, "99B20BAA-33B1-4D5A-854A-89C41BEBBD88", 114, 1396960210, "393213", 1396960210, "393213", "{\n}", "John Janzen Nature Centre", "7000 - 143 STREET NW", "City Facility", "In Future", "SHAW", "53.5014591624913", "-113.578920548901", [ null, "53.5014591624913", "-113.578920548901", null, false ] ]
+, [ 115, "B3DB481C-E266-4418-A9C0-601242CE05B5", 115, 1396960210, "393213", 1396960210, "393213", "{\n}", "Fort Edmonton Park (Reeds Bazaar, Ukrainian Bookstore, Capitol Theatre)", "7000 - 143 STREET NW", "City Facility", "Active", "City of Edmonton", "53.5014591624913", "-113.578920548901", [ null, "53.5014591624913", "-113.578920548901", null, false ] ]
+, [ 116, "914299A3-347C-4D46-942B-230301FD68B3", 116, 1396960210, "393213", 1396960210, "393213", "{\n}", "John Janzen Nature Centre", "7000 - 143 STREET NW", "City Facility", "Active", "City of Edmonton", "53.5014591624913", "-113.578920548901", [ null, "53.5014591624913", "-113.578920548901", null, false ] ]
+, [ 117, "5911AD43-8594-42A8-86DA-4893C3AA04C9", 117, 1396960210, "393213", 1396960210, "393213", "{\n}", "Fort Edmonton Park", "7000 - 143 STREET NW", "City Facility", "In Future", "SHAW", "53.5014591624913", "-113.578920548901", [ null, "53.5014591624913", "-113.578920548901", null, false ] ]
+, [ 118, "DAE108F2-C011-4032-955D-C9BE2D3B26C7", 118, 1396960210, "393213", 1396960210, "393213", "{\n}", "Mill Woods Sport Park Outdoor Skating Rink", "7004 - 23 AVENUE NW", "City Facility", "In Future", "SHAW", "53.4558209655836", "-113.442180590999", [ null, "53.4558209655836", "-113.442180590999", null, false ] ]
+, [ 119, "868D530A-F68E-46AA-8AF1-E19F569D70B8", 119, 1396960210, "393213", 1396960210, "393213", "{\n}", "Millwoods Recreation Centre", "7207 - 28 AVENUE NW", "City Facility", "Active", "City of Edmonton", "53.4571154101646", "-113.445028039348", [ null, "53.4571154101646", "-113.445028039348", null, false ] ]
+, [ 120, "1A745DD3-2736-4A80-8584-2E53BC084A58", 120, 1396960210, "393213", 1396960210, "393213", "{\n}", "Millwoods Recreation Centre", "7207 - 28 AVENUE NW", "City Facility", "In Progress", "SHAW", "53.4571154101646", "-113.445028039348", [ null, "53.4571154101646", "-113.445028039348", null, false ] ]
+, [ 121, "1B1C5A24-7A92-4AC8-8967-A9DFC435F8F6", 121, 1396960210, "393213", 1396960210, "393213", "{\n}", "Millwoods Arena", "7207 - 28 AVENUE NW", "City Facility", "In Progress", "SHAW", "53.4571154101646", "-113.445028039348", [ null, "53.4571154101646", "-113.445028039348", null, false ] ]
+, [ 122, "2C92E327-3AB9-4B5C-90F6-41AAB52348DA", 122, 1396960210, "393213", 1396960210, "393213", "{\n}", "Borden Park Pool", "7615 - BORDEN PARK ROAD NW", "City Facility", "In Future", "SHAW", "53.5626856004341", "-113.455772162419", [ null, "53.5626856004341", "-113.455772162419", null, false ] ]
+, [ 123, "A3330ED5-C53E-4439-AC8E-135720B5C7DF", 123, 1396960210, "393213", 1396960210, "393213", "{\n}", "EPL Idylwylde Library ", "8310 - 88 AVENUE NW", "City Facility", "In Progress", "SHAW", "53.5238427299676", "-113.456884489807", [ null, "53.5238427299676", "-113.456884489807", null, false ] ]
+, [ 124, "26269BA4-4D8A-4C40-A943-8C36F0C1CB30", 124, 1396960210, "393213", 1396960210, "393213", "{\n}", "Kenilworth Arena", "8313 - 68A STREET NW", "City Facility", "In Progress", "SHAW", "53.5193322097241", "-113.430607872893", [ null, "53.5193322097241", "-113.430607872893", null, false ] ]
+, [ 125, "6BD88654-FF35-408A-B874-6F63A1A467ED", 125, 1396960210, "393213", 1396960210, "393213", "{\n}", "EPL Strathcona Library", "8331 - 104 STREET NW", "City Facility", "In Progress", "SHAW", "53.5197834574499", "-113.497032298449", [ null, "53.5197834574499", "-113.497032298449", null, false ] ]
+, [ 126, "B57A6321-8D9A-46B5-BFF9-D8957DD6E3FD", 126, 1396960210, "393213", 1396960210, "393213", "{\n}", "Dr Wilbert McIntyre Park", "8331 - 104 STREET NW", "City Facility", "Active", "City of Edmonton", "53.5197834574499", "-113.497032298449", [ null, "53.5197834574499", "-113.497032298449", null, false ] ]
+, [ 127, "4CAAE754-F78A-496A-ACC3-562E1606AE5A", 127, 1396960210, "393213", 1396960210, "393213", "{\n}", "Riverside Golf Course Clubhouse", "8630 - ROWLAND ROAD NW", "City Facility", "In Future", "SHAW", "53.5510274498804", "-113.458638190071", [ null, "53.5510274498804", "-113.458638190071", null, false ] ]
+, [ 128, "910B5D38-DFDF-4328-83AD-6152776E52DE", 128, 1396960210, "393213", 1396960210, "393213", "{\n}", "Bonnie Doon Leisure Centre", "8648 - 81 STREET NW", "City Facility", "In Future", "SHAW", "53.5236841287891", "-113.454109021866", [ null, "53.5236841287891", "-113.454109021866", null, false ] ]
+, [ 129, "3026E825-F20E-465F-AA02-B8C982C62D53", 129, 1396960210, "393213", 1396960210, "393213", "{\n}", "ETS Davies Administration Building", "8729 - 58 AVENUE NW", "City Facility", "Active", "City of Edmonton", "53.492762607718", "-113.458531656336", [ null, "53.492762607718", "-113.458531656336", null, false ] ]
+, [ 130, "BBCAC963-9EFA-45AD-84C2-9658AAFDBF6F", 130, 1396960210, "393213", 1396960210, "393213", "{\n}", "Davies MES", "8733 - 58 AVENUE NW", "City Facility", "Active", "City of Edmonton", "53.492762607718", "-113.458531656336", [ null, "53.492762607718", "-113.458531656336", null, false ] ]
+, [ 131, "F4ACCFD1-51A3-48D7-8CC2-8D7DEF4ACD8B", 131, 1396960210, "393213", 1396960210, "393213", "{\n}", "O'leary Leisure Centre", "8808 - 132 AVENUE NW", "City Facility", "In Future", "SHAW", "53.5944892627371", "-113.477633573925", [ null, "53.5944892627371", "-113.477633573925", null, false ] ]
+, [ 132, "D9E8019F-9623-4B9A-8942-8C4D6EB9B531", 132, 1396960210, "393213", 1396960210, "393213", "{\n}", "O'leary Leisure Centre", "8808 - 132 AVENUE NW", "City Facility", "Active", "City of Edmonton", "53.5944892627371", "-113.477633573925", [ null, "53.5944892627371", "-113.477633573925", null, false ] ]
+, [ 133, "AB61E91F-D24D-42F9-AE12-3988E627BF87", 133, 1396960210, "393213", 1396960210, "393213", "{\n}", "John Walter Museum", "9100 - WALTERDALE HILL NW", "City Facility", "In Progress", "SHAW", "53.5272511542602", "-113.511483226487", [ null, "53.5272511542602", "-113.511483226487", null, false ] ]
+, [ 134, "69286381-628E-4517-ABF4-6562B1240080", 134, 1396960210, "393213", 1396960210, "393213", "{\n}", "Kinsmen Sports Centre", "9100 - WALTERDALE HILL NW", "City Facility", "In Progress", "SHAW", "53.5272511542602", "-113.511483226487", [ null, "53.5272511542602", "-113.511483226487", null, false ] ]
+, [ 135, "FA6EE5C5-AC1E-4BD2-9570-A5B09FAD609B", 135, 1396960210, "393213", 1396960210, "393213", "{\n}", "Queen Elizabeth Pool ", "9100 - WALTERDALE HILL NW", "City Facility", "In Future", "SHAW", "53.5272511542602", "-113.511483226487", [ null, "53.5272511542602", "-113.511483226487", null, false ] ]
+, [ 136, "B2C898E9-6048-4586-B79D-32E696119FDA", 136, 1396960210, "393213", 1396960210, "393213", "{\n}", "Kinsmen Sports Centre", "9100 - WALTERDALE HILL NW", "City Facility", "Active", "City of Edmonton", "53.5272511542602", "-113.511483226487", [ null, "53.5272511542602", "-113.511483226487", null, false ] ]
+, [ 137, "B86F5D90-9002-4781-81DD-1B6F15A53065", 137, 1396960210, "393213", 1396960210, "393213", "{\n}", "Donnan Arena ", "9105 - 80 AVENUE NW", "City Facility", "In Progress", "SHAW", "53.5156016494401", "-113.468776505282", [ null, "53.5156016494401", "-113.468776505282", null, false ] ]
+, [ 138, "A0F48A26-6AF8-40AC-BF9E-50A661F7F3D2", 138, 1396960210, "393213", 1396960210, "393213", "{\n}", "Parks SouthEast", "9120 - 37 AVENUE NW", "City Facility", "Active", "City of Edmonton", "53.4726696388526", "-113.468972793626", [ null, "53.4726696388526", "-113.468972793626", null, false ] ]
+, [ 139, "449E781F-6095-442F-B205-B4C7C28EA0BF", 139, 1396960210, "393213", 1396960210, "393213", "{\n}", "Jasper Place Leisure Centre", "9200 - 163 STREET NW", "City Facility", "In Future", "SHAW", "53.52747782658", "-113.605061116264", [ null, "53.52747782658", "-113.605061116264", null, false ] ]
+, [ 140, "594014B2-FA25-48B2-A56A-46DC57B2B87C", 140, 1396960210, "393213", 1396960210, "393213", "{\n}", "ST. Francis Xavier Sports Centre", "9250 - 163 STREET NW", "City Facility", "In Future", "SHAW", "53.5294131749041", "-113.604828902121", [ null, "53.5294131749041", "-113.604828902121", null, false ] ]
+, [ 141, "C6ED9A15-5C2F-4BD0-AB50-C46A56B17FC2", 141, 1396960210, "393213", 1396960210, "393213", "{\n}", "Office of Traffic Safety", "9304 - 41 AVENUE NW", "City Facility", "Active", "City of Edmonton", "53.4770398506373", "-113.473029724731", [ null, "53.4770398506373", "-113.473029724731", null, false ] ]
+, [ 142, "C6189724-7DAF-4F75-91B4-B3414EB9442F", 142, 1396960210, "393213", 1396960210, "393213", "{\n}", "Heritage Amplitheatre in William Hawrelak Park", "9330 - GROAT ROAD NW", "City Facility", "In Future", "SHAW", "53.5276760771396", "-113.547165750399", [ null, "53.5276760771396", "-113.547165750399", null, false ] ]
+, [ 143, "B4F9966E-840E-4F2B-99F2-74B8FB898ECF", 143, 1396960210, "393213", 1396960210, "393213", "{\n}", "William Hawrelak Park (Pavilion)", "9330 - GROAT ROAD NW", "City Facility", "In Future", "SHAW", "53.5276760771396", "-113.547165750399", [ null, "53.5276760771396", "-113.547165750399", null, false ] ]
+, [ 144, "65DBBB71-A446-484B-AA7F-A45CFAFDC772", 144, 1396960210, "393213", 1396960210, "393213", "{\n}", "William Hawrelak Park (Outdoor Skating Rink)", "9330 - GROAT ROAD NW", "City Facility", "In Future", "SHAW", "53.5276760771396", "-113.547165750399", [ null, "53.5276760771396", "-113.547165750399", null, false ] ]
+, [ 145, "65855D3E-EB90-4962-8516-ED5271C0D96E", 145, 1396960210, "393213", 1396960210, "393213", "{\n}", "SE Seniors (SEESA)", "9350 - 82 STREET NW", "City Facility", "In Future", "SHAW", "53.5304907638988", "-113.452385274801", [ null, "53.5304907638988", "-113.452385274801", null, false ] ]
+, [ 146, "1F506751-62C5-4220-88DF-40A52402D206", 146, 1396960210, "393213", 1396960210, "393213", "{\n}", "Eastgate Drainage Building", "9504 - 49 STREET NW", "City Facility", "Active", "City of Edmonton", "53.53463347519", "-113.415780246942", [ null, "53.53463347519", "-113.415780246942", null, false ] ]
+, [ 147, "A8E6FB44-3E29-454B-9189-282863A7EB61", 147, 1396960210, "393213", 1396960210, "393213", "{\n}", "Mill Creek Pool", "9555 - 84 AVENUE NW", "City Facility", "In Future", "SHAW", "53.5195115026708", "-113.474414037306", [ null, "53.5195115026708", "-113.474414037306", null, false ] ]
+, [ 148, "810E2036-AFF9-44D9-9D69-0B49C1119C23", 148, 1396960210, "393213", 1396960210, "393213", "{\n}", "Muttart Conservatory ", "9626 - 96A STREET NW", "City Facility", "In Future", "SHAW", "53.5352063578107", "-113.477821318846", [ null, "53.5352063578107", "-113.477821318846", null, false ] ]
+, [ 149, "BD0AA81D-35FF-4197-BFCC-B41630F3284C", 149, 1396960210, "393213", 1396960210, "393213", "{\n}", "Muttart Conservatory ", "9626 - 96A STREET NW", "City Facility", "Active", "City of Edmonton", "53.5352063578107", "-113.477821318846", [ null, "53.5352063578107", "-113.477821318846", null, false ] ]
+, [ 150, "22B84414-F44C-426F-BAFD-EF4684CAB919", 150, 1396960210, "393213", 1396960210, "393213", "{\n}", "Shaw Conference Centre", "9797 - JASPER AVENUE NW", "City Facility", "In Future", "SHAW", "53.5413578039352", "-113.485915350274", [ null, "53.5413578039352", "-113.485915350274", null, false ] ]
+, [ 151, "31C6D699-34D6-43CD-A477-E1C674C1E443", 151, 1396960210, "393213", 1396960210, "393213", "{\n}", "Shaw Conference Centre", "9797 - JASPER AVENUE NW", "City Facility", "Active", "City of Edmonton", "53.5413578039352", "-113.485915350274", [ null, "53.5413578039352", "-113.485915350274", null, false ] ]
+, [ 152, "C855B03C-6976-45A0-B820-8F2EDF083131", 152, 1396960210, "393213", 1396960210, "393213", "{\n}", "Century Place", "9803 - 102A AVENUE NW", "City Facility", "Active", "City of Edmonton", "53.5444196687436", "-113.487875513414", [ null, "53.5444196687436", "-113.487875513414", null, false ] ]
+, [ 153, "6E9F5BB9-F0E7-47D0-95E3-222440E73616", 153, 1396960210, "393213", 1396960210, "393213", "{\n}", "Churchill Square/Interpretive Centre/Tix on the Square", "9918 - 102 AVENUE NW", "City Facility", "Active", "City of Edmonton", "53.5439606220845", "-113.48992772572", [ null, "53.5439606220845", "-113.48992772572", null, false ] ]
+, [ 154, "97D8341C-DD83-4CAC-B623-3B5071D3FBEB", 154, 1396960210, "393213", 1396960210, "393213", "{\n}", "Crestwood Arena ", "9940 - 147 STREET NW", "City Facility", "In Progress", "SHAW", "53.5389665336744", "-113.575397923117", [ null, "53.5389665336744", "-113.575397923117", null, false ] ]
+, [ 155, "28B20613-B2EB-4B1F-A6D1-8D479CBB2682", 155, 1396960210, "393213", 1396960210, "393213", "{\n}", "Westwood Division", "11840 - 106A STREET NW", "Transit Facility", "Active", "City of Edmonton", "53.5722469979829", "-113.50583187762", [ null, "53.5722469979829", "-113.50583187762", null, false ] ]
+, [ 156, "30717F7D-4B05-4B43-90B8-512A57A401A6", 156, 1396960210, "393213", 1396960210, "393213", "{\n}", "Mitchell Division", "11904 - 154 STREET NW", "Transit Facility", "Active", "City of Edmonton", "53.5715289210804", "-113.588750307978", [ null, "53.5715289210804", "-113.588750307978", null, false ] ]
+, [ 157, "5BABDBB8-82C8-4B10-A235-48168D86CFF5", 157, 1396960210, "393213", 1396960210, "393213", "{\n}", "Centennial Transit Garage", "15520 - ELLERSLIE ROAD SW", "Transit Facility", "Active", "City of Edmonton", "53.4266910762123", "-113.582823435608", [ null, "53.4266910762123", "-113.582823435608", null, false ] ]
+, [ 158, "FBD3DB5C-F193-42C0-965F-3F2F7FD30289", 158, 1396960210, "393213", 1396960210, "393213", "{\n}", "Percy Wickman Garage", "5610 - 86 STREET NW", "Transit Facility", "Active", "City of Edmonton", "53.4919603079471", "-113.45627665764", [ null, "53.4919603079471", "-113.45627665764", null, false ] ]
+, [ 159, "98250287-CC94-4F3B-828F-0978BDA7B3C7", 159, 1396960210, "393213", 1396960210, "393213", "{\n}", "Ferrier Division", "8620 - 58 AVENUE NW", "Transit Facility", "Active", "City of Edmonton", "53.4950142777967", "-113.456654550158", [ null, "53.4950142777967", "-113.456654550158", null, false ] ]
+ ]
+}
