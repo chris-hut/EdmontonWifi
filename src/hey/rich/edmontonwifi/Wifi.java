@@ -12,11 +12,13 @@ public class Wifi {
 		CITY, TRANSIT;
 	};
 
+	/** The status of the wifi. If invalid, IN_FUTURE will be used */
 	public enum Status {
 		ACTIVE, IN_PROGRESS, IN_FUTURE
 	};
 
-	private long id;
+	/** ID is a HEX value with dashes in it */
+	private String id;
 	/** Name of the place where the WiFi antenna is located */
 	private String name;
 	/** Physical street address where the WiFi antenna is located */
@@ -32,7 +34,7 @@ public class Wifi {
 	/** Spatial coordinates of location */
 	private Location location;
 
-	public Wifi(long id, String name, String address, Facility facility,
+	public Wifi(String id, String name, String address, Facility facility,
 			Status status, String provider, Location location) {
 		this.id = id;
 		this.name = name;
@@ -43,11 +45,11 @@ public class Wifi {
 		this.location = location;
 	}
 
-	public long getId() {
+	public String getId() {
 		return id;
 	}
 
-	public void setId(long id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 
