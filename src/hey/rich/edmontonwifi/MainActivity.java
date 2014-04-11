@@ -2,27 +2,21 @@ package hey.rich.edmontonwifi;
 
 import java.util.List;
 
-import android.app.Activity;
-import android.app.Fragment;
+import android.app.ListActivity;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
 
-public class MainActivity extends Activity {
+public class MainActivity extends ListActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		List<Wifi> Wifis = JsonReader.jsonStringToList(JsonReader
+		List<Wifi> wifis = JsonReader.jsonStringToList(JsonReader
 				.loadJSONFromAsset(getAssets()));
-		if (savedInstanceState == null) {
-			getFragmentManager().beginTransaction()
-					.add(R.id.container, new PlaceholderFragment()).commit();
-		}
+		WifiArrayAdapter adapter = new WifiArrayAdapter(this, wifis);
+		setListAdapter(adapter);
 	}
 
 	@Override
@@ -43,23 +37,6 @@ public class MainActivity extends Activity {
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
-	}
-
-	/**
-	 * A placeholder fragment containing a simple view.
-	 */
-	public static class PlaceholderFragment extends Fragment {
-
-		public PlaceholderFragment() {
-		}
-
-		@Override
-		public View onCreateView(LayoutInflater inflater, ViewGroup container,
-				Bundle savedInstanceState) {
-			View rootView = inflater.inflate(R.layout.fragment_main, container,
-					false);
-			return rootView;
-		}
 	}
 
 }

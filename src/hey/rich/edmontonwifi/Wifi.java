@@ -80,6 +80,10 @@ public class Wifi {
 	public Status getStatus() {
 		return status;
 	}
+	
+	public String getStatusString(){
+		return status.toString();
+	}
 
 	public void setStatus(Status status) {
 		this.status = status;

@@ -4,5 +4,12 @@
     <string name="app_name">Edmonton Wifi</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    
+    
+    
+    <!-- ListView Strings -->
+    <string name="wifi_list_name">Name</string>
+    <string name="wifi_list_status">Status</string>
+    <string name="wifi_list_address">Address</string>
 
 </resources>
