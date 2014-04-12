@@ -4,9 +4,13 @@
     <string name="app_name">Edmonton Wifi</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    
-    
-    
+
+    <!-- Wifi ListView Sort By Spinner -->
+    <string-array name="wifi_list_view_sort">
+        <item>Name</item>
+        <item>Status</item>
+    </string-array>
+
     <!-- ListView Strings -->
     <string name="wifi_list_name">Name</string>
     <string name="wifi_list_status">Status</string>
