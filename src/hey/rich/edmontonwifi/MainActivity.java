@@ -1,10 +1,16 @@
 package hey.rich.edmontonwifi;
 
+import hey.rich.edmontonwifi.SortWifiListDialogFragment.SortWifiListDialogListener;
+
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 import android.app.ActionBar;
 import android.app.ActionBar.OnNavigationListener;
+import android.app.DialogFragment;
 import android.app.ListActivity;
 import android.content.Intent;
 import android.net.Uri;
@@ -16,7 +22,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
-public class MainActivity extends ListActivity implements OnNavigationListener {
+public class MainActivity extends ListActivity implements OnNavigationListener,
+		SortWifiListDialogListener {
 
 	private List<Wifi> wifis;
 	private List<String> sortStrings;
@@ -88,10 +95,48 @@ public class MainActivity extends ListActivity implements OnNavigationListener {
 		// automatically handle clicks on the Home/Up button, so long
 		// as you specify a parent activity in AndroidManifest.xml.
 		int id = item.getItemId();
-		if (id == R.id.action_settings) {
-			return true;
+		if (id == R.id.menu_sort_wifi_list) {
+			// Pop open a dialog to ask user how they want to sort thsi list by
+			showSortListDialog();
+			return false;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+
+	private void showSortListDialog() {
+		SortWifiListDialogFragment dialog = new SortWifiListDialogFragment();
+		dialog.show(getFragmentManager(), "SortWifiListDialogFragment");
+	}
+
+	@Override
+	/** Callback from SortWifiListDialog, when called, sort our list of wifis by the choice selected.*/
+	public void onDialogClick(int position) {
+		/*
+		 * User clicked a position From the string-array:
+		 * R.array.array_sort_wifi_list Order is: Name, Address, Status,
+		 * Facility, Distance
+		 */
+		switch (position) {
+		case 0: // Name
+			Collections.sort(wifis, new NameComparator());
+			break;
+		case 1: // Address
+			Collections.sort(wifis, new AddressComparator());
+			break;
+		case 2: // Status
+			Collections.sort(wifis, new StatusComparator());
+			break;
+		case 3: // Facility
+			Collections.sort(wifis, new FacilityComparator());
+			break;
+		case 4: // Distance
+			Collections.sort(wifis, new DistanceComparator());
+			break;
+		default: // Invalid
+			return;
+		}
+		// Only if we got a non-invalid position we will be here
+		adapter.notifyDataSetChanged();
 	}
 
 	@Override
@@ -104,6 +149,73 @@ public class MainActivity extends ListActivity implements OnNavigationListener {
 			return true;
 		default: // Unknown
 			return false;
+		}
+	}
+
+	/** Used to compare wifis by name their name in alphabetical order */
+	public class NameComparator implements Comparator<Wifi> {
+
+		@Override
+		public int compare(Wifi w1, Wifi w2) {
+			return w1.getName().compareTo(w2.getName());
+		}
+
+	}
+
+	/** Used to compare wifis by their address in alphabetical order */
+	public class AddressComparator implements Comparator<Wifi> {
+
+		@Override
+		public int compare(Wifi w1, Wifi w2) {
+			return w1.getAddress().compareTo(w2.getAddress());
+		}
+	}
+
+	/**
+	 * Used to compare wifis by their Status. This comparator will compare the
+	 * wifis in alphabetical order.
+	 * <p>
+	 * The order is: ACTIVE, IN_PROGRESS, IN_FUTURE
+	 */
+	public class StatusComparator implements Comparator<Wifi> {
+		@Override
+		public int compare(Wifi w1, Wifi w2) {
+			return w1.getStatusString().compareTo(w2.getStatusString());
+		}
+	}
+
+	/**
+	 * Used to compare wifis by their facility type. This comparator will
+	 * compare the wifis in alphabetical order.
+	 * <p>
+	 * The order is: CITY, TRANSIT
+	 */
+	public class FacilityComparator implements Comparator<Wifi> {
+		@Override
+		public int compare(Wifi w1, Wifi w2) {
+			return w1.getProvider().compareTo(w2.getProvider());
+		}
+	}
+
+	public class DistanceComparator implements Comparator<Wifi> {
+		@Override
+		public int compare(Wifi w1, Wifi w2) {
+			double d1 = w1.getDistance();
+			double d2 = w2.getDistance();
+
+			if (d1 == d2) {
+				return 0;
+			} else if (d1 != Wifi.INVALID_DISTANCE
+					&& d2 == Wifi.INVALID_DISTANCE) {
+				// D2 is invalid so d1 must be closer
+				return -1;
+			} else if (d1 == Wifi.INVALID_DISTANCE
+					&& d2 != Wifi.INVALID_DISTANCE) {
+				// D1 is invalid so d2 must be closer
+				return 1;
+			} else {
+				return (int) (d1 - d2);
+			}
 		}
 	}
 }
