@@ -21,6 +21,7 @@ public class MainActivity extends ListActivity implements OnNavigationListener {
 	private List<Wifi> wifis;
 	private List<String> sortStrings;
 	private WifiArrayAdapter adapter;
+	private WifiList wifiList;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -37,8 +38,9 @@ public class MainActivity extends ListActivity implements OnNavigationListener {
 		actionBar.setListNavigationCallbacks(sortAdapter, this);
 
 		setContentView(R.layout.activity_main);
-		wifis = JsonReader.jsonStringToList(JsonReader
-				.loadJSONFromAsset(getAssets()));
+
+		wifiList = EdmontonWifi.getWifiList(getApplicationContext());
+		wifis = wifiList.getAllWifis();
 		adapter = new WifiArrayAdapter(this, wifis);
 		setListAdapter(adapter);
 	}
