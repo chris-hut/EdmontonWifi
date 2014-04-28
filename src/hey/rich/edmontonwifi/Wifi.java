@@ -1,7 +1,5 @@
 package hey.rich.edmontonwifi;
 
-import java.util.Comparator;
-
 import android.location.Location;
 
 /**

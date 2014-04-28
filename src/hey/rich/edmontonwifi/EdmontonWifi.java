@@ -13,7 +13,7 @@ public class EdmontonWifi extends Application {
 		super.onCreate();
 	}
 
-	/** Returns the wifiList, if one doesnt exist, we will create it here. */
+	/** Returns the wifiList, if one doesn't exist, we will create it here. */
 	public static WifiList getWifiList(Context context) {
 		if (wifiList == null) {
 			// load wifilist
@@ -24,4 +24,5 @@ public class EdmontonWifi extends Application {
 
 		return wifiList;
 	}
+	
 }

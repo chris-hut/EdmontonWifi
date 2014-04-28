@@ -5,6 +5,7 @@
 
     <!-- Menu Strings -->
     <string name="menu_sort_wifi_list">Sort By</string>
+    <string name="menu_action_on_select">On Select</string>
 
     <!-- Sort List of Wifi Dialog Array -->
     <string-array name="array_wifi_sort_list">
@@ -13,6 +14,14 @@
         <item>Status</item>
         <item>Facility</item>
         <item>Distance</item>
+    </string-array>
+    
+    <!-- OnClickActionDialog Array -->
+    <string-array name="array_action_click_list">
+        <item>Open address in maps</item>
+        <item>Copy address to clipboard</item>
+        <item>Remove from list</item>
+        <item>Do nothing</item>
     </string-array>
 
     <!-- ListView Strings -->

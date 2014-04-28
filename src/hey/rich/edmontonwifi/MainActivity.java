@@ -1,17 +1,22 @@
 package hey.rich.edmontonwifi;
 
+import hey.rich.edmontonwifi.OnClickActionDialogFragment.OnClickActionDialogListener;
 import hey.rich.edmontonwifi.SortWifiListDialogFragment.SortWifiListDialogListener;
 
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
 import android.app.ActionBar.OnNavigationListener;
 import android.app.ListActivity;
+import android.content.ClipData;
+import android.content.ClipboardManager;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -19,22 +24,44 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 public class MainActivity extends ListActivity implements OnNavigationListener,
-		SortWifiListDialogListener {
+		SortWifiListDialogListener, OnClickActionDialogListener {
 
 	private List<Wifi> wifis;
 	private WifiArrayAdapter adapter;
 	private WifiList wifiList;
+	private ActionOnClick actionOnClick;
+	SharedPreferences prefs;
+
+	private enum ActionOnClick {
+		OPEN_IN_MAPS, COPY_ADDRESS_TO_CLIPBOARD, REMOVE_FROM_LIST, NOTHING
+	}
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-
 		setContentView(R.layout.activity_main);
 
 		wifiList = EdmontonWifi.getWifiList(getApplicationContext());
 		wifis = wifiList.getAllWifis();
 		adapter = new WifiArrayAdapter(this, wifis);
 		setListAdapter(adapter);
+	}
+
+	@Override
+	protected void onStart() {
+		super.onStart();
+
+		prefs = this.getSharedPreferences("hey.rich.EdmontonWifi",
+				Context.MODE_PRIVATE);
+		// From this beauty: http://stackoverflow.com/a/5878986
+		actionOnClick = ActionOnClick.values()[prefs.getInt("action_on_click",
+				0)];
+	}
+
+	@Override
+	protected void onStop() {
+		super.onStop();
+		prefs.edit().putInt("action_on_click", actionOnClick.ordinal());
 	}
 
 	@Override
@@ -45,20 +72,10 @@ public class MainActivity extends ListActivity implements OnNavigationListener,
 		return true;
 	}
 
-	private List<String> getSortStrings() {
-		List<String> list = new ArrayList<String>();
-		list.add("Name");
-		list.add("Status");
-		return list;
-	}
-
 	@Override
 	protected void onListItemClick(ListView l, View v, int position, long id) {
 		super.onListItemClick(l, v, position, id);
 		Wifi wifi = wifis.get(position);
-		Toast.makeText(getApplicationContext(),
-				String.format("Loading directions to: %s", wifi.getName()),
-				Toast.LENGTH_SHORT).show();
 		// Format of url is latitude, longitude, title
 		// From: http://stackoverflow.com/a/17973122
 		/*
@@ -68,10 +85,37 @@ public class MainActivity extends ListActivity implements OnNavigationListener,
 		 * .getLocation().getLatitude(), wifi .getLocation().getLongitude(),
 		 * wifi.getName())));
 		 */
-		Intent intent = new Intent(android.content.Intent.ACTION_VIEW,
-				Uri.parse(String.format("http://maps.google.com/maps?q=%s",
-						wifi.getAddress())));
-		startActivity(intent);
+		switch (actionOnClick) {
+		case OPEN_IN_MAPS:
+			Toast.makeText(getApplicationContext(),
+					String.format("Loading directions to: %s", wifi.getName()),
+					Toast.LENGTH_SHORT).show();
+			Intent intent = new Intent(android.content.Intent.ACTION_VIEW,
+					Uri.parse(String.format("http://maps.google.com/maps?q=%s",
+							wifi.getAddress())));
+			startActivity(intent);
+
+			break;
+		case COPY_ADDRESS_TO_CLIPBOARD:
+			Toast.makeText(getApplicationContext(),
+					"Copying address to clipboard", Toast.LENGTH_SHORT).show();
+			;
+			ClipboardManager clipboard = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
+			ClipData clip = ClipData.newPlainText("Address to Wifi",
+					wifi.getAddress());
+			clipboard.setPrimaryClip(clip);
+			break;
+		case REMOVE_FROM_LIST:
+			wifis.remove(position);
+			adapter.notifyDataSetChanged();
+			break;
+		case NOTHING:
+			// Do nothing
+			break;
+		default:
+			// Don't think this is even possible
+			break;
+		}
 	}
 
 	@Override
@@ -79,18 +123,26 @@ public class MainActivity extends ListActivity implements OnNavigationListener,
 		// Handle action bar item clicks here. The action bar will
 		// automatically handle clicks on the Home/Up button, so long
 		// as you specify a parent activity in AndroidManifest.xml.
-		int id = item.getItemId();
-		if (id == R.id.menu_sort_wifi_list) {
-			// Pop open a dialog to ask user how they want to sort thsi list by
+		switch (item.getItemId()) {
+		case R.id.menu_sort_wifi_list:
 			showSortListDialog();
 			return false;
+		case R.id.menu_action_on_select:
+			showChooseClickActionDialog();
+			return false;
+		default:
+			return super.onOptionsItemSelected(item);
 		}
-		return super.onOptionsItemSelected(item);
 	}
 
 	private void showSortListDialog() {
 		SortWifiListDialogFragment dialog = new SortWifiListDialogFragment();
 		dialog.show(getFragmentManager(), "SortWifiListDialogFragment");
+	}
+
+	private void showChooseClickActionDialog() {
+		OnClickActionDialogFragment dialog = new OnClickActionDialogFragment();
+		dialog.show(getFragmentManager(), "OnClickActionDialogFragment");
 	}
 
 	@Override
@@ -122,6 +174,22 @@ public class MainActivity extends ListActivity implements OnNavigationListener,
 		}
 		// Only if we got a non-invalid position we will be here
 		adapter.notifyDataSetChanged();
+	}
+
+	@Override
+	/**Callback from OnClickActionDialog, when clicked, we set our action for when the user clicks a wifi in the list.*/
+	public void onDialogActionClick(int position) {
+		try {
+			actionOnClick = ActionOnClick.values()[position];
+		} catch (ArrayIndexOutOfBoundsException e) {
+			Log.e("EdmontonWifi", "ActionOnClick value was invalid: "
+					+ position);
+			actionOnClick = ActionOnClick.OPEN_IN_MAPS;
+		}
+	}
+
+	public int getActionOnClick() {
+		return actionOnClick.ordinal();
 	}
 
 	@Override
