@@ -3,14 +3,11 @@ package hey.rich.edmontonwifi;
 import hey.rich.edmontonwifi.SortWifiListDialogFragment.SortWifiListDialogListener;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-import android.app.ActionBar;
 import android.app.ActionBar.OnNavigationListener;
-import android.app.DialogFragment;
 import android.app.ListActivity;
 import android.content.Intent;
 import android.net.Uri;
@@ -18,7 +15,6 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -26,23 +22,12 @@ public class MainActivity extends ListActivity implements OnNavigationListener,
 		SortWifiListDialogListener {
 
 	private List<Wifi> wifis;
-	private List<String> sortStrings;
 	private WifiArrayAdapter adapter;
 	private WifiList wifiList;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-
-		// Setup actionBar
-		final ActionBar actionBar = getActionBar();
-		actionBar.setDisplayShowTitleEnabled(false);
-		actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_LIST);
-		sortStrings = getSortStrings();
-		ArrayAdapter<String> sortAdapter = new ArrayAdapter<String>(this,
-				android.R.layout.simple_list_item_1, android.R.id.text1,
-				sortStrings);
-		actionBar.setListNavigationCallbacks(sortAdapter, this);
 
 		setContentView(R.layout.activity_main);
 
