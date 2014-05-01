@@ -14,8 +14,8 @@ public class OnClickActionDialogFragment extends DialogFragment {
 			"Copy address to clipboard", "Remove from list", "Do nothing" };
 
 	private OnClickActionDialogListener mListener;
-	
-	private int currentChoice = 0;
+
+	private static int currentChoice = 0;
 
 	public interface OnClickActionDialogListener {
 		public void onDialogActionClick(int position);
@@ -38,18 +38,39 @@ public class OnClickActionDialogFragment extends DialogFragment {
 	@Override
 	public Dialog onCreateDialog(Bundle savedInstanceState) {
 		AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-		builder.setTitle("On click action").setSingleChoiceItems(
-				R.array.array_action_click_list, currentChoice, 
-				new DialogInterface.OnClickListener() {
+		builder.setTitle("On click action")
+				.setSingleChoiceItems(R.array.array_action_click_list,
+						currentChoice, new DialogInterface.OnClickListener() {
 
-					@Override
-					public void onClick(DialogInterface dialog, int which) {
-						Toast.makeText(getActivity(),
-								"On click action: " + actionList[which],
-								Toast.LENGTH_SHORT).show();
-						mListener.onDialogActionClick(which);
-					}
-				});
+							@Override
+							public void onClick(DialogInterface dialog,
+									int which) {
+								currentChoice = which;
+							}
+						})
+				.setPositiveButton("Appy",
+						new DialogInterface.OnClickListener() {
+
+							@Override
+							public void onClick(DialogInterface dialog,
+									int which) {
+								Toast.makeText(
+										getActivity(),
+										"On click action: " + actionList[currentChoice],
+										Toast.LENGTH_SHORT).show();
+								mListener.onDialogActionClick(currentChoice);
+
+							}
+						})
+				.setNegativeButton("Cancel",
+						new DialogInterface.OnClickListener() {
+
+							@Override
+							public void onClick(DialogInterface dialog,
+									int which) {
+
+							}
+						});
 		return builder.create();
 	}
 }

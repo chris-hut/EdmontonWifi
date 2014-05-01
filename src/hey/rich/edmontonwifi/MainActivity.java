@@ -14,6 +14,7 @@ import android.content.ClipboardManager;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.SharedPreferences.Editor;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
@@ -30,7 +31,8 @@ public class MainActivity extends ListActivity implements OnNavigationListener,
 	private WifiArrayAdapter adapter;
 	private WifiList wifiList;
 	private ActionOnClick actionOnClick;
-	SharedPreferences prefs;
+	private SharedPreferences prefs;
+	private int sortChoice;
 
 	private enum ActionOnClick {
 		OPEN_IN_MAPS, COPY_ADDRESS_TO_CLIPBOARD, REMOVE_FROM_LIST, NOTHING
@@ -48,20 +50,24 @@ public class MainActivity extends ListActivity implements OnNavigationListener,
 	}
 
 	@Override
-	protected void onStart() {
+	protected void onResume() {
 		super.onStart();
 
-		prefs = this.getSharedPreferences("hey.rich.EdmontonWifi",
+		prefs = getSharedPreferences("hey.rich.EdmontonWifi",
 				Context.MODE_PRIVATE);
 		// From this beauty: http://stackoverflow.com/a/5878986
 		actionOnClick = ActionOnClick.values()[prefs.getInt("action_on_click",
 				0)];
+		sortChoice = prefs.getInt("sort_choice", 0);
 	}
 
 	@Override
 	protected void onStop() {
 		super.onStop();
-		prefs.edit().putInt("action_on_click", actionOnClick.ordinal());
+		Editor edit = prefs.edit();
+		edit.putInt("action_on_click", actionOnClick.ordinal());
+		edit.putInt("sort_choice", sortChoice);
+		edit.apply();
 	}
 
 	@Override
@@ -99,7 +105,6 @@ public class MainActivity extends ListActivity implements OnNavigationListener,
 		case COPY_ADDRESS_TO_CLIPBOARD:
 			Toast.makeText(getApplicationContext(),
 					"Copying address to clipboard", Toast.LENGTH_SHORT).show();
-			;
 			ClipboardManager clipboard = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
 			ClipData clip = ClipData.newPlainText("Address to Wifi",
 					wifi.getAddress());
@@ -153,6 +158,7 @@ public class MainActivity extends ListActivity implements OnNavigationListener,
 		 * R.array.array_sort_wifi_list Order is: Name, Address, Status,
 		 * Facility, Distance
 		 */
+		sortChoice = position;
 		switch (position) {
 		case 0: // Name
 			Collections.sort(wifis, new NameComparator());
@@ -190,6 +196,10 @@ public class MainActivity extends ListActivity implements OnNavigationListener,
 
 	public int getActionOnClick() {
 		return actionOnClick.ordinal();
+	}
+
+	public int getSortChoice() {
+		return sortChoice;
 	}
 
 	@Override
