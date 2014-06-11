@@ -8,29 +8,37 @@ import java.util.Comparator;
 import java.util.List;
 
 import android.app.ActionBar.OnNavigationListener;
-import android.app.ListActivity;
+import android.app.Activity;
+import android.app.SearchManager;
 import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.SharedPreferences.Editor;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
+import android.widget.SearchView;
 import android.widget.Toast;
 
-public class MainActivity extends ListActivity implements OnNavigationListener,
+public class MainActivity extends Activity implements OnNavigationListener,
 		SortWifiListDialogListener, OnClickActionDialogListener {
 
 	private List<Wifi> wifis;
 	private WifiArrayAdapter adapter;
 	private WifiList wifiList;
 	private ActionOnClick actionOnClick;
-	SharedPreferences prefs;
+	private SharedPreferences prefs;
+	private int sortChoice;
+	private ListView lView;
 
 	private enum ActionOnClick {
 		OPEN_IN_MAPS, COPY_ADDRESS_TO_CLIPBOARD, REMOVE_FROM_LIST, NOTHING
@@ -41,81 +49,107 @@ public class MainActivity extends ListActivity implements OnNavigationListener,
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
+		lView = (ListView) findViewById(R.id.main_activity_listview);
 		wifiList = EdmontonWifi.getWifiList(getApplicationContext());
 		wifis = wifiList.getAllWifis();
 		adapter = new WifiArrayAdapter(this, wifis);
-		setListAdapter(adapter);
+		lView.setAdapter(adapter);
+
+		lView.setOnItemClickListener(new OnItemClickListener() {
+			@Override
+			public void onItemClick(AdapterView<?> parent, View view,
+					int position, long id) {
+				Wifi wifi = wifis.get(position);
+				// Format of url is latitude, longitude, title
+				// From: http://stackoverflow.com/a/17973122
+				/*
+				 * Intent intent = new
+				 * Intent(android.content.Intent.ACTION_VIEW,
+				 * Uri.parse(String.format(
+				 * "http://maps.google.com/maps?q=loc:%f,%f(%s)", wifi
+				 * .getLocation().getLatitude(), wifi
+				 * .getLocation().getLongitude(), wifi.getName())));
+				 */
+				switch (actionOnClick) {
+				case OPEN_IN_MAPS:
+					Toast.makeText(
+							getApplicationContext(),
+							String.format("Loading directions to: %s",
+									wifi.getName()), Toast.LENGTH_SHORT).show();
+					Intent intent = new Intent(
+							android.content.Intent.ACTION_VIEW, Uri
+									.parse(String.format(
+											"http://maps.google.com/maps?q=%s",
+											wifi.getAddress())));
+					startActivity(intent);
+
+					break;
+				case COPY_ADDRESS_TO_CLIPBOARD:
+					Toast.makeText(getApplicationContext(),
+							"Copying address to clipboard", Toast.LENGTH_SHORT)
+							.show();
+					ClipboardManager clipboard = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
+					ClipData clip = ClipData.newPlainText("Address to Wifi",
+							wifi.getAddress());
+					clipboard.setPrimaryClip(clip);
+					break;
+				case REMOVE_FROM_LIST:
+					wifis.remove(position);
+					adapter.notifyDataSetChanged();
+					break;
+				case NOTHING:
+					// Do nothing
+					break;
+				default:
+					// Don't think this is even possible
+					break;
+				}
+			}
+		});
 	}
 
 	@Override
-	protected void onStart() {
+	protected void onResume() {
 		super.onStart();
 
-		prefs = this.getSharedPreferences("hey.rich.EdmontonWifi",
+		prefs = getSharedPreferences("hey.rich.EdmontonWifi",
 				Context.MODE_PRIVATE);
 		// From this beauty: http://stackoverflow.com/a/5878986
 		actionOnClick = ActionOnClick.values()[prefs.getInt("action_on_click",
 				0)];
+		sortChoice = prefs.getInt("sort_choice", 0);
 	}
 
 	@Override
 	protected void onStop() {
 		super.onStop();
-		prefs.edit().putInt("action_on_click", actionOnClick.ordinal());
+		Editor edit = prefs.edit();
+		edit.putInt("action_on_click", actionOnClick.ordinal());
+		edit.putInt("sort_choice", sortChoice);
+		edit.apply();
+	}
+
+	@Override
+	public boolean onSearchRequested() {
+		// Pause anything that would be running
+		return super.onSearchRequested();
 	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
+		MenuInflater inf = getMenuInflater();
+		inf.inflate(R.menu.main, menu);
 
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.main, menu);
+		// Get the searchview and set the searchable conf
+		SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
+		SearchView searchView = (SearchView) menu.findItem(R.id.menu_search)
+				.getActionView();
+		// Assumes current activity is the searchable activity
+		searchView.setSearchableInfo(searchManager
+				.getSearchableInfo(getComponentName()));
+		// Don't iconify the widget; expand it by default
+		searchView.setIconifiedByDefault(true);
 		return true;
-	}
-
-	@Override
-	protected void onListItemClick(ListView l, View v, int position, long id) {
-		super.onListItemClick(l, v, position, id);
-		Wifi wifi = wifis.get(position);
-		// Format of url is latitude, longitude, title
-		// From: http://stackoverflow.com/a/17973122
-		/*
-		 * Intent intent = new Intent(android.content.Intent.ACTION_VIEW,
-		 * Uri.parse(String.format(
-		 * "http://maps.google.com/maps?q=loc:%f,%f(%s)", wifi
-		 * .getLocation().getLatitude(), wifi .getLocation().getLongitude(),
-		 * wifi.getName())));
-		 */
-		switch (actionOnClick) {
-		case OPEN_IN_MAPS:
-			Toast.makeText(getApplicationContext(),
-					String.format("Loading directions to: %s", wifi.getName()),
-					Toast.LENGTH_SHORT).show();
-			Intent intent = new Intent(android.content.Intent.ACTION_VIEW,
-					Uri.parse(String.format("http://maps.google.com/maps?q=%s",
-							wifi.getAddress())));
-			startActivity(intent);
-
-			break;
-		case COPY_ADDRESS_TO_CLIPBOARD:
-			Toast.makeText(getApplicationContext(),
-					"Copying address to clipboard", Toast.LENGTH_SHORT).show();
-			;
-			ClipboardManager clipboard = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
-			ClipData clip = ClipData.newPlainText("Address to Wifi",
-					wifi.getAddress());
-			clipboard.setPrimaryClip(clip);
-			break;
-		case REMOVE_FROM_LIST:
-			wifis.remove(position);
-			adapter.notifyDataSetChanged();
-			break;
-		case NOTHING:
-			// Do nothing
-			break;
-		default:
-			// Don't think this is even possible
-			break;
-		}
 	}
 
 	@Override
@@ -153,6 +187,7 @@ public class MainActivity extends ListActivity implements OnNavigationListener,
 		 * R.array.array_sort_wifi_list Order is: Name, Address, Status,
 		 * Facility, Distance
 		 */
+		sortChoice = position;
 		switch (position) {
 		case 0: // Name
 			Collections.sort(wifis, new NameComparator());
@@ -190,6 +225,10 @@ public class MainActivity extends ListActivity implements OnNavigationListener,
 
 	public int getActionOnClick() {
 		return actionOnClick.ordinal();
+	}
+
+	public int getSortChoice() {
+		return sortChoice;
 	}
 
 	@Override

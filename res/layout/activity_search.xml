@@ -3,13 +3,12 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="hey.rich.edmontonwifi.MainActivity"
+    tools:context="hey.rich.edmontonwifi.SearchActivity"
     tools:ignore="MergeRootFrame" >
 
     <ListView
-        android:id="@+id/main_activity_listview"
+        android:id="@+id/search_activity_listview"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content" >
-    </ListView>
+        android:layout_height="wrap_content" />
 
-</FrameLayout> 
+</FrameLayout>

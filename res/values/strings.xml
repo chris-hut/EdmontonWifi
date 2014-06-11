@@ -6,6 +6,7 @@
     <!-- Menu Strings -->
     <string name="menu_sort_wifi_list">Sort By</string>
     <string name="menu_action_on_select">On Select</string>
+    <string name="menu_search">Search Wifis</string>
 
     <!-- Sort List of Wifi Dialog Array -->
     <string-array name="array_wifi_sort_list">
@@ -15,7 +16,7 @@
         <item>Facility</item>
         <item>Distance</item>
     </string-array>
-    
+
     <!-- OnClickActionDialog Array -->
     <string-array name="array_action_click_list">
         <item>Open address in maps</item>
@@ -28,5 +29,12 @@
     <string name="wifi_list_name">Name</string>
     <string name="wifi_list_status">Status</string>
     <string name="wifi_list_address">Address</string>
+
+    <!-- Search Strings -->
+    <string name="search_hint">Search Wifis</string>
+    <string name="search_label">MainActivitySearch</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
 
 </resources>
