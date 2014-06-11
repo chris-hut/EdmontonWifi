@@ -9,6 +9,7 @@ import java.util.List;
 
 import android.app.ActionBar.OnNavigationListener;
 import android.app.ListActivity;
+import android.app.SearchManager;
 import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.Context;
@@ -19,9 +20,11 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ListView;
+import android.widget.SearchView;
 import android.widget.Toast;
 
 public class MainActivity extends ListActivity implements OnNavigationListener,
@@ -71,10 +74,25 @@ public class MainActivity extends ListActivity implements OnNavigationListener,
 	}
 
 	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
+	public boolean onSearchRequested() {
+		// Pause anything that would be running
+		return super.onSearchRequested();
+	}
 
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.main, menu);
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		MenuInflater inf = getMenuInflater();
+		inf.inflate(R.menu.main, menu);
+
+		// Get the searchview and set the searchable conf
+		SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
+		SearchView searchView = (SearchView) menu.findItem(R.id.menu_search)
+				.getActionView();
+		// Assumes current activity is the searchable activity
+		searchView.setSearchableInfo(searchManager
+				.getSearchableInfo(getComponentName()));
+		// Don't iconify the widget; expand it by default
+		searchView.setIconifiedByDefault(true);
 		return true;
 	}
 
