@@ -3,33 +3,51 @@ package hey.rich.edmontonwifi;
 import java.util.ArrayList;
 import java.util.List;
 
-import android.app.ListActivity;
+import android.app.Activity;
 import android.app.SearchManager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 import android.widget.Toast;
 
-public class SearchActivity extends ListActivity {
+public class SearchActivity extends Activity {
 	private List<Wifi> wifis;
 	private WifiArrayAdapter adapter;
+	private ListView lView;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_search);
 
-		wifis = EdmontonWifi.getWifiList(getApplicationContext()).getAllWifis();
+		lView = (ListView) findViewById(R.id.search_activity_listview);
+		
+		wifis = new ArrayList<Wifi>(EdmontonWifi.getWifiList(
+				getApplicationContext()).getAllWifis());
 		adapter = new WifiArrayAdapter(this, wifis);
-		setListAdapter(adapter);
+		lView.setAdapter(adapter);
+
+		lView.setOnItemClickListener(new OnItemClickListener() {
+			@Override
+			public void onItemClick(AdapterView<?> parent, View view,
+					int position, long id) {
+				Wifi wifi = wifis.get(position);
+
+				Toast.makeText(getApplicationContext(),
+						String.format("Wifi: %s", wifi.getName()),
+						Toast.LENGTH_SHORT).show();
+			}
+		});
 
 		handleIntent(getIntent());
 
 	}
-	
+
 	@Override
-	protected void onNewIntent(Intent intent){
+	protected void onNewIntent(Intent intent) {
 		setIntent(intent);
 		handleIntent(intent);
 	}
@@ -46,7 +64,8 @@ public class SearchActivity extends ListActivity {
 		// Should probably optimize this somehow
 		List<Wifi> newWifis = new ArrayList<Wifi>();
 		for (Wifi w : wifis) {
-			if (w.getAddress().contains(query) || w.getName().contains(query)) {
+			if (w.getAddress().toLowerCase().contains(query.toLowerCase())
+					|| w.getName().toLowerCase().contains(query.toLowerCase())) {
 				newWifis.add(w);
 			}
 		}
@@ -54,14 +73,5 @@ public class SearchActivity extends ListActivity {
 		wifis.clear();
 		wifis.addAll(newWifis);
 		adapter.notifyDataSetChanged();
-	}
-
-	@Override
-	protected void onListItemClick(ListView l, View v, int position, long id) {
-		super.onListItemClick(l, v, position, id);
-		Wifi wifi = wifis.get(position);
-
-		Toast.makeText(this, String.format("Wifi: %s", wifi.getName()),
-				Toast.LENGTH_SHORT).show();
 	}
 }
