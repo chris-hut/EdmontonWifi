@@ -70,40 +70,10 @@ public class MainActivity extends Activity implements OnNavigationListener,
 				 * .getLocation().getLatitude(), wifi
 				 * .getLocation().getLongitude(), wifi.getName())));
 				 */
-				switch (actionOnClick) {
-				case OPEN_IN_MAPS:
-					Toast.makeText(
-							getApplicationContext(),
-							String.format("Loading directions to: %s",
-									wifi.getName()), Toast.LENGTH_SHORT).show();
-					Intent intent = new Intent(
-							android.content.Intent.ACTION_VIEW, Uri
-									.parse(String.format(
-											"http://maps.google.com/maps?q=%s",
-											wifi.getAddress())));
-					startActivity(intent);
-
-					break;
-				case COPY_ADDRESS_TO_CLIPBOARD:
-					Toast.makeText(getApplicationContext(),
-							"Copying address to clipboard", Toast.LENGTH_SHORT)
-							.show();
-					ClipboardManager clipboard = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
-					ClipData clip = ClipData.newPlainText("Address to Wifi",
-							wifi.getAddress());
-					clipboard.setPrimaryClip(clip);
-					break;
-				case REMOVE_FROM_LIST:
-					wifis.remove(position);
-					adapter.notifyDataSetChanged();
-					break;
-				case NOTHING:
-					// Do nothing
-					break;
-				default:
-					// Don't think this is even possible
-					break;
-				}
+				Intent i = new Intent(getApplicationContext(),
+						WifiViewActivity.class);
+				i.putExtra(WifiViewActivity.WIFI_ID, position);
+				startActivity(i);
 			}
 		});
 	}

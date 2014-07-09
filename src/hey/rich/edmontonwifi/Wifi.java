@@ -81,6 +81,10 @@ public class Wifi {
 		return facility;
 	}
 
+	public String getFacilityString() {
+		return this.facility.toString();
+	}
+
 	public void setFacility(Facility facility) {
 		this.facility = facility;
 	}
@@ -120,6 +124,5 @@ public class Wifi {
 	public double getDistance() {
 		return this.distance;
 	}
-
 
 }
