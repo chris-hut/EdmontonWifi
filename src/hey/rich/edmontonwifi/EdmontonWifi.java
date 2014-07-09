@@ -25,4 +25,12 @@ public class EdmontonWifi extends Application {
 		return wifiList;
 	}
 	
+	public static Wifi getWifi(Context context, int position){
+		if(wifiList == null){
+			wifiList = getWifiList(context);
+		}
+		
+		return wifiList.getWifiAtPos(position);
+	}
+	
 }
