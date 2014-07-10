@@ -17,14 +17,6 @@
         <item>Distance</item>
     </string-array>
 
-    <!-- OnClickActionDialog Array -->
-    <string-array name="array_action_click_list">
-        <item>Open address in maps</item>
-        <item>Copy address to clipboard</item>
-        <item>Remove from list</item>
-        <item>Do nothing</item>
-    </string-array>
-
     <!-- ListView Strings -->
     <string name="wifi_list_name">Name</string>
     <string name="wifi_list_status">Status</string>
@@ -37,5 +29,16 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_wifi_view">WifiViewActivity</string>
+    
+    <!-- WifiViewActivity Strings -->
+    <string name="title">Title</string>
+    <string name="address">Address</string>
+    <string name="status">Status</string>
+    <string name="facility">Facility</string>
+    <string name="provider">Provider</string>
+    <string name="distance">Distance</string>
+    <string name="open_in_maps">Open in maps</string>
+    <string name="copy">Copy</string>
+    <string name="remove_from_wifis">Remove</string>
 
 </resources>

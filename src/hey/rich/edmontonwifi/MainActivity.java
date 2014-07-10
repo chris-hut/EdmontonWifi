@@ -53,7 +53,6 @@ public class MainActivity extends Activity implements OnNavigationListener,
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view,
 					int position, long id) {
-				Wifi wifi = wifis.get(position);
 				// Format of url is latitude, longitude, title
 				// From: http://stackoverflow.com/a/17973122
 				/*

@@ -23,7 +23,7 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentTop="true"
-            android:text="Title"
+            android:text="@string/title"
 			android:padding="5dp"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -36,7 +36,7 @@
             android:layout_below="@+id/wifi_view_wifi_title"
             android:maxLines="2"
             android:padding="5dp"
-            android:text="Address"
+            android:text="@string/address"
             android:textSize="16sp" />
 
         <TextView
@@ -46,7 +46,7 @@
             android:layout_alignLeft="@+id/wifi_view_wifi_address"
             android:layout_below="@+id/wifi_view_wifi_address"
             android:padding="5dp"
-            android:text="Status"
+            android:text="@string/status"
             android:textSize="16sp" />
 
         <TextView
@@ -56,7 +56,7 @@
             android:layout_alignLeft="@+id/wifi_view_wifi_status"
             android:layout_below="@+id/wifi_view_wifi_status"
             android:padding="5dp"
-            android:text="Facility"
+            android:text="@string/facility"
             android:textSize="16sp" />
 
         <TextView
@@ -66,7 +66,7 @@
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/wifi_view_wifi_facility"
             android:layout_below="@+id/wifi_view_wifi_facility"
-            android:text="Provider"
+            android:text="@string/provider"
             android:textSize="16sp" />
 
         <TextView
@@ -76,7 +76,7 @@
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/wifi_view_wifi_provider"
             android:layout_below="@+id/wifi_view_wifi_provider"
-            android:text="Distance"
+            android:text="@string/distance"
             android:textSize="16sp" />
     </RelativeLayout>
 
@@ -93,7 +93,7 @@
         android:layout_below="@+id/wifi_view_middle_view"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="Open in Maps" />
+        android:text="@string/open_in_maps" />
 
     <Button
         android:id="@+id/wifi_view_wifi_clipboard"
@@ -101,7 +101,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/wifi_view_wifi_maps"
         android:layout_centerHorizontal="true"
-        android:text="Copy" />
+        android:text="@string/copy" />
 
     <Button
         android:id="@+id/wifi_view_wifi_remove"
@@ -109,6 +109,6 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/wifi_view_wifi_clipboard"
         android:layout_centerHorizontal="true"
-        android:text="Remove" />
+        android:text="@string/remove_from_wifis" />
 
 </RelativeLayout>
