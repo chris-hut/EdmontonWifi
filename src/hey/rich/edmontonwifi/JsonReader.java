@@ -1,4 +1,4 @@
-package hey.rich.edmontonwifi;
+package hey.rich.edmontonwifi; 
 
 import java.io.IOException;
 import java.io.InputStream;

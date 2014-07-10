@@ -1,6 +1,5 @@
 package hey.rich.edmontonwifi;
 
-import hey.rich.edmontonwifi.OnClickActionDialogFragment.OnClickActionDialogListener;
 import hey.rich.edmontonwifi.SortWifiListDialogFragment.SortWifiListDialogListener;
 
 import java.util.Collections;
@@ -10,15 +9,11 @@ import java.util.List;
 import android.app.ActionBar.OnNavigationListener;
 import android.app.Activity;
 import android.app.SearchManager;
-import android.content.ClipData;
-import android.content.ClipboardManager;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
-import android.net.Uri;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -27,10 +22,9 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 import android.widget.SearchView;
-import android.widget.Toast;
 
 public class MainActivity extends Activity implements OnNavigationListener,
-		SortWifiListDialogListener, OnClickActionDialogListener {
+		SortWifiListDialogListener {
 
 	private List<Wifi> wifis;
 	private WifiArrayAdapter adapter;
@@ -131,9 +125,6 @@ public class MainActivity extends Activity implements OnNavigationListener,
 		case R.id.menu_sort_wifi_list:
 			showSortListDialog();
 			return false;
-		case R.id.menu_action_on_select:
-			showChooseClickActionDialog();
-			return false;
 		default:
 			return super.onOptionsItemSelected(item);
 		}
@@ -142,11 +133,6 @@ public class MainActivity extends Activity implements OnNavigationListener,
 	private void showSortListDialog() {
 		SortWifiListDialogFragment dialog = new SortWifiListDialogFragment();
 		dialog.show(getFragmentManager(), "SortWifiListDialogFragment");
-	}
-
-	private void showChooseClickActionDialog() {
-		OnClickActionDialogFragment dialog = new OnClickActionDialogFragment();
-		dialog.show(getFragmentManager(), "OnClickActionDialogFragment");
 	}
 
 	@Override
@@ -179,22 +165,6 @@ public class MainActivity extends Activity implements OnNavigationListener,
 		}
 		// Only if we got a non-invalid position we will be here
 		adapter.notifyDataSetChanged();
-	}
-
-	@Override
-	/**Callback from OnClickActionDialog, when clicked, we set our action for when the user clicks a wifi in the list.*/
-	public void onDialogActionClick(int position) {
-		try {
-			actionOnClick = ActionOnClick.values()[position];
-		} catch (ArrayIndexOutOfBoundsException e) {
-			Log.e("EdmontonWifi", "ActionOnClick value was invalid: "
-					+ position);
-			actionOnClick = ActionOnClick.OPEN_IN_MAPS;
-		}
-	}
-
-	public int getActionOnClick() {
-		return actionOnClick.ordinal();
 	}
 
 	public int getSortChoice() {
