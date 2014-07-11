@@ -1,4 +1,4 @@
-package hey.rich.edmontonwifi; 
+package hey.rich.edmontonwifi;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -54,7 +54,7 @@ public class JsonReader {
 
 			JSONArray array = obj.getJSONArray("data");
 			JSONArray value = new JSONArray();
-			for (int i = 0; i < array.length(); i++) {
+			loopThroughWifis: for (int i = 0; i < array.length(); i++) {
 				value = array.getJSONArray(i);
 				id = value.getString(1);
 				name = value.getString(8);
@@ -69,18 +69,25 @@ public class JsonReader {
 					break;
 				case "In Progress":
 					status = Wifi.Status.IN_PROGRESS;
-					break;
+					// break;
 				case "Future":
 					status = Wifi.Status.IN_FUTURE;
-					break;
+					// break;
 				default:
 					status = Wifi.Status.IN_FUTURE;
+					/*
+					 * Until we have some method of filtering Wifis by their
+					 * status, we will not display any IN_PROGRESS or IN_FUTURE
+					 * wifis. Also no one probably cares about them
+					 */
+					continue loopThroughWifis;
 				}
 
 				provider = value.getString(12);
 				location.setLatitude(Double.parseDouble(value.getString(13)));
 				location.setLongitude(Double.parseDouble(value.getString(14)));
-				wifi = new Wifi(id, name,address, facility, status, provider, location);
+				wifi = new Wifi(id, name, address, facility, status, provider,
+						location);
 				wifis.add(wifi);
 			}
 

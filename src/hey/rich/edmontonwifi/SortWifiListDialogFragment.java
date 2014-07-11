@@ -10,8 +10,8 @@ import android.widget.Toast;
 
 public class SortWifiListDialogFragment extends DialogFragment {
 
-	private static final String[] sortList = { "Name", "Address", "Status",
-			"Provider", "Distance" };
+	private static final String[] sortList = { "Name", "Address", "Provider",
+			"Distance" };
 
 	private SortWifiListDialogListener mListener;
 

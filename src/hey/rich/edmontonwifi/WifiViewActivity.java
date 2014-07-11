@@ -21,7 +21,7 @@ public class WifiViewActivity extends Activity {
 	private Wifi wifi;
 
 	// TextViews
-	private TextView titleText, addressText, statusText, facilityText,
+	private TextView titleText, addressText, facilityText,
 			providerText, distanceText;
 
 	@Override
@@ -98,14 +98,12 @@ public class WifiViewActivity extends Activity {
 	private void setupTextViews() {
 		this.titleText = (TextView) findViewById(R.id.wifi_view_wifi_title);
 		this.addressText = (TextView) findViewById(R.id.wifi_view_wifi_address);
-		this.statusText = (TextView) findViewById(R.id.wifi_view_wifi_status);
 		this.facilityText = (TextView) findViewById(R.id.wifi_view_wifi_facility);
 		this.providerText = (TextView) findViewById(R.id.wifi_view_wifi_provider);
 		this.distanceText = (TextView) findViewById(R.id.wifi_view_wifi_distance);
 		
 		this.titleText.setText(wifi.getName());
 		this.addressText.setText(wifi.getAddress());
-		this.statusText.setText(wifi.getStatusString());
 		this.facilityText.setText(wifi.getFacilityString());
 		this.providerText.setText(wifi.getProvider());
 		this.distanceText.setText("Distance: " + wifi.getDistance());
