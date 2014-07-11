@@ -29,14 +29,9 @@ public class MainActivity extends Activity implements OnNavigationListener,
 	private List<Wifi> wifis;
 	private WifiArrayAdapter adapter;
 	private WifiList wifiList;
-	private ActionOnClick actionOnClick;
 	private SharedPreferences prefs;
 	private int sortChoice;
 	private ListView lView;
-
-	private enum ActionOnClick {
-		OPEN_IN_MAPS, COPY_ADDRESS_TO_CLIPBOARD, REMOVE_FROM_LIST, NOTHING
-	}
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -78,8 +73,6 @@ public class MainActivity extends Activity implements OnNavigationListener,
 		prefs = getSharedPreferences("hey.rich.EdmontonWifi",
 				Context.MODE_PRIVATE);
 		// From this beauty: http://stackoverflow.com/a/5878986
-		actionOnClick = ActionOnClick.values()[prefs.getInt("action_on_click",
-				0)];
 		sortChoice = prefs.getInt("sort_choice", 0);
 	}
 
@@ -87,7 +80,6 @@ public class MainActivity extends Activity implements OnNavigationListener,
 	protected void onStop() {
 		super.onStop();
 		Editor edit = prefs.edit();
-		edit.putInt("action_on_click", actionOnClick.ordinal());
 		edit.putInt("sort_choice", sortChoice);
 		edit.apply();
 	}

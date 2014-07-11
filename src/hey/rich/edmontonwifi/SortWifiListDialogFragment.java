@@ -40,8 +40,8 @@ public class SortWifiListDialogFragment extends DialogFragment {
 	public Dialog onCreateDialog(Bundle savedInstanceState) {
 		AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
 		builder.setTitle("Sort By")
-				.setItems(R.array.array_wifi_sort_list,
-						new DialogInterface.OnClickListener() {
+				.setSingleChoiceItems(R.array.array_wifi_sort_list,
+						currentChoice, new DialogInterface.OnClickListener() {
 
 							@Override
 							public void onClick(DialogInterface dialog,
