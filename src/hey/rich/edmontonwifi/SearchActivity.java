@@ -11,7 +11,6 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
-import android.widget.Toast;
 
 public class SearchActivity extends Activity {
 	private List<Wifi> wifis;
@@ -24,7 +23,7 @@ public class SearchActivity extends Activity {
 		setContentView(R.layout.activity_search);
 
 		lView = (ListView) findViewById(R.id.search_activity_listview);
-		
+
 		wifis = new ArrayList<Wifi>(EdmontonWifi.getWifiList(
 				getApplicationContext()).getAllWifis());
 		adapter = new WifiArrayAdapter(this, wifis);
@@ -34,11 +33,11 @@ public class SearchActivity extends Activity {
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view,
 					int position, long id) {
-				Wifi wifi = wifis.get(position);
+				Intent i = new Intent(getApplicationContext(),
+						WifiViewActivity.class);
+				i.putExtra(WifiViewActivity.WIFI_ID, position);
+				startActivity(i);
 
-				Toast.makeText(getApplicationContext(),
-						String.format("Wifi: %s", wifi.getName()),
-						Toast.LENGTH_SHORT).show();
 			}
 		});
 
