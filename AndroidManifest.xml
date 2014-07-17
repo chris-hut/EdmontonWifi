@@ -42,6 +42,11 @@
             android:name="hey.rich.edmontonwifi.WifiViewActivity"
             android:label="@string/title_activity_wifi_view" >
         </activity>
+
+        <provider
+            android:name=".WifiSearchRecentSuggestionsProvider"
+            android:authorities="hey.rich.edmontonwifi.WifiSearchRecentSuggestionsProvider" >
+        </provider>
     </application>
 
 </manifest>

@@ -7,6 +7,7 @@ import android.app.Activity;
 import android.app.SearchManager;
 import android.content.Intent;
 import android.os.Bundle;
+import android.provider.SearchRecentSuggestions;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
@@ -55,6 +56,14 @@ public class SearchActivity extends Activity {
 
 		if (Intent.ACTION_SEARCH.equals(i.getAction())) {
 			String query = i.getStringExtra(SearchManager.QUERY);
+			
+
+			// Save recent search
+			SearchRecentSuggestions suggestions = new SearchRecentSuggestions(this,
+					WifiSearchRecentSuggestionsProvider.AUTHORITY,
+					WifiSearchRecentSuggestionsProvider.MODE);
+			suggestions.saveRecentQuery(query, null);
+			
 			performSearch(query);
 		}
 	}
@@ -68,6 +77,7 @@ public class SearchActivity extends Activity {
 				newWifis.add(w);
 			}
 		}
+
 
 		wifis.clear();
 		wifis.addAll(newWifis);
