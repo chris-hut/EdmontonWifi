@@ -103,7 +103,7 @@ public class MainActivity extends Activity implements OnNavigationListener,
 		searchView.setSearchableInfo(searchManager
 				.getSearchableInfo(getComponentName()));
 		// Don't iconify the widget; expand it by default
-		searchView.setIconifiedByDefault(true);
+		searchView.setIconifiedByDefault(true);;
 		return true;
 	}
 
@@ -116,9 +116,17 @@ public class MainActivity extends Activity implements OnNavigationListener,
 		case R.id.menu_sort_wifi_list:
 			showSortListDialog();
 			return false;
+		case R.id.menu_clear_search_history:
+			clearSearchHistory();
+			return false;
 		default:
 			return super.onOptionsItemSelected(item);
 		}
+	}
+	
+	private void clearSearchHistory(){
+		ClearSearchHistoryDialogFragment dialog = new ClearSearchHistoryDialogFragment();
+		dialog.show(getFragmentManager(), "ClearSearchHistoryDialogFragment");
 	}
 
 	private void showSortListDialog() {

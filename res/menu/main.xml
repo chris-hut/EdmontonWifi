@@ -14,5 +14,10 @@
         android:orderInCategory="200"
         android:showAsAction="never"
         android:title="@string/menu_sort_wifi_list"/>
+    <item
+        android:id="@+id/menu_clear_search_history"
+        android:orderInCategory="300"
+        android:showAsAction="never"
+        android:title="@string/menu_clear_search_history"/>
 
 </menu>

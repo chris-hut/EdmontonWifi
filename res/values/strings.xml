@@ -5,8 +5,8 @@
 
     <!-- Menu Strings -->
     <string name="menu_sort_wifi_list">Sort By</string>
-    <string name="menu_action_on_select">On Select</string>
     <string name="menu_search">Search Wifis</string>
+    <string name="menu_clear_search_history">Clear Search History</string>
 
     <!-- Sort List of Wifi Dialog Array -->
     <string-array name="array_wifi_sort_list">
