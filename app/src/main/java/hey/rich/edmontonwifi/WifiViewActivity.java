@@ -71,7 +71,7 @@ public class WifiViewActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				Toast.makeText(getApplicationContext(),
-						"Copying address to clipbaord", Toast.LENGTH_SHORT)
+						"Copying address to clipboard", Toast.LENGTH_SHORT)
 						.show();
 				ClipboardManager clipboard = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
 				ClipData clip = ClipData.newPlainText("Address to Wifi",
