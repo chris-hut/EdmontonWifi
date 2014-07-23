@@ -9,14 +9,17 @@ import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.location.Location;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
+import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.SearchView;
+import android.widget.Toast;
 
 import java.util.Collections;
 import java.util.Comparator;
@@ -56,7 +59,19 @@ public class MainActivity extends Activity implements OnNavigationListener,
             }
         });
 
+        setupRefreshLocationButton();
+
         updateLocation();
+    }
+
+    private void setupRefreshLocationButton() {
+        ImageButton button = (ImageButton) findViewById(R.id.main_activity_refresh_location_button);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                updateLocation();
+            }
+        });
     }
 
     private void updateLocation() {
@@ -64,6 +79,8 @@ public class MainActivity extends Activity implements OnNavigationListener,
         if (l == null) {
             return;
         }
+        Toast.makeText(this, "Getting location", Toast.LENGTH_SHORT).show();
+
         for (Wifi wifi : wifis) wifi.setDistanceToLocation(l);
         adapter.notifyDataSetChanged();
     }
