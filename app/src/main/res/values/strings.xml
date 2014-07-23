@@ -18,7 +18,7 @@
 
     <!-- ListView Strings -->
     <string name="wifi_list_name">Name</string>
-    <string name="wifi_list_status">Status</string>
+    <string name="wifi_list_distance">Distance</string>
     <string name="wifi_list_address">Address</string>
 
     <!-- Search Strings -->

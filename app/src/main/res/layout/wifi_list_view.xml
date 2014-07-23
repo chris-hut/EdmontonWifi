@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    android:padding="3dip" >
+    android:padding="3dip">
 
     <TextView
         android:id="@+id/wifi_list_name"
@@ -15,21 +15,22 @@
         android:textSize="18sp"
         android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/wifi_list_status"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/wifi_list_name"
-        android:layout_below="@+id/wifi_list_name"
-        android:singleLine="true"
-        android:text="@string/wifi_list_status" />
 
     <TextView
         android:id="@+id/wifi_list_address"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/wifi_list_status"
+        android:layout_below="@+id/wifi_list_name"
         android:singleLine="true"
         android:text="@string/wifi_list_address" />
+
+    <TextView
+        android:id="@+id/wifi_list_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/wifi_list_name"
+        android:layout_below="@+id/wifi_list_address"
+        android:singleLine="true"
+        android:text="@string/wifi_list_distance" />
 
 </RelativeLayout>

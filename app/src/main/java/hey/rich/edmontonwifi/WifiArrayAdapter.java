@@ -20,7 +20,7 @@ public class WifiArrayAdapter extends ArrayAdapter<Wifi> {
 	}
 
 	static class ViewHolder {
-		public TextView name, status, address;
+		public TextView name, distance, address;
 	}
 
 	@Override
@@ -33,7 +33,7 @@ public class WifiArrayAdapter extends ArrayAdapter<Wifi> {
 
 			ViewHolder v = new ViewHolder();
 			v.name = (TextView) rowView.findViewById(R.id.wifi_list_name);
-			v.status = (TextView) rowView.findViewById(R.id.wifi_list_status);
+			v.distance = (TextView) rowView.findViewById(R.id.wifi_list_distance);
 			v.address = (TextView) rowView.findViewById(R.id.wifi_list_address);
 			rowView.setTag(v);
 		}
@@ -41,7 +41,7 @@ public class WifiArrayAdapter extends ArrayAdapter<Wifi> {
 		ViewHolder holder = (ViewHolder) rowView.getTag();
 		Wifi wifi = values.get(position);
 		holder.name.setText(wifi.getName());
-		holder.status.setText("Status: " + wifi.getStatusString());
+		holder.distance.setText("Distance: " + wifi.getDistance());
 		holder.address.setText(wifi.getAddress());
 
 		return rowView;
