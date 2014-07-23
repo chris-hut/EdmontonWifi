@@ -146,13 +146,10 @@ public class MainActivity extends Activity implements OnNavigationListener,
             case 1: // Address
                 Collections.sort(wifis, new AddressComparator());
                 break;
-            case 2: // Status
-                Collections.sort(wifis, new StatusComparator());
-                break;
-            case 3: // Facility
+            case 2: // Facility
                 Collections.sort(wifis, new FacilityComparator());
                 break;
-            case 4: // Distance
+            case 3: // Distance
                 Collections.sort(wifis, new DistanceComparator());
                 break;
             default: // Invalid
