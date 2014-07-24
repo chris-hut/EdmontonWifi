@@ -1,7 +1,6 @@
 package hey.rich.edmontonwifi;
 
 import android.location.Location;
-import android.util.Log;
 
 /**
  * A Wifi object that whose parameters will be filled by the json in
@@ -136,6 +135,24 @@ public class Wifi {
 
     public void setDistanceToLocation(Location l) {
         this.distance = l.distanceTo(this.location);
+    }
+
+    /**
+     * Returns a nicely formatted distance string for the given Wifi
+     * Assumes that the distance to location is already set.
+     */
+    public static String getDistanceString(Wifi w) {
+        double distance = w.getDistance();
+
+        // Return invalid distance
+        if(distance < 0) return "No distance available.";
+        else if(distance < 500){
+            // Return distance in meters
+            return String.format("Distance: %3.0f m", distance);
+        } else { // distance >= 500
+            // return distance in kms
+            return String.format("Distance: %.1f km", distance);
+        }
     }
 
     public double getDistance() {

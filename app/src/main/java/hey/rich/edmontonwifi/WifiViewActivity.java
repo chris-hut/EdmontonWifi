@@ -102,7 +102,7 @@ public class WifiViewActivity extends Activity {
 		addressText.setText(wifi.getAddress());
 		facilityText.setText(wifi.getFacilityString());
 		providerText.setText(wifi.getProvider());
-		distanceText.setText("Distance: " + wifi.getDistance());
+		distanceText.setText(Wifi.getDistanceString(wifi));
 	}
 
 }

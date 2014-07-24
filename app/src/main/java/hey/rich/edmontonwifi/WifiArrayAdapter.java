@@ -41,7 +41,7 @@ public class WifiArrayAdapter extends ArrayAdapter<Wifi> {
 		ViewHolder holder = (ViewHolder) rowView.getTag();
 		Wifi wifi = values.get(position);
 		holder.name.setText(wifi.getName());
-		holder.distance.setText("Distance: " + wifi.getDistance());
+		holder.distance.setText(Wifi.getDistanceString(wifi));
 		holder.address.setText(wifi.getAddress());
 
 		return rowView;
