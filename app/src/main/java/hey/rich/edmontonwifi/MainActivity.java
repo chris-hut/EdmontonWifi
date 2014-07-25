@@ -8,7 +8,6 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.location.Location;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -20,6 +19,9 @@ import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.SearchView;
 import android.widget.Toast;
+
+import com.github.amlcurran.showcaseview.ShowcaseView;
+import com.github.amlcurran.showcaseview.targets.ViewTarget;
 
 import java.util.Collections;
 import java.util.Comparator;
@@ -93,6 +95,16 @@ public class MainActivity extends Activity implements OnNavigationListener,
                 Context.MODE_PRIVATE);
         // From this beauty: http://stackoverflow.com/a/5878986
         sortChoice = prefs.getInt("sort_choice", 0);
+
+        if (prefs.getBoolean("firstrun", true)) {
+            prefs.edit().putBoolean("firstrun", true).apply();
+            new ShowcaseView.Builder(this, true)
+                    .setTarget(new ViewTarget(findViewById(R.id.main_activity_listview)))
+                    .setContentTitle("Select a Wifi")
+                    .setContentText("To get more information about it and to perform actions")
+                    .setStyle(R.style.ShowcaseViewTheme)
+                    .build();
+        }
     }
 
     @Override

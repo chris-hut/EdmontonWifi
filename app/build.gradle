@@ -23,7 +23,12 @@ android {
     }
 }
 
+repositories {
+    mavenCentral()
+}
+
 def var = dependencies {
     compile 'com.android.support:support-v4:20+'
     compile 'com.android.support:appcompat-v7:20.+'
+    compile 'com.github.amlcurran.showcaseview:library:5.0.0'
 }
