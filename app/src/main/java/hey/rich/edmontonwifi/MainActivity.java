@@ -96,8 +96,8 @@ public class MainActivity extends Activity implements OnNavigationListener,
         // From this beauty: http://stackoverflow.com/a/5878986
         sortChoice = prefs.getInt("sort_choice", 0);
 
-        if (prefs.getBoolean("firstrun", true)) {
-            prefs.edit().putBoolean("firstrun", true).apply();
+        if (prefs.getBoolean("firstrun", false)) {
+            prefs.edit().putBoolean("firstrun", false).apply();
             new ShowcaseView.Builder(this, true)
                     .setTarget(new ViewTarget(findViewById(R.id.main_activity_listview)))
                     .setContentTitle("Select a Wifi")

@@ -66,7 +66,7 @@ public class Wifi {
 
         // Set distance to invalid since we don't know what location we want
         // distance from
-        this.distance = -INVALID_DISTANCE;
+        this.distance = INVALID_DISTANCE;
     }
 
     public String getId() {
@@ -151,7 +151,7 @@ public class Wifi {
             return String.format("Distance: %3.0f m", distance);
         } else { // distance >= 500
             // return distance in kms
-            return String.format("Distance: %.1f km", distance);
+            return String.format("Distance: %.1f km", distance/1000);
         }
     }
 
