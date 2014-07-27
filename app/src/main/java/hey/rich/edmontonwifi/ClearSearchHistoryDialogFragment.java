@@ -12,7 +12,7 @@ public class ClearSearchHistoryDialogFragment extends DialogFragment {
 	@Override
 	public Dialog onCreateDialog(Bundle savedInstance) {
 		AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-		builder.setTitle("Clear Search History?")
+		builder.setMessage("Clear Search History?")
 				.setPositiveButton("Yes",
 						new DialogInterface.OnClickListener() {
 

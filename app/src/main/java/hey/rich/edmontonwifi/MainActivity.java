@@ -47,6 +47,7 @@ public class MainActivity extends Activity implements OnNavigationListener,
         WifiList wifiList;
         wifiList = EdmontonWifi.getWifiList(getApplicationContext());
         wifis = wifiList.getAllWifis();
+
         adapter = new WifiArrayAdapter(this, wifis);
         lView.setAdapter(adapter);
 
@@ -64,6 +65,9 @@ public class MainActivity extends Activity implements OnNavigationListener,
         setupRefreshLocationButton();
 
         updateLocation();
+        // By default let's sort by distance
+        Collections.sort(wifis, new DistanceComparator());
+        adapter.notifyDataSetChanged();
     }
 
     private void setupRefreshLocationButton() {
