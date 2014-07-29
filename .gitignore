@@ -60,3 +60,4 @@ proguard/
 *.log
 
 ShowcaseView/*
+library/*
