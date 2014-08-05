@@ -35,7 +35,6 @@
     <string name="provider">Provider</string>
     <string name="distance">Distance</string>
     <string name="open_in_maps">Open in maps</string>
-    <string name="copy">Copy</string>
-    <string name="remove_from_wifis">Remove</string>
+    <string name="copy">Copy Address</string>
 
 </resources>

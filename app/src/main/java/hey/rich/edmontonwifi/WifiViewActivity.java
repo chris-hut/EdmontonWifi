@@ -46,7 +46,6 @@ public class WifiViewActivity extends Activity {
 		// Allocate buttons
 		final Button mapsButton = (Button) findViewById(R.id.wifi_view_wifi_maps);
 		final Button copyButton = (Button) findViewById(R.id.wifi_view_wifi_clipboard);
-		final Button removeButton = (Button) findViewById(R.id.wifi_view_wifi_remove);
 
 		mapsButton.setOnClickListener(new OnClickListener() {
 
@@ -80,15 +79,6 @@ public class WifiViewActivity extends Activity {
 			}
 		});
 
-		removeButton.setOnClickListener(new OnClickListener() {
-
-			@Override
-			public void onClick(View v) {
-				Toast.makeText(getApplicationContext(),
-						"Removing Wifi is not yet implemented",
-						Toast.LENGTH_SHORT).show();
-			}
-		});
 	}
 
 	private void setupTextViews() {

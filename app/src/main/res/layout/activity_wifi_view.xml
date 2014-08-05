@@ -6,15 +6,14 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="hey.rich.edmontonwifi.WifiViewActivity$PlaceholderFragment" >
+    tools:context="hey.rich.edmontonwifi.WifiViewActivity$PlaceholderFragment">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/wifi_view_middle_view"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true" >
+        android:layout_alignParentStart="true">
 
         <TextView
             android:id="@+id/wifi_view_wifi_title"
@@ -68,6 +67,26 @@
             android:padding="5dp"
             android:text="@string/distance"
             android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/wifi_view_wifi_maps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/open_in_maps"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+        <Button
+            android:id="@+id/wifi_view_wifi_clipboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/copy"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
     </RelativeLayout>
 
     <View
@@ -76,29 +95,5 @@
         android:layout_height="0dp"
         android:layout_centerInParent="true" />
 
-    <Button
-        android:id="@+id/wifi_view_wifi_maps"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/wifi_view_middle_view"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="@string/open_in_maps" />
-
-    <Button
-        android:id="@+id/wifi_view_wifi_clipboard"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/wifi_view_wifi_maps"
-        android:layout_centerHorizontal="true"
-        android:text="@string/copy" />
-
-    <Button
-        android:id="@+id/wifi_view_wifi_remove"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/wifi_view_wifi_clipboard"
-        android:layout_centerHorizontal="true"
-        android:text="@string/remove_from_wifis" />
 
 </RelativeLayout>
