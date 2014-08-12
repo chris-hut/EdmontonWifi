@@ -16,6 +16,10 @@
         <item>Distance</item>
     </string-array>
 
+    <!-- Navigation Drawer -->
+    <string name="navigation_drawer_open">open drawer</string>
+    <string name="navigation_drawer_close">close drawer</string>
+
     <!-- ListView Strings -->
     <string name="wifi_list_name">Name</string>
     <string name="wifi_list_distance">Distance</string>
@@ -26,7 +30,7 @@
     <string name="search_label">MainActivitySearch</string>
     <string name="title_activity_search">SearchActivity</string>
     <string name="title_activity_wifi_view">WifiViewActivity</string>
-    
+
     <!-- WifiViewActivity Strings -->
     <string name="title">Title</string>
     <string name="address">Address</string>
@@ -36,5 +40,6 @@
     <string name="distance">Distance</string>
     <string name="open_in_maps">Open in maps</string>
     <string name="copy">Copy Address</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
