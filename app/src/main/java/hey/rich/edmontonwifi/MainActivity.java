@@ -1,7 +1,10 @@
 package hey.rich.edmontonwifi;
 
+import android.app.ActionBar;
 import android.app.ActionBar.OnNavigationListener;
 import android.app.Activity;
+import android.app.Fragment;
+import android.app.FragmentManager;
 import android.app.SearchManager;
 import android.content.Context;
 import android.content.Intent;
@@ -9,10 +12,13 @@ import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.location.Location;
 import android.os.Bundle;
+import android.support.v4.widget.DrawerLayout;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ImageButton;
@@ -30,19 +36,37 @@ import java.util.List;
 import hey.rich.edmontonwifi.SortWifiListDialogFragment.SortWifiListDialogListener;
 
 public class MainActivity extends Activity implements OnNavigationListener,
-        SortWifiListDialogListener {
+        SortWifiListDialogListener, NavigationDrawerFragment.NavigationDrawerCallbacks {
 
     private List<Wifi> wifis;
     private WifiArrayAdapter adapter;
     private SharedPreferences prefs;
     private int sortChoice;
 
+    /**
+     * Fragment managing the behaviors, interactions and presentation of the navigation drawer
+     */
+    private NavigationDrawerFragment mNavigationDrawerFragment;
+
+    /**
+     * Used to store the last screen title. For use in {@link #restoreActionBar()}
+     */
+    private CharSequence mTitle;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ListView lView;
+        mNavigationDrawerFragment = (NavigationDrawerFragment)
+                getFragmentManager().findFragmentById(R.id.navigation_drawer);
+        mTitle = getTitle();
+
+        // setup the drawer
+        mNavigationDrawerFragment.setUp(R.id.navigation_drawer,
+                (DrawerLayout) findViewById(R.id.drawer_layout));
+
+       /* ListView lView;
         lView = (ListView) findViewById(R.id.main_activity_listview);
         WifiList wifiList;
         wifiList = EdmontonWifi.getWifiList(getApplicationContext());
@@ -58,13 +82,12 @@ public class MainActivity extends Activity implements OnNavigationListener,
                 Intent i = new Intent(getApplicationContext(),
                         WifiViewActivity.class);
                 i.putExtra(WifiViewActivity.WIFI_ID, position);
-                if(i.resolveActivity(getPackageManager()) != null){
-                	startActivity(i);
+                if (i.resolveActivity(getPackageManager()) != null) {
+                    startActivity(i);
+                } else {
+                    Toast.makeText(getApplicationContext(), "Error Trying to Open, Try Again Later", Toast.LENGTH_LONG).show();
                 }
-                else{
-                	Toast.makeText(getApplicationContext(), "Error Trying to Open, Try Again Later", Toast.LENGTH_LONG).show();
-                }
-               
+
             }
         });
 
@@ -73,17 +96,47 @@ public class MainActivity extends Activity implements OnNavigationListener,
         updateLocation();
         // By default let's sort by distance
         Collections.sort(wifis, new DistanceComparator());
-        adapter.notifyDataSetChanged();
+        adapter.notifyDataSetChanged();*/
+    }
+
+    @Override
+    public void onNavigationDrawerItemSelected(int position) {
+        // update the main content by replacing fragments
+        FragmentManager fragmentManager = getFragmentManager();
+        fragmentManager.beginTransaction()
+                .replace(R.id.container, PlaceholderFragment.newInstance(position + 1))
+                .commit();
+    }
+
+    public void onSectionAttached(int number) {
+        switch (number) {
+            case 1:
+                mTitle = "Section 1";
+                break;
+            case 2:
+                mTitle = "Section hehee";
+                break;
+            case 3:
+                mTitle = "section oooh";
+                break;
+        }
+    }
+
+    public void restoreActionBar() {
+        ActionBar actionBar = getActionBar();
+        actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_STANDARD);
+        actionBar.setDisplayShowTitleEnabled(true);
+        actionBar.setTitle(mTitle);
     }
 
     private void setupRefreshLocationButton() {
-        ImageButton button = (ImageButton) findViewById(R.id.main_activity_refresh_location_button);
+       /* ImageButton button = (ImageButton) findViewById(R.id.main_activity_refresh_location_button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 updateLocation();
             }
-        });
+        });*/
     }
 
     private void updateLocation() {
@@ -106,7 +159,7 @@ public class MainActivity extends Activity implements OnNavigationListener,
         // From this beauty: http://stackoverflow.com/a/5878986
         sortChoice = prefs.getInt("sort_choice", 0);
 
-        if (prefs.getBoolean("firstrun", false)) {
+        /*if (prefs.getBoolean("firstrun", false)) {
             prefs.edit().putBoolean("firstrun", false).apply();
             new ShowcaseView.Builder(this, true)
                     .setTarget(new ViewTarget(findViewById(R.id.main_activity_listview)))
@@ -114,7 +167,7 @@ public class MainActivity extends Activity implements OnNavigationListener,
                     .setContentText("To get more information about it and to perform actions")
                     .setStyle(R.style.ShowcaseViewTheme)
                     .build();
-        }
+        }*/
     }
 
     @Override
@@ -128,18 +181,23 @@ public class MainActivity extends Activity implements OnNavigationListener,
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inf = getMenuInflater();
-        inf.inflate(R.menu.main, menu);
 
-        // Get the searchview and set the searchable conf
-        SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
-        SearchView searchView = (SearchView) menu.findItem(R.id.menu_search)
-                .getActionView();
-        // Assumes current activity is the searchable activity
-        searchView.setSearchableInfo(searchManager
-                .getSearchableInfo(getComponentName()));
-        // Don't iconify the widget; expand it by default
-        searchView.setIconifiedByDefault(true);
-        return true;
+        if (!mNavigationDrawerFragment.isDrawerOpen()) {
+            inf.inflate(R.menu.main, menu);
+
+            // Get the searchview and set the searchable conf
+            SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
+            SearchView searchView = (SearchView) menu.findItem(R.id.menu_search)
+                    .getActionView();
+            // Assumes current activity is the searchable activity
+            searchView.setSearchableInfo(searchManager
+                    .getSearchableInfo(getComponentName()));
+            // Don't iconify the widget; expand it by default
+            searchView.setIconifiedByDefault(true);
+            restoreActionBar();
+            return true;
+        }
+        return super.onCreateOptionsMenu(menu);
     }
 
     @Override
@@ -286,4 +344,44 @@ public class MainActivity extends Activity implements OnNavigationListener,
         }
     }
 
+
+    /**
+     * A placeholder fragment containing a simple view
+     */
+    public static class PlaceholderFragment extends Fragment {
+        /**
+         * The fragment argument representing the section number for this
+         * fragment.
+         */
+        private static final String ARG_SECTION_NUMBER = "section_number";
+
+        /**
+         * Returns a new instance of this fragment for the given section
+         * number.
+         */
+        public static PlaceholderFragment newInstance(int sectionNumber) {
+            PlaceholderFragment fragment = new PlaceholderFragment();
+            Bundle args = new Bundle();
+            args.putInt(ARG_SECTION_NUMBER, sectionNumber);
+            fragment.setArguments(args);
+            return fragment;
+        }
+
+        public PlaceholderFragment() {
+        }
+
+        @Override
+        public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                                 Bundle savedInstanceState) {
+            View rootView = inflater.inflate(R.layout.fragment_main, container, false);
+            return rootView;
+        }
+
+        @Override
+        public void onAttach(Activity activity) {
+            super.onAttach(activity);
+            ((MainActivity) activity).onSectionAttached(
+                    getArguments().getInt(ARG_SECTION_NUMBER));
+        }
+    }
 }
