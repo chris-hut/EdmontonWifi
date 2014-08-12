@@ -60,7 +60,12 @@ public class WifiViewActivity extends Activity {
 						.parse(String.format(
 								"http://maps.google.com/maps?q=%s",
 								wifi.getAddress())));
-				startActivity(i);
+				if(i.resolveActivity(getPackageManager()) != null){
+					startActivity(i);
+				}
+				else{
+					Toast.makeText(getApplicationContext(), "Server Error, Try Again Later", Toast.LENGTH_LONG).show();
+				}
 
 			}
 		});
