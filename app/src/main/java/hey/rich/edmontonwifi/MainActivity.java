@@ -58,7 +58,13 @@ public class MainActivity extends Activity implements OnNavigationListener,
                 Intent i = new Intent(getApplicationContext(),
                         WifiViewActivity.class);
                 i.putExtra(WifiViewActivity.WIFI_ID, position);
-                startActivity(i);
+                if(i.resolveActivity(getPackageManager()) != null){
+                	startActivity(i);
+                }
+                else{
+                	Toast.makeText(getApplicationContext(), "Error Trying to Open, Try Again Later", Toast.LENGTH_LONG).show();
+                }
+               
             }
         });
 
