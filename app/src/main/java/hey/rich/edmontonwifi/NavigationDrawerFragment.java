@@ -3,6 +3,7 @@ package hey.rich.edmontonwifi;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.app.Fragment;
+import android.app.FragmentManager;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.os.Bundle;
@@ -21,14 +22,6 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 
-/**
- * A simple {@link Fragment} subclass.
- * Activities that contain this fragment must implement the
- * {@link NavigationDrawerFragment.OnFragmentInteractionListener} interface
- * to handle interaction events.
- * Use the {@link NavigationDrawerFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class NavigationDrawerFragment extends Fragment {
 
     /**
@@ -65,7 +58,7 @@ public class NavigationDrawerFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        // Read in the flag indicating whether or not the user has demonstrated awereness of the
+        // Read in the flag indicating whether or not the user has demonstrated awareness of the
         // drawer.
         SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(getActivity());
         mUserLearnedDrawer = sp.getBoolean(PREF_USER_LEARNED_DRAWER, false);
@@ -189,16 +182,26 @@ public class NavigationDrawerFragment extends Fragment {
     }
 
     private void selectItem(int position) {
-        mCurrentSelectedPosition = position;
-        if (mDrawerListView != null) {
-            mDrawerListView.setItemChecked(position, true);
+
+        // Create a new fragment
+        Fragment fragment = null;
+
+        switch (position) {
+            case 0: // Wifi
+                fragment = new WifiFragment();
+                break;
+            default:
+
+                break;
         }
-        if (mDrawerLayout != null) {
-            mDrawerLayout.closeDrawer(mFragmentContainerView);
-        }
-        if (mCallbacks != null) {
-            mCallbacks.onNavigationDrawerItemSelected(position);
-        }
+
+        // Insert the fragment by replacing any existing fragment
+        FragmentManager fragmentManager = getFragmentManager();
+        fragmentManager.beginTransaction()
+                .replace(R.id.container, fragment)
+                .commit();
+
+        // Highlight the selected item, update the title, and close the drawer
     }
 
     @Override
