@@ -19,6 +19,9 @@
     <!-- Navigation Drawer -->
     <string name="navigation_drawer_open">open drawer</string>
     <string name="navigation_drawer_close">close drawer</string>
+    <string-array name="navigation_drawer_tabs">
+        <item>Wifi</item>
+    </string-array>
 
     <!-- ListView Strings -->
     <string name="wifi_list_name">Name</string>

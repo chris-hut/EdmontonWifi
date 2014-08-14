@@ -3,43 +3,25 @@ package hey.rich.edmontonwifi;
 import android.app.ActionBar;
 import android.app.ActionBar.OnNavigationListener;
 import android.app.Activity;
-import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.SearchManager;
 import android.content.Context;
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
-import android.location.Location;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemClickListener;
-import android.widget.ImageButton;
-import android.widget.ListView;
 import android.widget.SearchView;
-import android.widget.Toast;
 
-import com.github.amlcurran.showcaseview.ShowcaseView;
-import com.github.amlcurran.showcaseview.targets.ViewTarget;
-
-import java.util.Collections;
 import java.util.Comparator;
-import java.util.List;
 
 import hey.rich.edmontonwifi.SortWifiListDialogFragment.SortWifiListDialogListener;
 
 public class MainActivity extends Activity implements OnNavigationListener,
         SortWifiListDialogListener, NavigationDrawerFragment.NavigationDrawerCallbacks {
 
-    private List<Wifi> wifis;
-    private WifiArrayAdapter adapter;
     private SharedPreferences prefs;
     private int sortChoice;
 
@@ -65,47 +47,11 @@ public class MainActivity extends Activity implements OnNavigationListener,
         // setup the drawer
         mNavigationDrawerFragment.setUp(R.id.navigation_drawer,
                 (DrawerLayout) findViewById(R.id.drawer_layout));
-
-       /* ListView lView;
-        lView = (ListView) findViewById(R.id.main_activity_listview);
-        WifiList wifiList;
-        wifiList = EdmontonWifi.getWifiList(getApplicationContext());
-        wifis = wifiList.getAllWifis();
-
-        adapter = new WifiArrayAdapter(this, wifis);
-        lView.setAdapter(adapter);
-
-        lView.setOnItemClickListener(new OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view,
-                                    int position, long id) {
-                Intent i = new Intent(getApplicationContext(),
-                        WifiViewActivity.class);
-                i.putExtra(WifiViewActivity.WIFI_ID, position);
-                if (i.resolveActivity(getPackageManager()) != null) {
-                    startActivity(i);
-                } else {
-                    Toast.makeText(getApplicationContext(), "Error Trying to Open, Try Again Later", Toast.LENGTH_LONG).show();
-                }
-
-            }
-        });
-
-        setupRefreshLocationButton();
-
-        updateLocation();
-        // By default let's sort by distance
-        Collections.sort(wifis, new DistanceComparator());
-        adapter.notifyDataSetChanged();*/
     }
 
     @Override
     public void onNavigationDrawerItemSelected(int position) {
         // update the main content by replacing fragments
-        FragmentManager fragmentManager = getFragmentManager();
-        fragmentManager.beginTransaction()
-                .replace(R.id.container, PlaceholderFragment.newInstance(position + 1))
-                .commit();
     }
 
     public void onSectionAttached(int number) {
@@ -127,27 +73,6 @@ public class MainActivity extends Activity implements OnNavigationListener,
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_STANDARD);
         actionBar.setDisplayShowTitleEnabled(true);
         actionBar.setTitle(mTitle);
-    }
-
-    private void setupRefreshLocationButton() {
-       /* ImageButton button = (ImageButton) findViewById(R.id.main_activity_refresh_location_button);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                updateLocation();
-            }
-        });*/
-    }
-
-    private void updateLocation() {
-        Location l = EdmontonWifi.getLocation(this);
-        if (l == null) {
-            return;
-        }
-        Toast.makeText(this, "Getting location", Toast.LENGTH_SHORT).show();
-
-        for (Wifi wifi : wifis) wifi.setDistanceToLocation(l);
-        adapter.notifyDataSetChanged();
     }
 
     @Override
@@ -185,6 +110,7 @@ public class MainActivity extends Activity implements OnNavigationListener,
         if (!mNavigationDrawerFragment.isDrawerOpen()) {
             inf.inflate(R.menu.main, menu);
 
+            // TODO: Check what fragment is displayed and display the correct settings
             // Get the searchview and set the searchable conf
             SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
             SearchView searchView = (SearchView) menu.findItem(R.id.menu_search)
@@ -230,12 +156,13 @@ public class MainActivity extends Activity implements OnNavigationListener,
     @Override
     /** Callback from SortWifiListDialog, when called, sort our list of wifis by the choice selected.*/
     public void onDialogClick(int position) {
+        // TODO: Let the fragment know to sort dialog in a certain way
         /*
          * User clicked a position From the string-array:
-		 * R.array.array_sort_wifi_list Order is: Name, Address, Status,
+		 * R.array.array_sort_wifi_list Order is: Name, Address,
 		 * Facility, Distance
 		 */
-        sortChoice = position;
+      /*  sortChoice = position;
         switch (position) {
             case 0: // Name
                 Collections.sort(wifis, new NameComparator());
@@ -253,7 +180,7 @@ public class MainActivity extends Activity implements OnNavigationListener,
                 return;
         }
         // Only if we got a non-invalid position we will be here
-        adapter.notifyDataSetChanged();
+        adapter.notifyDataSetChanged();*/
     }
 
     public int getSortChoice() {
@@ -344,44 +271,4 @@ public class MainActivity extends Activity implements OnNavigationListener,
         }
     }
 
-
-    /**
-     * A placeholder fragment containing a simple view
-     */
-    public static class PlaceholderFragment extends Fragment {
-        /**
-         * The fragment argument representing the section number for this
-         * fragment.
-         */
-        private static final String ARG_SECTION_NUMBER = "section_number";
-
-        /**
-         * Returns a new instance of this fragment for the given section
-         * number.
-         */
-        public static PlaceholderFragment newInstance(int sectionNumber) {
-            PlaceholderFragment fragment = new PlaceholderFragment();
-            Bundle args = new Bundle();
-            args.putInt(ARG_SECTION_NUMBER, sectionNumber);
-            fragment.setArguments(args);
-            return fragment;
-        }
-
-        public PlaceholderFragment() {
-        }
-
-        @Override
-        public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                                 Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_main, container, false);
-            return rootView;
-        }
-
-        @Override
-        public void onAttach(Activity activity) {
-            super.onAttach(activity);
-            ((MainActivity) activity).onSectionAttached(
-                    getArguments().getInt(ARG_SECTION_NUMBER));
-        }
-    }
 }

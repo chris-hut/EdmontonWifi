@@ -1,6 +1,5 @@
 package hey.rich.edmontonwifi;
 
-import android.app.ActionBar;
 import android.app.Fragment;
 import android.content.Context;
 import android.content.Intent;
@@ -8,8 +7,6 @@ import android.content.SharedPreferences;
 import android.location.Location;
 import android.os.Bundle;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -27,12 +24,13 @@ import java.util.List;
 /**
  * Created by chris on 12/08/14.
  */
-public class WifiFragment extends Fragment implements SortWifiListDialogFragment.SortWifiListDialogListener, ActionBar.OnNavigationListener {
+public class WifiFragment extends Fragment implements SortWifiListDialogFragment.SortWifiListDialogListener {
 
     private List<Wifi> wifis;
     private WifiArrayAdapter adapter;
     private SharedPreferences prefs;
     private int sortChoice;
+    private boolean navigationDrawerOpen;
 
     public WifiFragment() {
 
@@ -43,6 +41,7 @@ public class WifiFragment extends Fragment implements SortWifiListDialogFragment
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_wifi, container, false);
 
+        setHasOptionsMenu(true);
         setupList(rootView);
 
         getActivity().setTitle("Wifi");
@@ -76,8 +75,6 @@ public class WifiFragment extends Fragment implements SortWifiListDialogFragment
         setupRefreshLocationButton(v);
 
         updateLocation();
-
-        // By Default let's sort by distance
 
         // By default let's sort by distance
         Collections.sort(wifis, new DistanceComparator());
@@ -126,7 +123,6 @@ public class WifiFragment extends Fragment implements SortWifiListDialogFragment
         }
     }
 
-
     @Override
     public void onStop() {
         super.onStop();
@@ -135,53 +131,16 @@ public class WifiFragment extends Fragment implements SortWifiListDialogFragment
         edit.apply();
     }
 
-    //@Override
-    public boolean onCreateOptionsMenu(Menu menu) {
+    /**
+     * Used to compare wifis by name their name in alphabetical order
+     */
+    public class NameComparator implements Comparator<Wifi> {
 
-        // TODO: Make a menu
-       /* MenuInflater inf = getMenuInflater();
-        inf.inflate(R.menu.main, menu);
+        @Override
+        public int compare(Wifi w1, Wifi w2) {
+            return w1.getName().compareTo(w2.getName());
+        }
 
-        // Get the searchview and set the searchable conf
-        SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
-        SearchView searchView = (SearchView) menu.findItem(R.id.menu_search)
-                .getActionView();
-        // Assumes current activity is the searchable activity
-        searchView.setSearchableInfo(searchManager
-                .getSearchableInfo(getComponentName()));
-        // Don't iconify the widget; expand it by default
-        searchView.setIconifiedByDefault(true);
-        return true;*/
-        return false;
-    }
-
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-      /*  switch (item.getItemId()) {
-            case R.id.menu_sort_wifi_list:
-                showSortListDialog();
-                return false;
-            case R.id.menu_clear_search_history:
-                clearSearchHistory();
-                return false;
-            default:
-                return super.onOptionsItemSelected(item);
-        */
-        return super.onOptionsItemSelected(item);
-    }
-
-    private void clearSearchHistory() {
-        ClearSearchHistoryDialogFragment dialog = new ClearSearchHistoryDialogFragment();
-        dialog.show(getFragmentManager(), "ClearSearchHistoryDialogFragment");
-    }
-
-    private void showSortListDialog() {
-        SortWifiListDialogFragment dialog = new SortWifiListDialogFragment();
-        dialog.show(getFragmentManager(), "SortWifiListDialogFragment");
     }
 
     @Override
@@ -189,7 +148,7 @@ public class WifiFragment extends Fragment implements SortWifiListDialogFragment
     public void onDialogClick(int position) {
         /*
          * User clicked a position From the string-array:
-		 * R.array.array_sort_wifi_list Order is: Name, Address, Status,
+		 * R.array.array_sort_wifi_list Order is: Name, Address,
 		 * Facility, Distance
 		 */
         sortChoice = position;
@@ -213,33 +172,14 @@ public class WifiFragment extends Fragment implements SortWifiListDialogFragment
         adapter.notifyDataSetChanged();
     }
 
-    public int getSortChoice() {
-        return sortChoice;
+    private void clearSearchHistory() {
+        ClearSearchHistoryDialogFragment dialog = new ClearSearchHistoryDialogFragment();
+        dialog.show(getFragmentManager(), "ClearSearchHistoryDialogFragment");
     }
 
-    @Override
-    public boolean onNavigationItemSelected(int position, long id) {
-        // TODO: Make comparators and sort list
-        switch (position) {
-            case 1: // Name
-                return true;
-            case 2: // Status
-                return true;
-            default: // Unknown
-                return false;
-        }
-    }
-
-    /**
-     * Used to compare wifis by name their name in alphabetical order
-     */
-    public class NameComparator implements Comparator<Wifi> {
-
-        @Override
-        public int compare(Wifi w1, Wifi w2) {
-            return w1.getName().compareTo(w2.getName());
-        }
-
+    private void showSortListDialog() {
+        SortWifiListDialogFragment dialog = new SortWifiListDialogFragment();
+        dialog.show(getFragmentManager(), "SortWifiListDialogFragment");
     }
 
     /**
