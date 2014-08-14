@@ -3,6 +3,7 @@ package hey.rich.edmontonwifi;
 import android.app.ActionBar;
 import android.app.ActionBar.OnNavigationListener;
 import android.app.Activity;
+import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.SearchManager;
 import android.content.Context;
@@ -10,9 +11,12 @@ import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.SearchView;
 
 import java.util.Comparator;
@@ -270,5 +274,4 @@ public class MainActivity extends Activity implements OnNavigationListener,
             }
         }
     }
-
 }
