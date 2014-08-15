@@ -51,7 +51,6 @@ public class MainActivity extends Activity implements OnNavigationListener,
 
         mNavigationDrawerFragment = (NavigationDrawerFragment)
                 getFragmentManager().findFragmentById(R.id.navigation_drawer);
-        mTitle = getTitle();
 
         // setup the drawer
         mNavigationDrawerFragment.setUp(R.id.navigation_drawer,
@@ -61,24 +60,11 @@ public class MainActivity extends Activity implements OnNavigationListener,
     @Override
     public void onNavigationDrawerItemSelected(int position) {
         currentFragment = position;
-    }
-
-    public void onSectionAttached(int number) {
-        String[] title = getResources().getStringArray(R.array.navigation_drawer_tabs);
         try {
-            mTitle = title[number];
+            mTitle = getResources().getStringArray(R.array.navigation_drawer_tabs)[position];
         } catch (ArrayIndexOutOfBoundsException e) {
-            Log.e(TAG, "Got invalid Drawer number");
-        }
-
-        // Do something with the settings here?
-        switch (number) {
-            case 1:
-                break;
-            case 2:
-                break;
-            default: // This probably isn't the best
-                break;
+            Log.e(TAG, "Got invalid navigation drawer tab");
+            mTitle = getTitle();
         }
     }
 
@@ -134,11 +120,12 @@ public class MainActivity extends Activity implements OnNavigationListener,
                             .getSearchableInfo(getComponentName()));
                     // Don't iconify the widget; expand it by default
                     searchView.setIconifiedByDefault(true);
-                    restoreActionBar();
+
                     break;
                 case 1: // Construction menu
                     break;
             }
+            restoreActionBar();
             return true;
         }
         return super.onCreateOptionsMenu(menu);
