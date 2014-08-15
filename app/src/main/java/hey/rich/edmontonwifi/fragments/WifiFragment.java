@@ -18,7 +18,6 @@ import com.github.amlcurran.showcaseview.ShowcaseView;
 import com.github.amlcurran.showcaseview.targets.ViewTarget;
 
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 
 import hey.rich.edmontonwifi.EdmontonWifi;
@@ -27,6 +26,7 @@ import hey.rich.edmontonwifi.Objects.WifiList;
 import hey.rich.edmontonwifi.R;
 import hey.rich.edmontonwifi.activities.WifiViewActivity;
 import hey.rich.edmontonwifi.adapters.WifiArrayAdapter;
+import hey.rich.edmontonwifi.utils.Sorters;
 
 /**
  * Created by chris on 12/08/14.
@@ -83,7 +83,7 @@ public class WifiFragment extends Fragment {
         updateLocation();
 
         // By default let's sort by distance
-        Collections.sort(wifis, new DistanceComparator());
+        Collections.sort(wifis, new Sorters.DistanceComparator());
         adapter.notifyDataSetChanged();
     }
 
@@ -106,6 +106,31 @@ public class WifiFragment extends Fragment {
 
         for (Wifi wifi : wifis) wifi.setDistanceToLocation(l);
 
+    }
+
+    public void sortWifisBy(int position) {
+        /*
+         * User clicked a position From the string-array:
+		 * R.array.array_sort_wifi_list Order is: Name, Address,
+		 * Facility, Distance
+		 */
+        switch (position) {
+            case 0: // Name
+                Collections.sort(wifis, new Sorters.NameComparator());
+                break;
+            case 1: // Address
+                Collections.sort(wifis, new Sorters.AddressComparator());
+                break;
+            case 2: // Facility
+                Collections.sort(wifis, new Sorters.FacilityComparator());
+                break;
+            case 3: // Distance
+                Collections.sort(wifis, new Sorters.DistanceComparator());
+                break;
+            default: // Invalid
+                return;
+        }
+        adapter.notifyDataSetChanged();
     }
 
     @Override
@@ -136,26 +161,5 @@ public class WifiFragment extends Fragment {
         edit.apply();
     }
 
-    public class DistanceComparator implements Comparator<Wifi> {
-        @Override
-        public int compare(Wifi w1, Wifi w2) {
-            double d1 = w1.getDistance();
-            double d2 = w2.getDistance();
-
-            if (d1 == d2) {
-                return 0;
-            } else if (d1 != Wifi.INVALID_DISTANCE
-                    && d2 == Wifi.INVALID_DISTANCE) {
-                // D2 is invalid so d1 must be closer
-                return -1;
-            } else if (d1 == Wifi.INVALID_DISTANCE
-                    && d2 != Wifi.INVALID_DISTANCE) {
-                // D1 is invalid so d2 must be closer
-                return 1;
-            } else {
-                return (int) (d1 - d2);
-            }
-        }
-    }
 
 }

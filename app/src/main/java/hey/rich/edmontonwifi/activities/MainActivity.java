@@ -1,7 +1,6 @@
 package hey.rich.edmontonwifi.activities;
 
 import android.app.ActionBar;
-import android.app.ActionBar.OnNavigationListener;
 import android.app.Activity;
 import android.app.SearchManager;
 import android.content.Context;
@@ -15,16 +14,16 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.SearchView;
 
-import java.util.Comparator;
+import java.util.Collections;
 
-import hey.rich.edmontonwifi.Objects.Wifi;
 import hey.rich.edmontonwifi.R;
 import hey.rich.edmontonwifi.fragments.ClearSearchHistoryDialogFragment;
 import hey.rich.edmontonwifi.fragments.NavigationDrawerFragment;
 import hey.rich.edmontonwifi.fragments.SortWifiListDialogFragment;
 import hey.rich.edmontonwifi.fragments.SortWifiListDialogFragment.SortWifiListDialogListener;
+import hey.rich.edmontonwifi.fragments.WifiFragment;
 
-public class MainActivity extends Activity implements OnNavigationListener,
+public class MainActivity extends Activity implements
         SortWifiListDialogListener, NavigationDrawerFragment.NavigationDrawerCallbacks {
 
     private static final String TAG = MainActivity.class.getName();
@@ -162,117 +161,20 @@ public class MainActivity extends Activity implements OnNavigationListener,
     /** Callback from SortWifiListDialog, when called, sort our list of wifis by the choice selected.*/
     public void onDialogClick(int position) {
         // TODO: Let the fragment know to sort dialog in a certain way
-        /*
-         * User clicked a position From the string-array:
-		 * R.array.array_sort_wifi_list Order is: Name, Address,
-		 * Facility, Distance
-		 */
-      /*  sortChoice = position;
-        switch (position) {
-            case 0: // Name
-                Collections.sort(wifis, new NameComparator());
-                break;
-            case 1: // Address
-                Collections.sort(wifis, new AddressComparator());
-                break;
-            case 2: // Facility
-                Collections.sort(wifis, new FacilityComparator());
-                break;
-            case 3: // Distance
-                Collections.sort(wifis, new DistanceComparator());
-                break;
-            default: // Invalid
-                return;
+
+
+        // Temporary fix until Sorting is moved somewhere else
+        WifiFragment fragment = (WifiFragment) getFragmentManager().findFragmentById(R.id.wifi_fragment);
+        if(fragment != null){
+            fragment.sortWifisBy(position);
+        } else {
+            // Dev doc's say this would happen if we're in a one-pane layout and WifiFragment isn't
+            // the foreground fragment
         }
-        // Only if we got a non-invalid position we will be here
-        adapter.notifyDataSetChanged();*/
     }
 
     public int getSortChoice() {
         return sortChoice;
     }
 
-    @Override
-    public boolean onNavigationItemSelected(int position, long id) {
-        // TODO: Make comparators and sort list
-        switch (position) {
-            case 1: // Name
-                return true;
-            case 2: // Status
-                return true;
-            default: // Unknown
-                return false;
-        }
-    }
-
-    /**
-     * Used to compare wifis by name their name in alphabetical order
-     */
-    public class NameComparator implements Comparator<Wifi> {
-
-        @Override
-        public int compare(Wifi w1, Wifi w2) {
-            return w1.getName().compareTo(w2.getName());
-        }
-
-    }
-
-    /**
-     * Used to compare wifis by their address in alphabetical order
-     */
-    public class AddressComparator implements Comparator<Wifi> {
-
-        @Override
-        public int compare(Wifi w1, Wifi w2) {
-            return w1.getAddress().compareTo(w2.getAddress());
-        }
-    }
-
-    /**
-     * Used to compare wifis by their Status. This comparator will compare the
-     * wifis in alphabetical order.
-     * <p/>
-     * The order is: ACTIVE, IN_PROGRESS, IN_FUTURE
-     */
-    public class StatusComparator implements Comparator<Wifi> {
-        @Override
-        public int compare(Wifi w1, Wifi w2) {
-            return w1.getStatusString().compareTo(w2.getStatusString());
-        }
-    }
-
-    /**
-     * Used to compare wifis by their facility type. This comparator will
-     * compare the wifis in alphabetical order.
-     * <p/>
-     * The order is: CITY, TRANSIT
-     */
-    public class FacilityComparator implements Comparator<Wifi> {
-        @Override
-        public int compare(Wifi w1, Wifi w2) {
-            return w1.getProvider().compareTo(w2.getProvider());
-        }
-    }
-
-    public class DistanceComparator implements Comparator<Wifi> {
-        @Override
-        public int compare(Wifi w1, Wifi w2) {
-            double d1 = w1.getDistance();
-            double d2 = w2.getDistance();
-
-            if (d1 == d2) {
-                return 0;
-            } else if (d1 != Wifi.INVALID_DISTANCE
-                    && d2 == Wifi.INVALID_DISTANCE) {
-                // D2 is invalid so d1 must be closer
-                return -1;
-            } else if (d1 == Wifi.INVALID_DISTANCE
-                    && d2 != Wifi.INVALID_DISTANCE) {
-                // D1 is invalid so d2 must be closer
-                return 1;
-            } else {
-                return (int) (d1 - d2);
-            }
-        }
-    }
 }

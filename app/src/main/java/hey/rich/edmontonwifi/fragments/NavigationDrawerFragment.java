@@ -210,7 +210,7 @@ public class NavigationDrawerFragment extends Fragment {
         // Insert the fragment by replacing any existing fragment
         FragmentManager fragmentManager = getFragmentManager();
         fragmentManager.beginTransaction()
-                .replace(R.id.container, fragment)
+                .replace(R.id.wifi_fragment, fragment)
                 .commit();
 
         // Highlight the selected item, update the title, and close the drawer
