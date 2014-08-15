@@ -1,5 +1,6 @@
 package hey.rich.edmontonwifi.fragments;
 
+import android.app.Activity;
 import android.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -7,15 +8,18 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import hey.rich.edmontonwifi.R;
+import hey.rich.edmontonwifi.activities.MainActivity;
 
 /**
  * Created by chris on 14/08/14.
  */
 public class ConstructionFragment extends Fragment {
 
+
     public ConstructionFragment() {
 
     }
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -23,4 +27,5 @@ public class ConstructionFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_construction, container, false);
         return rootView;
     }
+
 }

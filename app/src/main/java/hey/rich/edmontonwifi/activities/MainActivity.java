@@ -9,6 +9,7 @@ import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -16,15 +17,17 @@ import android.widget.SearchView;
 
 import java.util.Comparator;
 
+import hey.rich.edmontonwifi.Objects.Wifi;
+import hey.rich.edmontonwifi.R;
 import hey.rich.edmontonwifi.fragments.ClearSearchHistoryDialogFragment;
 import hey.rich.edmontonwifi.fragments.NavigationDrawerFragment;
 import hey.rich.edmontonwifi.fragments.SortWifiListDialogFragment;
 import hey.rich.edmontonwifi.fragments.SortWifiListDialogFragment.SortWifiListDialogListener;
-import hey.rich.edmontonwifi.R;
-import hey.rich.edmontonwifi.Objects.Wifi;
 
 public class MainActivity extends Activity implements OnNavigationListener,
         SortWifiListDialogListener, NavigationDrawerFragment.NavigationDrawerCallbacks {
+
+    private static final String TAG = MainActivity.class.getName();
 
     private SharedPreferences prefs;
     private int sortChoice;
@@ -38,6 +41,8 @@ public class MainActivity extends Activity implements OnNavigationListener,
      * Used to store the last screen title. For use in {@link #restoreActionBar()}
      */
     private CharSequence mTitle;
+
+    private int currentFragment = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,19 +60,24 @@ public class MainActivity extends Activity implements OnNavigationListener,
 
     @Override
     public void onNavigationDrawerItemSelected(int position) {
-        // update the main content by replacing fragments
+        currentFragment = position;
     }
 
     public void onSectionAttached(int number) {
+        String[] title = getResources().getStringArray(R.array.navigation_drawer_tabs);
+        try {
+            mTitle = title[number];
+        } catch (ArrayIndexOutOfBoundsException e) {
+            Log.e(TAG, "Got invalid Drawer number");
+        }
+
+        // Do something with the settings here?
         switch (number) {
             case 1:
-                mTitle = "Section 1";
                 break;
             case 2:
-                mTitle = "Section hehee";
                 break;
-            case 3:
-                mTitle = "section oooh";
+            default: // This probably isn't the best
                 break;
         }
     }
@@ -112,19 +122,23 @@ public class MainActivity extends Activity implements OnNavigationListener,
         MenuInflater inf = getMenuInflater();
 
         if (!mNavigationDrawerFragment.isDrawerOpen()) {
-            inf.inflate(R.menu.main, menu);
-
-            // TODO: Check what fragment is displayed and display the correct settings
-            // Get the searchview and set the searchable conf
-            SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
-            SearchView searchView = (SearchView) menu.findItem(R.id.menu_search)
-                    .getActionView();
-            // Assumes current activity is the searchable activity
-            searchView.setSearchableInfo(searchManager
-                    .getSearchableInfo(getComponentName()));
-            // Don't iconify the widget; expand it by default
-            searchView.setIconifiedByDefault(true);
-            restoreActionBar();
+            switch (currentFragment) {
+                case 0: // Wifi menu
+                    inf.inflate(R.menu.main, menu);
+                    // Get the searchview and set the searchable conf
+                    SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
+                    SearchView searchView = (SearchView) menu.findItem(R.id.menu_search)
+                            .getActionView();
+                    // Assumes current activity is the searchable activity
+                    searchView.setSearchableInfo(searchManager
+                            .getSearchableInfo(getComponentName()));
+                    // Don't iconify the widget; expand it by default
+                    searchView.setIconifiedByDefault(true);
+                    restoreActionBar();
+                    break;
+                case 1: // Construction menu
+                    break;
+            }
             return true;
         }
         return super.onCreateOptionsMenu(menu);

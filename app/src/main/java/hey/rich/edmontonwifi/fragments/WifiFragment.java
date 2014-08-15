@@ -22,16 +22,17 @@ import java.util.Comparator;
 import java.util.List;
 
 import hey.rich.edmontonwifi.EdmontonWifi;
-import hey.rich.edmontonwifi.R;
 import hey.rich.edmontonwifi.Objects.Wifi;
-import hey.rich.edmontonwifi.adapters.WifiArrayAdapter;
 import hey.rich.edmontonwifi.Objects.WifiList;
+import hey.rich.edmontonwifi.R;
 import hey.rich.edmontonwifi.activities.WifiViewActivity;
+import hey.rich.edmontonwifi.adapters.WifiArrayAdapter;
 
 /**
  * Created by chris on 12/08/14.
  */
 public class WifiFragment extends Fragment {
+
 
     private List<Wifi> wifis;
     private WifiArrayAdapter adapter;

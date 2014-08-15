@@ -42,7 +42,6 @@ public class NavigationDrawerFragment extends Fragment {
     private NavigationDrawerCallbacks mCallbacks;
 
     private ActionBarDrawerToggle mDrawerToggle;
-
     private DrawerLayout mDrawerLayout;
     private ListView mDrawerListView;
     private View mFragmentContainerView;
@@ -121,7 +120,7 @@ public class NavigationDrawerFragment extends Fragment {
         mDrawerLayout.setDrawerShadow(R.drawable.drawer_shadow, GravityCompat.START);
         // set up the drawer's list view with items and click listener
 
-        ActionBar actionBar = getActionBar();
+        final ActionBar actionBar = getActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setHomeButtonEnabled(true);
 
@@ -140,7 +139,6 @@ public class NavigationDrawerFragment extends Fragment {
                 if (!isAdded()) {
                     return;
                 }
-
                 getActivity().invalidateOptionsMenu(); // calls onPrepareOptionsMenu()
             }
 
@@ -183,7 +181,19 @@ public class NavigationDrawerFragment extends Fragment {
 
     private void selectItem(int position) {
 
-        // Create a new fragment
+        mCurrentSelectedPosition = position;
+
+        if(mDrawerListView != null){
+            mDrawerListView.setItemChecked(position, true);
+        }
+        if (mDrawerLayout != null){
+            mDrawerLayout.closeDrawer(mFragmentContainerView);
+        }
+        if (mCallbacks != null){
+            mCallbacks.onNavigationDrawerItemSelected(position);
+        }
+
+        // Create a new fragment1
         Fragment fragment = null;
 
         switch (position) {
@@ -248,10 +258,13 @@ public class NavigationDrawerFragment extends Fragment {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        // Pass the event to ActionBarDrawerToggle, if it returns
+        // true, then it has handled the app icon touch event
         if (mDrawerToggle.onOptionsItemSelected(item)) {
             return true;
         }
 
+        // Handle the other action bar items
         return super.onOptionsItemSelected(item);
     }
 
