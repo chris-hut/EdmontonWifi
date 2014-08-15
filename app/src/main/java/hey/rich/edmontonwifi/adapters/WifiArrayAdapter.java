@@ -1,4 +1,4 @@
-package hey.rich.edmontonwifi;
+package hey.rich.edmontonwifi.adapters;
 
 import java.util.List;
 
@@ -8,6 +8,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
+
+import hey.rich.edmontonwifi.Objects.Wifi;
+import hey.rich.edmontonwifi.R;
 
 public class WifiArrayAdapter extends ArrayAdapter<Wifi> {
 	private final Activity context;

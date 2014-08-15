@@ -1,4 +1,4 @@
-package hey.rich.edmontonwifi;
+package hey.rich.edmontonwifi.fragments;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -7,6 +7,9 @@ import android.app.DialogFragment;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.widget.Toast;
+
+import hey.rich.edmontonwifi.activities.MainActivity;
+import hey.rich.edmontonwifi.R;
 
 public class SortWifiListDialogFragment extends DialogFragment {
 

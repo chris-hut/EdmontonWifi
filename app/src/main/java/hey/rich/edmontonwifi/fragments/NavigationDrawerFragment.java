@@ -1,4 +1,4 @@
-package hey.rich.edmontonwifi;
+package hey.rich.edmontonwifi.fragments;
 
 import android.app.ActionBar;
 import android.app.Activity;
@@ -20,6 +20,8 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+
+import hey.rich.edmontonwifi.R;
 
 
 public class NavigationDrawerFragment extends Fragment {
@@ -188,6 +190,8 @@ public class NavigationDrawerFragment extends Fragment {
             case 0: // Wifi
                 fragment = new WifiFragment();
                 break;
+            case 1: // Construction
+                fragment = new ConstructionFragment();
             default:
 
                 break;

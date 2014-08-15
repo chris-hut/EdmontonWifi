@@ -21,6 +21,7 @@
     <string name="navigation_drawer_close">close drawer</string>
     <string-array name="navigation_drawer_tabs">
         <item>Wifi</item>
+        <item>Construction</item>
     </string-array>
 
     <!-- ListView Strings -->

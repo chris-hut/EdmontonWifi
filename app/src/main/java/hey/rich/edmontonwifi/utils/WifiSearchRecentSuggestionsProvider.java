@@ -1,4 +1,4 @@
-package hey.rich.edmontonwifi;
+package hey.rich.edmontonwifi.utils;
 
 import android.content.SearchRecentSuggestionsProvider;
 

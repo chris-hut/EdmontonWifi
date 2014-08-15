@@ -1,4 +1,4 @@
-package hey.rich.edmontonwifi;
+package hey.rich.edmontonwifi.activities;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,6 +14,12 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import hey.rich.edmontonwifi.EdmontonWifi;
+import hey.rich.edmontonwifi.R;
+import hey.rich.edmontonwifi.Objects.Wifi;
+import hey.rich.edmontonwifi.adapters.WifiArrayAdapter;
+import hey.rich.edmontonwifi.utils.WifiSearchRecentSuggestionsProvider;
+
 public class SearchActivity extends Activity {
 	private List<Wifi> wifis;
 	private WifiArrayAdapter adapter;
@@ -26,7 +32,7 @@ public class SearchActivity extends Activity {
 		ListView lView = (ListView) findViewById(R.id.search_activity_listview);
 
 		wifis = new ArrayList<Wifi>(EdmontonWifi.getWifiList(
-				getApplicationContext()).getAllWifis());
+                getApplicationContext()).getAllWifis());
 		adapter = new WifiArrayAdapter(this, wifis);
 		lView.setAdapter(adapter);
 

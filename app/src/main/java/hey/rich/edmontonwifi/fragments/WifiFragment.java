@@ -1,4 +1,4 @@
-package hey.rich.edmontonwifi;
+package hey.rich.edmontonwifi.fragments;
 
 import android.app.Fragment;
 import android.content.Context;
@@ -20,6 +20,13 @@ import com.github.amlcurran.showcaseview.targets.ViewTarget;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+
+import hey.rich.edmontonwifi.EdmontonWifi;
+import hey.rich.edmontonwifi.R;
+import hey.rich.edmontonwifi.Objects.Wifi;
+import hey.rich.edmontonwifi.adapters.WifiArrayAdapter;
+import hey.rich.edmontonwifi.Objects.WifiList;
+import hey.rich.edmontonwifi.activities.WifiViewActivity;
 
 /**
  * Created by chris on 12/08/14.

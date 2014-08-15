@@ -1,4 +1,4 @@
-package hey.rich.edmontonwifi;
+package hey.rich.edmontonwifi.activities;
 
 import android.app.Activity;
 import android.content.ClipData;
@@ -13,6 +13,10 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import hey.rich.edmontonwifi.EdmontonWifi;
+import hey.rich.edmontonwifi.R;
+import hey.rich.edmontonwifi.Objects.Wifi;
 
 public class WifiViewActivity extends Activity {
 

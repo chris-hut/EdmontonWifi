@@ -2,11 +2,14 @@ package hey.rich.edmontonwifi;
 
 import android.app.Application;
 import android.content.Context;
-import android.location.Criteria;
 import android.location.Location;
 import android.location.LocationManager;
 
 import java.util.List;
+
+import hey.rich.edmontonwifi.Objects.Wifi;
+import hey.rich.edmontonwifi.Objects.WifiList;
+import hey.rich.edmontonwifi.utils.JsonReader;
 
 /**
  * Singleton Class

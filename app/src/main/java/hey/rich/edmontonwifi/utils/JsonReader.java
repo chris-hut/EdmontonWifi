@@ -1,8 +1,7 @@
-package hey.rich.edmontonwifi;
+package hey.rich.edmontonwifi.utils;
 
 import android.content.res.AssetManager;
 import android.location.Location;
-import android.util.Log;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -12,6 +11,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
+
+import hey.rich.edmontonwifi.Objects.Wifi;
 
 /**
  * Modified from: http://stackoverflow.com/a/19945484

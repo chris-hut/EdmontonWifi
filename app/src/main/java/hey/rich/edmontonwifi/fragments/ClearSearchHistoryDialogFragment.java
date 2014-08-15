@@ -1,4 +1,4 @@
-package hey.rich.edmontonwifi;
+package hey.rich.edmontonwifi.fragments;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -6,6 +6,8 @@ import android.app.DialogFragment;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.provider.SearchRecentSuggestions;
+
+import hey.rich.edmontonwifi.utils.WifiSearchRecentSuggestionsProvider;
 
 public class ClearSearchHistoryDialogFragment extends DialogFragment {
 
