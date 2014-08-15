@@ -14,8 +14,6 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.SearchView;
 
-import java.util.Collections;
-
 import hey.rich.edmontonwifi.R;
 import hey.rich.edmontonwifi.fragments.ClearSearchHistoryDialogFragment;
 import hey.rich.edmontonwifi.fragments.NavigationDrawerFragment;
@@ -166,6 +164,7 @@ public class MainActivity extends Activity implements
         // Temporary fix until Sorting is moved somewhere else
         WifiFragment fragment = (WifiFragment) getFragmentManager().findFragmentById(R.id.wifi_fragment);
         if(fragment != null){
+            sortChoice = position;
             fragment.sortWifisBy(position);
         } else {
             // Dev doc's say this would happen if we're in a one-pane layout and WifiFragment isn't

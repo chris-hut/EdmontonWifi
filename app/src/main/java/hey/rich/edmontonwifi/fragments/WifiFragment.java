@@ -82,9 +82,6 @@ public class WifiFragment extends Fragment {
 
         updateLocation();
 
-        // By default let's sort by distance
-        Collections.sort(wifis, new Sorters.DistanceComparator());
-        adapter.notifyDataSetChanged();
     }
 
     private void setupRefreshLocationButton(View v) {
