@@ -80,6 +80,8 @@ public class MainActivity extends Activity implements
                 Context.MODE_PRIVATE);
         // From this beauty: http://stackoverflow.com/a/5878986
         sortChoice = prefs.getInt("sort_choice", 0);
+        // Make sure that the wifis are sorted as they were before if they had to be reloaded
+        onDialogClick(sortChoice);
 
         /*if (prefs.getBoolean("firstrun", false)) {
             prefs.edit().putBoolean("firstrun", false).apply();
