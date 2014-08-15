@@ -9,11 +9,13 @@
     <string name="menu_clear_search_history">Clear Search History</string>
 
     <!-- Sort List of Wifi Dialog Array -->
+    <!-- If you're changing this make sure to also change
+            the array in SortWifiListDialogFragment -->
     <string-array name="array_wifi_sort_list">
-        <item>Name</item>
+        <item>Distance</item>
         <item>Address</item>
         <item>Facility</item>
-        <item>Distance</item>
+        <item>Name</item>
     </string-array>
 
     <!-- Navigation Drawer -->

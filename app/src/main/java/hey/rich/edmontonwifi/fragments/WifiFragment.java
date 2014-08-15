@@ -108,12 +108,12 @@ public class WifiFragment extends Fragment {
     public void sortWifisBy(int position) {
         /*
          * User clicked a position From the string-array:
-		 * R.array.array_sort_wifi_list Order is: Name, Address,
-		 * Facility, Distance
+		 * R.array.array_sort_wifi_list Order is: Distance, Address,
+		 * Facility, Name
 		 */
         switch (position) {
-            case 0: // Name
-                Collections.sort(wifis, new Sorters.NameComparator());
+            case 0: // Distance
+                Collections.sort(wifis, new Sorters.DistanceComparator());
                 break;
             case 1: // Address
                 Collections.sort(wifis, new Sorters.AddressComparator());
@@ -121,8 +121,8 @@ public class WifiFragment extends Fragment {
             case 2: // Facility
                 Collections.sort(wifis, new Sorters.FacilityComparator());
                 break;
-            case 3: // Distance
-                Collections.sort(wifis, new Sorters.DistanceComparator());
+            case 3: // Name
+                Collections.sort(wifis, new Sorters.NameComparator());
                 break;
             default: // Invalid
                 return;

@@ -13,8 +13,9 @@ import hey.rich.edmontonwifi.R;
 
 public class SortWifiListDialogFragment extends DialogFragment {
 
-	private static final String[] sortList = { "Name", "Address", "Provider",
-			"Distance" };
+    // TODO: Can I get this straight from strings.xml
+	private static final String[] sortList = { "Distance", "Address", "Provider",
+			"Name" };
 
 	private SortWifiListDialogListener mListener;
 
