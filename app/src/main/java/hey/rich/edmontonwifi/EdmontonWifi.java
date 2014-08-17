@@ -7,6 +7,8 @@ import android.location.LocationManager;
 
 import java.util.List;
 
+import hey.rich.edmontonwifi.Objects.Construction;
+import hey.rich.edmontonwifi.Objects.ConstructionList;
 import hey.rich.edmontonwifi.Objects.Wifi;
 import hey.rich.edmontonwifi.Objects.WifiList;
 import hey.rich.edmontonwifi.utils.JsonReader;
@@ -16,7 +18,11 @@ import hey.rich.edmontonwifi.utils.JsonReader;
  */
 public class EdmontonWifi extends Application {
 
+    private static final String WIFI_FILE_NAME = "wifi.json";
+    private static final String CONSTRUCTION_FILE_NAME = "construction.json";
+
     private static WifiList wifiList = null;
+    private static ConstructionList constructionList = null;
 
     /**
      * Returns the wifiList, if one doesn't exist, we will create it here.
@@ -25,11 +31,22 @@ public class EdmontonWifi extends Application {
         if (wifiList == null) {
             // load wifilist
             wifiList = new WifiList();
-            wifiList.setAllWifis(JsonReader.jsonStringToList(JsonReader
-                    .loadJSONFromAsset(context.getAssets())));
+            wifiList.setAllWifis(JsonReader.jsonStringToWifiList(JsonReader
+                    .loadJSONFromAsset(context.getAssets(), WIFI_FILE_NAME)));
         }
 
         return wifiList;
+    }
+
+    public static ConstructionList getConstructionList(Context context) {
+        if (constructionList == null) {
+            // load constructionList
+            constructionList = new ConstructionList();
+            constructionList.setAllConstructions(JsonReader.jsonStringToConstructionList(JsonReader.
+                    loadJSONFromAsset(context.getAssets(), CONSTRUCTION_FILE_NAME)));
+        }
+
+        return constructionList;
     }
 
     public static Wifi getWifi(Context context, int position) {
@@ -40,9 +57,18 @@ public class EdmontonWifi extends Application {
         return wifiList.getWifiAtPos(position);
     }
 
+    public static Construction getConstruction(Context context, int position){
+        if(constructionList == null){
+            constructionList = getConstructionList(context);
+        }
+        return constructionList.getConstructionAtPos(position);
+    }
+
+
     /**
      * Gets the last known location of the device.
-     * If this can't be found for some reason, null will be returned.*/
+     * If this can't be found for some reason, null will be returned.
+     */
     public static Location getLocation(Context context) {
         // From: http://stackoverflow.com/a/20465781/1684866
         LocationManager manager = (LocationManager) context.getSystemService(LOCATION_SERVICE);
@@ -50,13 +76,13 @@ public class EdmontonWifi extends Application {
         List<String> providers = manager.getProviders(true);
         Location bestLocation = null;
 
-        for(String provider: providers){
+        for (String provider : providers) {
             Location l = manager.getLastKnownLocation(provider);
 
-            if(l == null){
+            if (l == null) {
                 continue;
             }
-            if(bestLocation == null || l.getAccuracy() < bestLocation.getAccuracy()){
+            if (bestLocation == null || l.getAccuracy() < bestLocation.getAccuracy()) {
                 bestLocation = l;
             }
         }

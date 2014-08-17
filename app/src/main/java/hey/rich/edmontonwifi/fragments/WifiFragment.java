@@ -111,11 +111,6 @@ public class WifiFragment extends PreferenceFragment implements SharedPreference
     }
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-    }
-
-    @Override
     public void onResume() {
         super.onResume();
 

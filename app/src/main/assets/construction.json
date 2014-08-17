@@ -1,0 +1,1605 @@
+{
+  "meta" : {
+    "view" : {
+      "id" : "zxf6-rv9a",
+      "name" : "2014 Street Construction Projects",
+      "attribution" : "Transportation Services - Transportation Operations",
+      "averageRating" : 0,
+      "category" : "Transportation",
+      "createdAt" : 1332520674,
+      "description" : "A list of special projects and major road construction sites planned for 2014.",
+      "displayType" : "table",
+      "downloadCount" : 132,
+      "indexUpdatedAt" : 1408054235,
+      "newBackend" : false,
+      "numberOfComments" : 0,
+      "oid" : 8651369,
+      "publicationAppendEnabled" : false,
+      "publicationDate" : 1408054222,
+      "publicationGroup" : 303189,
+      "publicationStage" : "published",
+      "resourceName" : "sthd-gad4",
+      "rowsUpdatedAt" : 1408054204,
+      "rowsUpdatedBy" : "c5tx-nx37",
+      "tableId" : 1684330,
+      "totalTimesRated" : 0,
+      "viewCount" : 1249,
+      "viewLastModified" : 1408054222,
+      "viewType" : "tabular",
+      "columns" : [ {
+        "id" : -1,
+        "name" : "sid",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":sid",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : -1,
+        "name" : "id",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":id",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : -1,
+        "name" : "position",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":position",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : -1,
+        "name" : "created_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : -1,
+        "name" : "created_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : -1,
+        "name" : "updated_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : -1,
+        "name" : "updated_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : -1,
+        "name" : "meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : {
+        }
+      }, {
+        "id" : 162097658,
+        "name" : "ASSET",
+        "dataTypeName" : "text",
+        "description" : "The City of Edmonton classifies all roadwork and improvements as assets.\n",
+        "fieldName" : "asset_type",
+        "position" : 1,
+        "renderTypeName" : "text",
+        "tableColumnId" : 2347707,
+        "width" : 145,
+        "cachedContents" : {
+          "non_null" : 252,
+          "smallest" : "BRIDGE",
+          "null" : 0,
+          "largest" : "Transit",
+          "top" : [ {
+            "count" : 20,
+            "item" : "ROAD"
+          }, {
+            "count" : 19,
+            "item" : "BRIDGE"
+          }, {
+            "count" : 18,
+            "item" : "LIGHTS"
+          }, {
+            "count" : 17,
+            "item" : "SIDEWALK"
+          }, {
+            "count" : 16,
+            "item" : "Transit"
+          } ]
+        },
+        "format" : {
+          "align" : "left"
+        }
+      }, {
+        "id" : 162097659,
+        "name" : "ID",
+        "dataTypeName" : "text",
+        "description" : "Internal Project Identifier",
+        "fieldName" : "id",
+        "position" : 2,
+        "renderTypeName" : "text",
+        "tableColumnId" : 2400743,
+        "width" : 50,
+        "cachedContents" : {
+          "non_null" : 252,
+          "smallest" : "BDG-2014-401",
+          "null" : 0,
+          "largest" : "TRT-2015-SE LRT-010",
+          "top" : [ {
+            "count" : 20,
+            "item" : "TRT-2015-SE LRT-005"
+          }, {
+            "count" : 19,
+            "item" : "TRT-2015-SE LRT-006"
+          }, {
+            "count" : 18,
+            "item" : "TRT-2015-SE LRT-007"
+          }, {
+            "count" : 17,
+            "item" : "TRT-2015-SE LRT-008"
+          }, {
+            "count" : 16,
+            "item" : "TRT-2015-SE LRT-009"
+          }, {
+            "count" : 15,
+            "item" : "TRT-2015-SE LRT-004"
+          } ]
+        },
+        "format" : {
+          "precisionStyle" : "standard",
+          "noCommas" : "false",
+          "align" : "right"
+        }
+      }, {
+        "id" : 162097660,
+        "name" : "START YEAR",
+        "dataTypeName" : "text",
+        "description" : "Proposed Implementation Year",
+        "fieldName" : "start_year",
+        "position" : 3,
+        "renderTypeName" : "text",
+        "tableColumnId" : 2400796,
+        "width" : 100,
+        "cachedContents" : {
+          "non_null" : 252,
+          "smallest" : "2012",
+          "null" : 0,
+          "largest" : "2014",
+          "top" : [ {
+            "count" : 20,
+            "item" : "2013"
+          }, {
+            "count" : 19,
+            "item" : "2014"
+          }, {
+            "count" : 18,
+            "item" : "2012"
+          } ]
+        },
+        "format" : {
+        }
+      }, {
+        "id" : 162097661,
+        "name" : "APPROX. START",
+        "dataTypeName" : "text",
+        "description" : "Approximate start date of the project ",
+        "fieldName" : "approx_start",
+        "position" : 4,
+        "renderTypeName" : "text",
+        "tableColumnId" : 19336530,
+        "width" : 100,
+        "cachedContents" : {
+          "non_null" : 252,
+          "smallest" : "13-May-13",
+          "null" : 0,
+          "largest" : "7-Apr-14",
+          "top" : [ {
+            "count" : 20,
+            "item" : "1-Apr-13"
+          }, {
+            "count" : 19,
+            "item" : "1-Jul-14"
+          }, {
+            "count" : 18,
+            "item" : "1-Apr-14"
+          }, {
+            "count" : 17,
+            "item" : "1-Oct-13"
+          }, {
+            "count" : 16,
+            "item" : "1-Apr-12"
+          }, {
+            "count" : 15,
+            "item" : "1-May-14"
+          }, {
+            "count" : 14,
+            "item" : "7-Apr-14"
+          }, {
+            "count" : 13,
+            "item" : "25-Jul-13"
+          }, {
+            "count" : 12,
+            "item" : "1-Jun-13"
+          }, {
+            "count" : 11,
+            "item" : "17-Jun-13"
+          }, {
+            "count" : 10,
+            "item" : "13-May-13"
+          }, {
+            "count" : 9,
+            "item" : "1-Aug-13"
+          }, {
+            "count" : 8,
+            "item" : "1-Jan-13"
+          }, {
+            "count" : 7,
+            "item" : "1-May-13"
+          }, {
+            "count" : 6,
+            "item" : "2-Jul-14"
+          }, {
+            "count" : 5,
+            "item" : "1-Jan-14"
+          } ]
+        },
+        "format" : {
+        }
+      }, {
+        "id" : 162097662,
+        "name" : "APPROX. FINISH",
+        "dataTypeName" : "text",
+        "description" : "Approximate end date of the project ",
+        "fieldName" : "approx_finish",
+        "position" : 5,
+        "renderTypeName" : "text",
+        "tableColumnId" : 19336531,
+        "width" : 100,
+        "cachedContents" : {
+          "non_null" : 252,
+          "smallest" : "15-Nov-14",
+          "null" : 0,
+          "largest" : "31-Oct-15",
+          "top" : [ {
+            "count" : 20,
+            "item" : "25-Dec-15"
+          }, {
+            "count" : 19,
+            "item" : "25-Dec-14"
+          }, {
+            "count" : 18,
+            "item" : "31-Oct-15"
+          }, {
+            "count" : 17,
+            "item" : "30-Nov-14"
+          }, {
+            "count" : 16,
+            "item" : "31-Jul-14"
+          }, {
+            "count" : 15,
+            "item" : "30-Sep-14"
+          }, {
+            "count" : 14,
+            "item" : "1-Aug-14"
+          }, {
+            "count" : 13,
+            "item" : "17-Sep-14"
+          }, {
+            "count" : 12,
+            "item" : "31-Dec-14"
+          }, {
+            "count" : 11,
+            "item" : "31-Aug-14"
+          }, {
+            "count" : 10,
+            "item" : "31-May-14"
+          }, {
+            "count" : 9,
+            "item" : "1-Sep-14"
+          }, {
+            "count" : 8,
+            "item" : "31-Oct-14"
+          }, {
+            "count" : 7,
+            "item" : "15-Oct-14"
+          }, {
+            "count" : 6,
+            "item" : "15-Nov-14"
+          }, {
+            "count" : 5,
+            "item" : "24-Apr-20"
+          }, {
+            "count" : 4,
+            "item" : "26-Apr-20"
+          }, {
+            "count" : 3,
+            "item" : "25-Apr-20"
+          } ]
+        },
+        "format" : {
+        }
+      }, {
+        "id" : 162097663,
+        "name" : "PROJECT LIMITS",
+        "dataTypeName" : "text",
+        "description" : "The limits of the project in the area.",
+        "fieldName" : "project_limits",
+        "position" : 6,
+        "renderTypeName" : "text",
+        "tableColumnId" : 2400997,
+        "width" : 182,
+        "cachedContents" : {
+          "non_null" : 252,
+          "smallest" : "100 Street: 83 Ave. - Saskatchewan Dr.",
+          "null" : 0,
+          "largest" : "York Neighbourhood",
+          "top" : [ {
+            "count" : 20,
+            "item" : "83 Street: 84 Ave. - 73 Ave."
+          }, {
+            "count" : 19,
+            "item" : "83 Street: 73 Ave. - Argyll Rd./Davies Rd."
+          }, {
+            "count" : 18,
+            "item" : "75 Street: Davies Rd. - Whitemud Dr."
+          }, {
+            "count" : 17,
+            "item" : "66 Street: Whitemud Dr. - 38 Ave."
+          }, {
+            "count" : 16,
+            "item" : "66 Street: 38 Ave. - 31 Ave."
+          }, {
+            "count" : 15,
+            "item" : "85 Street: 93 Ave. - 90 Ave / 83 Street: 90 Ave. - 84 Ave."
+          } ]
+        },
+        "format" : {
+        }
+      }, {
+        "id" : 162097664,
+        "name" : "PROJECT LOCATION",
+        "dataTypeName" : "text",
+        "description" : "Project location and indicator number as found on the printed Construction On Your Streets map and Ward map section.",
+        "fieldName" : "description",
+        "position" : 7,
+        "renderTypeName" : "text",
+        "tableColumnId" : 2347714,
+        "width" : 306,
+        "cachedContents" : {
+          "non_null" : 252,
+          "smallest" : "B01: Walterdale Bridge Replacement: Walterdale Hill and Queen Elizabeth Park Rd.",
+          "null" : 0,
+          "largest" : "T02: Valley Line LRT",
+          "top" : [ {
+            "count" : 20,
+            "item" : "P77: 106 Avenue: Wayne Gretzky Dr. - 84 St."
+          }, {
+            "count" : 19,
+            "item" : "P78: Whitemud Drive EBD: N/53 Ave. - Rainbow Valley Br."
+          }, {
+            "count" : 18,
+            "item" : "P78: Whitemud Drive WBD: Rainbow Valley Br. - S/53 Ave."
+          }, {
+            "count" : 17,
+            "item" : "P79: Whitemud Drive EBD On-Ramp: Terwillegar Dr. NBD - Whitemud Dr. EBD"
+          }, {
+            "count" : 16,
+            "item" : "P80: Whitemud Drive: 50 St. - 66/75 St."
+          }, {
+            "count" : 15,
+            "item" : "R01: Stony Plain Road: 149 St. - 158 St."
+          }, {
+            "count" : 14,
+            "item" : "R02: Whitemud Dr. Ramps EBD: Whitemud Dr. - 159 St."
+          }, {
+            "count" : 13,
+            "item" : "R02: Whitemud Dr. Ramps WBD: Whitemud Dr. - 159 St."
+          }, {
+            "count" : 12,
+            "item" : "R03: 101A Avenue: 96 St. - 97 St."
+          }, {
+            "count" : 11,
+            "item" : "R03: 96 Street: Jasper Ave. - 103A Ave. (Quarters)"
+          }, {
+            "count" : 10,
+            "item" : "R04: 112 Avenue: 50 St. - 60 St."
+          }, {
+            "count" : 9,
+            "item" : "R04: 50 Street: Ada Blvd. - 117 Ave."
+          }, {
+            "count" : 8,
+            "item" : "R05: 50 Street: 106 Ave. - Capilano Park Rd. "
+          }, {
+            "count" : 7,
+            "item" : "R06: 34 Street: 74 Ave. - Sherwood Fwy. EBD Ramps"
+          }, {
+            "count" : 6,
+            "item" : "R07: Sherwood Park Off Ramps: Sherwood Park Fwy. - 34 St."
+          }, {
+            "count" : 5,
+            "item" : "R07: Sherwood Park On Ramps: Sherwood Park Fwy. - 34 St."
+          }, {
+            "count" : 4,
+            "item" : "R08: Sherwood Park Ramps EBD: Sherwood Park Fwy. - 50 St."
+          }, {
+            "count" : 3,
+            "item" : "R08: Sherwood Park Ramps WBD: Sherwood Park Fwy. - 50 St."
+          }, {
+            "count" : 2,
+            "item" : "R09: Argyll Road (SPF Ramp): Sherwood Park Fwy. - 76 Ave."
+          }, {
+            "count" : 1,
+            "item" : "R09: Argyll Road: 76 Ave. - 75 St."
+          } ]
+        },
+        "format" : {
+          "align" : "left"
+        }
+      }, {
+        "id" : 162097665,
+        "name" : "LATITUDE",
+        "dataTypeName" : "number",
+        "fieldName" : "latitude",
+        "position" : 8,
+        "renderTypeName" : "number",
+        "tableColumnId" : 2347751,
+        "width" : 100,
+        "cachedContents" : {
+          "non_null" : 252,
+          "smallest" : "53.4023417751",
+          "sum" : "13487.8326982233",
+          "null" : 0,
+          "average" : "53.52314562787024",
+          "largest" : "53.6418949858",
+          "top" : [ {
+            "count" : 20,
+            "item" : "53.5145644894"
+          }, {
+            "count" : 19,
+            "item" : "53.5034542819"
+          }, {
+            "count" : 18,
+            "item" : "53.4933605435"
+          }, {
+            "count" : 17,
+            "item" : "53.4802546777"
+          }, {
+            "count" : 16,
+            "item" : "53.4687129709"
+          }, {
+            "count" : 15,
+            "item" : "53.5237642522"
+          } ]
+        },
+        "format" : {
+        }
+      }, {
+        "id" : 162097666,
+        "name" : "LONGITUDE",
+        "dataTypeName" : "number",
+        "fieldName" : "longitude",
+        "position" : 9,
+        "renderTypeName" : "number",
+        "tableColumnId" : 2347762,
+        "width" : 100,
+        "cachedContents" : {
+          "non_null" : 252,
+          "smallest" : "-113.7135174391",
+          "sum" : "-28602.6178973242",
+          "null" : 0,
+          "average" : "-113.5024519735087",
+          "largest" : "-113.3142955618",
+          "top" : [ {
+            "count" : 20,
+            "item" : "-113.4551112769"
+          }, {
+            "count" : 19,
+            "item" : "-113.4530959578"
+          }, {
+            "count" : 18,
+            "item" : "-113.4424104432"
+          }, {
+            "count" : 17,
+            "item" : "-113.4422724405"
+          }, {
+            "count" : 16,
+            "item" : "-113.4371171332"
+          }, {
+            "count" : 15,
+            "item" : "-113.45600414"
+          } ]
+        },
+        "format" : {
+        }
+      }, {
+        "id" : 162097667,
+        "name" : "LOCATION",
+        "dataTypeName" : "location",
+        "fieldName" : "location",
+        "position" : 10,
+        "renderTypeName" : "location",
+        "tableColumnId" : 2347715,
+        "width" : 196,
+        "cachedContents" : {
+          "non_null" : 252,
+          "smallest" : {
+            "longitude" : "-113.501461338087",
+            "latitude" : "53.5287649876138"
+          },
+          "null" : 0,
+          "largest" : {
+            "longitude" : "-113.456004139954",
+            "latitude" : "53.5237642522085"
+          },
+          "top" : [ {
+            "count" : 20,
+            "item" : {
+              "longitude" : "-113.455111276886",
+              "latitude" : "53.5145644894028"
+            }
+          }, {
+            "count" : 19,
+            "item" : {
+              "longitude" : "-113.453095957775",
+              "latitude" : "53.5034542818827"
+            }
+          }, {
+            "count" : 18,
+            "item" : {
+              "longitude" : "-113.442410443204",
+              "latitude" : "53.493360543511"
+            }
+          }, {
+            "count" : 17,
+            "item" : {
+              "longitude" : "-113.44227244053",
+              "latitude" : "53.4802546777219"
+            }
+          }, {
+            "count" : 16,
+            "item" : {
+              "longitude" : "-113.43711713322",
+              "latitude" : "53.4687129708508"
+            }
+          }, {
+            "count" : 15,
+            "item" : {
+              "longitude" : "-113.456004139954",
+              "latitude" : "53.5237642522085"
+            }
+          } ]
+        },
+        "format" : {
+        },
+        "subColumnTypes" : [ "human_address", "latitude", "longitude", "machine_address", "needs_recoding" ]
+      }, {
+        "id" : 162097668,
+        "name" : "PROFILE NUMBER",
+        "dataTypeName" : "text",
+        "description" : "Internal Profile Number",
+        "fieldName" : "profile_number",
+        "position" : 11,
+        "renderTypeName" : "text",
+        "tableColumnId" : 19336532,
+        "width" : 100,
+        "cachedContents" : {
+          "non_null" : 252,
+          "smallest" : "05-66-1665",
+          "null" : 0,
+          "largest" : "Operating",
+          "top" : [ {
+            "count" : 20,
+            "item" : "12-66-1466"
+          }, {
+            "count" : 19,
+            "item" : "10-66-1484"
+          }, {
+            "count" : 18,
+            "item" : "14-66-1041"
+          }, {
+            "count" : 17,
+            "item" : "12-17-6100"
+          }, {
+            "count" : 16,
+            "item" : "N/A"
+          }, {
+            "count" : 15,
+            "item" : "12-66-1020"
+          }, {
+            "count" : 14,
+            "item" : "05-66-1665"
+          }, {
+            "count" : 13,
+            "item" : "13-66-1449/12-66-1020"
+          }, {
+            "count" : 12,
+            "item" : "12-66-1445"
+          }, {
+            "count" : 11,
+            "item" : "13-66-1448/12-66-1020"
+          }, {
+            "count" : 10,
+            "item" : "13-66-1447/12-66-1020"
+          }, {
+            "count" : 9,
+            "item" : "12-66-1454"
+          }, {
+            "count" : 8,
+            "item" : "12-66-1443/12-66-1020"
+          }, {
+            "count" : 7,
+            "item" : "12-66-1260"
+          }, {
+            "count" : 6,
+            "item" : "12-66-1430"
+          }, {
+            "count" : 5,
+            "item" : "12-66-1056"
+          }, {
+            "count" : 4,
+            "item" : "15-66-1069"
+          }, {
+            "count" : 3,
+            "item" : "13-66-1066"
+          }, {
+            "count" : 2,
+            "item" : "14-66-1068"
+          }, {
+            "count" : 1,
+            "item" : "09-66-1056"
+          } ]
+        },
+        "format" : {
+        }
+      }, {
+        "id" : 162097669,
+        "name" : "CONSTRUCTION TYPE",
+        "dataTypeName" : "text",
+        "description" : "A description of the type of work being performed.",
+        "fieldName" : "design_type",
+        "position" : 12,
+        "renderTypeName" : "text",
+        "tableColumnId" : 2347708,
+        "width" : 173,
+        "cachedContents" : {
+          "non_null" : 252,
+          "smallest" : "Bridge/Rehabilitation",
+          "null" : 0,
+          "largest" : "Street Lights",
+          "top" : [ {
+            "count" : 20,
+            "item" : "Growth/Rehabilitaion"
+          }, {
+            "count" : 19,
+            "item" : "Bridge/Rehabilitation"
+          }, {
+            "count" : 18,
+            "item" : "Developer Proposed - North"
+          }, {
+            "count" : 17,
+            "item" : "Developer Proposed - South"
+          }, {
+            "count" : 16,
+            "item" : "Growth/Rehabilitation"
+          }, {
+            "count" : 15,
+            "item" : "Street Lights"
+          }, {
+            "count" : 14,
+            "item" : "Shared-Use-Path"
+          }, {
+            "count" : 13,
+            "item" : "Sidewalk"
+          }, {
+            "count" : 12,
+            "item" : "Neighbourhood Overlay"
+          }, {
+            "count" : 11,
+            "item" : "Neighbourhood Reconstruction"
+          }, {
+            "count" : 10,
+            "item" : "NE Road Replacement"
+          }, {
+            "count" : 9,
+            "item" : "Neighbourhood Microsurfacing"
+          }, {
+            "count" : 8,
+            "item" : "Pavement Renewal"
+          }, {
+            "count" : 7,
+            "item" : "Road Rehabilitation"
+          }, {
+            "count" : 6,
+            "item" : "LRT Growth"
+          } ]
+        },
+        "format" : {
+          "align" : "left"
+        }
+      }, {
+        "id" : 162097670,
+        "name" : "CONSTRUCTION SUPERVISOR",
+        "dataTypeName" : "text",
+        "description" : "Contact person for more information.",
+        "fieldName" : "construction_supervisor",
+        "position" : 13,
+        "renderTypeName" : "text",
+        "tableColumnId" : 2347709,
+        "width" : 226,
+        "cachedContents" : {
+          "non_null" : 252,
+          "smallest" : "Adnan Akram",
+          "null" : 0,
+          "largest" : "Zdenko Petrovic",
+          "top" : [ {
+            "count" : 20,
+            "item" : "Ryan Teplitsky"
+          }, {
+            "count" : 19,
+            "item" : "Lisa Erickson"
+          }, {
+            "count" : 18,
+            "item" : "Jim Murray"
+          }, {
+            "count" : 17,
+            "item" : "Tariq Aziz"
+          }, {
+            "count" : 16,
+            "item" : "Loli Fernandez"
+          }, {
+            "count" : 15,
+            "item" : "Mohammed Bashar"
+          }, {
+            "count" : 14,
+            "item" : "Wayne Squires"
+          }, {
+            "count" : 13,
+            "item" : "Keith Teeuwsen"
+          }, {
+            "count" : 12,
+            "item" : "Gordon Mitchell"
+          }, {
+            "count" : 11,
+            "item" : "Harinder Sandhu"
+          }, {
+            "count" : 10,
+            "item" : "Shane Richard"
+          }, {
+            "count" : 9,
+            "item" : "Vlado Cicovski"
+          }, {
+            "count" : 8,
+            "item" : "Greg Courtepatte"
+          }, {
+            "count" : 7,
+            "item" : "Zdenko Petrovic"
+          }, {
+            "count" : 6,
+            "item" : "John Crockett"
+          }, {
+            "count" : 5,
+            "item" : "Mike Bindas"
+          }, {
+            "count" : 4,
+            "item" : "Adnan Akram"
+          }, {
+            "count" : 3,
+            "item" : "Jason Caudron"
+          }, {
+            "count" : 2,
+            "item" : "Felix Lam"
+          }, {
+            "count" : 1,
+            "item" : "Mark Morton"
+          } ]
+        },
+        "format" : {
+          "align" : "left"
+        }
+      }, {
+        "id" : 162097671,
+        "name" : "PHONE NUMBER",
+        "dataTypeName" : "text",
+        "description" : "Phone number for Construction Supervisor",
+        "fieldName" : "cs_phone",
+        "position" : 14,
+        "renderTypeName" : "text",
+        "tableColumnId" : 2347711,
+        "width" : 109,
+        "cachedContents" : {
+          "non_null" : 252,
+          "smallest" : "780-423-3913",
+          "null" : 0,
+          "largest" : "780-944-7893",
+          "top" : [ {
+            "count" : 20,
+            "item" : "780-944-7893"
+          }, {
+            "count" : 19,
+            "item" : "780-944-7683"
+          }, {
+            "count" : 18,
+            "item" : "780-496-1799"
+          }, {
+            "count" : 17,
+            "item" : "780-423-5544"
+          }, {
+            "count" : 16,
+            "item" : "780-495-0270"
+          }, {
+            "count" : 15,
+            "item" : "780-944-5662"
+          }, {
+            "count" : 14,
+            "item" : "780-944-5640"
+          }, {
+            "count" : 13,
+            "item" : "780-495-9964"
+          }, {
+            "count" : 12,
+            "item" : "780-423-7470"
+          }, {
+            "count" : 11,
+            "item" : "780-496-5367"
+          }, {
+            "count" : 10,
+            "item" : "780-423-3913"
+          }, {
+            "count" : 9,
+            "item" : "780-442-4713"
+          }, {
+            "count" : 8,
+            "item" : "780-495-0268"
+          }, {
+            "count" : 7,
+            "item" : "780-944-7692"
+          }, {
+            "count" : 6,
+            "item" : "780-944-0266"
+          }, {
+            "count" : 5,
+            "item" : "780-423-5004"
+          }, {
+            "count" : 4,
+            "item" : "780-442-4712"
+          }, {
+            "count" : 3,
+            "item" : "780-944-7701"
+          }, {
+            "count" : 2,
+            "item" : "780-944-5691"
+          }, {
+            "count" : 1,
+            "item" : "780-944-7698"
+          } ]
+        },
+        "format" : {
+          "mask" : "###-###-####",
+          "precisionStyle" : "standard",
+          "noCommas" : "false",
+          "align" : "right"
+        }
+      }, {
+        "id" : 162097672,
+        "name" : "WARD",
+        "dataTypeName" : "text",
+        "description" : "City Ward Number",
+        "fieldName" : "ward",
+        "position" : 15,
+        "renderTypeName" : "text",
+        "tableColumnId" : 2373401,
+        "width" : 100,
+        "cachedContents" : {
+          "non_null" : 252,
+          "smallest" : "WARD 01",
+          "null" : 0,
+          "largest" : "WARD 12",
+          "top" : [ {
+            "count" : 20,
+            "item" : "WARD 06"
+          }, {
+            "count" : 19,
+            "item" : "WARD 09"
+          }, {
+            "count" : 18,
+            "item" : "WARD 01"
+          }, {
+            "count" : 17,
+            "item" : "WARD 02"
+          }, {
+            "count" : 16,
+            "item" : "WARD 03"
+          }, {
+            "count" : 15,
+            "item" : "WARD 04"
+          }, {
+            "count" : 14,
+            "item" : "WARD 05"
+          }, {
+            "count" : 13,
+            "item" : "WARD 10"
+          }, {
+            "count" : 12,
+            "item" : "WARD 12"
+          }, {
+            "count" : 11,
+            "item" : "WARD 07"
+          }, {
+            "count" : 10,
+            "item" : "WARD 11"
+          }, {
+            "count" : 9,
+            "item" : "WARD 08"
+          } ]
+        },
+        "format" : {
+        }
+      }, {
+        "id" : 162097673,
+        "name" : "CONSTRUCTION BY WARD",
+        "dataTypeName" : "url",
+        "description" : "This link goes to a page listing all the construction projects scheduled in this Ward.",
+        "fieldName" : "construction_by_ward",
+        "position" : 16,
+        "renderTypeName" : "url",
+        "tableColumnId" : 20700159,
+        "width" : 100,
+        "cachedContents" : {
+          "non_null" : 252,
+          "smallest" : {
+            "description" : "Construction in Ward 01",
+            "url" : "http://www.edmonton.ca/ward1construction/"
+          },
+          "null" : 0,
+          "largest" : {
+            "description" : "Construction in Ward 12",
+            "url" : "http://www.edmonton.ca/ward12construction/"
+          },
+          "top" : [ {
+            "count" : 20,
+            "item" : {
+              "description" : "Construction in Ward 06",
+              "url" : "http://www.edmonton.ca/ward6construction/"
+            }
+          }, {
+            "count" : 19,
+            "item" : {
+              "description" : "Construction in Ward 09",
+              "url" : "http://www.edmonton.ca/ward9construction/"
+            }
+          }, {
+            "count" : 18,
+            "item" : {
+              "description" : "Construction in Ward 01",
+              "url" : "http://www.edmonton.ca/ward1construction/"
+            }
+          }, {
+            "count" : 17,
+            "item" : {
+              "description" : "Construction in Ward 02",
+              "url" : "http://www.edmonton.ca/ward2construction/"
+            }
+          }, {
+            "count" : 16,
+            "item" : {
+              "description" : "Construction in Ward 03",
+              "url" : "http://www.edmonton.ca/ward3construction/"
+            }
+          }, {
+            "count" : 15,
+            "item" : {
+              "description" : "Construction in Ward 04",
+              "url" : "http://www.edmonton.ca/ward4construction/"
+            }
+          }, {
+            "count" : 14,
+            "item" : {
+              "description" : "Construction in Ward 05",
+              "url" : "http://www.edmonton.ca/ward5construction/"
+            }
+          }, {
+            "count" : 13,
+            "item" : {
+              "description" : "Construction in Ward 10",
+              "url" : "http://www.edmonton.ca/ward10construction/"
+            }
+          }, {
+            "count" : 12,
+            "item" : {
+              "description" : "Construction in Ward 12",
+              "url" : "http://www.edmonton.ca/ward12construction/"
+            }
+          }, {
+            "count" : 11,
+            "item" : {
+              "description" : "Construction in Ward 07",
+              "url" : "http://www.edmonton.ca/ward7construction/"
+            }
+          }, {
+            "count" : 10,
+            "item" : {
+              "description" : "Construction in Ward 11",
+              "url" : "http://www.edmonton.ca/ward11construction/"
+            }
+          }, {
+            "count" : 9,
+            "item" : {
+              "description" : "Construction in Ward 08",
+              "url" : "http://www.edmonton.ca/ward8construction/"
+            }
+          } ]
+        },
+        "format" : {
+          "align" : "left"
+        },
+        "subColumnTypes" : [ "url", "description" ]
+      }, {
+        "id" : 162097674,
+        "name" : "ADDITIONAL INFO",
+        "dataTypeName" : "url",
+        "description" : "Additional information relating to this project..",
+        "fieldName" : "additional_info",
+        "position" : 17,
+        "renderTypeName" : "url",
+        "tableColumnId" : 2390079,
+        "width" : 237,
+        "cachedContents" : {
+          "non_null" : 117,
+          "smallest" : {
+            "description" : "102 Avenue Over Groat Road Bridge Replacement",
+            "url" : "http://www.edmonton.ca/transportation/road_projects/102-avenue-over-groat-road-bridge-replacement.aspx"
+          },
+          "null" : 135,
+          "largest" : {
+            "description" : "West Jasper Place Neighbourhood Renewal",
+            "url" : "http://edmonton.ca/transportation/on_your_streets/west-jasper-place-neighbourhood-renewal.aspx"
+          },
+          "top" : [ {
+            "count" : 20,
+            "item" : {
+              "description" : "Developer Arterial Projects",
+              "url" : "http://www.edmonton.ca/transportation/road_projects/developer-arterial-projects.aspx"
+            }
+          }, {
+            "count" : 19,
+            "item" : {
+              "description" : "Construction Bulletin",
+              "url" : "http://www.edmonton.ca/transportation/RoadsTraffic/P45_14-1405-02_20AveRehab_Bulletin.pdf"
+            }
+          }, {
+            "count" : 18,
+            "item" : {
+              "description" : "Construction Bulletin",
+              "url" : "http://www.edmonton.ca/transportation/RoadsTraffic/P53_14-1407-01_140Ave_Bulletin.pdf"
+            }
+          }, {
+            "count" : 17,
+            "item" : {
+              "description" : "Traffic Disruption Notice",
+              "url" : "http://www.mailoutinteractive.com/Industry/View.aspx?id=601743&q=770968532&qz=0831ad"
+            }
+          }, {
+            "count" : 16,
+            "item" : {
+              "description" : "Construction Bulletin",
+              "url" : "http://www.edmonton.ca/transportation/RoadsTraffic/P64_14-1407-02_100St_Bulletin.pdf"
+            }
+          }, {
+            "count" : 15,
+            "item" : {
+              "description" : "Construction Bulletin",
+              "url" : "http://www.edmonton.ca/transportation/RoadsTraffic/P65_14-1407-03_105St_Bulletin.pdf"
+            }
+          }, {
+            "count" : 14,
+            "item" : {
+              "description" : "Construction Bulletin",
+              "url" : "http://www.edmonton.ca/transportation/RoadsTraffic/P66_14-1407-04_86Ave_Bulletin.pdf"
+            }
+          }, {
+            "count" : 13,
+            "item" : {
+              "description" : "Construction Bulletin",
+              "url" : "http://www.edmonton.ca/transportation/RoadsTraffic/P67_14-1407-05_105St_Bulletin.pdf"
+            }
+          }, {
+            "count" : 12,
+            "item" : {
+              "description" : "Traffic Report",
+              "url" : "http://www.edmonton.ca/transportation/traffic-reports.aspx?trumbaEmbed=view%3Devent%26eventid%3D111250130"
+            }
+          }, {
+            "count" : 11,
+            "item" : {
+              "description" : "Traffic Report",
+              "url" : "http://www.edmonton.ca/transportation/traffic-reports.aspx?trumbaEmbed=view%3Devent%26eventid%3D110963091"
+            }
+          }, {
+            "count" : 10,
+            "item" : {
+              "description" : "Traffic Report",
+              "url" : "http://www.edmonton.ca/transportation/traffic-reports.aspx?trumbaEmbed=view%3Devent%26eventid%3D111423923"
+            }
+          }, {
+            "count" : 9,
+            "item" : {
+              "description" : "Stony Plain Road Streetscape",
+              "url" : "http://www.edmonton.ca/transportation/road_projects/stony-plain-road-streetscape-149-to-158-street.aspx"
+            }
+          }, {
+            "count" : 8,
+            "item" : {
+              "description" : "Construction Bulletin",
+              "url" : "http://www.edmonton.ca/transportation/RoadsTraffic/R02_14-1418-01_Whitemud-159St_Bulletin.pdf"
+            }
+          }, {
+            "count" : 7,
+            "item" : {
+              "description" : "Traffic Report",
+              "url" : "http://www.edmonton.ca/transportation/traffic-reports.aspx?trumbaEmbed=view%3Devent%26eventid%3D109820202"
+            }
+          }, {
+            "count" : 6,
+            "item" : {
+              "description" : "112 Avenue Reconstruction",
+              "url" : "http://www.edmonton.ca/transportation/road_projects/112-avenue-reconstruction.aspx"
+            }
+          }, {
+            "count" : 5,
+            "item" : {
+              "description" : "Construction Bulletin",
+              "url" : "http://www.edmonton.ca/transportation/RoadsTraffic/R05_14-1403-01_50StRehab_Bulletin.pdf"
+            }
+          }, {
+            "count" : 4,
+            "item" : {
+              "description" : "Traffic Disruption Notice",
+              "url" : "http://www.mailoutinteractive.com/Industry/View.aspx?id=580006&q=745287857&qz=58005c"
+            }
+          }, {
+            "count" : 3,
+            "item" : {
+              "description" : "Traffic Disruption Notice",
+              "url" : "http://www.mailoutinteractive.com/Industry/View.aspx?id=601745&q=770968722&qz=bb4c55"
+            }
+          }, {
+            "count" : 2,
+            "item" : {
+              "description" : "Traffic Report",
+              "url" : "http://www.edmonton.ca/transportation/traffic-reports.aspx?trumbaEmbed=view%3Devent%26eventid%3D111424644"
+            }
+          }, {
+            "count" : 1,
+            "item" : {
+              "description" : "Traffic Disruption Notice",
+              "url" : "http://www.mailoutinteractive.com/Industry/View.aspx?id=581434&q=747296969&qz=d45587"
+            }
+          } ]
+        },
+        "format" : {
+          "align" : "left"
+        },
+        "subColumnTypes" : [ "url", "description" ]
+      }, {
+        "id" : 162097675,
+        "name" : "PROJECT STATUS",
+        "dataTypeName" : "text",
+        "description" : "Current status for a particular Construction Project",
+        "fieldName" : "project_status",
+        "position" : 18,
+        "renderTypeName" : "text",
+        "tableColumnId" : 7123056,
+        "width" : 100,
+        "cachedContents" : {
+          "non_null" : 23,
+          "smallest" : "Project Complete",
+          "null" : 229,
+          "largest" : "Project Complete",
+          "top" : [ {
+            "count" : 20,
+            "item" : "Project Complete"
+          } ]
+        },
+        "format" : {
+        }
+      }, {
+        "id" : 162097676,
+        "name" : "ICON",
+        "dataTypeName" : "url",
+        "fieldName" : "icon",
+        "position" : 20,
+        "renderTypeName" : "url",
+        "tableColumnId" : 2347716,
+        "width" : 53,
+        "cachedContents" : {
+          "non_null" : 0,
+          "null" : 252
+        },
+        "format" : {
+        },
+        "subColumnTypes" : [ "url", "description" ]
+      } ],
+      "grants" : [ {
+        "inherited" : false,
+        "type" : "viewer",
+        "flags" : [ "public" ]
+      } ],
+      "metadata" : {
+        "custom_fields" : {
+          "General Information" : {
+            "Dataset Owner" : "Transportation Services - Transportation Operations",
+            "Gallery Category (Google)" : "Transportation",
+            "Purpose" : "A list of special projects and major road construction sites planned for 2014.",
+            "Dataset Owner Contact" : "TSWebCoordinators@edmonton.ca"
+          },
+          "Spatial" : {
+            "Datum" : "NAD 83",
+            "Coordinate System" : "Geographic"
+          },
+          "Time Frame" : {
+            "Date Created" : "April 29, 2013",
+            "Period of Coverage" : "April 24, 2014 to December 31, 2014",
+            "Date Updated" : "April 24, 2014",
+            "Update Frequency" : "When Necessary"
+          }
+        },
+        "renderTypeConfig" : {
+          "visible" : {
+            "table" : true
+          }
+        },
+        "availableDisplayTypes" : [ "table", "fatrow", "page" ],
+        "jsonQuery" : {
+          "order" : [ {
+            "ascending" : true,
+            "columnFieldName" : "description"
+          } ]
+        },
+        "rdfSubject" : "0",
+        "attachments" : [ {
+          "assetId" : "",
+          "blobId" : "52E23ED9-8489-487A-8D11-444A8AF589D5",
+          "name" : "Green-Complete_36x36.png",
+          "filename" : "Green-Complete_36x36.png"
+        }, {
+          "assetId" : "",
+          "blobId" : "FE89AE05-890A-41CE-B2F3-2004E54E775E",
+          "name" : "Red-Defer_2013_36x36.png",
+          "filename" : "Red-Defer_2013_36x36.png"
+        }, {
+          "assetId" : "",
+          "blobId" : "52FD7407-0013-487F-83DB-74433688FB0C",
+          "name" : "Red-Defer_2013__36x36.png",
+          "filename" : "Red-Defer_2013__36x36.png"
+        }, {
+          "assetId" : "",
+          "blobId" : "12527D66-31E5-4900-A749-C9D9338291CA",
+          "name" : "Red-Defer_TBA_36x36.png",
+          "filename" : "Red-Defer_TBA_36x36.png"
+        }, {
+          "assetId" : "",
+          "blobId" : "2DB974E4-DD3B-4EA1-ACA8-D1E2CF0236C2",
+          "name" : "Yellow-Ongoing_36x36.png",
+          "filename" : "Yellow-Ongoing_36x36.png"
+        }, {
+          "assetId" : "",
+          "blobId" : "ADCA63A8-C4A1-4E3E-AC77-B4A770A0F56B",
+          "name" : "Yellow-Ongoing_2012_36x36.png",
+          "filename" : "Yellow-Ongoing_2012_36x36.png"
+        }, {
+          "assetId" : "",
+          "blobId" : "485863DB-3170-465F-8BCD-6C2B97F24C47",
+          "name" : "Yellow-Ongoing_2013_36x36.png",
+          "filename" : "Yellow-Ongoing_2013_36x36.png"
+        } ]
+      },
+      "owner" : {
+        "id" : "c5tx-nx37",
+        "displayName" : "TSWebCoordinator",
+        "roleName" : "designer",
+        "screenName" : "TSWebCoordinator",
+        "rights" : [ "create_datasets", "edit_sdp", "edit_site_theme", "feature_items", "change_configurations", "view_domain", "view_others_datasets", "create_pages" ]
+      },
+      "query" : {
+        "orderBys" : [ {
+          "ascending" : true,
+          "expression" : {
+            "columnId" : 162097664,
+            "type" : "column"
+          }
+        } ]
+      },
+      "rights" : [ "read" ],
+      "sortBys" : [ {
+        "id" : 0,
+        "viewColumnId" : 162097664,
+        "flags" : [ "asc" ]
+      } ],
+      "tableAuthor" : {
+        "id" : "c5tx-nx37",
+        "displayName" : "TSWebCoordinator",
+        "roleName" : "designer",
+        "screenName" : "TSWebCoordinator",
+        "rights" : [ "create_datasets", "edit_sdp", "edit_site_theme", "feature_items", "change_configurations", "view_domain", "view_others_datasets", "create_pages" ]
+      },
+      "tags" : [ "street construction", "projects" ],
+      "flags" : [ "default" ]
+    }
+  },
+  "data" : [ [ 1, "01DC5934-50BB-4D90-9778-F59300149AB8", 1, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2013-292-CO1", "2013", "1-Apr-13", "25-Dec-15", "Walterdale Bridge Replacement: Walterdale Hill and Queen Elizabeth Park Rd.", "B01: Walterdale Bridge Replacement: Walterdale Hill and Queen Elizabeth Park Rd.", "53.5287649876", "-113.5014613381", [ null, "53.5287649876138", "-113.501461338087", null, false ], "12-66-1466", "Growth/Rehabilitaion", "Ryan Teplitsky", "780-944-7651", "WARD 06", [ "http://www.edmonton.ca/ward6construction/", "Construction in Ward 06" ], [ "http://www.edmonton.ca/walterdalebridge/", "Walterdale Bridge Replacement" ], null, [ null, null ] ]
+, [ 2, "0D4A6D17-D82A-4035-95DA-82CA5A477CEF", 2, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2013-290", "2013", "1-Apr-13", "25-Dec-14", "Interchange: 41 Ave. SW and QE II (Highway 2)", "B02: Interchange: 41 Ave. SW and QE II (Highway 2)", "53.4137411319", "-113.498531824", [ null, "53.4137411318831", "-113.498531824002", null, false ], "10-66-1484", "Growth/Rehabilitaion", "Lisa Erickson", "780-944-7893", "WARD 09", [ "http://www.edmonton.ca/ward9construction/", "Construction in Ward 09" ], [ "http://www.edmonton.ca/transportation/road_projects/qe-2-hwy-41-avenue-interchange.aspx", "QE II Highway and 41 Avenue SW Interchange" ], null, [ null, null ] ]
+, [ 3, "9F961C3D-FE4D-4BD3-8907-E2E33F40C97D", 3, 1404852792, "398657", 1404852792, "398657", "{\n}", "BRIDGE", "BDG-2014-401", "2014", "1-Jul-14", "31-Oct-15", "102 Avenue - Groat Road", "B03: 102 Avenue - Groat Road", "53.5430099908", "-113.5403100001", [ null, "53.5430099907947", "-113.540310000104", null, false ], "14-66-1041", "Bridge/Rehabilitation", "Jim Murray", "780-944-7667", "WARD 06", [ "http://www.edmonton.ca/ward6construction/", "Construction in Ward 06" ], [ "http://www.edmonton.ca/transportation/road_projects/102-avenue-over-groat-road-bridge-replacement.aspx", "102 Avenue Over Groat Road Bridge Replacement" ], null, [ null, null ] ]
+, [ 4, "E1F7B3F8-F66D-42E6-933B-33FB1219FA40", 4, 1404852792, "398657", 1404852792, "398657", "{\n}", "BRIDGE", "BDG-2014-402", "2014", "1-Apr-14", "25-Dec-15", "Terwillegar Park Footbridge", "B04: Terwillegar Park Footbridge", "53.4824455216", "-113.6020257287", [ null, "53.4824455215808", "-113.602025728696", null, false ], "12-17-6100", "Bridge/Rehabilitation", "Tariq Aziz", "780-496-8192", "WARD 09", [ "http://www.edmonton.ca/ward9construction/", "Construction in Ward 09" ], [ "http://www.edmonton.ca/city_government/projects_redevelopment/terwillegar-park-footbridge.aspx", "Terwillegar Park Footbridge" ], null, [ null, null ] ]
+, [ 5, "E57B27D9-FC6B-4A30-8D0F-2B915587455F", 5, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "DEV-2012-11846", "2013", "1-Oct-13", "30-Nov-14", "215 Street: Yellowhead Tr. - Hawks Ridge Blvd.", "D01: 215 Street: Yellowhead Tr. - Hawks Ridge Blvd.", "53.5807237997", "-113.6891010112", [ null, "53.5807237997424", "-113.689101011226", null, false ], "N/A", "Developer Proposed - North", "Loli Fernandez", "780-944-7683", "WARD 01", [ "http://www.edmonton.ca/ward1construction/", "Construction in Ward 01" ], [ "http://www.edmonton.ca/transportation/road_projects/developer-arterial-projects.aspx", "Developer Arterial Projects" ], null, [ null, null ] ]
+, [ 6, "E47C1715-F93E-4A21-BC0A-6AE96F51C30B", 6, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "DEV-2012-7705", "2012", "1-Apr-12", "30-Nov-14", "Winterburn Road: Whitemud Dr. - Webber Greens Dr.", "D02: Winterburn Road: Whitemud Dr. - Webber Greens Dr.", "53.5200130715", "-113.6889075978", [ null, "53.5200130715142", "-113.688907597767", null, false ], "N/A", "Developer Proposed - North", "Loli Fernandez", "780-944-7683", "WARD 01", [ "http://www.edmonton.ca/ward1construction/", "Construction in Ward 01" ], [ "http://www.edmonton.ca/transportation/road_projects/developer-arterial-projects.aspx", "Developer Arterial Projects" ], null, [ null, null ] ]
+, [ 7, "DB53C4F3-298E-40D0-81C4-D383B74986F8", 7, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "DEV-2013-200", "2014", "1-May-14", "31-Jul-14", "137 Avenue: 199 St. - Ray Gibbon Dr.", "D03: 137 Avenue: 199 St. - Ray Gibbon Dr.", "53.5995559267", "-113.6573136659", [ null, "53.5995559266735", "-113.657313665933", null, false ], "N/A", "Developer Proposed - North", "Loli Fernandez", "780-944-7683", "WARD 01", [ "http://www.edmonton.ca/ward1construction/", "Construction in Ward 01" ], [ "http://www.mailoutinteractive.com/Industry/View.aspx?id=561289&q=726029054&qz=38d9e5", "Closure Notice" ], null, [ null, null ] ]
+, [ 8, "0400BC45-099B-459E-ABCC-C02A989DE411", 8, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "TPB-DEV-4N", "2014", "1-May-14", "30-Nov-14", "109 Avenue: 205 St. - TUC", "D04: 109 Avenue: 205 St. - TUC", "53.5548282502", "-113.6690933323", [ null, "53.5548282502272", "-113.669093332319", null, false ], "N/A", "Developer Proposed - North", "Loli Fernandez", "780-944-7683", "WARD 01", [ "http://www.edmonton.ca/ward1construction/", "Construction in Ward 01" ], [ "http://www.edmonton.ca/transportation/road_projects/developer-arterial-projects.aspx", "Developer Arterial Projects" ], null, [ null, null ] ]
+, [ 9, "0E39DD4D-F0AB-4CFE-B66A-804422F2679C", 9, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "TPB-DEV-7N", "2014", "1-May-14", "30-Nov-14", "215 Street: 112 Ave. - Yellowhead Tr.", "D05: 215 Street: 112 Ave. - Yellowhead Tr.", "53.5636988178", "-113.6890371519", [ null, "53.56369881779", "-113.689037151919", null, false ], "N/A", "Developer Proposed - North", "Loli Fernandez", "780-944-7683", "WARD 01", [ "http://www.edmonton.ca/ward1construction/", "Construction in Ward 01" ], [ "http://www.edmonton.ca/transportation/road_projects/developer-arterial-projects.aspx", "Developer Arterial Projects" ], null, [ null, null ] ]
+, [ 10, "6CE84A66-2718-4136-88B9-00B1C042733D", 10, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "TPB-DEV-5N", "2014", "1-May-14", "30-Nov-14", "231 Street: Secord Gate - S/97 Ave.", "D06: 231 Street: Secord Gate - S/97 Ave.", "53.533353788", "-113.7135174391", [ null, "53.5333537879819", "-113.713517439091", null, false ], "N/A", "Developer Proposed - North", "Loli Fernandez", "780-944-7683", "WARD 01", [ "http://www.edmonton.ca/ward1construction/", "Construction in Ward 01" ], [ "http://www.edmonton.ca/transportation/road_projects/developer-arterial-projects.aspx", "Developer Arterial Projects" ], null, [ null, null ] ]
+, [ 11, "91D02455-D994-47C2-8A5A-016862B1AAF8", 11, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "TPB-DEV-8N", "2014", "1-May-14", "30-Nov-14", "156 Street: N/137 Ave. - N/Boundary of Subdivision (Mistatim S13)", "D07: 156 Street: N/137 Ave. - S/St. Albert Tr.", "53.6025956163", "-113.590295853", [ null, "53.6025956162788", "-113.590295853024", null, false ], "N/A", "Developer Proposed - North", "Loli Fernandez", "780-944-7683", "WARD 02", [ "http://www.edmonton.ca/ward2construction/", "Construction in Ward 02" ], [ "http://www.edmonton.ca/transportation/road_projects/developer-arterial-projects.aspx", "Developer Arterial Projects" ], null, [ null, null ] ]
+, [ 12, "D54814FF-479B-4F33-A5B5-A5F779E4274D", 12, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "DEV-2014-189", "2014", "1-May-14", "30-Sep-14", "167 Avenue: 127 St. - 123 St.", "D08: 167 Avenue: 127 St. - 123 St.", "53.6288750868", "-113.531461285", [ null, "53.6288750867599", "-113.531461284984", null, false ], "N/A", "Developer Proposed - North", "Loli Fernandez", "780-944-7683", "WARD 03", [ "http://www.edmonton.ca/ward3construction/", "Construction in Ward 03" ], [ "http://www.edmonton.ca/transportation/road_projects/developer-arterial-projects.aspx", "Developer Arterial Projects" ], null, [ null, null ] ]
+, [ 13, "C35D99AC-3125-4359-B3B0-5E9156AC65E0", 13, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "TPB-DEV-6N", "2014", "1-Apr-14", "30-Nov-14", "34 Street: 153 Ave. - 158 Ave.", "D09: 34 Street: 153 Ave. - 158 Ave.", "53.6179037485", "-113.3936046862", [ null, "53.6179037484887", "-113.393604686183", null, false ], "N/A", "Developer Proposed - North", "Loli Fernandez", "780-944-7683", "WARD 04", [ "http://www.edmonton.ca/ward4construction/", "Construction in Ward 04" ], [ "http://www.edmonton.ca/transportation/road_projects/developer-arterial-projects.aspx", "Developer Arterial Projects" ], null, [ null, null ] ]
+, [ 14, "42EEBFD6-8D2D-4765-8444-83A10283A17A", 14, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "TPB-DEV-1N", "2014", "1-May-14", "1-Aug-14", "167 Avenue: Manning Dr. - 50 St.", "D10: 167 Avenue: Manning Dr. - 50 St.", "53.627988235", "-113.4034692112", [ null, "53.627988235011", "-113.403469211214", null, false ], "N/A", "Developer Proposed - North", "Loli Fernandez", "780-944-7683", "WARD 04", [ "http://www.edmonton.ca/ward4construction/", "Construction in Ward 04" ], [ "http://www.edmonton.ca/transportation/road_projects/developer-arterial-projects.aspx", "Developer Arterial Projects" ], null, [ null, null ] ]
+, [ 15, "D1450506-CDF1-4363-95A7-EC1D6A9B0437", 15, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "TPB-DEV-2N", "2014", "1-May-14", "30-Nov-14", "50 Street: 167 Ave. - Cy Becker Blvd.", "D11: 50 Street: 167 Ave. - Cy Becker Blvd.", "53.6306886756", "-113.4123798478", [ null, "53.6306886755886", "-113.412379847766", null, false ], "N/A", "Developer Proposed - North", "Loli Fernandez", "780-944-7683", "WARD 04", [ "http://www.edmonton.ca/ward4construction/", "Construction in Ward 04" ], [ "http://www.edmonton.ca/transportation/road_projects/developer-arterial-projects.aspx", "Developer Arterial Projects" ], null, [ null, null ] ]
+, [ 16, "B62117C1-8241-4A28-8290-4132783CF592", 16, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "DEV-2014-194", "2014", "1-Apr-14", "25-Dec-14", "199 Street: S/Lessard Rd. - 35 Ave.", "D12: 199 Street: S/Lessard Rd. - 35 Ave.", "53.4754106794", "-113.6707836898", [ null, "53.4754106793707", "-113.670783689804", null, false ], "N/A", "Developer Proposed - North", "Loli Fernandez", "780-944-7683", "WARD 05", [ "http://www.edmonton.ca/ward5construction/", "Construction in Ward 05" ], [ "http://www.edmonton.ca/transportation/road_projects/developer-arterial-projects.aspx", "Developer Arterial Projects" ], null, [ null, null ] ]
+, [ 17, "2B5BAEA1-9490-4F45-807F-30F129A8D78D", 17, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "DEV-2013_100", "2014", "1-Apr-14", "25-Dec-14", "Lessard Road: 199 St. - 202 St.", "D13: Lessard Road: 199 St. - 202 St.", "53.4777265082", "-113.6737171496", [ null, "53.4777265081938", "-113.673717149629", null, false ], "N/A", "Developer Proposed - North", "Loli Fernandez", "780-944-7683", "WARD 05", [ "http://www.edmonton.ca/ward5construction/", "Construction in Ward 05" ], [ "http://www.edmonton.ca/transportation/road_projects/developer-arterial-projects.aspx", "Developer Arterial Projects" ], null, [ null, null ] ]
+, [ 18, "2B07A72C-9855-4A9A-8400-FEFE0EFB27E2", 18, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "TPB-DEV-3N", "2014", "1-May-14", "30-Nov-14", "62 Avenue: 215 St. - Granville Link", "D14: 62 Avenue: 215 St. - Granville Link", "53.4976833617", "-113.6861552966", [ null, "53.4976833617176", "-113.686155296648", null, false ], "N/A", "Developer Proposed - North", "Loli Fernandez", "780-944-7683", "WARD 05", [ "http://www.edmonton.ca/ward5construction/", "Construction in Ward 05" ], [ "http://www.edmonton.ca/transportation/road_projects/developer-arterial-projects.aspx", "Developer Arterial Projects" ], null, [ null, null ] ]
+, [ 19, "B7D65F00-19C3-4EBF-882F-9D650F23692E", 19, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "TPB-DEV-SE4", "2014", "7-Apr-14", "17-Sep-14", "Aurum Road: 17 St. NE - E/17 St. NE", "D15: Aurum Road: 17 St. NE - E/17 St. NE", "53.5903054162", "-113.3142955618", [ null, "53.5903054161937", "-113.314295561811", null, false ], "N/A", "Developer Proposed - South", "Mohammed Bashar", "780-496-1799", "WARD 04", [ "http://www.edmonton.ca/ward4construction/", "Construction in Ward 04" ], [ "http://www.edmonton.ca/transportation/road_projects/developer-arterial-projects.aspx", "Developer Arterial Projects" ], null, [ null, null ] ]
+, [ 20, "31BF29A8-2B76-4F80-9171-D444EE424FA4", 20, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "TPB-DEV-SW11", "2014", "1-Apr-14", "25-Dec-14", "James Mowatt Trail SW: Rutherford Rd. SW - Ellerslie Rd. SW", "D16: James Mowatt Trail SW: Rutherford Rd. SW - Ellerslie Rd. SW", "53.4229058391", "-113.5162926351", [ null, "53.4229058390917", "-113.516292635129", null, false ], "N/A", "Developer Proposed - South", "Mohammed Bashar", "780-496-1799", "WARD 09", [ "http://www.edmonton.ca/ward9construction/", "Construction in Ward 09" ], [ "http://www.edmonton.ca/transportation/road_projects/developer-arterial-projects.aspx", "Developer Arterial Projects" ], null, [ null, null ] ]
+, [ 21, "2150A6AB-DF27-4FEC-BEAA-CB40115E01B9", 21, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "TPB-DEV-SW10", "2014", "1-Apr-14", "25-Dec-14", "30 Avenue SW: Blackmud Creek - Cavanagh Dr. SW", "D17: 30 Avenue SW: Blackmud Creek - Cavanagh Dr. SW", "53.4057112602", "-113.5198285432", [ null, "53.4057112602083", "-113.51982854319", null, false ], "N/A", "Developer Proposed - South", "Mohammed Bashar", "780-496-1799", "WARD 09", [ "http://www.edmonton.ca/ward9construction/", "Construction in Ward 09" ], [ "http://www.edmonton.ca/transportation/road_projects/developer-arterial-projects.aspx", "Developer Arterial Projects" ], null, [ null, null ] ]
+, [ 22, "1A3325E1-4EE6-40DB-B934-86250936E799", 22, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "TPB-DEV-SW8", "2014", "1-Apr-14", "25-Dec-14", "Ellerslie Road SW: 127 St. SW to 141 St. SW", "D18: Ellerslie Road SW: 127 St. SW to 141 St. SW", "53.4249275148", "-113.5524548275", [ null, "53.4249275148287", "-113.552454827456", null, false ], "N/A", "Developer Proposed - South", "Mohammed Bashar", "780-496-1799", "WARD 09", [ "http://www.edmonton.ca/ward9construction/", "Construction in Ward 09" ], [ "http://www.edmonton.ca/transportation/road_projects/developer-arterial-projects.aspx", "Developer Arterial Projects" ], null, [ null, null ] ]
+, [ 23, "A43D808B-86A7-48C2-8DD1-86E484134FBE", 23, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "TPB-DEV-SW6", "2014", "1-Apr-14", "25-Dec-14", "28 Avenue SW: 141 St. SW - Hays Ridge Link SW", "D19: 28 Avenue SW: 141 St. SW - Hays Ridge Link SW", "53.4166013465", "-113.5678082582", [ null, "53.4166013464865", "-113.567808258159", null, false ], "N/A", "Developer Proposed - South", "Mohammed Bashar", "780-496-1799", "WARD 09", [ "http://www.edmonton.ca/ward9construction/", "Construction in Ward 09" ], [ "http://www.edmonton.ca/transportation/road_projects/developer-arterial-projects.aspx", "Developer Arterial Projects" ], null, [ null, null ] ]
+, [ 24, "E7421CBE-7DA9-4217-BD7A-D1452BDA780F", 24, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "TPB-DEV-SW7", "2014", "1-Apr-14", "25-Dec-14", "Rabbit Hill Road SW: Glenridding Blvd. SW - Ellerslie Rd. SW", "D20: Rabbit Hill Road SW: Glenridding Blvd. SW - Ellerslie Rd. SW", "53.423858415", "-113.5907995047", [ null, "53.4238584149896", "-113.590799504687", null, false ], "N/A", "Developer Proposed - South", "Mohammed Bashar", "780-496-1799", "WARD 09", [ "http://www.edmonton.ca/ward9construction/", "Construction in Ward 09" ], [ "http://www.edmonton.ca/transportation/road_projects/developer-arterial-projects.aspx", "Developer Arterial Projects" ], null, [ null, null ] ]
+, [ 25, "0134B867-07A9-40BA-81F1-A1BA67EDCDCE", 25, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "TPB-DEV-SW1", "2013", "25-Jul-13", "25-Dec-14", "Ellerslie Road SW: Rabbit Hill Rd. SW - 163 St. SW", "D21: Ellerslie Road SW: Rabbit Hill Rd. SW - 163 St. SW", "53.4249372173", "-113.598085728", [ null, "53.4249372172994", "-113.598085728035", null, false ], "N/A", "Developer Proposed - South", "Mohammed Bashar", "780-496-1799", "WARD 09", [ "http://www.edmonton.ca/ward9construction/", "Construction in Ward 09" ], [ "http://www.edmonton.ca/transportation/road_projects/developer-arterial-projects.aspx", "Developer Arterial Projects" ], null, [ null, null ] ]
+, [ 26, "C65A3D01-1FA7-43BC-96E1-E7C6D5E554A8", 26, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "TPB-DEV-SW4", "2013", "1-Jun-13", "25-Dec-14", "Ellerslie Road SW: 163 St. SW - 170 St. SW", "D22: Ellerslie Road SW: 163 St. SW - 170 St. SW", "53.4249319591", "-113.6103236997", [ null, "53.4249319591275", "-113.610323699685", null, false ], "N/A", "Developer Proposed - South", "Mohammed Bashar", "780-496-1799", "WARD 09", [ "http://www.edmonton.ca/ward9construction/", "Construction in Ward 09" ], [ "http://www.edmonton.ca/transportation/road_projects/developer-arterial-projects.aspx", "Developer Arterial Projects" ], null, [ null, null ] ]
+, [ 27, "89B2DEC3-5FC9-4008-8364-7FFD8BFD0B0A", 27, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2014-409", "2014", "1-Apr-14", "25-Dec-14", "122 Street: N/63 Ave. - S/63 Ave.", "D23: 122 Street: N/63 Ave. - S/63 Ave.", "53.5023955591", "-113.5410964119", [ null, "53.5023955590691", "-113.541096411914", null, false ], "12-66-1020", "Developer Proposed - South", "Mohammed Bashar", "780-496-1799", "WARD 10", [ "http://www.edmonton.ca/ward10construction/", "Construction in Ward 10" ], [ "http://www.edmonton.ca/transportation/road_projects/developer-arterial-projects.aspx", "Developer Arterial Projects" ], null, [ null, null ] ]
+, [ 28, "050EC035-7767-462E-B3F1-8F33DBD08DC5", 28, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "TPB-DEV-SW2", "2013", "17-Jun-13", "25-Dec-14", "170 Street SW: Hiller Rd. SW -  Anderson Way SW", "D24: 170 Street SW: Hiller Rd. SW -  Anderson Way SW", "53.4247089111", "-113.6146305579", [ null, "53.4247089111185", "-113.614630557862", null, false ], "N/A", "Developer Proposed - South", "Mohammed Bashar", "780-496-1799", "WARD 09", [ "http://www.edmonton.ca/ward9construction/", "Construction in Ward 09" ], [ "http://www.edmonton.ca/transportation/traffic-reports.aspx?trumbaEmbed=view%3Devent%26eventid%3D110776021", "Traffic Report" ], null, [ null, null ] ]
+, [ 29, "275E9E95-C6FD-44EF-9EE7-771604999F36", 29, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "TPB-DEV-SE7", "2014", "1-Apr-14", "25-Dec-14", "23 Avenue: 17 St. - Tamarack Collector", "D25: 23 Avenue: 17 St. - Tamarack Collector", "53.4539786049", "-113.3642403707", [ null, "53.4539786048751", "-113.364240370738", null, false ], "N/A", "Developer Proposed - South", "Mohammed Bashar", "780-496-1799", "WARD 12", [ "http://www.edmonton.ca/ward12construction/", "Construction in Ward 12" ], [ "http://www.edmonton.ca/transportation/road_projects/developer-arterial-projects.aspx", "Developer Arterial Projects" ], null, [ null, null ] ]
+, [ 30, "56B55EF6-4D5D-42D9-985D-9A0DA4840C6F", 30, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "TPB-DEV-SE6", "2014", "1-Apr-14", "25-Dec-14", "17 Street: 23 Ave. - Tamarack Commercial Access", "D26: 17 Street: 23 Ave. - Tamarack Commercial Access", "53.4566910581", "-113.3690199227", [ null, "53.4566910580854", "-113.369019922655", null, false ], "N/A", "Developer Proposed - South", "Mohammed Bashar", "780-496-1799", "WARD 12", [ "http://www.edmonton.ca/ward12construction/", "Construction in Ward 12" ], [ "http://www.edmonton.ca/transportation/road_projects/developer-arterial-projects.aspx", "Developer Arterial Projects" ], null, [ null, null ] ]
+, [ 31, "D29E4CBD-2E21-46F6-998D-9E329F0958F7", 31, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "TPB-DEV-SE2", "2014", "1-Apr-14", "25-Dec-14", "Ellerslie Road SW: Pioneer Meadow Entrance - 50 St. SW", "D27: Ellerslie Road SW: Pioneer Meadow Entrance - 50 St. SW", "53.4249243042", "-113.4089972804", [ null, "53.4249243042291", "-113.408997280443", null, false ], "N/A", "Developer Proposed - South", "Mohammed Bashar", "780-496-1799", "WARD 12", [ "http://www.edmonton.ca/ward12construction/", "Construction in Ward 12" ], [ "http://www.edmonton.ca/transportation/road_projects/developer-arterial-projects.aspx", "Developer Arterial Projects" ], null, [ null, null ] ]
+, [ 32, "E0A62FC7-74E7-49EE-A7F3-A194501053B1", 32, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "TPB-DEV-SE12", "2013", "13-May-13", "25-Dec-14", "50 Street SW: Ellerslie Rd. SW - Anthony Henday Dr.", "D28: 50 Street SW: Ellerslie Rd. SW - Anthony Henday Dr.", "53.4291026107", "-113.4181700001", [ null, "53.4291026106987", "-113.418170000133", null, false ], "N/A", "Developer Proposed - South", "Mohammed Bashar", "780-496-1799", "WARD 12", [ "http://www.edmonton.ca/ward12construction/", "Construction in Ward 12" ], [ "http://www.edmonton.ca/transportation/road_projects/developer-arterial-projects.aspx", "Developer Arterial Projects" ], null, [ null, null ] ]
+, [ 33, "B56AF736-4CB0-4D8F-9910-DD024428599B", 33, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "TPB-DEV-SE3", "2014", "1-Apr-14", "25-Dec-14", "50 Street SW: Ellerslie Rd. SW - 14 Ave. SW", "D29: 50 Street SW: Ellerslie Rd. SW - 14 Ave. SW", "53.4152135056", "-113.4181800001", [ null, "53.4152135055854", "-113.418180000068", null, false ], "N/A", "Developer Proposed - South", "Mohammed Bashar", "780-496-1799", "WARD 12", [ "http://www.edmonton.ca/ward12construction/", "Construction in Ward 12" ], [ "http://www.edmonton.ca/transportation/road_projects/developer-arterial-projects.aspx", "Developer Arterial Projects" ], null, [ null, null ] ]
+, [ 34, "55BBE1B8-08D1-48F6-B959-D49E3388C3FE", 34, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "TPB-DEV-SE1", "2013", "1-Apr-13", "25-Dec-14", "Ellerslie Road SW: 62 St. SW - 50 St. SW", "D30: Ellerslie Road SW: 62 St. SW - 50 St. SW", "53.4249245184", "-113.4273889716", [ null, "53.4249245183837", "-113.427388971615", null, false ], "N/A", "Developer Proposed - South", "Mohammed Bashar", "780-496-1799", "WARD 12", [ "http://www.edmonton.ca/ward12construction/", "Construction in Ward 12" ], [ "http://www.edmonton.ca/transportation/road_projects/ellerslie-road-upgrade.aspx", "Ellerslie Road Upgrade" ], null, [ null, null ] ]
+, [ 35, "09D8DCB6-C5AA-4B7E-A6AA-D2F9C30960F4", 35, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "TPB-DEV-SE5", "2014", "1-Apr-14", "25-Dec-14", "25 Avenue SW: Orchards Gate - Savryn Dr.", "D31: 25 Avenue SW: Orchards Gate - Savryn Dr.", "53.4104371678", "-113.4674098551", [ null, "53.4104371677855", "-113.467409855073", null, false ], "N/A", "Developer Proposed - South", "Mohammed Bashar", "780-496-1799", "WARD 12", [ "http://www.edmonton.ca/ward12construction/", "Construction in Ward 12" ], [ "http://www.edmonton.ca/transportation/road_projects/developer-arterial-projects.aspx", "Developer Arterial Projects" ], null, [ null, null ] ]
+, [ 36, "68A299F2-4CD6-40CA-BDEB-52250E6CFC98", 36, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2014-216", "2014", "1-Apr-14", "25-Dec-14", "97 Street: 135 Ave. - 137 Ave. (Bus Lanes)", "G01: 97 Street: 135 Ave. - 137 Ave.", "53.598117959", "-113.4918530029", [ null, "53.598117959002", "-113.491853002851", null, false ], "05-66-1665", "Growth/Rehabilitation", "Wayne Squires", "780-423-5544", "WARD 07", [ "http://www.edmonton.ca/ward7construction/", "Construction in Ward 07" ], [ null, null ], null, [ null, null ] ]
+, [ 37, "135985AD-4B49-470D-AEDD-74D15E1708B7", 37, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2014-214", "2014", "1-Apr-14", "25-Dec-14", "38 Avenue: 21 St. - 34 St.", "G02: 38 Avenue: 21 St. - 34 St.", "53.4743151638", "-113.3843738537", [ null, "53.4743151638427", "-113.384373853651", null, false ], "13-66-1449/12-66-1020", "Growth/Rehabilitation", "Wayne Squires", "780-423-5544", "WARD 12", [ "http://www.edmonton.ca/ward12construction/", "Construction in Ward 12" ], [ "http://www.edmonton.ca/transportation/road_projects/34-street-arterial-roadway-widening.aspx", "34 Street, 23 Avenue, 38 Avenue Arterial Roadway Widening" ], null, [ null, null ] ]
+, [ 38, "67963604-2D73-4F8D-8A16-1ABBD64B2DCB", 38, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2013-210", "2013", "1-Apr-13", "31-Jul-14", "Guardian Road/Lewis Estates Boulevard: Grantham Dr. - Potters Greens Dr.", "G03: Guardian Road/Lewis Estates Boulevard: Grantham Dr. - Potters Greens Dr.", "53.5100475819", "-113.6774350173", [ null, "53.5100475818855", "-113.677435017295", null, false ], "12-66-1445", "Growth/Rehabilitation", "Keith Teeuwsen", "780-495-0270", "WARD 05", [ "http://www.edmonton.ca/ward5construction/", "Construction in Ward 05" ], [ "http://www.edmonton.ca/transportation/road_projects/guardian-road-lewis-estates-boulevard.aspx", "Guardian Road/Lewis Estates Blvd" ], null, [ null, null ] ]
+, [ 39, "52A95FB8-5ECB-4372-B9BE-8F0B70809976", 39, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2014-213", "2014", "1-Apr-14", "25-Dec-14", "34 Street: 23 Ave. - 34 Ave.", "G04: 34 Street: 23 Ave. - 34 Ave.", "53.4586809121", "-113.3939728869", [ null, "53.4586809121233", "-113.39397288691", null, false ], "13-66-1448/12-66-1020", "Growth/Rehabilitation", "Gordon Mitchell", "780-944-5662", "WARD 12", [ "http://www.edmonton.ca/ward12construction/", "Construction in Ward 12" ], [ "http://www.edmonton.ca/transportation/road_projects/34-street-arterial-roadway-widening.aspx", "35 Street, 23 Avenue, 38 Avenue Arterial Roadway Widening" ], null, [ null, null ] ]
+, [ 40, "BB341782-9ED0-45FC-A212-3835CBB56B7B", 40, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2014-212", "2014", "1-Apr-14", "25-Dec-14", "23 Avenue: 34 St. - Mill Wood Dr. East", "G05: 23 Avenue: 34 St. - Mill Wood Dr. East", "53.4545005705", "-113.4015137393", [ null, "53.4545005704585", "-113.401513739313", null, false ], "13-66-1447/12-66-1020", "Growth/Rehabilitation", "Gordon Mitchell", "780-944-5662", "WARD 12", [ "http://www.edmonton.ca/ward12construction/", "Construction in Ward 12" ], [ "http://www.edmonton.ca/transportation/road_projects/34-street-arterial-roadway-widening.aspx", "36 Street, 23 Avenue, 38 Avenue Arterial Roadway Widening" ], null, [ null, null ] ]
+, [ 41, "33F0BB46-5C9B-40AC-A604-D98E0B539ADE", 41, 1404852792, "398657", 1407424324, "398657", null, "ROAD", "RDS-2014-215", "2014", "1-Apr-14", "25-Dec-14", "91 Street SW: 30 Ave. SW - 41 Ave. SW", "G06: 91 Street SW: 30 Ave. SW - 41 Ave. SW", "53.4023417751", "-113.4889496866", [ null, "53.4023417751442", "-113.488949686556", null, false ], "12-66-1454", "Growth/Rehabilitation", "Harinder Sandhu", "780-944-5640", "WARD 12", [ "http://www.edmonton.ca/ward12construction/", "Construction in Ward 12" ], [ "http://www.edmonton.ca/transportation/road_projects/91-street-sw.aspx", "Ewing Trail SW (91 Street SW)" ], null, [ null, null ] ]
+, [ 42, "8C258522-8345-480B-A104-F7A4E793707F", 42, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2013-181-CO1", "2014", "1-Apr-14", "25-Dec-14", "34 Avenue: 34 St. - 48 St.", "G07: 34 Avenue: 34 St. - 48 St.", "53.4638124857", "-113.4003179304", [ null, "53.4638124856734", "-113.400317930363", null, false ], "12-66-1443/12-66-1020", "Growth/Rehabilitation", "Shane Richard", "780-495-9964", "WARD 12", [ "http://www.edmonton.ca/ward12construction/", "Construction in Ward 12" ], [ "http://www.edmonton.ca/transportation/road_projects/34-avenue-widening.aspx", "34 Avenue Widening" ], null, [ null, null ] ]
+, [ 43, "4C29EB9C-97A2-4B6E-BCE6-DFDF3EEFB513", 43, 1404852792, "398657", 1404852792, "398657", "{\n}", "LIGHTS", "TOB 2014 1260 011", "2014", "1-May-14", "31-Dec-14", "156 Street: 95 Ave. - 100 Ave.", "L01: 156 Street: 95 Ave. - 100 Ave.", "53.5353971447", "-113.5903250507", [ null, "53.5353971446674", "-113.59032505068", null, false ], "12-66-1260", "Street Lights", "Vlado Cicovski", "780-423-7470", "WARD 01", [ "http://www.edmonton.ca/ward1construction/", "Construction in Ward 01" ], [ null, null ], null, [ null, null ] ]
+, [ 44, "13DDC6FE-9662-4D4C-9E5E-B3C0F9BA86C9", 44, 1404852792, "398657", 1404852792, "398657", "{\n}", "LIGHTS", "TOB 2014 1260 016", "2014", "1-May-14", "31-Dec-14", "Mayfield Road: 163 St. - 170 St.", "L02: Mayfield Road: 163 St. - 170 St.", "53.5441018435", "-113.614831233", [ null, "53.5441018434925", "-113.614831232972", null, false ], "12-66-1260", "Street Lights", "Vlado Cicovski", "780-423-7470", "WARD 01", [ "http://www.edmonton.ca/ward1construction/", "Construction in Ward 01" ], [ null, null ], null, [ null, null ] ]
+, [ 45, "0324AA33-33F7-4C21-9C24-9DFEA75AEE08", 45, 1404852792, "398657", 1404852792, "398657", "{\n}", "LIGHTS", "TOB 2014 1260 022", "2014", "1-May-14", "31-Aug-14", "170 Street (on CN Bridge)", "L03: 170 Street (on CN Bridge)", "53.5754481747", "-113.61517", [ null, "53.5754481747192", "-113.61517", null, false ], "12-66-1260", "Street Lights", "Vlado Cicovski", "780-423-7470", "WARD 01", [ "http://www.edmonton.ca/ward1construction/", "Construction in Ward 01" ], [ null, null ], null, [ null, null ] ]
+, [ 46, "027A323D-5712-4872-AA60-168968A0A7A5", 46, 1404852792, "398657", 1404852792, "398657", "{\n}", "LIGHTS", "TOB-2014-1260-4", "2014", "1-May-14", "31-Aug-14", "178 Street - 93 Avenue", "L04: 178 Street - 93 Avenue", "53.52632", "-113.62992", [ null, "53.5263199999683", "-113.629920000005", null, false ], "12-66-1260", "Street Lights", "Vlado Cicovski", "780-423-7470", "WARD 01", [ "http://www.edmonton.ca/ward1construction/", "Construction in Ward 01" ], [ null, null ], null, [ null, null ] ]
+, [ 47, "9D669D33-B70C-4C13-A0AC-87BE6767B4E8", 47, 1404852792, "398657", 1404852792, "398657", "{\n}", "LIGHTS", "TOB 2014 1260 010", "2014", "1-May-14", "31-Dec-14", "132 Avenue: 102 St. - 103 St.", "L05: 132 Avenue: 102 St. - 103 St.", "53.59204", "-113.496355", [ null, "53.5920400000001", "-113.496355", null, false ], "12-66-1260", "Street Lights", "Vlado Cicovski", "780-423-7470", "WARD 02", [ "http://www.edmonton.ca/ward2construction/", "Construction in Ward 02" ], [ null, null ], null, [ null, null ] ]
+, [ 48, "F82E29F8-6677-4448-96FB-80A65FBE83FB", 48, 1404852792, "398657", 1404852792, "398657", "{\n}", "LIGHTS", "TOB 2014 1260 014", "2014", "1-May-14", "31-Dec-14", "106 Street/107 Street: 118 Ave. - Yellowhead Tr.", "L06: 106 Street/107 Street: 118 Ave. - Yellowhead Tr.", "53.5704135416", "-113.5030194636", [ null, "53.5704135415575", "-113.503019463643", null, false ], "12-66-1260", "Street Lights", "Vlado Cicovski", "780-423-7470", "WARD 02", [ "http://www.edmonton.ca/ward2construction/", "Construction in Ward 02" ], [ null, null ], null, [ null, null ] ]
+, [ 49, "95315C53-C905-4DB8-A4F5-724CFD9D655A", 49, 1404852792, "398657", 1404852792, "398657", "{\n}", "LIGHTS", "TOB 2014 1260 012", "2014", "1-May-14", "31-Dec-14", "127 Street: 153 Ave. - 158 Ave.", "L07: 127 Street: 153 Ave. - 158 Ave.", "53.62032", "-113.5411846251", [ null, "53.6203199999742", "-113.541184625099", null, false ], "12-66-1260", "Street Lights", "Vlado Cicovski", "780-423-7470", "WARD 02", [ "http://www.edmonton.ca/ward2construction/", "Construction in Ward 02" ], [ null, null ], null, [ null, null ] ]
+, [ 50, "732EA939-0C29-489B-9BE9-AA9EECD299F3", 50, 1404852792, "398657", 1404852792, "398657", "{\n}", "LIGHTS", "STL 1260-5196", "2013", "1-Aug-13", "31-May-14", "Calgary Trail : 23 Ave. - Whitemud Dr.", "L08: Calgary Trail : 23 Ave. - Whitemud Dr.", "53.4665782423", "-113.4957140757", [ null, "53.4665782422738", "-113.495714075729", null, false ], "12-66-1260", "Street Lights", "Vlado Cicovski", "780-423-7470", "WARD 10", [ "http://www.edmonton.ca/ward10construction/", "Construction in Ward 10" ], [ null, null ], null, [ null, null ] ]
+, [ 51, "945FC2C4-7334-4658-A1A8-AE3ABA180B57", 51, 1404852792, "398657", 1404852792, "398657", "{\n}", "LIGHTS", "STL 1260-5195", "2013", "1-Aug-13", "31-May-14", "Gateway Boulevard: 23 Ave. - Whitemud Dr.", "L09: Gateway Boulevard: 23 Ave. - Whitemud Dr.", "53.4669664756", "-113.4920153308", [ null, "53.4669664756302", "-113.492015330824", null, false ], "12-66-1260", "Street Lights", "Vlado Cicovski", "780-423-7470", "WARD 11", [ "http://www.edmonton.ca/ward11construction/", "Construction in Ward 11" ], [ null, null ], null, [ null, null ] ]
+, [ 52, "97BC39F4-4B1F-490E-A3E6-CEEBBF78D049", 52, 1404852792, "398657", 1404852792, "398657", "{\n}", "LIGHTS", "TOB 2014 1260 009", "2014", "1-May-14", "31-Aug-14", "158 Avenue - Beaumaris Road", "L10: 158 Avenue - Beaumaris Road", "53.6188", "-113.50282", [ null, "53.6188000000001", "-113.50282", null, false ], "12-66-1260", "Street Lights", "Vlado Cicovski", "780-423-7470", "WARD 03", [ "http://www.edmonton.ca/ward3construction/", "Construction in Ward 03" ], [ null, null ], null, [ null, null ] ]
+, [ 53, "E14C3C76-2ACD-4D76-A3A8-1775449DB6FD", 53, 1404852792, "398657", 1404852792, "398657", "{\n}", "LIGHTS", "STL 1260 2013 3", "2013", "1-Jun-13", "31-Dec-14", "50 Street: TUC - Whitemud Dr.", "L11: 50 Street: TUC - Whitemud Dr.", "53.4627481862", "-113.4206982091", [ null, "53.4627481861653", "-113.420698209135", null, false ], "12-66-1260", "Street Lights", "Vlado Cicovski", "780-423-7470", "WARD 11", [ "http://www.edmonton.ca/ward11construction/", "Construction in Ward 11" ], [ null, null ], null, [ null, null ] ]
+, [ 54, "44DD7CE8-30F7-4DA2-9837-54B9BA79E20B", 54, 1404852792, "398657", 1404852792, "398657", "{\n}", "LIGHTS", "TOB 2014 1260 018", "2014", "1-May-14", "31-Dec-14", "144 Avenue: 36 St. - Manning Dr.", "L12: 144 Avenue: 36 St. - Manning Dr.", "53.6069", "-113.3988503143", [ null, "53.6069000000001", "-113.398850314342", null, false ], "12-66-1260", "Street Lights", "Vlado Cicovski", "780-423-7470", "WARD 04", [ "http://www.edmonton.ca/ward4construction/", "Construction in Ward 04" ], [ null, null ], null, [ null, null ] ]
+, [ 55, "DFF40059-46A6-492B-9B5C-4A303764175D", 55, 1404852792, "398657", 1404852792, "398657", "{\n}", "LIGHTS", "TOB 2014 1260 017", "2014", "1-May-14", "31-Dec-14", "Hermitage Road: Hooke Rd. - 50 St.", "L13: Hermitage Road: Hooke Rd. - 50 St.", "53.589477876", "-113.4179195357", [ null, "53.589477875975", "-113.417919535725", null, false ], "12-66-1260", "Street Lights", "Vlado Cicovski", "780-423-7470", "WARD 04", [ "http://www.edmonton.ca/ward4construction/", "Construction in Ward 04" ], [ null, null ], null, [ null, null ] ]
+, [ 56, "B1E0A9FB-867D-4052-B8A6-DDC84664E641", 56, 1404852792, "398657", 1404852792, "398657", "{\n}", "LIGHTS", "STL 1260 2014 1", "2014", "1-May-14", "31-Aug-14", "102 Street - MacDonald Drive", "L14: 102 Street - MacDonald Drive", "53.53889", "-113.49572", [ null, "53.53889", "-113.49572", null, false ], "12-66-1260", "Street Lights", "Vlado Cicovski", "780-423-7470", "WARD 06", [ "http://www.edmonton.ca/ward6construction/", "Construction in Ward 06" ], [ null, null ], null, [ null, null ] ]
+, [ 57, "B0C3AB3D-F0DC-43C9-BB0A-A9C7C52804BD", 57, 1404852792, "398657", 1404852792, "398657", "{\n}", "LIGHTS", "TOB 2014 1260 008", "2014", "1-May-14", "31-Dec-14", "105 Avenue: 105 St. - 109 St.", "L15: 105 Avenue: 105 St. - 109 St.", "53.5477604365", "-113.5048167784", [ null, "53.5477604364599", "-113.504816778363", null, false ], "12-66-1260", "Street Lights", "Vlado Cicovski", "780-423-7470", "WARD 06", [ "http://www.edmonton.ca/ward6construction/", "Construction in Ward 06" ], [ null, null ], null, [ null, null ] ]
+, [ 58, "F9575775-C2E3-455C-A076-1E170768C650", 58, 1404852792, "398657", 1404852792, "398657", "{\n}", "LIGHTS", "TOB 2014 1260 015", "2014", "1-May-14", "31-Dec-14", "109 Street: 107 Ave. - 111 Ave.", "L16: 109 Street: 107 Ave. - 111 Ave.", "53.5585724094", "-113.5083142715", [ null, "53.5585724094406", "-113.508314271498", null, false ], "12-66-1260", "Street Lights", "Vlado Cicovski", "780-423-7470", "WARD 06", [ "http://www.edmonton.ca/ward6construction/", "Construction in Ward 06" ], [ null, null ], null, [ null, null ] ]
+, [ 59, "58738B2A-4680-4DF7-82DA-E4BCFCDCC617", 59, 1404852792, "398657", 1404852792, "398657", "{\n}", "LIGHTS", "TOB 2014 1260 007", "2014", "1-May-14", "31-Dec-14", "50 Street: Terrace Rd. - 50 Ave.", "L17: 50 Street: Terrace Rd. - 50 Ave.", "53.5229147964", "-113.4185855206", [ null, "53.5229147963738", "-113.418585520648", null, false ], "12-66-1260", "Street Lights", "Vlado Cicovski", "780-423-7470", "WARD 08", [ "http://www.edmonton.ca/ward8construction/", "Construction in Ward 08" ], [ null, null ], null, [ null, null ] ]
+, [ 60, "0D9D9C10-9D66-46A2-86B9-5831F1438EF7", 60, 1404852792, "398657", 1404852792, "398657", "{\n}", "LIGHTS", "TOB 2014 1260 006", "2014", "1-May-14", "31-Dec-14", "98 Avenue/Terrace Road: 50 St. - 75 St.", "L18: 98 Avenue/Terrace Road: 50 St. - 75 St.", "53.53884", "-113.430765", [ null, "53.5388399999808", "-113.430765000004", null, false ], "12-66-1260", "Street Lights", "Vlado Cicovski", "780-423-7470", "WARD 08", [ "http://www.edmonton.ca/ward8construction/", "Construction in Ward 08" ], [ null, null ], null, [ null, null ] ]
+, [ 61, "843514A0-C773-45AA-8206-CF671FAC679E", 61, 1404852792, "398657", 1404852792, "398657", "{\n}", "LIGHTS", "TOB 2014 1260 013", "2014", "1-May-14", "31-Dec-14", "Wayne Gretzky Drive: 118 Ave. - Capillano Bridge", "L19: Wayne Gretzky Drive: 118 Ave. - Capillano Bridge", "53.5545547539", "-113.438323701", [ null, "53.5545547538886", "-113.438323700954", null, false ], "12-66-1260", "Street Lights", "Vlado Cicovski", "780-423-7470", "WARD 08", [ "http://www.edmonton.ca/ward8construction/", "Construction in Ward 08" ], [ null, null ], null, [ null, null ] ]
+, [ 62, "5F6555B8-CB9D-4583-8744-532492130A49", 62, 1404852792, "398657", 1404852792, "398657", "{\n}", "LIGHTS", "TOB 2014 1260 025", "2014", "1-May-14", "31-Aug-14", "106 Street - 74 Avenue", "L20: 106 Street - 74 Avenue", "53.51039", "-113.50441", [ null, "53.5103900000001", "-113.50441", null, false ], "12-66-1260", "Street Lights", "Vlado Cicovski", "780-423-7470", "WARD 08", [ "http://www.edmonton.ca/ward8construction/", "Construction in Ward 08" ], [ null, null ], null, [ null, null ] ]
+, [ 63, "B3079E84-DC17-4367-A0B6-743917A0FDC0", 63, 1404852792, "398657", 1404852792, "398657", "{\n}", "LIGHTS", "TOB 2014 1260 019", "2014", "1-May-14", "31-Dec-14", "122 Street: Whitemud Dr. - Fox Dr.", "L21: 122 Street: Whitemud Dr. - Fox Dr.", "53.5035018982", "-113.5398470152", [ null, "53.5035018981528", "-113.539847015242", null, false ], "12-66-1260", "Street Lights", "Vlado Cicovski", "780-423-7470", "WARD 10", [ "http://www.edmonton.ca/ward10construction/", "Construction in Ward 10" ], [ null, null ], null, [ null, null ] ]
+, [ 64, "513F4C14-08F0-489E-A0E7-6E4C02FAEA3C", 64, 1404852792, "398657", 1404852792, "398657", "{\n}", "LIGHTS", "TOB 2014 1260 020", "2014", "1-May-14", "31-Dec-14", "Whitemud Drive: Fox Dr. - Terwillegar Dr.", "L22: Whitemud Drive: Fox Dr. - Terwillegar Dr.", "53.4945452733", "-113.5722291338", [ null, "53.4945452732527", "-113.572229133799", null, false ], "12-66-1260", "Street Lights", "Vlado Cicovski", "780-423-7470", "WARD 10", [ "http://www.edmonton.ca/ward10construction/", "Construction in Ward 10" ], [ null, null ], null, [ null, null ] ]
+, [ 65, "998CCABF-747F-460A-BE86-73FD89BBBBF0", 65, 1404852792, "398657", 1404852792, "398657", "{\n}", "LIGHTS", "STL 1260 2014 3", "2014", "1-Apr-14", "1-Sep-14", "51 Avenue: 93 St. - 75 St.", "L23: 51 Avenue: 93 St. - 75 St.", "53.489175", "-113.4539172255", [ null, "53.4891750000001", "-113.453917225453", null, false ], "12-66-1260", "Street Lights", "Vlado Cicovski", "780-423-7470", "WARD 11", [ "http://www.edmonton.ca/ward11construction/", "Construction in Ward 11" ], [ null, null ], null, [ null, null ] ]
+, [ 66, "6B9D11CA-E289-49C3-BFE9-8971609C6E47", 66, 1404852792, "398657", 1404852792, "398657", "{\n}", "LIGHTS", "TOB 2014 1260 024", "2014", "1-May-14", "31-Dec-14", "42 Avenue: 97 St. - 99 St.", "L24: 42 Avenue: 97 St. - 99 St.", "53.47873", "-113.4827399909", [ null, "53.4787299999968", "-113.482739990911", null, false ], "12-66-1260", "Street Lights", "Vlado Cicovski", "780-423-7470", "WARD 11", [ "http://www.edmonton.ca/ward11construction/", "Construction in Ward 11" ], [ null, null ], null, [ null, null ] ]
+, [ 67, "C2763017-9593-4BCC-90D2-9EDDD0A36C2B", 67, 1404852792, "398657", 1404852792, "398657", "{\n}", "LIGHTS", "TOB 2014 1260 021", "2014", "1-May-14", "31-Aug-14", "Millwoods Road: 23 Ave. - 34 Ave.", "L25: Millwoods Road: 23 Ave. - 34 Ave.", "53.459785", "-113.40799", [ null, "53.4597849999907", "-113.407990000001", null, false ], "12-66-1260", "Street Lights", "Vlado Cicovski", "780-423-7470", "WARD 12", [ "http://www.edmonton.ca/ward12construction/", "Construction in Ward 12" ], [ null, null ], null, [ null, null ] ]
+, [ 68, "17A6832E-C96D-4C90-906B-61D94681E8CE", 68, 1404852792, "398657", 1404852792, "398657", "{\n}", "SIDEWALK", "MUT-2013-522-CO1", "2014", "1-Apr-14", "25-Dec-14", "87 Avenue: 189 St. - TUC", "M01: 87 Avenue: 189 St. - TUC", "53.5213122879", "-113.6506342913", [ null, "53.5213122878682", "-113.650634291316", null, false ], "12-66-1430", "Shared-Use-Path", "Greg Courtepatte", "780-496-5367", "WARD 01", [ "http://www.edmonton.ca/ward1construction/", "Construction in Ward 01" ], [ null, null ], null, [ null, null ] ]
+, [ 69, "A80537D6-C59C-4ACB-984B-4A81D4F02526", 69, 1404852792, "398657", 1404852792, "398657", "{\n}", "SIDEWALK", "MUT-2013-521-CO1", "2014", "1-Apr-14", "25-Dec-14", "82 Street: Yellowhead Tr. - 127 Ave.", "M02: 82 Street: Yellowhead Tr. - 127 Ave.", "53.5835741693", "-113.4673188803", [ null, "53.5835741693417", "-113.467318880269", null, false ], "12-66-1430", "Shared-Use-Path", "Greg Courtepatte", "780-496-5367", "WARD 07", [ "http://www.edmonton.ca/ward7construction/", "Construction in Ward 07" ], [ null, null ], null, [ null, null ] ]
+, [ 70, "F887DEF3-7E20-476C-B702-0AFC9854E46D", 70, 1404852792, "398657", 1404852792, "398657", "{\n}", "SIDEWALK", "MUT-2014-101", "2014", "1-Apr-14", "25-Dec-14", "121 Avenue: W/69 St. - Wally Footz Field", "M03: 121 Avenue: W/69 St. - Wally Footz Field", "53.5749863483", "-113.4518443141", [ null, "53.5749863483287", "-113.451844314053", null, false ], "12-66-1430", "Shared-Use-Path", "Greg Courtepatte", "780-496-5367", "WARD 07", [ "http://www.edmonton.ca/ward7construction/", "Construction in Ward 07" ], [ null, null ], null, [ null, null ] ]
+, [ 71, "E1543036-7716-40AF-AB38-2E021FAC05B2", 71, 1404852792, "398657", 1404852792, "398657", "{\n}", "SIDEWALK", "MUT-2014-201", "2014", "1-Apr-14", "25-Dec-14", "28 Avenue: Parsons Rd. - 92 St.", "M04: 28 Avenue: Parsons Rd. - 92 St.", "53.4586634951", "-113.4736800195", [ null, "53.4586634951377", "-113.473680019511", null, false ], "12-66-1430", "Sidewalk", "Greg Courtepatte", "780-496-5367", "WARD 11", [ "http://www.edmonton.ca/ward11construction/", "Construction in Ward 11" ], [ null, null ], null, [ null, null ] ]
+, [ 72, "5EF0C6FF-9A03-4816-889E-2B985E8B4A65", 72, 1404852792, "398657", 1404852792, "398657", "{\n}", "SIDEWALK", "MUT-2014-202", "2014", "1-Apr-14", "25-Dec-14", "Argyll Road: 75 St. -  79 St.", "M05: Argyll Road: 75 St. -  79 St.", "53.5065782196", "-113.4458329291", [ null, "53.5065782195531", "-113.445832929122", null, false ], "12-66-1430", "Sidewalk", "Greg Courtepatte", "780-496-5367", "WARD 11", [ "http://www.edmonton.ca/ward11construction/", "Construction in Ward 11" ], [ null, null ], null, [ null, null ] ]
+, [ 73, "9AF11FF2-028B-4000-8ACB-EA9B0EB1B4F3", 73, 1404852792, "398657", 1404852792, "398657", "{\n}", "SIDEWALK", "MUT-2014-203", "2014", "1-Apr-14", "25-Dec-14", "Rabbit Hill Road - 23 Avenue Dry Pond", "M06: Rabbit Hill Road - 23 Avenue Dry Pond", "53.4530224423", "-113.5675339237", [ null, "53.4530224422841", "-113.567533923746", null, false ], "12-66-1430", "Sidewalk", "Greg Courtepatte", "780-496-5367", "WARD 09", [ "http://www.edmonton.ca/ward9construction/", "Construction in Ward 09" ], [ null, null ], null, [ null, null ] ]
+, [ 74, "3D0594A2-B221-48B2-906D-727416645B42", 74, 1404852792, "398657", 1407531450, "398657", null, "ROAD", "RDS-2013-966-CO1", "2014", "1-Apr-14", "25-Dec-14", "Lago Lindo Neighbourhood (North Contract)", "N01: Lago Lindo Neighbourhood", "53.6406316532", "-113.4817667887", [ null, "53.6406316531878", "-113.481766788689", null, false ], "12-66-1056", "Neighbourhood Overlay", "Zdenko Petrovic", "780-423-3913", "WARD 03", [ "http://www.edmonton.ca/ward3construction/", "Construction in Ward 03" ], [ null, null ], "Project Complete", [ null, null ] ]
+, [ 75, "4D1978EC-3218-4A13-9740-5DC50D9F4C52", 75, 1404852792, "398657", 1407531460, "398657", null, "ROAD", "RDS-2014-015", "2014", "1-Apr-14", "25-Dec-14", "Evansdale Neighbourhood", "N02: Evansdale Neighbourhood", "53.6107594847", "-113.4872053159", [ null, "53.6107594847216", "-113.487205315916", null, false ], "12-66-1056", "Neighbourhood Overlay", "Zdenko Petrovic", "780-423-3913", "WARD 03", [ "http://www.edmonton.ca/ward3construction/", "Construction in Ward 03" ], [ "http://www.edmonton.ca/transportation/RoadsTraffic/N02_14-1402-01_EvansdaleNR_Bulletin.pdf", "Construction Bulletin" ], "Project Complete", [ null, null ] ]
+, [ 76, "4690285C-ABBF-4793-8587-59F4DB756F4C", 76, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2014-009", "2014", "1-Apr-14", "25-Dec-14", "Dechene Neighbourhood", "N03: Dechene Neighbourhood", "53.4887856742", "-113.6363408081", [ null, "53.4887856742396", "-113.636340808067", null, false ], "12-66-1056", "Neighbourhood Overlay", "John Crockett", "780-442-4713", "WARD 05", [ "http://www.edmonton.ca/ward5construction/", "Construction in Ward 05" ], [ null, null ], null, [ null, null ] ]
+, [ 78, "36A79605-4A4C-41E3-9833-12F32374C453", 78, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2014-010", "2014", "1-Apr-14", "25-Dec-14", "Ormsby Place Neighbourhood (E/187A St.)", "N04: Ormsby Place Neighbourhood ", "53.4992448166", "-113.6396811256", [ null, "53.499244816551", "-113.63968112557", null, false ], "12-66-1056", "Neighbourhood Overlay", "John Crockett", "780-442-4713", "WARD 05", [ "http://www.edmonton.ca/ward5construction/", "Construction in Ward 05" ], [ null, null ], null, [ null, null ] ]
+, [ 77, "E1A4D4CD-30F5-4FDC-A365-880FF2310E0B", 77, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2014-012", "2014", "1-Apr-14", "25-Dec-14", "Ormsby Place Neighbourhood (W/187A St.)", "N04: Ormsby Place Neighbourhood ", "53.495823157", "-113.6514041304", [ null, "53.4958231570243", "-113.651404130365", null, false ], "12-66-1056", "Neighbourhood Overlay", "John Crockett", "780-442-4713", "WARD 05", [ "http://www.edmonton.ca/ward5construction/", "Construction in Ward 05" ], [ null, null ], null, [ null, null ] ]
+, [ 79, "22393ABE-296E-4197-B075-2E4413F5D651", 79, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2014-017", "2014", "1-Apr-14", "25-Dec-14", "Newton Neighbourhood (N/123 Ave.)", "N05: Newton Neighbourhood (N/123 Ave.)", "53.5783135862", "-113.4277018202", [ null, "53.5783135862435", "-113.427701820194", null, false ], "12-66-1056", "Neighbourhood Overlay", "John Crockett", "780-442-4713", "WARD 07", [ "http://www.edmonton.ca/ward7construction/", "Construction in Ward 07" ], [ null, null ], null, [ null, null ] ]
+, [ 80, "FE0AD0E8-CB16-48E5-80B2-5E4B1D05AE89", 80, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2014-006", "2014", "1-Apr-14", "25-Dec-14", "Sweet Grass Neighbourhood", "N06: Sweet Grass Neighbourhood", "53.4638815497", "-113.5264848688", [ null, "53.4638815497406", "-113.526484868843", null, false ], "12-66-1056", "Neighbourhood Overlay", "John Crockett", "780-442-4713", "WARD 10", [ "http://www.edmonton.ca/ward10construction/", "Construction in Ward 10" ], [ null, null ], null, [ null, null ] ]
+, [ 81, "B4305603-871B-4973-83BE-90B499DA8F30", 81, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2013-065-CO1", "2014", "1-Apr-14", "25-Dec-14", "Pollard Meadows Neighbourhood", "N07: Pollard Meadows Neighbourhood", "53.4479876557", "-113.4134636167", [ null, "53.4479876556811", "-113.413463616717", null, false ], "12-66-1056", "Neighbourhood Overlay", "John Crockett", "780-442-4713", "WARD 12", [ "http://www.edmonton.ca/ward12construction/", "Construction in Ward 12" ], [ null, null ], null, [ null, null ] ]
+, [ 82, "649969F1-1F6C-4A2D-9D8D-68BEA1BF8B72", 82, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2014-008-PH1", "2014", "1-Apr-14", "25-Dec-14", "Laurier Heights Neighbourhood (W/139 St. Phase I)", "N08: Laurier Heights Neighbourhood (W/139 St. Phase I)", "53.5147324466", "-113.5717890588", [ null, "53.5147324466465", "-113.571789058804", null, false ], "15-66-1069", "Neighbourhood Reconstruction", "Mike Bindas", "780-495-9963", "WARD 05", [ "http://www.edmonton.ca/ward5construction/", "Construction in Ward 05" ], [ "http://www.edmonton.ca/transportation/on_your_streets/laurier-heights-neighbourhood-renewal.aspx", "Laurier Heights Neighbourhood Renewal" ], null, [ null, null ] ]
+, [ 83, "D7FCC266-21A3-4349-90A3-97FB0C8B8129", 83, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2013-077-PH2", "2014", "1-Apr-14", "25-Dec-14", "North Glenora Neighbourhood (Phase II)", "N09: North Glenora Neighbourhood (Phase II)", "53.5533666316", "-113.5613728306", [ null, "53.5533666316112", "-113.561372830614", null, false ], "13-66-1066", "Neighbourhood Reconstruction", "Adnan Akram", "780-423-6728", "WARD 06", [ "http://www.edmonton.ca/ward6construction/", "Construction in Ward 06" ], [ "http://www.edmonton.ca/transportation/on_your_streets/north-glenora-neighbourhood-renewal.aspx", "North Glenora Neighbourhood Renewal" ], null, [ null, null ] ]
+, [ 84, "C315DB0C-468C-4213-8F4A-4B9BF0C33A9E", 84, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2014-011-PH1", "2014", "1-Apr-14", "25-Dec-14", "Glenora Neighbourhood (Phase I)", "N10: Glenora Neighbourhood (Phase I)", "53.548862307", "-113.5644100744", [ null, "53.5488623069521", "-113.56441007437", null, false ], "14-66-1068", "Neighbourhood Reconstruction", "Jason Caudron", "780-495-0268", "WARD 06", [ "http://www.edmonton.ca/ward6construction/", "Construction in Ward 06" ], [ "http://www.edmonton.ca/transportation/on_your_streets/glenora-neighbourhood-renewal.aspx", "Glenora Neighbourhood Renewal" ], null, [ null, null ] ]
+, [ 85, "995F5AE5-169C-4622-BE5C-DBC4E6570627", 85, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2011-401-PH2-CO2", "2014", "1-Apr-14", "25-Dec-14", "99 Avenue: 149 St. - N/151 St (Alley) / 151 Street: 98 Ave. - 100 Ave.", "N11: West Jasper Place Neighbourhood", "53.5369446674", "-113.5815331773", [ null, "53.5369446673511", "-113.581533177333", null, false ], "09-66-1056", "Neighbourhood Reconstruction", "Jason Caudron", "780-495-0268", "WARD 01", [ "http://www.edmonton.ca/ward1construction/", "Construction in Ward 01" ], [ "http://edmonton.ca/transportation/on_your_streets/west-jasper-place-neighbourhood-renewal.aspx", "West Jasper Place Neighbourhood Renewal" ], null, [ null, null ] ]
+, [ 86, "34FF70D4-ABEF-4634-8369-A0C040775D07", 86, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2013-075-PH2", "2014", "1-Apr-14", "25-Dec-14", "Grovenor Neighbourhood (Phase II)", "N12: Grovenor Neighbourhood (Phase II)", "53.544017499", "-113.5700079758", [ null, "53.5440174990253", "-113.57000797584", null, false ], "14-66-1064", "Neighbourhood Reconstruction", "Felix Lam", "780-944-7695", "WARD 06", [ "http://www.edmonton.ca/ward6construction/", "Construction in Ward 06" ], [ "http://www.edmonton.ca/transportation/on_your_streets/grovenor-neighbourhood-renewal.aspx", "Grovenor Neighbourhood Renewal" ], null, [ null, null ] ]
+, [ 87, "478F3B3B-F12A-4FA6-B199-84781520083F", 87, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2014-016-PH1", "2014", "1-Apr-14", "25-Dec-14", "Cromdale Neighbourhood (Phase I)", "N13: Cromdale Neighbourhood (Phase I)", "53.5603718088", "-113.4606397599", [ null, "53.5603718087832", "-113.460639759861", null, false ], "14-66-1067", "Neighbourhood Reconstruction", "Mark Morton", "780-944-7692", "WARD 07", [ "http://www.edmonton.ca/ward7construction/", "Construction in Ward 07" ], [ "http://www.edmonton.ca/buildingcromdale/", "Cromdale Neighbourhood Renewal" ], null, [ null, null ] ]
+, [ 88, "0F619D0C-564A-49B3-BD83-54F09A2E1BFD", 88, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2013-082-PH2", "2014", "1-Apr-14", "25-Dec-14", "Delton Neighbourhood (Phase II)", "N14: Delton Neighbourhood (Phase II)", "53.5788770963", "-113.479633026", [ null, "53.5788770962866", "-113.479633025957", null, false ], "13-66-1063", "Neighbourhood Reconstruction", "Mark Morton", "780-944-7692", "WARD 07", [ "http://www.edmonton.ca/ward7construction/", "Construction in Ward 07" ], [ "http://www.edmonton.ca/buildingdelton/", "Delton Neighbourhood Renewal" ], null, [ null, null ] ]
+, [ 89, "D991D41A-95F7-48B3-9169-43F68D58EF8B", 89, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2012-402-PH3", "2014", "1-Apr-14", "25-Dec-14", "King Edward Park Neighbourhood (Phase III)", "N15: King Edward Park Neighbourhood (Phase III)", "53.5150976531", "-113.4583140339", [ null, "53.5150976531443", "-113.458314033863", null, false ], "12-66-1057", "Neighbourhood Reconstruction", "David Scheeler", "780-495-0271", "WARD 11", [ "http://www.edmonton.ca/ward11construction/", "Construction in Ward 11" ], [ "http://www.edmonton.ca/buildingkingedwardpark/", "King Edward Park Neighbourhood Renewal" ], null, [ null, null ] ]
+, [ 90, "E5D9DCE9-71CE-401F-8999-B59DBCF82205", 90, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2013-064-PH2", "2014", "1-Apr-14", "25-Dec-14", "Argyll Neighbourhood (Phase II)", "N16: Argyll Neighbourhood (Phase II)", "53.5021991208", "-113.4646293518", [ null, "53.5021991208344", "-113.464629351843", null, false ], "13-66-1061", "Neighbourhood Reconstruction", "Steve Schmidt", "780-423-6793", "WARD 11", [ "http://www.edmonton.ca/ward11construction/", "Construction in Ward 11" ], [ "http://www.edmonton.ca/buildingargyll", "Argyll Neighbourhood Renewal" ], null, [ null, null ] ]
+, [ 91, "1D773636-C7C6-441B-B130-18FE19E182C6", 91, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2013-066-PH2", "2014", "1-Apr-14", "25-Dec-14", "Hazeldean Neighbourhood (Phase II)", "N17: Hazeldean Neighbourhood (Phase II)", "53.5028955254", "-113.4770582618", [ null, "53.5028955253599", "-113.477058261764", null, false ], "14-66-1065", "Neighbourhood Reconstruction", "Terrence Gosine", "780-944-0266", "WARD 11", [ "http://www.edmonton.ca/ward11construction/", "Construction in Ward 11" ], [ "http://www.edmonton.ca/buildinghazeldean/", "Hazeldean Neighbourhood Renewal" ], null, [ null, null ] ]
+, [ 92, "0F5CBEAA-BD09-4689-A526-0C8AD242AAA9", 92, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2014-199", "2014", "1-Apr-14", "25-Dec-14", "154 Avenue: 73A St. - 78 St.", "N18: 154 Avenue: 73A St. - 78 St.", "53.6164560421", "-113.4584069998", [ null, "53.616456042084", "-113.458406999832", null, false ], "12-66-1056", "NE Road Replacement", "Clinton Mah", "780-423-5004", "WARD 03", [ "http://www.edmonton.ca/ward3construction/", "Construction in Ward 03" ], [ null, null ], null, [ null, null ] ]
+, [ 93, "B67B5B87-91B5-41AD-9152-35B4F88CA324", 93, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2014-200", "2014", "1-Apr-14", "25-Dec-14", "78 Street: 154 Ave. - 155 Ave.", "N18: 78 Street: 154 Ave. - 155 Ave.", "53.6169647", "-113.4625005157", [ null, "53.6169647000306", "-113.462500515651", null, false ], "12-66-1056", "NE Road Replacement", "Clinton Mah", "780-423-5004", "WARD 03", [ "http://www.edmonton.ca/ward3construction/", "Construction in Ward 03" ], [ null, null ], null, [ null, null ] ]
+, [ 94, "158213C1-E530-467C-BCBF-42B0FE1C0900", 94, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2014-300", "2014", "1-Apr-14", "25-Dec-14", "Mayliewan Place: 154 Ave. - S/154 Ave.", "N18: Mayliewan Place: 154 Ave. - S/154 Ave.", "53.6164553843", "-113.4571489115", [ null, "53.6164553843287", "-113.45714891154", null, false ], "12-66-1056", "NE Road Replacement", "Clinton Mah", "780-423-5004", "WARD 03", [ "http://www.edmonton.ca/ward3construction/", "Construction in Ward 03" ], [ null, null ], null, [ null, null ] ]
+, [ 95, "7E6814EA-DB38-43E7-9447-2D28BA431A69", 95, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2014-206", "2014", "1-Apr-14", "25-Dec-14", "Hollick-Kenyon:157 Ave. - 110m N/158 Ave.", "N19: Hollick-Kenyon:157 Ave. - 110m N/158 Ave.", "53.6199283755", "-113.4285569247", [ null, "53.619928375477", "-113.428556924679", null, false ], "12-66-1056", "NE Road Replacement", "Clinton Mah", "780-423-5004", "WARD 04", [ "http://www.edmonton.ca/ward4construction/", "Construction in Ward 04" ], [ null, null ], null, [ null, null ] ]
+, [ 96, "EDCC5949-C5B9-4E6E-9AF6-5E18DB32987E", 96, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2014-198", "2014", "1-Apr-14", "25-Dec-14", "156 Avenue: 59A St. - 62B St.", "N20: 156 Avenue: 59A St. - 62B St.", "53.6179009837", "-113.4348127843", [ null, "53.6179009836803", "-113.434812784342", null, false ], "12-66-1056", "NE Road Replacement", "Clinton Mah", "780-423-5004", "WARD 04", [ "http://www.edmonton.ca/ward4construction/", "Construction in Ward 04" ], [ null, null ], null, [ null, null ] ]
+, [ 97, "DAFB708F-2563-405B-A586-5639E51ACFF0", 97, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2014-301", "2014", "1-Apr-14", "25-Dec-14", "62A Street: 156 Ave. - N/156 Ave.", "N20: 62A Street: 156 Ave. - N/156 Ave.", "53.6171624947", "-113.4369339273", [ null, "53.6171624946727", "-113.436933927281", null, false ], "12-66-1056", "NE Road Replacement", "Clinton Mah", "780-423-5004", "WARD 04", [ "http://www.edmonton.ca/ward4construction/", "Construction in Ward 04" ], [ null, null ], null, [ null, null ] ]
+, [ 98, "A6456C85-8507-4266-A2BC-4384DB586DB5", 98, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2014-207", "2014", "1-Apr-14", "25-Dec-14", "159 Avenue: 64 St. - 150m E/62 St. ", "N21: Matt Berry: 159 Avenue: 64 St. - 150m E/62 St.", "53.6202220603", "-113.4361361782", [ null, "53.6202220602982", "-113.436136178244", null, false ], "12-66-1056", "NE Road Replacement", "Clinton Mah", "780-423-5004", "WARD 04", [ "http://www.edmonton.ca/ward4construction/", "Construction in Ward 04" ], [ null, null ], null, [ null, null ] ]
+, [ 99, "D11106DF-02E3-45EC-AB3E-17C02BBECE6B", 99, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2014-119", "2014", "1-Apr-14", "25-Dec-14", "160 Avenue: 64 St. - End", "N22: 160 Avenue: 64 St. - End", "53.621784787", "-113.4381337297", [ null, "53.6217847869674", "-113.438133729677", null, false ], "12-66-1056", "NE Road Replacement", "Clinton Mah", "780-423-5004", "WARD 04", [ "http://www.edmonton.ca/ward4construction/", "Construction in Ward 04" ], [ null, null ], null, [ null, null ] ]
+, [ 100, "F074DA1E-F2C2-436C-8041-B792A4DB9B79", 100, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2014-001", "2014", "1-Apr-14", "25-Dec-14", "York Neighbourhood", "N23: York Neighbourhood", "53.6022060967", "-113.4366992156", [ null, "53.6022060966852", "-113.436699215594", null, false ], "12-66-1056", "Neighbourhood Microsurfacing", "Lloyd Carnegie", "780-442-4712", "WARD 04", [ "http://www.edmonton.ca/ward4construction/", "Construction in Ward 04" ], [ null, null ], null, [ null, null ] ]
+, [ 101, "86C00A2E-B4B3-446C-92E9-A4F84D2D11DF", 101, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2014-021", "2014", "1-Apr-14", "25-Dec-14", "Killarney Neighbourhood", "N24: Killarney Neighbourhood", "53.5884585805", "-113.4796809219", [ null, "53.5884585804879", "-113.479680921918", null, false ], "12-66-1056", "Neighbourhood Microsurfacing", "Lloyd Carnegie", "780-442-4712", "WARD 07", [ "http://www.edmonton.ca/ward7construction/", "Construction in Ward 07" ], [ null, null ], null, [ null, null ] ]
+, [ 102, "E106B06A-0729-4945-9D03-04E0D4F26AA7", 102, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2013-109-CO1", "2014", "1-Apr-14", "25-Dec-14", "121 Avenue: 168 St. - 167 St.", "P01: 121 Avenue: 168 St. - 167 St.", "53.5728357075", "-113.6101209522", [ null, "53.5728357075481", "-113.610120952152", null, false ], "12-66-1056", "Pavement Renewal", "Jason Caudron", "780-495-0268", "WARD 01", [ "http://www.edmonton.ca/ward1construction/", "Construction in Ward 01" ], [ null, null ], null, [ null, null ] ]
+, [ 103, "E97AE545-D06E-4BB6-8FF7-E2C067E0F998", 103, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2013-873-CO1", "2014", "1-Apr-14", "25-Dec-14", "167 Street: 118 Ave. - 121A Ave.", "P01: 167 Street: 118 Ave. - 121A Ave.", "53.5715656678", "-113.6089539597", [ null, "53.5715656678306", "-113.6089539597", null, false ], "12-66-1056", "Pavement Renewal", "Jason Caudron", "780-495-0268", "WARD 01", [ "http://www.edmonton.ca/ward1construction/", "Construction in Ward 01" ], [ null, null ], null, [ null, null ] ]
+, [ 104, "2A01D44E-EB63-4FC0-8D96-FBB7A5A29D48", 104, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2013-108-CO1", "2014", "1-Apr-14", "25-Dec-14", "168 Street: 118 Ave. - 121 Ave.", "P01: 168 Street: 118 Ave. - 121 Ave.", "53.5715417232", "-113.6113105934", [ null, "53.5715417232105", "-113.611310593406", null, false ], "12-66-1056", "Pavement Renewal", "Jason Caudron", "780-495-0268", "WARD 01", [ "http://www.edmonton.ca/ward1construction/", "Construction in Ward 01" ], [ null, null ], null, [ null, null ] ]
+, [ 105, "163A7781-F656-4B0B-8D83-26A392E63F1E", 105, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2014-227", "2014", "1-Apr-14", "25-Dec-14", "175 Street: 100 Ave. - Stony Plain Rd.", "P02: 175 Street: 100 Ave. - Stony Plain Rd.", "53.540059221", "-113.6221896074", [ null, "53.5400592209889", "-113.622189607354", null, false ], "12-66-1056", "Pavement Renewal", "John Crockett", "780-442-4713", "WARD 01", [ "http://www.edmonton.ca/ward1construction/", "Construction in Ward 01" ], [ null, null ], null, [ null, null ] ]
+, [ 106, "74D9209D-EA24-4473-A862-58E5E995F633", 106, 1404852792, "398657", 1407423553, "398657", null, "ROAD", "RDS-2013-801-CO1", "2014", "1-Apr-14", "25-Dec-14", "87 Avenue: 182 St. - W/189 St. (TUC)", "P03: 87 Avenue: 182 St. - W/189 St. (TUC)", "53.5214241178", "-113.6431637362", [ null, "53.5214241178184", "-113.643163736218", null, false ], "12-66-1020", "Pavement Renewal", "Wayne Squires", "780-423-5544", "WARD 01", [ "http://www.edmonton.ca/ward1construction/", "Construction in Ward 01" ], [ null, null ], "Project Complete", [ null, null ] ]
+, [ 107, "B1BFADD2-C63D-4F74-A886-22993B458D59", 107, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2014-226", "2014", "1-Apr-14", "25-Dec-14", "Breckenridge Drive: Lewis Estates Blvd. - Brennan Cr.", "P04: Breckenridge Drive: Lewis Estates Blvd. - Brennan Cr.", "53.5143278872", "-113.6862969242", [ null, "53.5143278872208", "-113.686296924249", null, false ], "12-66-1056", "Pavement Renewal", "John Crockett", "780-442-4713", "WARD 01", [ "http://www.edmonton.ca/ward1construction/", "Construction in Ward 01" ], [ null, null ], null, [ null, null ] ]
+, [ 108, "2D25E5D3-279F-4791-8EF0-8545C0390458", 108, 1404852792, "398657", 1407424286, "398657", null, "ROAD", "RDS-2015-105", "2014", "1-Apr-14", "25-Dec-14", "119 Street: 111 Ave. - Airport Rd.", "P05: 119 Street: 111 Ave. - Airport Rd.", "53.5636846593", "-113.5267955324", [ null, "53.5636846593427", "-113.526795532375", null, false ], "12-66-1020", "Pavement Renewal", "Harinder Sandhu", "780-944-5640", "WARD 02", [ "http://www.edmonton.ca/ward2construction/", "Construction in Ward 02" ], [ null, null ], null, [ null, null ] ]
+, [ 109, "468DAD30-8B5F-472E-A9E0-BFFACC4386EC", 109, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2014-107", "2014", "1-Apr-14", "25-Dec-14", "127 Street: 111 Ave. - 118 Ave.", "P06: 127 Street: 111 Ave. - 118 Ave.", "53.5669903451", "-113.5411850179", [ null, "53.5669903451082", "-113.54118501794", null, false ], "12-66-1056", "Pavement Renewal", "John Crockett", "780-442-4713", "WARD 02", [ "http://www.edmonton.ca/ward2construction/", "Construction in Ward 02" ], [ null, null ], null, [ null, null ] ]
+, [ 110, "818F9FAC-1D6A-49EA-83E0-F725DFAC9858", 110, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2013-144", "2014", "1-Apr-14", "25-Dec-14", "129 Street: Cumberland Rd. - 148 Ave.", "P07: 129 Street: Cumberland Rd. - 148 Ave.", "53.6079587928", "-113.5437292723", [ null, "53.6079587927968", "-113.543729272265", null, false ], "12-66-1056", "Pavement Renewal", "John Crockett", "780-442-4713", "WARD 02", [ "http://www.edmonton.ca/ward2construction/", "Construction in Ward 02" ], [ null, null ], null, [ null, null ] ]
+, [ 111, "FCDBEBAC-A890-44E4-8713-ADF9492EB3E7", 111, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2014-106", "2014", "1-Apr-14", "25-Dec-14", "114 Avenue: 142 St. - 149 St.", "P08: 114 Avenue: 142 St. - 149 St.", "53.5628773937", "-113.5727844509", [ null, "53.5628773937264", "-113.572784450909", null, false ], "12-66-1056", "Pavement Renewal", "John Crockett", "780-442-4713", "WARD 02", [ "http://www.edmonton.ca/ward2construction/", "Construction in Ward 02" ], [ null, null ], null, [ null, null ] ]
+, [ 112, "C16FE02D-8D93-4FB5-9D89-6A76A6351E8F", 112, 1404852792, "398657", 1407949452, "398657", null, "ROAD", "RDS-2016-156", "2014", "1-Apr-14", "25-Dec-14", "156 Street: 111 Ave. - 118 Ave.", "P09: 156 Street: 111 Ave. - 118 Ave.", "53.5646728733", "-113.5904072836", [ null, "53.5646728732692", "-113.590407283598", null, false ], "12-66-1020", "Pavement Renewal", "Harinder Sandhu", "780-944-5640", "WARD 01", [ "http://www.edmonton.ca/ward1construction/", "Construction in Ward 01" ], [ "http://www.mailoutinteractive.com/Industry/View.aspx?id=601146&q=770179960&qz=3c40f7", "Traffic Disruption Notice" ], null, [ null, null ] ]
+, [ 113, "8B1BBBAB-C6AB-4E6D-831B-C38B06E8F69C", 113, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2014-210", "2014", "1-Apr-14", "25-Dec-14", "100 Street: Castle Downs Rd. - 172 Ave.", "P10: 100 Street: Castle Downs Rd. - 172 Ave.", "53.6320725303", "-113.4963489517", [ null, "53.6320725303412", "-113.496348951702", null, false ], "12-66-1056", "Pavement Renewal", "John Crockett", "780-442-4713", "WARD 03", [ "http://www.edmonton.ca/ward3construction/", "Construction in Ward 03" ], [ null, null ], null, [ null, null ] ]
+, [ 114, "1F48B547-A0E0-4735-97E2-8B0229DAD9EB", 114, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2016-251", "2014", "1-Apr-14", "25-Dec-14", "104 Street: 176 Ave. - 180 Ave.", "P11: 104 Street: 176 Ave. - 180 Ave.", "53.6418949858", "-113.5012841052", [ null, "53.6418949858226", "-113.501284105151", null, false ], "12-66-1056", "Pavement Renewal", "John Crockett", "780-442-4713", "WARD 03", [ "http://www.edmonton.ca/ward3construction/", "Construction in Ward 03" ], [ null, null ], null, [ null, null ] ]
+, [ 115, "85386480-BA05-46B7-9884-29926FD929B5", 115, 1404852792, "398657", 1407424561, "398657", null, "ROAD", "RDS-2013-809-CO1", "2014", "1-Apr-14", "25-Dec-14", "100 Street: Jasper Ave. - 103A Ave.", "P12: 100 Street: Jasper Ave. - 103A Ave.", "53.5436730945", "-113.4907627531", [ null, "53.543673094539", "-113.490762753133", null, false ], "12-66-1020", "Pavement Renewal", "Kelly Calvez", "780-944-7701", "WARD 06", [ "http://www.edmonton.ca/ward6construction/", "Construction in Ward 06" ], [ "http://www.mailoutinteractive.com/Industry/View.aspx?id=570170&q=735346236&qz=ef403b", "Traffic Disruption Notice" ], "Project Complete", [ null, null ] ]
+, [ 116, "0D397E9E-3495-484B-8A15-605ED0A1FC5B", 116, 1404852792, "398657", 1407424607, "398657", null, "ROAD", "RDS-2013-812-CO1", "2014", "1-Apr-14", "25-Dec-14", "105 Street: Jasper Ave. - 105 Ave.", "P13: 105 Street: Jasper Ave. - 105 Ave.", "53.5461974611", "-113.5010415348", [ null, "53.5461974611476", "-113.501041534804", null, false ], "12-66-1020", "Pavement Renewal", "Kelly Calvez", "780-944-7701", "WARD 06", [ "http://www.edmonton.ca/ward6construction/", "Construction in Ward 06" ], [ null, null ], "Project Complete", [ null, null ] ]
+, [ 117, "3CCC80FA-205B-4EB5-AD98-43F913655B5D", 117, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2014-211", "2014", "1-Apr-14", "25-Dec-14", "109 Street: 172 Ave. - Castle Downs Rd.", "P14: 109 Street: 172 Ave. - Castle Downs Rd.", "53.6306918736", "-113.5122221189", [ null, "53.6306918736176", "-113.512222118945", null, false ], "12-66-1056", "Pavement Renewal", "John Crockett", "780-442-4713", "WARD 03", [ "http://www.edmonton.ca/ward3construction/", "Construction in Ward 03" ], [ null, null ], null, [ null, null ] ]
+, [ 118, "676527E2-380E-4AC8-88C5-46C6BC48C951", 118, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2014-217", "2014", "1-Apr-14", "25-Dec-14", "172 Avenue: 100 St. - 109 St.", "P15: 172 Avenue: 100 St. - 109 St.", "53.6332449283", "-113.5045767352", [ null, "53.6332449283207", "-113.504576735151", null, false ], "12-66-1056", "Pavement Renewal", "John Crockett", "780-442-4713", "WARD 03", [ "http://www.edmonton.ca/ward3construction/", "Construction in Ward 03" ], [ null, null ], null, [ null, null ] ]
+, [ 119, "8964B2D6-B55E-4CA7-99F1-089E280C2992", 119, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2014-218", "2014", "1-Apr-14", "25-Dec-14", "171 Avenue: 109 St. - 112 St.", "P16: 171 Avenue: 109 St. - 112 St.", "53.6333870671", "-113.5135091286", [ null, "53.6333870671004", "-113.513509128599", null, false ], "12-66-1056", "Pavement Renewal", "John Crockett", "780-442-4713", "WARD 03", [ "http://www.edmonton.ca/ward3construction/", "Construction in Ward 03" ], [ null, null ], null, [ null, null ] ]
+, [ 120, "217870EB-3AE4-446C-BCFC-91C9A45DFC83", 120, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2015-255", "2014", "1-Apr-14", "25-Dec-14", "Lessard Road: 55 Ave. - Callingwood Rd.", "P17: Lessard Road: 55 Ave. - Callingwood Rd.", "53.4955983234", "-113.6290986175", [ null, "53.4955983234272", "-113.629098617498", null, false ], "Operating", "Pavement Renewal", "John Crockett", "780-442-4713", "WARD 05", [ "http://www.edmonton.ca/ward5construction/", "Construction in Ward 05" ], [ null, null ], null, [ null, null ] ]
+, [ 121, "687C638F-02A3-4C27-B2EE-DD92381432B8", 121, 1404852792, "398657", 1408054204, "398657", null, "ROAD", "RDS-2015-170", "2014", "1-Apr-14", "25-Dec-14", "103A Avenue: Jasper Ave. - 97 St.", "P18: 103A Avenue: Jasper Ave. - 97 St.", "53.547787546", "-113.4812200892", [ null, "53.5477875459725", "-113.481220089169", null, false ], "12-66-1020", "Pavement Renewal", "Harinder Sandhu", "780-944-5640", "WARD 06", [ "http://www.edmonton.ca/ward6construction/", "Construction in Ward 06" ], [ "http://www.edmonton.ca/transportation/traffic-reports.aspx?trumbaEmbed=view%3Devent%26eventid%3D111422234", "Traffic Report" ], null, [ null, null ] ]
+, [ 122, "08B36881-0CA0-4054-877A-4186EF1E3CCD", 122, 1404852792, "398657", 1407531754, "398657", null, "ROAD", "RDS-2015-172", "2014", "1-Apr-14", "25-Dec-14", "Jasper Avenue: 103A Ave. EBD - 97 St.", "P18: Jasper Avenue: 103A Ave. EBD - 97 St.", "53.5454527222", "-113.4803137293", [ null, "53.5454527222461", "-113.480313729334", null, false ], "12-66-1020", "Pavement Renewal", "Harinder Sandhu", "780-944-5640", "WARD 06", [ "http://www.edmonton.ca/ward6construction/", "Construction in Ward 06" ], [ null, null ], null, [ null, null ] ]
+, [ 123, "E87B876F-77E6-4551-A667-D5564C9D0B3C", 123, 1404852792, "398657", 1407531785, "398657", null, "ROAD", "RDS-2016-129", "2014", "1-Apr-14", "25-Dec-14", "Jasper Avenue: 99 St. - 100 St.", "P19: Jasper Avenue: 99 St. - 100 St.", "53.5412135931", "-113.4894386367", [ null, "53.5412135931495", "-113.489438636715", null, false ], "12-66-1020", "Pavement Renewal", "Harinder Sandhu", "780-944-5640", "WARD 06", [ "http://www.edmonton.ca/ward6construction/", "Construction in Ward 06" ], [ null, null ], null, [ null, null ] ]
+, [ 124, "FA1D2771-F1EC-4240-ABFF-07898691E933", 124, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2016-155", "2014", "1-Apr-14", "25-Dec-14", "109 Street SBD: 104 Ave. - Jasper Ave.", "P20: 109 Street SBD: 104 Ave. - Jasper Ave.", "53.5435814761", "-113.5085396112", [ null, "53.5435814761015", "-113.508539611231", null, false ], "12-66-1020", "Pavement Renewal", "Nathan Stelmach", "780-944-5640", "WARD 06", [ "http://www.edmonton.ca/ward6construction/", "Construction in Ward 06" ], [ null, null ], null, [ null, null ] ]
+, [ 125, "AA12E981-4B0A-4F4E-8C2A-38F23ED304BC", 125, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2014-105", "2014", "1-Apr-14", "25-Dec-14", "102 Avenue: 111 St. - 121 St.", "P21: 102 Avenue: 111 St. - 121 St.", "53.5430162488", "-113.5166982042", [ null, "53.5430162488249", "-113.516698204229", null, false ], "12-66-1056", "Pavement Renewal", "John Crockett", "780-442-4713", "WARD 06", [ "http://www.edmonton.ca/ward6construction/", "Construction in Ward 06" ], [ null, null ], null, [ null, null ] ]
+, [ 126, "043E75F6-3A84-4547-BFE8-C0C5F98CE475", 126, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2013-150", "2014", "1-Apr-14", "25-Dec-14", "112 Street: Jasper Ave. - 104 Ave.", "P21: 112 Street: Jasper Ave. - 104 Ave.", "53.5435835113", "-113.5139373279", [ null, "53.5435835112606", "-113.513937327939", null, false ], "12-66-1056", "Pavement Renewal", "John Crockett", "780-442-4713", "WARD 06", [ "http://www.edmonton.ca/ward6construction/", "Construction in Ward 06" ], [ null, null ], null, [ null, null ] ]
+, [ 127, "6CDCABB7-4FAC-41C4-A195-0ABFF775C747", 127, 1404852792, "398657", 1407424268, "398657", null, "ROAD", "RDS-2014-128", "2014", "1-Apr-14", "25-Dec-14", "108 Avenue: 116 St. - 117 St.", "P22: 108 Avenue: 116 St. - 117 St.", "53.5529006091", "-113.5223630072", [ null, "53.5529006090783", "-113.522363007238", null, false ], "12-66-1020", "Pavement Renewal", "Harinder Sandhu", "780-944-5640", "WARD 06", [ "http://www.edmonton.ca/ward6construction/", "Construction in Ward 06" ], [ null, null ], null, [ null, null ] ]
+, [ 128, "3827C828-C63C-453C-8CF1-B4AC0E8E86FB", 128, 1404852792, "398657", 1407424256, "398657", null, "ROAD", "RDS-2015-127", "2014", "1-Apr-14", "25-Dec-14", "116 Street NBD: 104 Ave. - 107 Ave.", "P22: 116 Street NBD: 104 Ave. - 107 Ave.", "53.5488167129", "-113.5212571875", [ null, "53.5488167128896", "-113.521257187473", null, false ], "12-66-1020", "Pavement Renewal", "Harinder Sandhu", "780-944-5640", "WARD 06", [ "http://www.edmonton.ca/ward6construction/", "Construction in Ward 06" ], [ null, null ], null, [ null, null ] ]
+, [ 129, "BA13A87C-CE9D-4FAC-99E0-4DBA13E469C5", 129, 1404852792, "398657", 1407424255, "398657", null, "ROAD", "RDS-2015-128", "2014", "1-Apr-14", "25-Dec-14", "117 Street/116 Street SBD: 104 Ave. - 108 Ave.", "P22: 117 Street/116 Street SBD: 104 Ave. - 108 Ave.", "53.5496996552", "-113.5223547245", [ null, "53.5496996552054", "-113.522354724545", null, false ], "12-66-1020", "Pavement Renewal", "Harinder Sandhu", "780-944-5640", "WARD 06", [ "http://www.edmonton.ca/ward6construction/", "Construction in Ward 06" ], [ null, null ], null, [ null, null ] ]
+, [ 130, "F76948B3-A2F2-446B-A449-7DE38D6AC612", 130, 1404852792, "398657", 1407423879, "398657", null, "ROAD", "RDS-2015-112", "2014", "1-Apr-14", "25-Dec-14", "Stony Plain Road: 102 Ave. - 149 St.", "P23: Stony Plain Road: 102 Ave. - 149 St.", "53.5424044365", "-113.5700964145", [ null, "53.542404436489", "-113.570096414494", null, false ], "12-66-1020", "Pavement Renewal", "Shane Richard", "780-495-9964", "WARD 06", [ "http://www.edmonton.ca/ward6construction/", "Construction in Ward 06" ], [ "http://www.mailoutinteractive.com/Industry/View.aspx?id=584243&q=749959679&qz=6e790b", "Traffic Disruption Notice" ], "Project Complete", [ null, null ] ]
+, [ 131, "A1390D23-B405-42AF-B2ED-7EA6EA46A01F", 131, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2014-219", "2014", "1-Apr-14", "25-Dec-14", "Fortway Drive: River Valley Rd. - E/109 St.", "P24: Fortway Drive: River Valley Rd. - E/109 St.", "53.532206079", "-113.5104612916", [ null, "53.5322060790121", "-113.510461291555", null, false ], "12-66-1056", "Pavement Renewal", "John Crockett", "780-442-4713", "WARD 06", [ "http://www.edmonton.ca/ward6construction/", "Construction in Ward 06" ], [ null, null ], null, [ null, null ] ]
+, [ 132, "0AD8AD86-91AA-474E-994E-A12A091FF57B", 132, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2014-228", "2014", "1-Apr-14", "25-Dec-14", "119 Avenue: Fort Rd. - 82 St.", "P25: 119 Avenue: Fort Rd. - 82 St.", "53.5719503248", "-113.4652957764", [ null, "53.5719503248378", "-113.465295776353", null, false ], "12-66-1056", "Pavement Renewal", "John Crockett", "780-442-4713", "WARD 07", [ "http://www.edmonton.ca/ward7construction/", "Construction in Ward 07" ], [ null, null ], null, [ null, null ] ]
+, [ 133, "8D301914-E21F-4974-95B4-FBB3BF30D07D", 133, 1404852792, "398657", 1407424253, "398657", null, "ROAD", "RDS-2016-160", "2014", "1-Apr-14", "25-Dec-14", "97 Street: 111 Ave. - 118 Ave.", "P26: 97 Street: 111 Ave. - 118 Ave.", "53.564711419", "-113.491854314", [ null, "53.5647114190133", "-113.491854313994", null, false ], "12-66-1020", "Pavement Renewal", "Harinder Sandhu", "780-944-5640", "WARD 02", [ "http://www.edmonton.ca/ward2construction/", "Construction in Ward 02" ], [ null, null ], null, [ null, null ] ]
+, [ 134, "5E1E3CF2-1507-41CB-A3B1-2560F00F1A93", 134, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2013-856-CO1", "2014", "1-Apr-14", "25-Dec-14", "66 Avenue: 105 St. - 106 St.", "P27: 66 Avenue: 105 St. - 106 St.", "53.5025488375", "-113.5030603072", [ null, "53.5025488374825", "-113.503060307191", null, false ], "12-66-1056", "Pavement Renewal", "Terrence Gosine", "780-944-0266", "WARD 10", [ "http://www.edmonton.ca/ward10construction/", "Construction in Ward 10" ], [ null, null ], null, [ null, null ] ]
+, [ 135, "7CC43B22-2C07-4232-93B3-79791B2F4EAD", 135, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2013-855-CO1", "2014", "1-Apr-14", "25-Dec-14", "67 Avenue: 105 St. - 106 St.", "P27: 67 Avenue: 105 St. - 106 St.", "53.5035012374", "-113.5014644516", [ null, "53.5035012373606", "-113.501464451648", null, false ], "12-66-1056", "Pavement Renewal", "Terrence Gosine", "780-944-0266", "WARD 10", [ "http://www.edmonton.ca/ward10construction/", "Construction in Ward 10" ], [ null, null ], null, [ null, null ] ]
+, [ 136, "28ED898A-9A4C-40C4-8C7F-A8BAC14C9D2D", 136, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2013-857-CO1", "2014", "1-Apr-14", "25-Dec-14", "68 Avenue: 106 St. - 109 St.", "P27: 68 Avenue: 106 St. - 109 St.", "53.5048413496", "-113.5106730887", [ null, "53.5048413495817", "-113.510673088668", null, false ], "12-66-1056", "Pavement Renewal", "Terrence Gosine", "780-944-0266", "WARD 10", [ "http://www.edmonton.ca/ward10construction/", "Construction in Ward 10" ], [ null, null ], null, [ null, null ] ]
+, [ 137, "17190D85-65FC-47C2-84A6-6DE0B7DD290D", 137, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2016-249", "2014", "1-Apr-14", "25-Dec-14", "34 Street: 106 Ave. - 118 Ave.", "P28: 34 Street: 106 Ave. - 118 Ave.", "53.5650184001", "-113.3937228509", [ null, "53.5650184001222", "-113.393722850937", null, false ], "12-66-1056", "Pavement Renewal", "John Crockett", "780-442-4713", "WARD 07", [ "http://www.edmonton.ca/ward7construction/", "Construction in Ward 07" ], [ null, null ], null, [ null, null ] ]
+, [ 138, "80DC75B6-8284-45E3-AF5A-E27EE7DC52BE", 138, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2014-098", "2014", "1-Apr-14", "25-Dec-14", "111 Street: 82 Ave. - 87 Ave.", "P29: 111 Street: 82 Ave. - 87 Ave.", "53.5205034231", "-113.5178126135", [ null, "53.520503423064", "-113.517812613538", null, false ], "12-66-1056", "Pavement Renewal", "John Crockett", "780-442-4713", "WARD 08", [ "http://www.edmonton.ca/ward8construction/", "Construction in Ward 08" ], [ null, null ], null, [ null, null ] ]
+, [ 139, "7D3C86E8-74F3-4475-98DA-C1A67EB6CBC5", 139, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2014-104", "2014", "1-Apr-14", "25-Dec-14", "113 Street: 9 Ave. - 12 Ave.", "P30: 113 Street: 9 Ave. - 12 Ave.", "53.4408759871", "-113.5247472629", [ null, "53.4408759870974", "-113.524747262885", null, false ], "12-66-1056", "Pavement Renewal", "John Crockett", "780-442-4713", "WARD 09", [ "http://www.edmonton.ca/ward9construction/", "Construction in Ward 09" ], [ null, null ], null, [ null, null ] ]
+, [ 140, "FA457E40-B2C1-461D-81F9-32354D4DD6B5", 140, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2014-103", "2014", "1-Apr-14", "25-Dec-14", "115A Street/15 Avenue: 12 Ave. - Twin Brooks Way", "P31: 115A Street/15 Avenue: 12 Ave. - Twin Brooks Way", "53.4462465563", "-113.533408742", [ null, "53.4462465563178", "-113.533408742034", null, false ], "12-66-1056", "Pavement Renewal", "John Crockett", "780-442-4713", "WARD 09", [ "http://www.edmonton.ca/ward9construction/", "Construction in Ward 09" ], [ null, null ], null, [ null, null ] ]
+, [ 141, "948DDB3F-5169-4B57-B02A-959098F2DEB2", 141, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2014-102", "2014", "1-Apr-14", "25-Dec-14", "116 Street: 9 Ave. - 12 Ave.", "P32: 116 Street: 9 Ave. - 12 Ave.", "53.442240789", "-113.5351933006", [ null, "53.4422407889668", "-113.535193300624", null, false ], "12-66-1056", "Pavement Renewal", "John Crockett", "780-442-4713", "WARD 09", [ "http://www.edmonton.ca/ward9construction/", "Construction in Ward 09" ], [ null, null ], null, [ null, null ] ]
+, [ 142, "9BB090B2-EFDB-46D6-9E4D-39AD370FEEDC", 142, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2014-224", "2014", "1-Apr-14", "25-Dec-14", "Bulyea Road: Rabbit Hill Rd. - Oeming Dr.", "P33: Bulyea Road: Rabbit Hill Rd. - Oeming Dr.", "53.4676542946", "-113.5739626294", [ null, "53.4676542945517", "-113.573962629404", null, false ], "12-66-1056", "Pavement Renewal", "John Crockett", "780-442-4713", "WARD 09", [ "http://www.edmonton.ca/ward9construction/", "Construction in Ward 09" ], [ null, null ], null, [ null, null ] ]
+, [ 143, "5948F0B4-9921-439A-8784-927CB44179A5", 143, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2014-225", "2014", "1-Apr-14", "25-Dec-14", "Rhatigan Road West: Riverbend Rd. (N) - Riverbend Rd. (S)", "P34: Rhatigan Road West: Riverbend Rd. (N) - Riverbend Rd. (S)", "53.475987742", "-113.5883191107", [ null, "53.4759877420293", "-113.588319110714", null, false ], "12-66-1056", "Pavement Renewal", "John Crockett", "780-442-4713", "WARD 09", [ "http://www.edmonton.ca/ward9construction/", "Construction in Ward 09" ], [ null, null ], null, [ null, null ] ]
+, [ 144, "56CD4E91-D51F-48B7-983C-BCB885443576", 144, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2014-220", "2014", "1-Apr-14", "25-Dec-14", "Bulyea Road: Burton Rd. - Terwillegar Dr.", "P35: Bulyea Road: Burton Rd. - Terwillegar Dr.", "53.475818602", "-113.5733864091", [ null, "53.4758186020071", "-113.573386409052", null, false ], "12-66-1056", "Pavement Renewal", "John Crockett", "780-442-4713", "WARD 09", [ "http://www.edmonton.ca/ward9construction/", "Construction in Ward 09" ], [ null, null ], null, [ null, null ] ]
+, [ 145, "F36C3DEC-BFAD-48EE-825C-876442BAA45B", 145, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2015-272", "2014", "1-Apr-14", "25-Dec-14", "Calgary Trail W. Service Road: 55 Ave. - N/51 Ave.", "P36: Calgary Trail W. Service Road: 55 Ave. - N/51 Ave.", "53.4914740933", "-113.4955126189", [ null, "53.4914740932584", "-113.495512618918", null, false ], "12-66-1056", "Pavement Renewal", "Zdenko Petrovic", "780-423-3913", "WARD 10", [ "http://www.edmonton.ca/ward10construction/", "Construction in Ward 10" ], [ "http://www.edmonton.ca/transportation/RoadsTraffic/P36_14-1404-01_CgyTrServiceRdRehab_Bulletin.pdf", "Construction Bulletin" ], null, [ null, null ] ]
+, [ 146, "9A6A6751-7AE9-407B-9EAE-AFE101CFC088", 146, 1404852792, "398657", 1407863944, "398657", null, "ROAD", "RDS-2014-099", "2014", "1-Apr-14", "25-Dec-14", "112 Street: 25 Ave. - Saddleback Rd.", "P37: 112 Street: 25 Ave. - Saddleback Rd.", "53.459509917", "-113.5209500908", [ null, "53.4595099169963", "-113.520950090768", null, false ], "12-66-1056", "Pavement Renewal", "Zdenko Petrovic", "780-423-3913", "WARD 10", [ "http://www.edmonton.ca/ward10construction/", "Construction in Ward 10" ], [ null, null ], "Project Complete", [ null, null ] ]
+, [ 147, "53B9E7F2-71DE-4940-B1F4-5584A1FE2AB5", 147, 1404852792, "398657", 1407531529, "398657", null, "ROAD", "RDS-2014-311", "2014", "1-Apr-14", "25-Dec-14", "25 Avenue: 112 St. - 119 St.", "P38: 25 Avenue: 112 St. - 119 St.", "53.4563147427", "-113.5309555354", [ null, "53.4563147427488", "-113.53095553542", null, false ], "12-66-1056", "Pavement Renewal", "Zdenko Petrovic", "780-423-3913", "WARD 10", [ "http://www.edmonton.ca/ward10construction/", "Construction in Ward 10" ], [ "http://www.edmonton.ca/transportation/RoadsTraffic/P38_14-1404-02_25AveRehab_Bulletin.pdf", "Construction Bulletin" ], "Project Complete", [ null, null ] ]
+, [ 148, "D049D03F-E3F2-4468-83CC-D59CF0854346", 148, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2014-403", "2014", "1-Apr-14", "25-Dec-14", "Elmjay Industrial: N/76 Ave. - E/17 St.", "P39: Elmjay Industrial: N/76 Ave. - E/17 St.", "53.5131502367", "-113.3641489915", [ null, "53.5131502367271", "-113.364148991522", null, false ], "12-66-1056", "Pavement Renewal", "Clinton Mah", "780-423-5004", "WARD 11", [ "http://www.edmonton.ca/ward11construction/", "Construction in Ward 11" ], [ "http://www.edmonton.ca/transportation/RoadsTraffic/P39_14-1405-01_ElmjayIndRehab_Bulletin.pdf", "Construction Bulletin" ], null, [ null, null ] ]
+, [ 149, "2BEC4E9C-CAEA-492A-8E92-321C29A9DAD0", 149, 1404852792, "398657", 1407424237, "398657", null, "ROAD", "RDS-2013-824-CO1", "2014", "1-Apr-14", "25-Dec-14", "Mill Woods Road East: 23 Ave. - 38 Ave.", "P40: Mill Woods Road East: 23 Ave. - 38 Ave.", "53.4596415326", "-113.4069188217", [ null, "53.4596415325808", "-113.406918821747", null, false ], "12-66-1020", "Pavement Renewal", "Harinder Sandhu", "780-944-5640", "WARD 12", [ "http://www.edmonton.ca/ward12construction/", "Construction in Ward 12" ], [ null, null ], null, [ null, null ] ]
+, [ 150, "F744D291-ECE2-45DE-8531-58340274058F", 150, 1404852792, "398657", 1408053711, "398657", null, "ROAD", "RDS-2013-180", "2014", "1-Apr-14", "25-Dec-14", "17 Street: S/Maple Ridge Dr. - 76 Ave.", "P41: 17 Street: S/Maple Ridge Dr. - 76 Ave.", "53.4959823833", "-113.3691135429", [ null, "53.495982383275", "-113.369113542923", null, false ], "12-66-1020", "Pavement Renewal", "Wayne Squires", "780-423-5544", "WARD 11", [ "http://www.edmonton.ca/ward11construction/", "Construction in Ward 11" ], [ "http://www.edmonton.ca/transportation/traffic-reports.aspx?trumbaEmbed=view%3Devent%26eventid%3D111422880", "Traffic Report" ], null, [ null, null ] ]
+, [ 151, "A29AA257-80C2-424A-868D-C5D7AAE26BD9", 151, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2014-404", "2014", "1-Apr-14", "25-Dec-14", "70 Avenue: 18 St. - W/18 St. (Dead End)", "P42: 70 Avenue: 18 St. - W/18 St. (Dead End)", "53.5069847287", "-113.375153807", [ null, "53.5069847287073", "-113.375153806954", null, false ], "12-66-1056", "Pavement Renewal", "Clinton Mah", "780-423-5004", "WARD 11", [ "http://www.edmonton.ca/ward11construction/", "Construction in Ward 11" ], [ null, null ], null, [ null, null ] ]
+, [ 152, "997A450D-33A1-496F-B856-ABF56B89D85A", 152, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2014-221", "2014", "1-Apr-14", "25-Dec-14", "19 Avenue: 50 St. - 54 St.", "P43: 19 Avenue: 50 St. - 54 St.", "53.4500462591", "-113.4216336344", [ null, "53.4500462591294", "-113.421633634437", null, false ], "12-66-1056", "Pavement Renewal", "John Crockett", "780-442-4713", "WARD 11", [ "http://www.edmonton.ca/ward11construction/", "Construction in Ward 11" ], [ null, null ], null, [ null, null ] ]
+, [ 153, "8F7456A8-85E3-4172-AFA6-C140BBD1BD85", 153, 1404852792, "398657", 1407531865, "398657", null, "ROAD", "RDS-2017-109", "2014", "1-Apr-14", "25-Dec-14", "66 Street NBD: 23 Ave. - Whitemud Dr.", "P44: 66 Street NBD: 23 Ave. - Whitemud Dr.", "53.4690907716", "-113.4384120291", [ null, "53.4690907716197", "-113.4384120291", null, false ], "12-66-1020", "Pavement Renewal", "Harinder Sandhu", "780-944-5640", "WARD 11", [ "http://www.edmonton.ca/ward11construction/", "Construction in Ward 11" ], [ null, null ], null, [ null, null ] ]
+, [ 154, "C6272DBD-99D2-4568-838B-52DED1D0ED95", 154, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2014-406", "2014", "1-Apr-14", "25-Dec-14", "20 Avenue: 94 St. - Karl Clark Rd.", "P45: 20 Avenue: 94 St. - Karl Clark Rd.", "53.4507595715", "-113.4757390648", [ null, "53.450759571478", "-113.475739064833", null, false ], "12-66-1056", "Pavement Renewal", "Clinton Mah", "780-423-5004", "WARD 11", [ "http://www.edmonton.ca/ward11construction/", "Construction in Ward 11" ], [ "http://www.edmonton.ca/transportation/RoadsTraffic/P45_14-1405-02_20AveRehab_Bulletin.pdf", "Construction Bulletin" ], null, [ null, null ] ]
+, [ 155, "A752A43E-DD56-4CA2-B2C8-A832C95B44A1", 155, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2014-223", "2014", "1-Apr-14", "25-Dec-14", "94 Street: S/17 Ave. - 23 Ave.", "P45: 94 Street: S/17 Ave. - 23 Ave.", "53.4496633146", "-113.4705615359", [ null, "53.4496633146361", "-113.470561535899", null, false ], "12-66-1056", "Pavement Renewal", "Clinton Mah", "780-423-5004", "WARD 11", [ "http://www.edmonton.ca/ward11construction/", "Construction in Ward 11" ], [ "http://www.edmonton.ca/transportation/RoadsTraffic/P45_14-1405-02_20AveRehab_Bulletin.pdf", "Construction Bulletin" ], null, [ null, null ] ]
+, [ 156, "61D04B18-F970-4FE3-BAF9-7831DFE62A97", 156, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2014-408", "2014", "1-Apr-14", "25-Dec-14", "Karl Clark Road: 20 Ave. - 40m E/Parsons Rd.", "P45: Karl Clark Road: 20 Ave. - 40m E/Parsons Rd.", "53.4497530446", "-113.4780163908", [ null, "53.4497530446218", "-113.478016390793", null, false ], "12-66-1056", "Pavement Renewal", "Clinton Mah", "780-423-5004", "WARD 11", [ "http://www.edmonton.ca/ward11construction/", "Construction in Ward 11" ], [ "http://www.edmonton.ca/transportation/RoadsTraffic/P45_14-1405-02_20AveRehab_Bulletin.pdf", "Construction Bulletin" ], null, [ null, null ] ]
+, [ 157, "8BCFC535-02BD-4296-80CA-CEA04C54BFA7", 157, 1404852792, "398657", 1407864002, "398657", null, "ROAD", "RDS-2014-314", "2014", "1-Apr-14", "25-Dec-14", "101 Street: 39 Ave. - 42 Ave.", "P46: 101 Street: 39 Ave. - 42 Ave.", "53.4764253578", "-113.4888145242", [ null, "53.4764253578478", "-113.488814524178", null, false ], "12-66-1056", "Pavement Renewal", "Zdenko Petrovic", "780-423-3913", "WARD 11", [ "http://www.edmonton.ca/ward11construction/", "Construction in Ward 11" ], [ "http://www.edmonton.ca/transportation/RoadsTraffic/P46_14-1404-03_101StRehab_Bulletin.pdf", "Construction Bulletin" ], "Project Complete", [ null, null ] ]
+, [ 158, "9D58B527-037F-43E9-AD1B-F2A243A6ECCD", 158, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2014-405", "2014", "1-Apr-14", "25-Dec-14", "39 Avenue: 101 St. - 99 St.", "P46: 39 Avenue: 101 St. - 99 St.", "53.4741167402", "-113.4874275046", [ null, "53.4741167401913", "-113.487427504649", null, false ], "12-66-1056", "Pavement Renewal", "Zdenko Petrovic", "780-423-3913", "WARD 11", [ "http://www.edmonton.ca/ward11construction/", "Construction in Ward 11" ], [ null, null ], null, [ null, null ] ]
+, [ 159, "0A84C55D-02B4-453A-843F-F9C222D90A31", 159, 1404852792, "398657", 1407864065, "398657", null, "ROAD", "RDS-2014-315", "2014", "1-Apr-14", "25-Dec-14", "42 Avenue: 101 St. - 99 St.", "P46: 42 Avenue: 101 St. - 99 St.", "53.4787303454", "-113.4874496606", [ null, "53.4787303454114", "-113.487449660635", null, false ], "12-66-1056", "Pavement Renewal", "Zdenko Petrovic", "780-423-3913", "WARD 11", [ "http://www.edmonton.ca/ward11construction/", "Construction in Ward 11" ], [ null, null ], "Project Complete", [ null, null ] ]
+, [ 160, "FD8BD4A6-499A-43B6-9D92-CE66F3B940C6", 160, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2014-222", "2014", "1-Apr-14", "25-Dec-14", "44 Street: 38 Ave. - 44 Ave.", "P47: 44 Street: 38 Ave. - 44 Ave.", "53.4781557141", "-113.4092116879", [ null, "53.4781557140556", "-113.409211687911", null, false ], "12-66-1056", "Pavement Renewal", "John Crockett", "780-442-4713", "WARD 12", [ "http://www.edmonton.ca/ward12construction/", "Construction in Ward 12" ], [ null, null ], null, [ null, null ] ]
+, [ 161, "8AB28F64-685F-4A02-811F-7EBF6BE2839B", 161, 1404852792, "398657", 1406239029, "398657", null, "ROAD", "RDS-2014-277", "2014", "1-Apr-14", "25-Dec-14", "Connors Road: Scona Rd. - 95 Ave.", "P48: Connors Road: Scona Rd. - 95 Ave.", "53.5330261741", "-113.4758719679", [ null, "53.5330261741242", "-113.475871967937", null, false ], "Operating", "Pavement Renewal", "John Crockett", "780-442-4713", "WARD 08", [ "http://www.edmonton.ca/ward8construction/", "Construction in Ward 08" ], [ null, null ], null, [ null, null ] ]
+, [ 162, "2613CCE5-826A-4E2E-B0DB-8DAC77216FAD", 162, 1404852792, "398657", 1407968594, "398657", null, "ROAD", "RDS-2016-115", "2014", "1-Apr-14", "25-Dec-14", "156 Street: 87 Ave. - Meadowlark Rd.", "P49: 156 Street: 87 Ave. - Meadowlark Rd.", "53.5218716119", "-113.5905315951", [ null, "53.5218716118658", "-113.590531595145", null, false ], "12-66-1020", "Pavement Renewal", "Harinder Sandhu", "780-944-5640", "WARD 01", [ "http://www.edmonton.ca/ward1construction/", "Construction in Ward 01" ], [ "http://www.edmonton.ca/transportation/traffic-reports.aspx?trumbaEmbed=view%3Devent%26eventid%3D111414280", "Traffic Report" ], null, [ null, null ] ]
+, [ 163, "69A3BF97-258B-4C51-B9BD-9BEEA08FAFB5", 163, 1404852792, "398657", 1407531485, "398657", null, "ROAD", "RDS-2014-230", "2014", "1-Apr-14", "25-Dec-14", "165 Street: 95 Ave. - 100 Ave.", "P50: 165 Street: 95 Ave. - 100 Ave.", "53.5354573997", "-113.6065872942", [ null, "53.5354573997397", "-113.606587294164", null, false ], "12-66-1056", "Pavement Renewal", "Zdenko Petrovic", "780-423-3913", "WARD 01", [ "http://www.edmonton.ca/ward1construction/", "Construction in Ward 01" ], [ "http://www.edmonton.ca/transportation/RoadsTraffic/P50_14-1406-02_165St_Bulletin.pdf", "Construction Bulletin" ], "Project Complete", [ null, null ] ]
+, [ 164, "EA3B37D2-6DA2-49CF-833B-CFDFE3F79C0E", 164, 1404852792, "398657", 1407424220, "398657", null, "ROAD", "RDS-2014-807", "2014", "1-Apr-14", "25-Dec-14", "Stony Plain Road: 167 St. - 175 St.", "P51: Stony Plain Road: 167 St. - 175 St.", "53.5415576926", "-113.6160329791", [ null, "53.5415576925505", "-113.616032979149", null, false ], "12-66-1020", "Pavement Renewal", "Harinder Sandhu", "780-944-5640", "WARD 01", [ "http://www.edmonton.ca/ward1construction/", "Construction in Ward 01" ], [ null, null ], null, [ null, null ] ]
+, [ 165, "184C8EF0-4144-4520-BD9E-4342DA87BA69", 165, 1404852792, "398657", 1407424214, "398657", null, "ROAD", "RDS-2014-805", "2014", "1-Apr-14", "25-Dec-14", "153 Avenue EBD: 97 St. - Castle Downs Rd.", "P52: 153 Avenue EBD: 97 St. - Castle Downs Rd.", "53.6138543724", "-113.5042779501", [ null, "53.6138543723886", "-113.5042779501", null, false ], "12-66-1020", "Pavement Renewal", "Harinder Sandhu", "780-944-5640", "WARD 02", [ "http://www.edmonton.ca/ward2construction/", "Construction in Ward 02" ], [ null, null ], null, [ null, null ] ]
+, [ 166, "01F530D6-FB89-4292-8053-4134FB858FFE", 166, 1404852792, "398657", 1406660890, "398657", null, "ROAD", "RDS-2014-231", "2014", "1-Apr-14", "25-Dec-14", "123A Street: 137 Ave. - 140 Ave.", "P53: 123A Street: 137 Ave. - 140 Ave.", "53.6006951394", "-113.5350807795", [ null, "53.6006951393698", "-113.535080779527", null, false ], "12-66-1056", "Pavement Renewal", "Zdenko Petrovic", "780-423-3913", "WARD 02", [ "http://www.edmonton.ca/ward2construction/", "Construction in Ward 02" ], [ "http://www.edmonton.ca/transportation/RoadsTraffic/P53_14-1407-01_140Ave_Bulletin.pdf", "Construction Bulletin" ], null, [ null, null ] ]
+, [ 167, "97D8E415-1737-455F-9147-49B83DDE2B13", 167, 1404852792, "398657", 1406660904, "398657", null, "ROAD", "RDS-2014-232", "2014", "1-Apr-14", "25-Dec-14", "140 Avenue: 123A St. - 127 St.", "P53: 140 Avenue: 123A St. - 127 St.", "53.6020152448", "-113.5382312483", [ null, "53.6020152447684", "-113.538231248285", null, false ], "12-66-1056", "Pavement Renewal", "Zdenko Petrovic", "780-423-3913", "WARD 02", [ "http://www.edmonton.ca/ward2construction/", "Construction in Ward 02" ], [ "http://www.edmonton.ca/transportation/RoadsTraffic/P53_14-1407-01_140Ave_Bulletin.pdf", "Construction Bulletin" ], null, [ null, null ] ]
+, [ 168, "15EBC732-C81B-4304-A2C1-FD0280C8D1EA", 168, 1404852792, "398657", 1407531494, "398657", null, "ROAD", "RDS-2014-236", "2014", "1-Apr-14", "25-Dec-14", "114 Avenue: 128 St. - St. Albert Tr.", "P54: 114 Avenue: 128 St. - St. Albert Tr.", "53.563654297", "-113.5439786259", [ null, "53.5636542969604", "-113.543978625937", null, false ], "12-66-1056", "Pavement Renewal", "Zdenko Petrovic", "780-423-3913", "WARD 02", [ "http://www.edmonton.ca/ward2construction/", "Construction in Ward 02" ], [ null, null ], "Project Complete", [ null, null ] ]
+, [ 169, "B6689976-61BA-4DFA-8A6C-156B47AD0F39", 169, 1404852792, "398657", 1407531496, "398657", null, "ROAD", "RDS-2014-237", "2014", "1-Apr-14", "25-Dec-14", "128 Street: 115 Ave. - 116 Ave.", "P54: 128 Street: 115 Ave. - 116 Ave.", "53.5660538844", "-113.5428590807", [ null, "53.5660538844309", "-113.54285908066", null, false ], "12-66-1056", "Pavement Renewal", "Zdenko Petrovic", "780-423-3913", "WARD 02", [ "http://www.edmonton.ca/ward2construction/", "Construction in Ward 02" ], [ null, null ], "Project Complete", [ null, null ] ]
+, [ 170, "5707CAD7-6C20-4031-8B6B-C3634BE856B4", 170, 1404852792, "398657", 1407531504, "398657", null, "ROAD", "RDS-2014-238", "2014", "1-Apr-14", "25-Dec-14", "130 Street: 115 Ave. - 116 Ave.", "P54: 130 Street: 115 Ave. - 116 Ave.", "53.5660520296", "-113.5446907789", [ null, "53.5660520296202", "-113.544690778893", null, false ], "12-66-1056", "Pavement Renewal", "Zdenko Petrovic", "780-423-3913", "WARD 02", [ "http://www.edmonton.ca/ward2construction/", "Construction in Ward 02" ], [ null, null ], "Project Complete", [ null, null ] ]
+, [ 171, "47223693-6953-45D1-97DC-5DAF77E8DA0E", 171, 1404852792, "398657", 1407424211, "398657", null, "ROAD", "RDS-2014-806", "2014", "1-Apr-14", "25-Dec-14", "153 Avenue: 127 St. - 100m W/131 St.", "P55: 153 Avenue: 127 St. - 100m W/131 St.", "53.6167545504", "-113.5433218655", [ null, "53.616754550402", "-113.543321865545", null, false ], "12-66-1020", "Pavement Renewal", "Harinder Sandhu", "780-944-5640", "WARD 02", [ "http://www.edmonton.ca/ward2construction/", "Construction in Ward 02" ], [ null, null ], null, [ null, null ] ]
+, [ 172, "D7A39718-91D5-4B3D-864E-A8C7A7399C04", 172, 1404852792, "398657", 1407449503, "398657", null, "ROAD", "RDS-2018-138", "2014", "1-Apr-14", "25-Dec-14", "18 Street: 153 Ave (W) - TUC", "P56: 18 Street: 153 Ave. - 167 Ave.", "53.6224854812", "-113.3689733074", [ null, "53.622485481189", "-113.368973307366", null, false ], "12-66-1020", "Pavement Renewal", "Wayne Squires", "780-423-5544", "WARD 04", [ "http://www.edmonton.ca/ward4construction/", "Construction in Ward 04" ], [ null, null ], null, [ null, null ] ]
+, [ 173, "3953EB2C-641E-4953-B576-0C65734622F8", 173, 1404852792, "398657", 1406660864, "398657", null, "ROAD", "RDS-2014-245", "2014", "1-Apr-14", "25-Dec-14", "147 Avenue: 40M E/19 St. - 21 St.", "P57: 147 Avenue: 40M E/19 St. - 21 St.", "53.6100545976", "-113.3707016505", [ null, "53.6100545975972", "-113.370701650532", null, false ], "12-66-1056", "Pavement Renewal", "Zdenko Petrovic", "780-423-3913", "WARD 04", [ "http://www.edmonton.ca/ward4construction/", "Construction in Ward 04" ], [ "http://www.edmonton.ca/transportation/RoadsTraffic/P57_14-1406-01_147Ave_Bulletin.pdf", "Construction Bulletin" ], null, [ null, null ] ]
+, [ 174, "7A67ABFB-6279-4296-B13F-744B20918864", 174, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2015-185", "2014", "1-Apr-14", "25-Dec-14", "Whitemud Drive EBD: Guardian Rd. - Anthony Henday Ramps (TUC)", "P58: Whitemud Drive EBD: Guardian Rd. - Anthony Henday Ramps (TUC)", "53.5122282753", "-113.6716104675", [ null, "53.5122282752714", "-113.671610467499", null, false ], "12-66-1020", "Pavement Renewal", "Keith Teeuwsen", "780-495-0270", "WARD 05", [ "http://www.edmonton.ca/ward5construction/", "Construction in Ward 05" ], [ null, null ], null, [ null, null ] ]
+, [ 175, "E99C8680-B1DA-43AC-9759-4C321956763F", 175, 1404852792, "398657", 1407778108, "398657", null, "ROAD", "RDS-2015-184", "2014", "1-Apr-14", "25-Dec-14", "Whitemud Drive WBD: Anthony Henday Ramps (TUC) - 260m E/Guardian Rd.", "P58: Whitemud Drive WBD: Anthony Henday Ramps (TUC) - E/Guardian Rd.", "53.5123212206", "-113.6696378314", [ null, "53.5123212206187", "-113.669637831431", null, false ], "12-66-1020", "Pavement Renewal", "Keith Teeuwsen", "780-495-0270", "WARD 05", [ "http://www.edmonton.ca/ward5construction/", "Construction in Ward 05" ], [ null, null ], null, [ null, null ] ]
+, [ 176, "AA218864-0AC3-4402-9DF2-18491F64C361", 176, 1404852792, "398657", 1407106175, "398657", null, "ROAD", "RDS-2015-103", "2014", "1-Apr-14", "25-Dec-14", "Callingwood Road: 170 St. - 80m W/178 St.", "P59: Callingwood Road: 170 St. - 80m W/178 St.", "53.4969425365", "-113.6230245915", [ null, "53.4969425364931", "-113.623024591466", null, false ], "12-66-1020", "Pavement Renewal", "Shane Richard", "780-495-9964", "WARD 05", [ "http://www.edmonton.ca/ward5construction/", "Construction in Ward 05" ], [ "http://edmonton.ca/transportation/traffic-reports.aspx?trumbaEmbed=view%3Devent%26eventid%3D111276729", "Traffic Report" ], null, [ null, null ] ]
+, [ 177, "558D45CB-A853-456E-8DCE-F010DAB8F165", 177, 1404852792, "398657", 1407859576, "398657", null, "ROAD", "RDS-2018-125", "2014", "1-Apr-14", "25-Dec-14", "109 Street: 104 Ave. - 107 Ave.", "P60: 109 Street: 104 Ave. - 107 Ave.", "53.5498366357", "-113.5084301385", [ null, "53.5498366356618", "-113.508430138479", null, false ], "12-66-1020", "Pavement Renewal", "Harinder Sandhu", "780-944-5640", "WARD 06", [ "http://www.edmonton.ca/ward6construction/", "Construction in Ward 06" ], [ "http://www.mailoutinteractive.com/Industry/View.aspx?id=600602&q=769783280&qz=71ed49", "Traffic Disruption Notice" ], null, [ null, null ] ]
+, [ 178, "078494FE-DB22-4A10-AE0E-F267641A945C", 178, 1404852792, "398657", 1408053851, "398657", null, "ROAD", "RDS-2018-124", "2014", "1-Apr-14", "25-Dec-14", "109 Street: High Level Bridge - 104 Ave.", "P61: 109 Street: High Level Bridge - 104 Ave.", "53.5392441808", "-113.5085958147", [ null, "53.5392441808286", "-113.508595814675", null, false ], "12-66-1020", "Pavement Renewal", "Harinder Sandhu", "780-944-5640", "WARD 06", [ "http://www.edmonton.ca/ward6construction/", "Construction in Ward 06" ], [ "http://www.mailoutinteractive.com/Industry/View.aspx?id=601743&q=770968532&qz=0831ad", "Traffic Disruption Notice" ], null, [ null, null ] ]
+, [ 179, "8C570D48-9A1A-4C2F-8863-E98C284CE25A", 179, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2018-134", "2014", "1-Apr-14", "25-Dec-14", "118 Avenue: 34 St. - 42 St.", "P62: 118 Avenue: 34 St. - 42 St.", "53.5703697282", "-113.3999071547", [ null, "53.5703697281935", "-113.399907154677", null, false ], "12-66-1020", "Pavement Renewal", "Nathan Stelmach", "780-944-5640", "WARD 07", [ "http://www.edmonton.ca/ward7construction/", "Construction in Ward 07" ], [ null, null ], null, [ null, null ] ]
+, [ 180, "E422BF67-466E-45BA-A733-B72653EA4E46", 180, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2015-294", "2014", "1-Apr-14", "25-Dec-14", "50 Street: 118 Ave. - Yellowhead Tr.", "P63: 50 Street: 118 Ave. - Yellowhead Tr.", "53.5761536492", "-113.418468177", [ null, "53.5761536491689", "-113.418468177026", null, false ], "12-66-1020", "Pavement Renewal", "Nathan Stelmach", "780-944-5640", "WARD 07", [ "http://www.edmonton.ca/ward7construction/", "Construction in Ward 07" ], [ null, null ], null, [ null, null ] ]
+, [ 181, "FE74E3CF-CCC6-4B60-A440-EA83FD8FFC2F", 181, 1404852792, "398657", 1407864149, "398657", null, "ROAD", "RDS-2014-253", "2014", "1-Apr-14", "25-Dec-14", "100 Street: 83 Ave. - Saskatchewan Dr.", "P64: 100 Street: 83 Ave. - Saskatchewan Dr.", "53.5226453191", "-113.4886768979", [ null, "53.5226453191045", "-113.488676897872", null, false ], "12-66-1056", "Pavement Renewal", "Zdenko Petrovic", "780-423-3913", "WARD 08", [ "http://www.edmonton.ca/ward8construction/", "Construction in Ward 08" ], [ "http://www.edmonton.ca/transportation/RoadsTraffic/P64_14-1407-02_100St_Bulletin.pdf", "Construction Bulletin" ], "Project Complete", [ null, null ] ]
+, [ 182, "9FE0847F-1A66-4A90-AB98-F0D8828945D0", 182, 1404852792, "398657", 1407864113, "398657", null, "ROAD", "RDS-2014-252", "2014", "1-Apr-14", "25-Dec-14", "89 Avenue: 100 St. - 101 St.", "P64: 89 Avenue: 100 St. - 101 St.", "53.5244763223", "-113.4899518326", [ null, "53.5244763222769", "-113.489951832597", null, false ], "12-66-1056", "Pavement Renewal", "Zdenko Petrovic", "780-423-3913", "WARD 08", [ "http://www.edmonton.ca/ward8construction/", "Construction in Ward 08" ], [ "http://www.edmonton.ca/transportation/RoadsTraffic/P64_14-1407-02_100St_Bulletin.pdf", "Construction Bulletin" ], "Project Complete", [ null, null ] ]
+, [ 183, "C08DAA14-03C2-46A3-9322-D84746DF9252", 183, 1404852792, "398657", 1406660781, "398657", null, "ROAD", "RDS-2014-257", "2014", "1-Apr-14", "25-Dec-14", "105 Street: 82 Ave. - Saskatchewan Dr.", "P65: 105 Street: 82 Ave. - Saskatchewan Dr.", "53.5206565443", "-113.5004529561", [ null, "53.5206565442947", "-113.500452956051", null, false ], "12-66-1056", "Pavement Renewal", "Zdenko Petrovic", "780-423-3913", "WARD 08", [ "http://www.edmonton.ca/ward8construction/", "Construction in Ward 08" ], [ "http://www.edmonton.ca/transportation/RoadsTraffic/P65_14-1407-03_105St_Bulletin.pdf", "Construction Bulletin" ], null, [ null, null ] ]
+, [ 184, "05951024-07F8-4DA7-AC29-29DE47FF9DCA", 184, 1404852792, "398657", 1406660804, "398657", null, "ROAD", "RDS-2014-254", "2014", "1-Apr-14", "25-Dec-14", "86 Avenue: 104 St. - 105 St.", "P65: 86 Avenue: 104 St. - 105 St.", "53.5218265166", "-113.4990003695", [ null, "53.5218265165759", "-113.499000369507", null, false ], "12-66-1056", "Pavement Renewal", "Zdenko Petrovic", "780-423-3913", "WARD 08", [ "http://www.edmonton.ca/ward8construction/", "Construction in Ward 08" ], [ "http://www.edmonton.ca/transportation/RoadsTraffic/P65_14-1407-03_105St_Bulletin.pdf", "Construction Bulletin" ], null, [ null, null ] ]
+, [ 185, "B283E1D5-D67D-4BA5-A4BE-C18E1CDC2C69", 185, 1404852792, "398657", 1406660741, "398657", null, "ROAD", "RDS-2014-256", "2014", "1-Apr-14", "25-Dec-14", "108 Street: 86 Ave. - N/86 Ave. (Dead End)", "P66: 108 Street: 86 Ave. - N/86 Ave. (Dead End)", "53.5223956885", "-113.508779636", [ null, "53.5223956884886", "-113.508779635956", null, false ], "12-66-1056", "Pavement Renewal", "Zdenko Petrovic", "780-423-3913", "WARD 08", [ "http://www.edmonton.ca/ward8construction/", "Construction in Ward 08" ], [ "http://www.edmonton.ca/transportation/RoadsTraffic/P66_14-1407-04_86Ave_Bulletin.pdf", "Construction Bulletin" ], null, [ null, null ] ]
+, [ 186, "857A6274-F82F-45C9-91AC-90032E04FB4A", 186, 1404852792, "398657", 1406660730, "398657", null, "ROAD", "RDS-2014-255", "2014", "1-Apr-14", "25-Dec-14", "86 Avenue: 107 St. - 109 St.", "P66: 86 Avenue: 107 St. - 109 St.", "53.5219381916", "-113.5091751862", [ null, "53.521938191577", "-113.509175186216", null, false ], "12-66-1056", "Pavement Renewal", "Zdenko Petrovic", "780-423-3913", "WARD 08", [ "http://www.edmonton.ca/ward8construction/", "Construction in Ward 08" ], [ "http://www.edmonton.ca/transportation/RoadsTraffic/P66_14-1407-04_86Ave_Bulletin.pdf", "Construction Bulletin" ], null, [ null, null ] ]
+, [ 187, "EE324307-322B-4F7F-8420-4BE4FD4D5992", 187, 1404852792, "398657", 1406660699, "398657", null, "ROAD", "RDS-2014-258", "2014", "1-Apr-14", "25-Dec-14", "105 Street: Allendale Rd. - 70 Ave.", "P67: 105 Street: Allendale Rd. - 70 Ave.", "53.5028670179", "-113.5000356669", [ null, "53.5028670179217", "-113.5000356669", null, false ], "12-66-1056", "Pavement Renewal", "Zdenko Petrovic", "780-423-3913", "WARD 10", [ "http://www.edmonton.ca/ward10construction/", "Construction in Ward 10" ], [ "http://www.edmonton.ca/transportation/RoadsTraffic/P67_14-1407-05_105St_Bulletin.pdf", "Construction Bulletin" ], null, [ null, null ] ]
+, [ 188, "4A226643-6311-4DA7-8D33-37265FE84453", 188, 1404852792, "398657", 1407423984, "398657", null, "ROAD", "RDS-2014-280", "2014", "1-Apr-14", "25-Dec-14", "23 Avenue WBD: 111 St. - 119 St.", "P68: 23 Avenue WBD: 111 St. - 119 St.", "53.4540930457", "-113.5252104786", [ null, "53.4540930456594", "-113.525210478645", null, false ], "12-66-1020", "Pavement Renewal", "Shane Richard", "780-495-9964", "WARD 10", [ "http://www.edmonton.ca/ward10construction/", "Construction in Ward 10" ], [ "http://www.edmonton.ca/transportation/traffic-reports.aspx?trumbaEmbed=view%3Devent%26eventid%3D111250130", "Traffic Report" ], "Project Complete", [ null, null ] ]
+, [ 189, "7A2718CB-A1A5-495F-90FB-EC3AD48F1646", 189, 1404852792, "398657", 1407424364, "398657", null, "ROAD", "RDS-2016-119", "2014", "1-Apr-14", "25-Dec-14", "34 Avenue: 111 St. - 119 St.", "P69: 34 Avenue: 111 St. - 119 St.", "53.466866", "-113.52733", [ null, "53.466866", "-113.52733", null, false ], "12-66-1020", "Pavement Renewal", "Nathan Stelmach", "780-944-5640", "WARD 10", [ "http://www.edmonton.ca/ward10construction/", "Construction in Ward 10" ], [ "http://www.edmonton.ca/transportation/traffic-reports.aspx?trumbaEmbed=view%3Devent%26eventid%3D110963091", "Traffic Report" ], "Project Complete", [ null, null ] ]
+, [ 190, "DD4A84F4-471D-4A93-BD8B-1E3F3427CB82", 190, 1404852792, "398657", 1407424204, "398657", null, "ROAD", "RDS-2015-180", "2014", "1-Apr-14", "25-Dec-14", "119 Street: 34 Ave. - Whitemud Dr.", "P70: 119 Street: 34 Ave. - Whitemud Dr.", "53.4750169177", "-113.5398577616", [ null, "53.4750169176921", "-113.539857761613", null, false ], "12-66-1020", "Pavement Renewal", "Harinder Sandhu", "780-944-5640", "WARD 10", [ "http://www.edmonton.ca/ward10construction/", "Construction in Ward 10" ], [ null, null ], null, [ null, null ] ]
+, [ 191, "C1452B20-DCF4-4661-B6CC-6CC209E2488A", 191, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2014-272", "2014", "1-Apr-14", "25-Dec-14", "54 Street: 56 Ave. - 59 Ave.", "P71: 54 Street: 56 Ave. - 59 Ave.", "53.4951611693", "-113.4215449889", [ null, "53.4951611692843", "-113.421544988909", null, false ], "12-66-1056", "Pavement Renewal", "Zdenko Petrovic", "780-423-3913", "WARD 11", [ "http://www.edmonton.ca/ward11construction/", "Construction in Ward 11" ], [ null, null ], null, [ null, null ] ]
+, [ 192, "EA98649B-B4DC-4C7C-8032-6314FC5B43DA", 192, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2014-271", "2014", "1-Apr-14", "25-Dec-14", "59 Avenue: 54 St. - 59 St.", "P71: 59 Avenue: 54 St. - 59 St.", "53.4969844268", "-113.4235794799", [ null, "53.4969844268387", "-113.423579479883", null, false ], "12-66-1056", "Pavement Renewal", "Zdenko Petrovic", "780-423-3913", "WARD 11", [ "http://www.edmonton.ca/ward11construction/", "Construction in Ward 11" ], [ null, null ], null, [ null, null ] ]
+, [ 193, "448AB322-BCC9-40C4-B132-7A6262E60178", 193, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2014-270", "2014", "1-Apr-14", "25-Dec-14", "59 Street: 56 Ave. - 59 Ave.", "P71: 59 Street: 56 Ave. - 59 Ave.", "53.4947254572", "-113.4243513544", [ null, "53.4947254571775", "-113.424351354425", null, false ], "12-66-1056", "Pavement Renewal", "Zdenko Petrovic", "780-423-3913", "WARD 11", [ "http://www.edmonton.ca/ward11construction/", "Construction in Ward 11" ], [ null, null ], null, [ null, null ] ]
+, [ 194, "F02DD568-3494-4248-A2BC-273550610715", 194, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2018-140", "2014", "1-Apr-14", "25-Dec-14", "Whitemud Drive EBD On-Ramp: 66 St. - Whitemud Dr. EBD", "P72: Whitemud Drive EBD On-Ramp: 66 St. - Whitemud Dr. EBD", "53.4849932107", "-113.4398262675", [ null, "53.4849932107151", "-113.439826267464", null, false ], "12-66-1020", "Pavement Renewal", "Lisa Erickson", "780-944-7893", "WARD 11", [ "http://www.edmonton.ca/ward11construction/", "Construction in Ward 11" ], [ null, null ], null, [ null, null ] ]
+, [ 195, "AF171C18-E8D5-464E-9C89-21F9D58300C7", 195, 1404852792, "398657", 1408054043, "398657", null, "ROAD", "RDS-2016-295", "2014", "1-Apr-14", "25-Dec-14", "91 Street NBD: Whitemud Dr. WBD Ramps - 63 Ave.", "P73: 91 Street NBD: Whitemud Dr. WBD Ramps - 63 Ave.", "53.491719297", "-113.4667532661", [ null, "53.4917192969598", "-113.466753266146", null, false ], "12-66-1020", "Pavement Renewal", "Harinder Sandhu", "780-944-5640", "WARD 11", [ "http://www.edmonton.ca/ward11construction/", "Construction in Ward 11" ], [ "http://www.edmonton.ca/transportation/traffic-reports.aspx?trumbaEmbed=view%3Devent%26eventid%3D111423923", "Traffic Report" ], null, [ null, null ] ]
+, [ 196, "7C442230-C10B-4A77-93A9-2D51F97B754A", 196, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2014-261", "2014", "1-Apr-14", "25-Dec-14", "Wagner Road: 75 St. - 86 St.", "P74: Wagner Road: 75 St. - 86 St.", "53.4992720072", "-113.4488588576", [ null, "53.4992720072485", "-113.448858857566", null, false ], "12-66-1056", "Pavement Renewal", "Zdenko Petrovic", "780-423-3913", "WARD 11", [ "http://www.edmonton.ca/ward11construction/", "Construction in Ward 11" ], [ null, null ], null, [ null, null ] ]
+, [ 197, "95A21016-3288-4708-AA8C-B13E944E32F1", 197, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2014-267", "2014", "1-Apr-14", "25-Dec-14", "41 Avenue: 91A St. - 92 St.", "P75: 41 Avenue: 91A St. - 92 St.", "53.4765029504", "-113.4690016706", [ null, "53.4765029503544", "-113.469001670586", null, false ], "12-66-1056", "Pavement Renewal", "Zdenko Petrovic", "780-423-3913", "WARD 11", [ "http://www.edmonton.ca/ward11construction/", "Construction in Ward 11" ], [ null, null ], null, [ null, null ] ]
+, [ 198, "B58B48D5-6646-417A-B389-F8031EF5E777", 198, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2014-268", "2014", "1-Apr-14", "25-Dec-14", "41 Avenue: 97 St. - 99 St.", "P75: 41 Avenue: 97 St. - 99 St.", "53.4763497901", "-113.4827637988", [ null, "53.4763497901146", "-113.482763798813", null, false ], "12-66-1056", "Pavement Renewal", "Zdenko Petrovic", "780-423-3913", "WARD 11", [ "http://www.edmonton.ca/ward11construction/", "Construction in Ward 11" ], [ null, null ], null, [ null, null ] ]
+, [ 199, "921DA01B-96E3-4B3D-8398-EB4430B1502D", 199, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2014-266", "2014", "1-Apr-14", "25-Dec-14", "42 Avenue: 95 St. - 99 St.", "P75: 42 Avenue: 95 St. - 99 St.", "53.4789852148", "-113.4807089252", [ null, "53.4789852148087", "-113.480708925249", null, false ], "12-66-1056", "Pavement Renewal", "Zdenko Petrovic", "780-423-3913", "WARD 11", [ "http://www.edmonton.ca/ward11construction/", "Construction in Ward 11" ], [ null, null ], null, [ null, null ] ]
+, [ 200, "96B08EB4-5998-462C-81F8-AD8F9C7E2BB4", 200, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2014-265", "2014", "1-Apr-14", "25-Dec-14", "43 Avenue: 91A St. - 95 St.", "P75: 43 Avenue: 91A St. - 95 St.", "53.4806060681", "-113.4722437589", [ null, "53.4806060680983", "-113.472243758891", null, false ], "12-66-1056", "Pavement Renewal", "Zdenko Petrovic", "780-423-3913", "WARD 11", [ "http://www.edmonton.ca/ward11construction/", "Construction in Ward 11" ], [ null, null ], null, [ null, null ] ]
+, [ 201, "ECBE83B4-3F19-4621-8447-296A5E7AB90B", 201, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2014-262", "2014", "1-Apr-14", "25-Dec-14", "91A Street: 41 Ave. - 43 Ave.", "P75: 91A Street: 41 Ave. - 43 Ave.", "53.4784187665", "-113.4685157927", [ null, "53.4784187665292", "-113.468515792728", null, false ], "12-66-1056", "Pavement Renewal", "Zdenko Petrovic", "780-423-3913", "WARD 11", [ "http://www.edmonton.ca/ward11construction/", "Construction in Ward 11" ], [ null, null ], null, [ null, null ] ]
+, [ 202, "3047643D-21DD-4E2D-8471-67FD5847F143", 202, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2014-263", "2014", "1-Apr-14", "25-Dec-14", "93 Street: 41 Ave. - 43 Ave.", "P75: 93 Street: 41 Ave. - 43 Ave.", "53.4786764835", "-113.4721916927", [ null, "53.4786764835373", "-113.472191692654", null, false ], "12-66-1056", "Pavement Renewal", "Zdenko Petrovic", "780-423-3913", "WARD 11", [ "http://www.edmonton.ca/ward11construction/", "Construction in Ward 11" ], [ null, null ], null, [ null, null ] ]
+, [ 203, "9479A765-2A70-4F93-B229-F7E11AA3813C", 203, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2014-264", "2014", "1-Apr-14", "25-Dec-14", "95 Street: 41 Ave. - 43 Ave.", "P75: 95 Street: 41 Ave. - 43 Ave.", "53.4785880877", "-113.4753030207", [ null, "53.4785880877126", "-113.475303020722", null, false ], "12-66-1056", "Pavement Renewal", "Zdenko Petrovic", "780-423-3913", "WARD 11", [ "http://www.edmonton.ca/ward11construction/", "Construction in Ward 11" ], [ null, null ], null, [ null, null ] ]
+, [ 204, "32F1DD2B-7BEF-4DDD-9F1A-4EE4C49CE79E", 204, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2014-269", "2014", "1-Apr-14", "25-Dec-14", "98 Street: 39 Ave. - N/42 Ave. (Dead End)", "P75: 98 Street: 39 Ave. - N/42 Ave. (Dead End)", "53.4767374044", "-113.4821889701", [ null, "53.4767374043712", "-113.482188970145", null, false ], "12-66-1056", "Pavement Renewal", "Zdenko Petrovic", "780-423-3913", "WARD 11", [ "http://www.edmonton.ca/ward11construction/", "Construction in Ward 11" ], [ null, null ], null, [ null, null ] ]
+, [ 205, "6D6274FC-B6AD-481C-BD6E-71875B150C56", 205, 1404852792, "398657", 1407424372, "398657", null, "ROAD", "RDS-2018-110", "2014", "1-Apr-14", "25-Dec-14", "50 Street SBD: 23 Ave. - 13 Ave.", "P76: 50 Street SBD: 23 Ave. - 13 Ave.", "53.4486152676", "-113.4193348449", [ null, "53.4486152676497", "-113.419334844945", null, false ], "12-66-1020", "Pavement Renewal", "Nathan Stelmach", "780-944-5640", "WARD 12", [ "http://www.edmonton.ca/ward12construction/", "Construction in Ward 12" ], [ null, null ], "Project Complete", [ null, null ] ]
+, [ 206, "BA4BF234-5D29-4330-B03E-2014778F8326", 206, 1404852792, "398657", 1407424500, "398657", null, "ROAD", "RDS-2018-111", "2014", "1-Apr-14", "25-Dec-14", "106 Avenue: Wayne Gretzky Dr. - 84 St.", "P77: 106 Avenue: Wayne Gretzky Dr. - 84 St.", "53.5493705925", "-113.4482536721", [ null, "53.5493705925397", "-113.448253672118", null, false ], "12-66-1020", "Pavement Renewal", "Nathan Stelmach", "780-944-5640", "WARD 08", [ "http://www.edmonton.ca/ward8construction/", "Construction in Ward 08" ], [ null, null ], "Project Complete", [ null, null ] ]
+, [ 207, "F9AD08F2-DF5D-4BDC-9DEE-E06A5B3DCA42", 207, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2016-164", "2014", "1-Apr-14", "25-Dec-14", "Whitemud Drive EBD: N/53 Ave. - Rainbow Valley Br.", "P78: Whitemud Drive EBD: N/53 Ave. - Rainbow Valley Br.", "53.4888202246", "-113.5646694772", [ null, "53.48882022463", "-113.564669477182", null, false ], "12-66-1020", "Pavement Renewal", "Lisa Erickson", "780-944-7893", "WARD 09", [ "http://www.edmonton.ca/ward9construction/", "Construction in Ward 09" ], [ null, null ], null, [ null, null ] ]
+, [ 208, "AADE82FC-3C29-4BE5-AA01-C2855414AB50", 208, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2016-163", "2014", "1-Apr-14", "25-Dec-14", "Whitemud Drive WBD: Rainbow Valley Br. - 750m S/53 Ave.", "P78: Whitemud Drive WBD: Rainbow Valley Br. - S/53 Ave.", "53.4832279731", "-113.563426278", [ null, "53.4832279731342", "-113.56342627795", null, false ], "12-66-1020", "Pavement Renewal", "Lisa Erickson", "780-944-7893", "WARD 09", [ "http://www.edmonton.ca/ward9construction/", "Construction in Ward 09" ], [ null, null ], null, [ null, null ] ]
+, [ 209, "C3BBAE95-3D1A-44E2-9E04-2D4E54D329FB", 209, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2014-089", "2014", "1-Apr-14", "25-Dec-14", "Whitemud Drive EBD On-Ramp: Terwillegar Dr. NBD - Whitemud Dr. EBD", "P79: Whitemud Drive EBD On-Ramp: Terwillegar Dr. NBD - Whitemud Dr. EBD", "53.4810111817", "-113.5689400039", [ null, "53.481011181696", "-113.568940003933", null, false ], "12-66-1020", "Pavement Renewal", "Lisa Erickson", "780-944-7893", "WARD 09", [ "http://www.edmonton.ca/ward9construction/", "Construction in Ward 09" ], [ null, null ], null, [ null, null ] ]
+, [ 210, "CE73D9AC-903F-480F-B30A-ED60C39F3B7F", 210, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2015-165", "2014", "1-Apr-14", "25-Dec-14", "Whitemud Drive: 50 St. - 66/75 St.", "P80: Whitemud Drive: 50 St. - 66/75 St.", "53.4861774088", "-113.4304923186", [ null, "53.4861774088414", "-113.43049231857", null, false ], "12-66-1020", "Pavement Renewal", "Lisa Erickson", "780-944-7893", "WARD 11", [ "http://www.edmonton.ca/ward11construction/", "Construction in Ward 11" ], [ null, null ], null, [ null, null ] ]
+, [ 211, "6DAD48D6-A3E2-450B-9283-87A70799DB94", 211, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2012-301", "2013", "1-Jan-13", "31-Oct-14", "Stony Plain Road: 149 St. - 158 St.", "R01: Stony Plain Road: 149 St. - 158 St.", "53.541287732", "-113.5920735648", [ null, "53.5412877320106", "-113.592073564767", null, false ], "12-21-5800", "Road Rehabilitation", "Gordon Mitchell", "780-944-5662", "WARD 01", [ "http://www.edmonton.ca/ward1construction/", "Construction in Ward 01" ], [ "http://www.edmonton.ca/transportation/road_projects/stony-plain-road-streetscape-149-to-158-street.aspx", "Stony Plain Road Streetscape" ], null, [ null, null ] ]
+, [ 212, "220CC9CB-9A67-4486-AAC2-EFFEF0C5FF4F", 212, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2013-123", "2014", "1-Apr-14", "25-Dec-14", "Whitemud Dr. Ramps EBD: Whitemud Dr. - 159 St.", "R02: Whitemud Dr. Ramps EBD: Whitemud Dr. - 159 St.", "53.5116646474", "-113.5988945708", [ null, "53.5116646474074", "-113.598894570757", null, false ], "12-66-1020", "Road Rehabilitation", "Keith Teeuwsen", "780-495-0270", "WARD 05", [ "http://www.edmonton.ca/ward5construction/", "Construction in Ward 05" ], [ "http://www.edmonton.ca/transportation/RoadsTraffic/R02_14-1418-01_Whitemud-159St_Bulletin.pdf", "Construction Bulletin" ], null, [ null, null ] ]
+, [ 213, "0C1F0846-3945-4FD1-9CDF-B969534DAD93", 213, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2013-135", "2014", "1-Apr-14", "25-Dec-14", "Whitemud Dr. Ramps WBD: Whitemud Dr. - 159 St.", "R02: Whitemud Dr. Ramps WBD: Whitemud Dr. - 159 St.", "53.5122378642", "-113.594438588", [ null, "53.5122378642331", "-113.594438587958", null, false ], "12-66-1020", "Road Rehabilitation", "Keith Teeuwsen", "780-495-0270", "WARD 05", [ "http://www.edmonton.ca/ward5construction/", "Construction in Ward 05" ], [ "http://www.edmonton.ca/transportation/RoadsTraffic/R02_14-1418-01_Whitemud-159St_Bulletin.pdf", "Construction Bulletin" ], null, [ null, null ] ]
+, [ 214, "069DDCFB-6B46-45C8-A16D-BDB131E27565", 214, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2014-410", "2014", "1-Apr-14", "25-Dec-14", "101A Avenue: 96 St. - 97 St.", "R03: 101A Avenue: 96 St. - 97 St.", "53.5434134124", "-113.4842934219", [ null, "53.5434134124381", "-113.484293421884", null, false ], "11-17-0407", "Road Rehabilitation", "Marlis Foth", "780-944-5691", "WARD 06", [ "http://www.edmonton.ca/ward6construction/", "Construction in Ward 06" ], [ null, null ], null, [ null, null ] ]
+, [ 215, "3FBFB7CA-571F-4637-8393-D1C60275ED47", 215, 1404852792, "398657", 1407950012, "398657", null, "ROAD", "RDS-2013-405", "2013", "1-Jan-13", "15-Oct-14", "96 Street: Jasper Ave. - 103A Ave. (Quarters)", "R03: 96 Street: Jasper Ave. - 103A Ave. (Quarters)", "53.5450134372", "-113.4826743806", [ null, "53.5450134371877", "-113.482674380568", null, false ], "11-17-0407", "Road Rehabilitation", "Marlis Foth", "780-944-5691", "WARD 06", [ "http://www.edmonton.ca/ward6construction/", "Construction in Ward 06" ], [ "http://www.edmonton.ca/transportation/traffic-reports.aspx?trumbaEmbed=view%3Devent%26eventid%3D109820202", "Traffic Report" ], null, [ null, null ] ]
+, [ 216, "C8240130-82A0-4192-9133-895E359ABA96", 216, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2013-188", "2014", "1-Apr-14", "25-Dec-14", "112 Avenue: 50 St. - 60 St.", "R04: 112 Avenue: 50 St. - 60 St.", "53.5672599574", "-113.4246053161", [ null, "53.5672599573825", "-113.424605316072", null, false ], "13-66-1023/09-21-5800", "Road Rehabilitation", "Andre Samoil", "780-944-7698", "WARD 07", [ "http://www.edmonton.ca/ward7construction/", "Construction in Ward 07" ], [ "http://www.edmonton.ca/transportation/road_projects/112-avenue-reconstruction.aspx", "112 Avenue Reconstruction" ], null, [ null, null ] ]
+, [ 217, "48C92337-D6FB-4846-924B-768FC305E619", 217, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2014-310", "2014", "1-Apr-14", "25-Dec-14", "50 Street: Ada Blvd. - 117 Ave.", "R04: 50 Street: Ada Blvd. - 117 Ave.", "53.5681214779", "-113.4183924215", [ null, "53.5681214779156", "-113.418392421477", null, false ], "12-66-1020", "Road Rehabilitation", "Andre Samoil", "780-944-7698", "WARD 07", [ "http://www.edmonton.ca/ward7construction/", "Construction in Ward 07" ], [ "http://www.edmonton.ca/transportation/road_projects/112-avenue-reconstruction.aspx", "112 Avenue Reconstruction" ], null, [ null, null ] ]
+, [ 218, "4E861E06-3360-4560-A19C-CAA4070F7107", 218, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2013-129", "2014", "1-Apr-14", "25-Dec-14", "50 Street: 106 Ave. - Capilano Park Rd. ", "R05: 50 Street: 106 Ave. - Capilano Park Rd. ", "53.5549031671", "-113.4184088657", [ null, "53.5549031671045", "-113.418408865695", null, false ], "12-66-1056", "Road Rehabilitation", "Greg Courtepatte", "780-496-5367", "WARD 08", [ "http://www.edmonton.ca/ward8construction/", "Construction in Ward 08" ], [ "http://www.edmonton.ca/transportation/RoadsTraffic/R05_14-1403-01_50StRehab_Bulletin.pdf", "Construction Bulletin" ], null, [ null, null ] ]
+, [ 219, "3D6625C7-6830-4597-893C-7A21EA3B8378", 219, 1404852792, "398657", 1407425030, "398657", null, "ROAD", "RDS-2013-216", "2014", "1-Apr-14", "25-Dec-14", "34 Street: 74 Ave. - Sherwood Fwy. EBD Ramps", "R06: 34 Street: 74 Ave. - Sherwood Fwy. EBD Ramps", "53.5143390986", "-113.3938707257", [ null, "53.514339098576", "-113.393870725713", null, false ], "12-66-1020", "Road Rehabilitation", "Wayne Squires", "780-423-5544", "WARD 11", [ "http://www.edmonton.ca/ward11construction/", "Construction in Ward 11" ], [ "http://www.mailoutinteractive.com/Industry/View.aspx?id=580006&q=745287857&qz=58005c", "Traffic Disruption Notice" ], "Project Complete", [ null, null ] ]
+, [ 220, "A44FC2C9-7732-465D-B9A5-26812CA943FB", 220, 1404852792, "398657", 1408053913, "398657", null, "ROAD", "RDS-2013-184", "2014", "1-Apr-14", "25-Dec-14", "Sherwood Park Off Ramps: Sherwood Park Fwy. - 34 St.", "R07: Sherwood Park Off Ramps: Sherwood Park Fwy. - 34 St.", "53.5165586902", "-113.3967258545", [ null, "53.5165586902098", "-113.396725854539", null, false ], "12-66-1020", "Road Rehabilitation", "Kelly Calvez", "780-944-7701", "WARD 11", [ "http://www.edmonton.ca/ward11construction/", "Construction in Ward 11" ], [ "http://www.mailoutinteractive.com/Industry/View.aspx?id=601745&q=770968722&qz=bb4c55", "Traffic Disruption Notice" ], null, [ null, null ] ]
+, [ 221, "81C200CD-5CF5-4660-BB88-811F48BE3DAE", 221, 1404852792, "398657", 1408053934, "398657", null, "ROAD", "RDS-2013-183", "2014", "1-Apr-14", "25-Dec-14", "Sherwood Park On Ramps: Sherwood Park Fwy. - 34 St.", "R07: Sherwood Park On Ramps: Sherwood Park Fwy. - 34 St.", "53.5172893367", "-113.3963538104", [ null, "53.5172893367454", "-113.39635381037", null, false ], "12-66-1020", "Road Rehabilitation", "Kelly Calvez", "780-944-7701", "WARD 11", [ "http://www.edmonton.ca/ward11construction/", "Construction in Ward 11" ], [ "http://www.mailoutinteractive.com/Industry/View.aspx?id=601745&q=770968722&qz=bb4c55", "Traffic Disruption Notice" ], null, [ null, null ] ]
+, [ 222, "43145DA4-DBB3-4FFF-8F00-67FF09318E7C", 222, 1404852792, "398657", 1408053515, "398657", null, "ROAD", "RDS-2013-186", "2014", "1-Apr-14", "25-Dec-14", "Sherwood Park Ramps EBD: Sherwood Park Fwy. - 50 St.", "R08: Sherwood Park Ramps EBD: Sherwood Park Fwy. - 50 St.", "53.513790344", "-113.4203576463", [ null, "53.5137903439879", "-113.420357646259", null, false ], "12-66-1020", "Road Rehabilitation", "Kelly Calvez", "780-944-7701", "WARD 11", [ "http://www.edmonton.ca/ward11construction/", "Construction in Ward 11" ], [ "http://www.edmonton.ca/transportation/traffic-reports.aspx?trumbaEmbed=view%3Devent%26eventid%3D111424644", "Traffic Report" ], null, [ null, null ] ]
+, [ 223, "05C964DB-E143-4902-9E0A-906022073AD1", 223, 1404852792, "398657", 1408053524, "398657", null, "ROAD", "RDS-2013-185", "2014", "1-Apr-14", "25-Dec-14", "Sherwood Park Ramps WBD: Sherwood Park Fwy. - 50 St.", "R08: Sherwood Park Ramps WBD: Sherwood Park Fwy. - 50 St.", "53.5149465894", "-113.4163468184", [ null, "53.514946589384", "-113.416346818441", null, false ], "12-66-1020", "Road Rehabilitation", "Kelly Calvez", "780-944-7701", "WARD 11", [ "http://www.edmonton.ca/ward11construction/", "Construction in Ward 11" ], [ "http://www.edmonton.ca/transportation/traffic-reports.aspx?trumbaEmbed=view%3Devent%26eventid%3D111424644", "Traffic Report" ], null, [ null, null ] ]
+, [ 225, "D9A683D1-B079-46A9-A898-B65DC1C14867", 225, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2013-182", "2014", "1-Apr-14", "25-Dec-14", "Argyll Road: 76 Ave. - 75 St.", "R09: Argyll Road: 76 Ave. - 75 St.", "53.5099816978", "-113.4393137202", [ null, "53.5099816978484", "-113.439313720166", null, false ], "12-66-1020", "Road Rehabilitation", "Alan Herbert", "780-944-7704", "WARD 11", [ "http://www.edmonton.ca/ward11construction/", "Construction in Ward 11" ], [ "http://www.edmonton.ca/transportation/RoadsTraffic/R09_14-1416-01_ArgyllRd_Bulletin.pdf", "Construction Bulletin" ], null, [ null, null ] ]
+, [ 224, "BD41E80B-E8AF-4827-B5A9-94A3826FC9AF", 224, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2013-187", "2014", "1-Apr-14", "25-Dec-14", "Argyll Road (SPF Ramp): Sherwood Park Fwy. - 76 Ave.", "R09: Argyll Road (SPF Ramp): Sherwood Park Fwy. - 76 Ave.", "53.5150599929", "-113.4336641652", [ null, "53.5150599928567", "-113.433664165203", null, false ], "12-66-1020", "Road Rehabilitation", "Alan Herbert", "780-944-7704", "WARD 11", [ "http://www.edmonton.ca/ward11construction/", "Construction in Ward 11" ], [ "http://www.mailoutinteractive.com/Industry/View.aspx?id=581434&q=747296969&qz=d45587", "Traffic Disruption Notice" ], null, [ null, null ] ]
+, [ 226, "6D719D8D-051B-45BD-B10C-FE988F554F8A", 226, 1404852792, "398657", 1407424624, "398657", null, "ROAD", "RDS-2013-122", "2014", "1-Apr-14", "25-Dec-14", "Parsons Road: 23 Ave. - 34 Ave.", "R10: Parsons Road: 23 Ave. - 34 Ave.", "53.4594792911", "-113.484329035", [ null, "53.4594792911376", "-113.484329035025", null, false ], "12-66-1020", "Road Rehabilitation", "Kelly Calvez", "780-944-7701", "WARD 11", [ "http://www.edmonton.ca/ward11construction/", "Construction in Ward 11" ], [ "http://www.edmonton.ca/transportation/RoadsTraffic/R10_14-1417-01_ParsonsRd_Bulletin.pdf", "Construction Bulletin" ], "Project Complete", [ null, null ] ]
+, [ 227, "BA280465-7477-45E9-AD92-73FDCED02C98", 227, 1404852792, "398657", 1407424695, "398657", null, "ROAD", "RDS-2013-197", "2013", "1-Apr-13", "25-Dec-14", "Allendale Road: 106 St. - 104 St.", "R13: Allendale Road: 106 St. - 104 St.", "53.4987637667", "-113.5007958638", [ null, "53.498763766726", "-113.500795863781", null, false ], "12-66-1020", "Road Rehabilitation", "Alan Herbert", "780-944-7704", "WARD 10", [ "http://www.edmonton.ca/ward10construction/", "Construction in Ward 10" ], [ "http://www.edmonton.ca/transportation/road_projects/63-ave-allendale-rd-rehab.aspx", "63 Avenue & Allendale Road Rehabilitation" ], "Project Complete", [ null, null ] ]
+, [ 228, "27FEF56A-EC0A-4D16-ADFA-7DEDAFA33065", 228, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2013-134", "2013", "1-May-13", "31-Oct-14", "63 Avenue: 99 St. - 104 St.", "R14: 63 Avenue: 99 St. - 104 St.", "53.4999402966", "-113.4914976335", [ null, "53.4999402965553", "-113.491497633533", null, false ], "12-66-1022", "Road Rehabilitation", "Alan Herbert", "780-944-7704", "WARD 11", [ "http://www.edmonton.ca/ward11construction/", "Construction in Ward 11" ], [ "http://www.edmonton.ca/transportation/road_projects/63-ave-allendale-rd-rehab.aspx", "63 Avenue & Allendale Road Rehabilitation" ], null, [ null, null ] ]
+, [ 229, "40AEEB7A-67D3-4C3D-A320-8FB64D142B18", 229, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2013-118-CO1", "2014", "1-Apr-13", "25-Dec-14", "67 Street: 68 Ave. - 76 Ave.", "R16: 67 Street: 68 Ave. - 76 Ave.", "53.506831144", "-113.4305231496", [ null, "53.5068311440367", "-113.43052314961", null, false ], "12-66-1056", "Road Rehabilitation", "Jason Caudron", "780-495-0268", "WARD 11", [ "http://www.edmonton.ca/ward11construction/", "Construction in Ward 11" ], [ null, null ], null, [ null, null ] ]
+, [ 230, "ED4D2FF7-F41C-4E12-8B79-0714958BC527", 230, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2013-119-CO1", "2014", "2-Jul-14", "15-Nov-14", "71 Street: 68 Ave. - Girard Rd.", "R16: 71 Street: 68 Ave. - Girard Rd.", "53.5067026859", "-113.4365399536", [ null, "53.5067026858633", "-113.436539953617", null, false ], "12-66-1056", "Road Rehabilitation", "Jason Caudron", "780-495-0268", "WARD 11", [ "http://www.edmonton.ca/ward11construction/", "Construction in Ward 11" ], [ null, null ], null, [ null, null ] ]
+, [ 231, "F9D934F5-7650-4B92-844C-62D961B3671B", 231, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2013-120-CO1", "2014", "2-Jul-14", "15-Nov-14", "72 Avenue: 67 St. - 71 St.", "R16: 72 Avenue: 67 St. - 71 St.", "53.5085823259", "-113.4337176615", [ null, "53.508582325879", "-113.433717661458", null, false ], "12-66-1056", "Road Rehabilitation", "Jason Caudron", "780-495-0268", "WARD 11", [ "http://www.edmonton.ca/ward11construction/", "Construction in Ward 11" ], [ null, null ], null, [ null, null ] ]
+, [ 232, "8633FA7B-771D-4DEB-B2F6-EB0E13E466E0", 232, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2013-400-CO1", "2014", "2-Jul-14", "15-Nov-14", "Girard Road: 76 Ave. - S/72St.", "R16: Girard Road: 76 Ave. - S/72St.", "53.5107074522", "-113.435356239", [ null, "53.5107074521512", "-113.435356239047", null, false ], "12-66-1056", "Road Rehabilitation", "Jason Caudron", "780-495-0268", "WARD 11", [ "http://www.edmonton.ca/ward11construction/", "Construction in Ward 11" ], [ null, null ], null, [ null, null ] ]
+, [ 233, "42E0EEE7-CDCA-4F5A-B8F2-E8DA10A7FCAD", 233, 1404852792, "398657", 1407424193, "398657", null, "ROAD", "RDS-2017-112", "2014", "1-Apr-14", "25-Dec-14", "142 Street: Ravine Dr. - 103 Av.", "R17: 142 Street: Ravine Dr. - 103 Av.", "53.5420308302", "-113.5655049762", [ null, "53.5420308301703", "-113.565504976162", null, false ], "12-66-1020", "Pavement Renewal", "Harinder Sandhu", "780-944-5640", "WARD 06", [ "http://www.edmonton.ca/ward6construction/", "Construction in Ward 06" ], [ null, null ], null, [ null, null ] ]
+, [ 234, "A775EAB7-45D3-49FF-8FE7-FADA185563AB", 234, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "RDS-2013-127-CO1", "2014", "2-Jul-14", "15-Nov-14", "68 Avenue: 50 St. - 75 St.", "R17: 68 Avenue: 50 St. - 75 St.", "53.5050399493", "-113.4341127984", [ null, "53.505039949301", "-113.434112798377", null, false ], "12-66-1056", "Road Rehabilitation", "Jason Caudron", "780-495-0268", "WARD 11", [ "http://www.edmonton.ca/ward11construction/", "Construction in Ward 11" ], [ null, null ], null, [ null, null ] ]
+, [ 238, "47E2CA4F-83DF-4F2F-9CC8-991391DA219F", 238, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "TRT-2012-7749", "2013", "1-Apr-13", "25-Dec-14", "Kingsway: 102 St. - 108 St.", "T01: North LRT to NAIT Extension", "53.5569337482", "-113.4992812061", [ null, "53.5569337482484", "-113.499281206083", null, false ], "08-66-1672", "LRT Growth", "LRT Projects Information Centre", "780-496-4877", "WARD 06", [ "http://www.edmonton.ca/ward6construction/", "Construction in Ward 06" ], [ "http://www.edmonton.ca/transportation/ets/lrt_projects/downtown-to-nait-lrt-study.aspx", "Metro Line (North LRT to NAIT)" ], null, [ null, null ] ]
+, [ 237, "126158BD-E919-448B-AFA7-DDA5F10CF5E7", 237, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "TRT-2012-7746", "2013", "1-Apr-13", "25-Dec-14", "105 Street: 105 Ave. - 108 Ave.", "T01: North LRT to NAIT Extension", "53.5504516223", "-113.5010740569", [ null, "53.5504516223072", "-113.501074056941", null, false ], "08-66-1672", "LRT Growth", "LRT Projects Information Centre", "780-496-4876", "WARD 06", [ "http://www.edmonton.ca/ward6construction/", "Construction in Ward 06" ], [ "http://www.edmonton.ca/transportation/ets/lrt_projects/downtown-to-nait-lrt-study.aspx", "Metro Line (North LRT to NAIT)" ], null, [ null, null ] ]
+, [ 235, "118E9630-0ECB-4D83-8DB1-858C2E1CDE8B", 235, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "TRT-2012-12144", "2013", "1-Apr-13", "25-Dec-14", "105 Avenue: 101 St. - 105 St.", "T01: North LRT to NAIT Extension", "53.5477666729", "-113.4974104676", [ null, "53.5477666729062", "-113.497410467588", null, false ], "08-66-1672", "LRT Growth", "LRT Projects Information Centre", "780-496-4874", "WARD 06", [ "http://www.edmonton.ca/ward6construction/", "Construction in Ward 06" ], [ "http://www.edmonton.ca/transportation/ets/lrt_projects/downtown-to-nait-lrt-study.aspx", "Metro Line (North LRT to NAIT)" ], null, [ null, null ] ]
+, [ 236, "35566B70-4A37-4D61-AD45-FDFBD85F8264", 236, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "TRT-2012-7750", "2013", "1-Apr-13", "25-Dec-14", "104 Street: 108 Ave. - Kingsway", "T01: North LRT to NAIT Extension", "53.5553612878", "-113.4992359533", [ null, "53.555361287837", "-113.499235953328", null, false ], "08-66-1672", "LRT Growth", "LRT Projects Information Centre", "780-496-4875", "WARD 06", [ "http://www.edmonton.ca/ward6construction/", "Construction in Ward 06" ], [ "http://www.edmonton.ca/transportation/ets/lrt_projects/downtown-to-nait-lrt-study.aspx", "Metro Line (North LRT to NAIT)" ], null, [ null, null ] ]
+, [ 241, "4C5A6A27-DE7B-49DB-BC36-35B9DEBAD6C1", 241, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "TRT-2012-7752", "2013", "1-Apr-13", "25-Dec-14", "106 Street: 111 Ave. - Princess Elizabeth Ave.", "T01: North LRT to NAIT Extension", "53.5623231347", "-113.5033416966", [ null, "53.5623231347076", "-113.503341696579", null, false ], "08-66-1672", "LRT Growth", "LRT Projects Information Centre", "780-496-4880", "WARD 02", [ "http://www.edmonton.ca/ward2construction/", "Construction in Ward 02" ], [ "http://www.edmonton.ca/transportation/ets/lrt_projects/downtown-to-nait-lrt-study.aspx", "Metro Line (North LRT to NAIT)" ], null, [ null, null ] ]
+, [ 240, "429DE72B-2D0C-42D6-BE0D-C91DDD4E9B60", 240, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "TRT-2012-7748", "2013", "1-Apr-13", "25-Dec-14", "108 Avenue: 104 St. - 105 St.", "T01: North LRT to NAIT Extension", "53.5534041377", "-113.5001552778", [ null, "53.5534041377463", "-113.500155277809", null, false ], "08-66-1672", "LRT Growth", "LRT Projects Information Centre", "780-496-4879", "WARD 06", [ "http://www.edmonton.ca/ward6construction/", "Construction in Ward 06" ], [ "http://www.edmonton.ca/transportation/ets/lrt_projects/downtown-to-nait-lrt-study.aspx", "Metro Line (North LRT to NAIT)" ], null, [ null, null ] ]
+, [ 239, "15EC179B-8CA4-4DAE-B75B-4D870B3812FE", 239, 1404852792, "398657", 1404852792, "398657", "{\n}", "ROAD", "TRT-2012-7751", "2013", "1-Apr-13", "25-Dec-14", "Princess Elizabeth Avenue: 106 St. - 109 St.", "T01: North LRT to NAIT Extension", "53.5653528997", "-113.5055742283", [ null, "53.5653528996634", "-113.505574228345", null, false ], "08-66-1672", "LRT Growth", "LRT Projects Information Centre", "780-496-4878", "WARD 02", [ "http://www.edmonton.ca/ward2construction/", "Construction in Ward 02" ], [ "http://www.edmonton.ca/transportation/ets/lrt_projects/downtown-to-nait-lrt-study.aspx", "Metro Line (North LRT to NAIT)" ], null, [ null, null ] ]
+, [ 246, "6FDB5729-DE4D-434F-ADB5-28AB807F1BAE", 246, 1404852792, "398657", 1404852792, "398657", "{\n}", "Transit", "TRT-2015-SE LRT-003", "2014", "1-Jan-14", "26-Apr-20", "95 Avenue: 88 St. - 85 St.", "T02: Valley Line LRT", "53.5312187191", "-113.4573780032", [ null, "53.5312187191055", "-113.457378003183", null, false ], "11-66-1668", "LRT Growth", "LRT Projects Information Centre", "780-496-4885", "WARD 08", [ "http://www.edmonton.ca/ward8construction/", "Construction in Ward 08" ], [ "http://www.edmonton.ca/transportation/ets/lrt_projects/southeast-to-west-lrt-mill-woods-to-lewis-farms.aspx", "Valley Line (SE to West LRT): Mill Woods to Lewis Farms" ], null, [ null, null ] ]
+, [ 245, "DF18FA78-4565-4065-BB63-2600DF3B4FFA", 245, 1404852792, "398657", 1404852792, "398657", "{\n}", "Transit", "TRT-2015-SE LRT-002", "2014", "1-Jan-14", "25-Apr-20", "Connors Road: 98 Ave. - 95 Ave.", "T02: Valley Line LRT", "53.5328975387", "-113.4749598199", [ null, "53.5328975387119", "-113.474959819912", null, false ], "11-66-1668", "LRT Growth", "LRT Projects Information Centre", "780-496-4884", "WARD 08", [ "http://www.edmonton.ca/ward8construction/", "Construction in Ward 08" ], [ "http://www.edmonton.ca/transportation/ets/lrt_projects/southeast-to-west-lrt-mill-woods-to-lewis-farms.aspx", "Valley Line (SE to West LRT): Mill Woods to Lewis Farms" ], null, [ null, null ] ]
+, [ 244, "06706B51-5708-4657-98D4-4DB2105164F5", 244, 1404852792, "398657", 1404852792, "398657", "{\n}", "Transit", "TRT-2015-SE LRT-010", "2014", "1-Jan-14", "26-Apr-20", "66 Street: 31 Ave. - 23 Ave.", "T02: Valley Line LRT", "53.4588508347", "-113.4338786089", [ null, "53.4588508346659", "-113.433878608865", null, false ], "11-66-1668", "LRT Growth", "LRT Projects Information Centre", "780-496-4883", "WARD 11", [ "http://www.edmonton.ca/ward11construction/", "Construction in Ward 11" ], [ "http://www.edmonton.ca/transportation/ets/lrt_projects/southeast-to-west-lrt-mill-woods-to-lewis-farms.aspx", "Valley Line LRT" ], null, [ null, null ] ]
+, [ 243, "E1F25862-EF23-4625-BC63-9808D8273D27", 243, 1404852792, "398657", 1404852792, "398657", "{\n}", "Transit", "TRT-2015-SE LRT-001", "2014", "1-Jan-14", "26-Apr-20", "95 Street: 102 Ave. - 98 Ave.", "T02: Valley Line LRT", "53.5419821069", "-113.4772517191", [ null, "53.5419821068832", "-113.477251719089", null, false ], "11-66-1668", "LRT Growth", "LRT Projects Information Centre", "780-496-4882", "WARD 06", [ "http://www.edmonton.ca/ward6construction/", "Construction in Ward 06" ], [ "http://www.edmonton.ca/transportation/ets/lrt_projects/southeast-to-west-lrt-mill-woods-to-lewis-farms.aspx", "Valley Line (SE to West LRT): Mill Woods to Lewis Farms" ], null, [ null, null ] ]
+, [ 242, "6A842C0E-89A6-4AD7-9221-273E04DCCE6F", 242, 1404852792, "398657", 1404852792, "398657", "{\n}", "Transit", "TRT-2015-DT LRT-001", "2014", "1-Jan-14", "24-Apr-20", "102 Avenue: 100A St. - 95 St.", "T02: Valley Line LRT", "53.5436682057", "-113.4875630747", [ null, "53.5436682057304", "-113.487563074721", null, false ], "11-66-1668", "LRT Growth", "LRT Projects Information Centre", "780-496-4881", "WARD 06", [ "http://www.edmonton.ca/ward6construction/", "Construction in Ward 06" ], [ "http://www.edmonton.ca/transportation/ets/lrt_projects/southeast-to-west-lrt-mill-woods-to-lewis-farms.aspx", "Valley Line (SE to West LRT): Mill Woods to Lewis Farms" ], null, [ null, null ] ]
+, [ 252, "51EA05D6-EEDE-4B3B-83DA-CF9C5B609BCA", 252, 1404852792, "398657", 1404852792, "398657", "{\n}", "Transit", "TRT-2015-SE LRT-004", "2014", "1-Jan-14", "26-Apr-20", "85 Street: 93 Ave. - 90 Ave / 83 Street: 90 Ave. - 84 Ave.", "T02: Valley Line LRT", "53.5237642522", "-113.45600414", [ null, "53.5237642522085", "-113.456004139954", null, false ], "11-66-1668", "LRT Growth", "LRT Projects Information Centre", "780-496-4891", "WARD 08", [ "http://www.edmonton.ca/ward8construction/", "Construction in Ward 08" ], [ "http://www.edmonton.ca/transportation/ets/lrt_projects/southeast-to-west-lrt-mill-woods-to-lewis-farms.aspx", "Valley Line (SE to West LRT): Mill Woods to Lewis Farms" ], null, [ null, null ] ]
+, [ 251, "6AFA854D-7A9B-4928-A38F-4717AD825862", 251, 1404852792, "398657", 1404852792, "398657", "{\n}", "Transit", "TRT-2015-SE LRT-009", "2014", "1-Jan-14", "26-Apr-20", "66 Street: 38 Ave. - 31 Ave.", "T02: Valley Line LRT", "53.4687129709", "-113.4371171332", [ null, "53.4687129708508", "-113.43711713322", null, false ], "11-66-1668", "LRT Growth", "LRT Projects Information Centre", "780-496-4890", "WARD 11", [ "http://www.edmonton.ca/ward11construction/", "Construction in Ward 11" ], [ "http://www.edmonton.ca/transportation/ets/lrt_projects/southeast-to-west-lrt-mill-woods-to-lewis-farms.aspx", "Valley Line LRT" ], null, [ null, null ] ]
+, [ 250, "0E1DE004-4E7A-4AEB-92F0-B07561EBFC86", 250, 1404852792, "398657", 1404852792, "398657", "{\n}", "Transit", "TRT-2015-SE LRT-008", "2014", "1-Jan-14", "26-Apr-20", "66 Street: Whitemud Dr. - 38 Ave.", "T02: Valley Line LRT", "53.4802546777", "-113.4422724405", [ null, "53.4802546777219", "-113.44227244053", null, false ], "11-66-1668", "LRT Growth", "LRT Projects Information Centre", "780-496-4889", "WARD 11", [ "http://www.edmonton.ca/ward11construction/", "Construction in Ward 11" ], [ "http://www.edmonton.ca/transportation/ets/lrt_projects/southeast-to-west-lrt-mill-woods-to-lewis-farms.aspx", "Valley Line LRT" ], null, [ null, null ] ]
+, [ 249, "E8B322A2-6E3C-4948-A208-1F6D477FD681", 249, 1404852792, "398657", 1404852792, "398657", "{\n}", "Transit", "TRT-2015-SE LRT-007", "2014", "1-Jan-14", "26-Apr-20", "75 Street: Davies Rd. - Whitemud Dr.", "T02: Valley Line LRT", "53.4933605435", "-113.4424104432", [ null, "53.493360543511", "-113.442410443204", null, false ], "11-66-1668", "LRT Growth", "LRT Projects Information Centre", "780-496-4888", "WARD 11", [ "http://www.edmonton.ca/ward11construction/", "Construction in Ward 11" ], [ "http://www.edmonton.ca/transportation/ets/lrt_projects/southeast-to-west-lrt-mill-woods-to-lewis-farms.aspx", "Valley Line LRT" ], null, [ null, null ] ]
+, [ 248, "82ED7F57-126D-4606-B0B3-5B39EB365ED0", 248, 1404852792, "398657", 1404852792, "398657", "{\n}", "Transit", "TRT-2015-SE LRT-006", "2014", "1-Jan-14", "26-Apr-20", "83 Street: 73 Ave. - Argyll Rd./Davies Rd.", "T02: Valley Line LRT", "53.5034542819", "-113.4530959578", [ null, "53.5034542818827", "-113.453095957775", null, false ], "11-66-1668", "LRT Growth", "LRT Projects Information Centre", "780-496-4887", "WARD 11", [ "http://www.edmonton.ca/ward11construction/", "Construction in Ward 11" ], [ "http://www.edmonton.ca/transportation/ets/lrt_projects/southeast-to-west-lrt-mill-woods-to-lewis-farms.aspx", "Valley Line (SE to West LRT): Mill Woods to Lewis Farms" ], null, [ null, null ] ]
+, [ 247, "FE1FF4AF-EBBF-4E1A-85B0-57F1AC31ED2D", 247, 1404852792, "398657", 1404852792, "398657", "{\n}", "Transit", "TRT-2015-SE LRT-005", "2014", "1-Jan-14", "26-Apr-20", "83 Street: 84 Ave. - 73 Ave.", "T02: Valley Line LRT", "53.5145644894", "-113.4551112769", [ null, "53.5145644894028", "-113.455111276886", null, false ], "11-66-1668", "LRT Growth", "LRT Projects Information Centre", "780-496-4886", "WARD 11", [ "http://www.edmonton.ca/ward11construction/", "Construction in Ward 11" ], [ "http://www.edmonton.ca/transportation/ets/lrt_projects/southeast-to-west-lrt-mill-woods-to-lewis-farms.aspx", "Valley Line LRT" ], null, [ null, null ] ]
+ ]
+}

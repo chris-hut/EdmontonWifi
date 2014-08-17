@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="3dip">
+
+    <TextView
+        android:id="@+id/construction_list_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:singleLine="true"
+        android:text="Location"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/construction_list_distance"
+        android:layout_alignLeft="@+id/construction_list_location"
+        android:layout_below="@+id/construction_list_location"
+        android:singleLine="true"
+        android:text="Distance" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/construction_list_asset"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/construction_list_location"
+        android:singleLine="true"
+        android:layout_alignRight="@+id/construction_list_distance"
+        android:text="Asset"/>
+</RelativeLayout>
