@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/preference_category_global">
+
+        <ListPreference
+            android:key="sort_choice"
+            android:title="@string/preference_global_sort"
+            android:defaultValue="@string/preference_global_sort_default"
+            android:dialogTitle="@string/preference_global_sort_dialog"
+            android:entries="@array/array_sort_entries"
+            android:entryValues="@array/array_sort_values"
+            />
+
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,11 +1,13 @@
 package hey.rich.edmontonwifi.fragments;
 
-import android.app.Fragment;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.location.Location;
 import android.os.Bundle;
+import android.preference.PreferenceFragment;
+import android.preference.PreferenceManager;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -31,13 +33,13 @@ import hey.rich.edmontonwifi.utils.Sorters;
 /**
  * Created by chris on 12/08/14.
  */
-public class WifiFragment extends Fragment {
+public class WifiFragment extends PreferenceFragment implements SharedPreferences.OnSharedPreferenceChangeListener {
 
-
+    public static final String KEY_GLOBAL_SORT_PREEFERNCE = "sort_choice";
+    private final static String TAG = WifiFragment.class.getName();
     private List<Wifi> wifis;
     private WifiArrayAdapter adapter;
     private SharedPreferences prefs;
-    private int sortChoice;
 
     public WifiFragment() {
 
@@ -49,6 +51,9 @@ public class WifiFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_wifi, container, false);
 
         setupList(rootView);
+
+        SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(getActivity());
+        sortWifisOnPreference(sharedPref.getString(KEY_GLOBAL_SORT_PREEFERNCE, "distance"));
 
         getActivity().setTitle("Wifi");
         return rootView;
@@ -105,39 +110,21 @@ public class WifiFragment extends Fragment {
 
     }
 
-    public void sortWifisBy(int position) {
-        /*
-         * User clicked a position From the string-array:
-		 * R.array.array_sort_wifi_list Order is: Distance, Address,
-		 * Facility, Name
-		 */
-        switch (position) {
-            case 0: // Distance
-                Collections.sort(wifis, new Sorters.DistanceComparator());
-                break;
-            case 1: // Address
-                Collections.sort(wifis, new Sorters.AddressComparator());
-                break;
-            case 2: // Facility
-                Collections.sort(wifis, new Sorters.FacilityComparator());
-                break;
-            case 3: // Name
-                Collections.sort(wifis, new Sorters.NameComparator());
-                break;
-            default: // Invalid
-                return;
-        }
-        adapter.notifyDataSetChanged();
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
     }
 
     @Override
     public void onResume() {
         super.onResume();
 
+        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(getActivity());
+        sp.registerOnSharedPreferenceChangeListener(this);
+
         prefs = getActivity().getSharedPreferences("hey.rich.EdmontonWifi",
                 Context.MODE_PRIVATE);
         // From this beauty: http://stackoverflow.com/a/5878986
-        sortChoice = prefs.getInt("sort_choice", 0);
 
         if (prefs.getBoolean("firstrun", false)) {
             prefs.edit().putBoolean("firstrun", false).apply();
@@ -153,10 +140,36 @@ public class WifiFragment extends Fragment {
     @Override
     public void onStop() {
         super.onStop();
-        SharedPreferences.Editor edit = prefs.edit();
-        edit.putInt("sort_choice", sortChoice);
-        edit.apply();
+
+        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(getActivity());
+        sp.unregisterOnSharedPreferenceChangeListener(this);
+
     }
 
+    @Override
+    public void onSharedPreferenceChanged(SharedPreferences sp, String key) {
+        if (key.equals(KEY_GLOBAL_SORT_PREEFERNCE)) {
+            sortWifisOnPreference(sp.getString(key, "distance"));
+
+
+        }
+    }
+
+    private void sortWifisOnPreference(String sort) {
+        if (sort.equals("distance")) {
+            // Sort by distance
+            Collections.sort(wifis, new Sorters.DistanceComparator());
+        } else if (sort.equals("address")) {
+            // Sort by address
+            Collections.sort(wifis, new Sorters.AddressComparator());
+        } else if (sort.equals("name")) {
+            // Sort by name
+            Collections.sort(wifis, new Sorters.NameComparator());
+        } else {
+            // Sort type was invalid, should we set it back to distance here?
+            Log.e(TAG, String.format("Invalid sort type: ", sort));
+        }
+        adapter.notifyDataSetChanged();
+    }
 
 }

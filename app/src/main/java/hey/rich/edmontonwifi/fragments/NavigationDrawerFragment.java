@@ -86,6 +86,10 @@ public class NavigationDrawerFragment extends Fragment {
                              Bundle savedInstanceState) {
         mDrawerListView = (ListView) inflater.inflate(
                 R.layout.fragment_navigation_drawer, container, false);
+
+        View footer = getActivity().getLayoutInflater().inflate(R.layout.navigation_drawer_settings, null);
+        mDrawerListView.addFooterView(footer);
+
         mDrawerListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -183,13 +187,13 @@ public class NavigationDrawerFragment extends Fragment {
 
         mCurrentSelectedPosition = position;
 
-        if(mDrawerListView != null){
+        if (mDrawerListView != null) {
             mDrawerListView.setItemChecked(position, true);
         }
-        if (mDrawerLayout != null){
+        if (mDrawerLayout != null) {
             mDrawerLayout.closeDrawer(mFragmentContainerView);
         }
-        if (mCallbacks != null){
+        if (mCallbacks != null) {
             mCallbacks.onNavigationDrawerItemSelected(position);
         }
 
@@ -202,6 +206,17 @@ public class NavigationDrawerFragment extends Fragment {
                 break;
             case 1: // Construction
                 fragment = new ConstructionFragment();
+                break;
+            case 2: // Settings
+                fragment = new SettingsFragment();
+
+                /********************************************************
+                 **** Note that if you are adding another fragment   ****
+                 **** here you must always make settings be the last ****
+                 **** position as it is the footer                   ****
+                 ********************************************************/
+
+                break;
             default:
 
                 break;
