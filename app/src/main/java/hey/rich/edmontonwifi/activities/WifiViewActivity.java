@@ -35,8 +35,8 @@ public class WifiViewActivity extends Activity {
 			this.wifi = EdmontonWifi.getWifi(this, position);
 		} catch (IndexOutOfBoundsException e) {
 			Log.i(TAG,
-					"Got passed an invalid position for a Wifi in the Wifilist");
-			Toast.makeText(this, "An error occured.\n Please try again",
+					"Got passed an invalid position for a Wifi in the Wifilist" + position);
+			Toast.makeText(this, "An error occurred.\n Please try again",
 					Toast.LENGTH_SHORT).show();
 			finish();
 		}

@@ -1,12 +1,14 @@
 package hey.rich.edmontonwifi.fragments;
 
 import android.app.Fragment;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.List;
 
@@ -14,6 +16,7 @@ import hey.rich.edmontonwifi.EdmontonWifi;
 import hey.rich.edmontonwifi.Objects.Construction;
 import hey.rich.edmontonwifi.Objects.ConstructionList;
 import hey.rich.edmontonwifi.R;
+import hey.rich.edmontonwifi.activities.ConstructionActivity;
 import hey.rich.edmontonwifi.adapters.ConstructionArrayAdapter;
 
 /**
@@ -52,6 +55,14 @@ public class ConstructionFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 // TODO: make something happen on click
+                Intent i = new Intent(getActivity(), ConstructionActivity.class);
+                i.putExtra(ConstructionActivity.CONSTRUCTION_ID, position);
+                if(i.resolveActivity(getActivity().getPackageManager()) != null){
+                    startActivity(i);
+                } else {
+                    Toast.makeText(getActivity(), "Error trying to Open, Try Again Later",
+                            Toast.LENGTH_SHORT).show();
+                }
             }
         });
     }

@@ -164,7 +164,12 @@ public class JsonReader {
                 startDate = value.getString(11);
                 finishDate = value.getString(12);
                 limits = value.getString(13);
-                address = value.getString(14).split(" ")[1];
+                address = value.getString(14);
+                String[] addressArray = address.split(" ");
+                address = "";
+                for(int j = 1; j < addressArray.length; j++){
+                    address += addressArray[j];
+                }
                 location.setLatitude(Double.parseDouble(value.getString(15)));
                 location.setLongitude(Double.parseDouble(value.getString(16)));
 
@@ -174,7 +179,7 @@ public class JsonReader {
 
                 ward = Integer.parseInt(value.getString(22).split(" ")[1]);
 
-                construction = new Construction(id, "construction", address, asset, startYear,
+                construction = new Construction(id, address, asset, startYear,
                         startDate, finishDate, limits, constructionType, supervisor,
                         phoneNumber, ward, location);
                 constructions.add(construction);

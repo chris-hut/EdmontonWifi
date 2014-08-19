@@ -52,11 +52,11 @@ public class Construction extends Data {
      */
     private int ward;
 
-    public Construction(String id, String name, String address, Asset asset,
+    public Construction(String id, String address, Asset asset,
                         int startYear, String startDate, String finishDate,
                         String limits, String constructionType, String supervisor,
                         String phoneNumber, int ward, Location location) {
-        super(id, name, address, location);
+        super(id, "constructionAd", address, location);
         this.asset = asset;
         this.startYear = startYear;
         this.startDate = startDate;
@@ -77,16 +77,33 @@ public class Construction extends Data {
         return startYear;
     }
 
+    public String getStartYearText() {
+        return String.format("Start year: %d", startYear);
+    }
+
+
     public String getStartDate() {
         return startDate;
+    }
+
+    public String getStartDateText() {
+        return String.format("Started on: %s", startDate);
     }
 
     public String getFinishDate() {
         return finishDate;
     }
 
+    public String getFinishDateText(){
+        return String.format("Finished by: %s", finishDate);
+    }
+
     public String getLimits() {
         return limits;
+    }
+
+    public String getLimitsText(){
+        return String.format("Construction limits: %s", limits);
     }
 
     public String getConstructionType() {
@@ -97,12 +114,28 @@ public class Construction extends Data {
         return supervisor;
     }
 
+    public String getSupervisorText(){
+        return String.format("Supervisor: %s", supervisor);
+    }
+
     public String getPhoneNumber() {
         return phoneNumber;
     }
 
+    public String getPhoneNumberText(){
+        return String.format("Supervisor Phone: %s", phoneNumber);
+    }
+
     public int getWard() {
         return ward;
+    }
+
+    public String getWardText(){
+        return String.format("Ward: %s", ward);
+    }
+
+    public String getAssetText() {
+        return String.format("Construction type: %s", this.asset.toString());
     }
 
     public enum Asset {
