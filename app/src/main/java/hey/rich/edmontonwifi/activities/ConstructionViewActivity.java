@@ -13,10 +13,10 @@ import hey.rich.edmontonwifi.EdmontonWifi;
 import hey.rich.edmontonwifi.Objects.Construction;
 import hey.rich.edmontonwifi.R;
 
-public class ConstructionActivity extends Activity {
+public class ConstructionViewActivity extends Activity {
 
     public static final String CONSTRUCTION_ID = "construction";
-    private static final String TAG = ConstructionActivity.class.getName();
+    private static final String TAG = ConstructionViewActivity.class.getName();
     private Construction construction;
 
     @Override
@@ -66,7 +66,6 @@ public class ConstructionActivity extends Activity {
         phoneNumber.setText(this.construction.getPhoneNumberText());
         ward.setText(this.construction.getWardText());
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

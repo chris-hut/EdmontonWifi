@@ -2,6 +2,7 @@ package hey.rich.edmontonwifi.fragments;
 
 import android.app.Fragment;
 import android.content.Intent;
+import android.location.Location;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,7 +17,7 @@ import hey.rich.edmontonwifi.EdmontonWifi;
 import hey.rich.edmontonwifi.Objects.Construction;
 import hey.rich.edmontonwifi.Objects.ConstructionList;
 import hey.rich.edmontonwifi.R;
-import hey.rich.edmontonwifi.activities.ConstructionActivity;
+import hey.rich.edmontonwifi.activities.ConstructionViewActivity;
 import hey.rich.edmontonwifi.adapters.ConstructionArrayAdapter;
 
 /**
@@ -44,6 +45,16 @@ public class ConstructionFragment extends Fragment {
         return rootView;
     }
 
+    private void updateLocation(){
+        Location l = EdmontonWifi.getLocation(getActivity());
+        if(l == null){
+            return;
+        }
+        Toast.makeText(getActivity(), "Getting location", Toast.LENGTH_SHORT).show();
+
+        for(Construction construction: constructions) construction.setDistanceToLocation(l);
+    }
+
     private void setupList(View v){
         ListView lView = (ListView) v.findViewById(R.id.construction_fragment_listview);
         ConstructionList constructionList = EdmontonWifi.getConstructionList(getActivity());
@@ -55,8 +66,8 @@ public class ConstructionFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 // TODO: make something happen on click
-                Intent i = new Intent(getActivity(), ConstructionActivity.class);
-                i.putExtra(ConstructionActivity.CONSTRUCTION_ID, position);
+                Intent i = new Intent(getActivity(), ConstructionViewActivity.class);
+                i.putExtra(ConstructionViewActivity.CONSTRUCTION_ID, position);
                 if(i.resolveActivity(getActivity().getPackageManager()) != null){
                     startActivity(i);
                 } else {
@@ -65,6 +76,8 @@ public class ConstructionFragment extends Fragment {
                 }
             }
         });
+
+        updateLocation();
     }
 
 }

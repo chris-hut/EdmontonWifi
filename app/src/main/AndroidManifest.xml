@@ -49,7 +49,7 @@
             android:authorities="hey.rich.edmontonwifi.utils.WifiSearchRecentSuggestionsProvider" />
 
         <activity
-            android:name=".activities.ConstructionActivity"
+            android:name=".activities.ConstructionViewActivity"
             android:label="@string/title_activity_construction"
             android:parentActivityName=".activities.MainActivity" >
             <meta-data
